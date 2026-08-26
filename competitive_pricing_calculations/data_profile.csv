@@ -1,0 +1,13 @@
+brand,market,observations,unique_references,numeric_prices,numeric_price_coverage,price_upon_request,unresolved_missing,product_families,bag_type_group_nonmissing,material_nonmissing,dimension_volume_available,signature_class_known
+CHANEL,FR,20,20,17,85.0%,3,0,5,20,20,20,20
+CHANEL,US,21,21,18,85.7%,3,0,5,21,21,21,21
+Hermès,FR,20,20,20,100.0%,0,0,18,20,20,11,0
+Hermès,US,20,20,20,100.0%,0,0,12,20,20,15,0
+Louis Vuitton,FR,20,20,20,100.0%,0,0,8,20,20,20,20
+Louis Vuitton,US,20,20,20,100.0%,0,0,14,20,20,20,20
+Dior,FR,20,20,19,95.0%,0,1,8,20,20,20,20
+Dior,US,20,20,13,65.0%,0,7,8,20,20,20,20
+CHANEL,ALL,41,21,35,85.4%,6,0,5,41,41,41,41
+Hermès,ALL,40,37,40,100.0%,0,0,26,40,40,26,0
+Louis Vuitton,ALL,40,35,40,100.0%,0,0,18,40,40,40,40
+Dior,ALL,40,20,32,80.0%,0,8,8,40,40,40,40

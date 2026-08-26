@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<rect width="1600" height="900" fill="#FCFBF8"/>
+<style>
+          .title { font-family:'Noto Sans CJK SC','PingFang SC','Heiti SC','Arial',sans-serif; font-size:28px; font-weight:700; fill:#1F2933; }
+          .subtitle { font-family:'Noto Sans CJK SC','PingFang SC','Heiti SC','Arial',sans-serif; font-size:15px; fill:#5B6570; }
+          .section { font-family:'Noto Sans CJK SC','PingFang SC','Heiti SC','Arial',sans-serif; font-size:18px; font-weight:700; fill:#1F2933; }
+          .label { font-family:'Noto Sans CJK SC','PingFang SC','Heiti SC','Arial',sans-serif; font-size:14px; fill:#39424E; }
+          .small { font-family:'Noto Sans CJK SC','PingFang SC','Heiti SC','Arial',sans-serif; font-size:12px; fill:#65717C; }
+          .note { font-family:'Noto Sans CJK SC','PingFang SC','Heiti SC','Arial',sans-serif; font-size:12px; fill:#66727C; }
+          .value { font-family:'Noto Sans CJK SC','PingFang SC','Heiti SC','Arial',sans-serif; font-size:13px; font-weight:700; fill:#25313B; }
+          .grid { stroke:#D8D5CF; stroke-width:1; }
+          .axis { stroke:#8D959C; stroke-width:1.2; }
+        </style>
+<text x="56" y="52" class="title">Chanel 当前价格梯度：入门/核心 → Classic 高位锚点 → 询价上端</text>
+<text x="56" y="79" class="subtitle">仅展示本次官方页面采样中可见的 Chanel 产品家族区间；灰色询价标记不映射到数值轴。</text>
+<text x="90" y="150" class="section">法国｜EUR</text>
+<line x1="290.0" y1="182" x2="290.0" y2="442" class="grid"/>
+<text x="290.0" y="466" text-anchor="middle" class="small">€0</text>
+<line x1="365.9" y1="182" x2="365.9" y2="442" class="grid"/>
+<text x="365.9" y="466" text-anchor="middle" class="small">€2,500</text>
+<line x1="441.9" y1="182" x2="441.9" y2="442" class="grid"/>
+<text x="441.9" y="466" text-anchor="middle" class="small">€5,000</text>
+<line x1="517.8" y1="182" x2="517.8" y2="442" class="grid"/>
+<text x="517.8" y="466" text-anchor="middle" class="small">€7,500</text>
+<line x1="593.7" y1="182" x2="593.7" y2="442" class="grid"/>
+<text x="593.7" y="466" text-anchor="middle" class="small">€10,000</text>
+<line x1="669.6" y1="182" x2="669.6" y2="442" class="grid"/>
+<text x="669.6" y="466" text-anchor="middle" class="small">€12,500</text>
+<text x="276" y="245" text-anchor="end" class="label">Mini Classic</text>
+<line x1="437.3" y1="240" x2="443.4" y2="240" stroke="#B07A3D" stroke-width="16" stroke-linecap="round"/>
+<text x="453.4" y="245" class="value">€4,850–€5,050</text>
+<text x="276" y="313" text-anchor="end" class="label">Shopping Bag</text>
+<line x1="438.8" y1="308" x2="493.5" y2="308" stroke="#B07A3D" stroke-width="16" stroke-linecap="round"/>
+<text x="503.5" y="313" class="value">€4,900–€6,700</text>
+<text x="276" y="381" text-anchor="end" class="label">Bowling Bag</text>
+<line x1="466.1" y1="376" x2="478.3" y2="376" stroke="#B07A3D" stroke-width="16" stroke-linecap="round"/>
+<text x="488.3" y="381" class="value">€5,800–€6,200</text>
+<text x="276" y="449" text-anchor="end" class="label">Classic 11.12</text>
+<line x1="593.7" y1="444" x2="662.0" y2="444" stroke="#171717" stroke-width="16" stroke-linecap="round"/>
+<text x="672.0" y="449" class="value">€10,000–€12,250</text>
+<text x="276" y="517" text-anchor="end" class="label">Small Classic</text>
+<line x1="596.7" y1="512" x2="596.7" y2="512" stroke="#171717" stroke-width="16" stroke-linecap="round"/>
+<text x="606.7" y="517" class="value">€10,100–€10,100</text>
+<line x1="493.5" y1="414" x2="593.7" y2="414" stroke="#9B6B40" stroke-width="2" stroke-dasharray="5 5"/>
+<line x1="493.5" y1="406" x2="493.5" y2="422" stroke="#9B6B40" stroke-width="2"/>
+<line x1="593.7" y1="406" x2="593.7" y2="422" stroke="#9B6B40" stroke-width="2"/>
+<text x="543.6" y="402" text-anchor="middle" class="small">可见区间价差约 €3,300</text>
+<text x="276" y="585" text-anchor="end" class="label">Classic 11.12 询价</text>
+<rect x="290" y="568" width="280" height="24" rx="12" fill="#D4D1CA" opacity="0.8"/>
+<text x="430" y="585" text-anchor="middle" class="small">3 条记录｜不显示数值</text>
+<text x="90" y="715" class="note">入门/核心产品 = Mini、Shopping、Bowling；经典产品 = Classic 11.12、Small Classic</text>
+<text x="850" y="150" class="section">美国｜USD</text>
+<line x1="1050.0" y1="182" x2="1050.0" y2="442" class="grid"/>
+<text x="1050.0" y="466" text-anchor="middle" class="small">$0</text>
+<line x1="1118.3" y1="182" x2="1118.3" y2="442" class="grid"/>
+<text x="1118.3" y="466" text-anchor="middle" class="small">$2,500</text>
+<line x1="1186.7" y1="182" x2="1186.7" y2="442" class="grid"/>
+<text x="1186.7" y="466" text-anchor="middle" class="small">$5,000</text>
+<line x1="1255.0" y1="182" x2="1255.0" y2="442" class="grid"/>
+<text x="1255.0" y="466" text-anchor="middle" class="small">$7,500</text>
+<line x1="1323.3" y1="182" x2="1323.3" y2="442" class="grid"/>
+<text x="1323.3" y="466" text-anchor="middle" class="small">$10,000</text>
+<line x1="1391.7" y1="182" x2="1391.7" y2="442" class="grid"/>
+<text x="1391.7" y="466" text-anchor="middle" class="small">$12,500</text>
+<line x1="1460.0" y1="182" x2="1460.0" y2="442" class="grid"/>
+<text x="1460.0" y="466" text-anchor="middle" class="small">$15,000</text>
+<text x="1036" y="245" text-anchor="end" class="label">Mini Classic</text>
+<line x1="1197.6" y1="240" x2="1203.1" y2="240" stroke="#B07A3D" stroke-width="16" stroke-linecap="round"/>
+<text x="1213.1" y="245" class="value">$5,400–$5,600</text>
+<text x="1036" y="313" text-anchor="end" class="label">Shopping Bag</text>
+<line x1="1200.3" y1="308" x2="1252.3" y2="308" stroke="#B07A3D" stroke-width="16" stroke-linecap="round"/>
+<text x="1262.3" y="313" class="value">$5,500–$7,400</text>
+<text x="1036" y="381" text-anchor="end" class="label">Bowling Bag</text>
+<line x1="1227.7" y1="376" x2="1238.6" y2="376" stroke="#B07A3D" stroke-width="16" stroke-linecap="round"/>
+<text x="1248.6" y="381" class="value">$6,500–$6,900</text>
+<text x="1036" y="449" text-anchor="end" class="label">Classic 11.12</text>
+<line x1="1350.7" y1="444" x2="1419.0" y2="444" stroke="#171717" stroke-width="16" stroke-linecap="round"/>
+<text x="1429.0" y="449" class="value">$11,000–$13,500</text>
+<text x="1036" y="517" text-anchor="end" class="label">Small Classic</text>
+<line x1="1358.9" y1="512" x2="1358.9" y2="512" stroke="#171717" stroke-width="16" stroke-linecap="round"/>
+<text x="1368.9" y="517" class="value">$11,300–$11,300</text>
+<line x1="1252.3" y1="414" x2="1350.7" y2="414" stroke="#9B6B40" stroke-width="2" stroke-dasharray="5 5"/>
+<line x1="1252.3" y1="406" x2="1252.3" y2="422" stroke="#9B6B40" stroke-width="2"/>
+<line x1="1350.7" y1="406" x2="1350.7" y2="422" stroke="#9B6B40" stroke-width="2"/>
+<text x="1301.5" y="402" text-anchor="middle" class="small">可见区间价差约 $3,600</text>
+<text x="1036" y="585" text-anchor="end" class="label">Classic 11.12 询价</text>
+<rect x="1050" y="568" width="280" height="24" rx="12" fill="#D4D1CA" opacity="0.8"/>
+<text x="1190" y="585" text-anchor="middle" class="small">3 条记录｜不显示数值</text>
+<text x="850" y="715" class="note">入门/核心产品 = Mini、Shopping、Bowling；经典产品 = Classic 11.12、Small Classic</text>
+<line x1="56" y1="780" x2="1544" y2="780" stroke="#D8D5CF"/>
+<text x="56" y="810" class="note">主读法：Chanel 的可见价格不是一条均匀上升的连续梯，而是入门/核心产品集群与 Classic 产品集群之间存在明显跳升，上端还部分转为询价。</text>
+<text x="56" y="835" class="note">边界：本图描述本次采样中的数值观察；遗漏的中间 SKU 或询价产品可能改变完整在售组合的价格梯度。</text>
+</svg>

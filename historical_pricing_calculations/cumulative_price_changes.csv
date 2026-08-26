@@ -1,0 +1,20 @@
+brand,product_lineage_id,product_family,market,currency,lineage_continuity_status,calculation_scope,earliest_observation,earliest_price,latest_observation,latest_price,n_numeric_observations,elapsed_years,absolute_change,cumulative_change_pct,source_confidence_mix,calculation_confidence,headline_use
+Chanel,CH-C01,Classic 11.12,FR,EUR,SAME_MODEL_CONTINUOUS,same_model_comparable,2022,8990.00,2026-08-15,10500.00,4,4.619,1510.00,16.80,HIGH+MEDIUM,MEDIUM,headline_eligible
+Chanel,CH-C02,Small Classic,FR,EUR,SAME_MODEL_CONTINUOUS,same_model_comparable,2022,8450.00,2026-08-15,10100.00,4,4.619,1650.00,19.53,HIGH+MEDIUM,MEDIUM,headline_eligible
+Chanel,CH-C03,Mini Classic,FR,EUR,SAME_MODEL_CONTINUOUS,same_model_comparable,2020,3350.00,2026-08-15,4850.00,5,6.620,1500.00,44.78,HIGH+MEDIUM,MEDIUM,headline_eligible
+Chanel,CH-C04,Mini Classic,FR,EUR,SAME_MODEL_CONTINUOUS,same_model_comparable,2022,4350.00,2026-08-15,5050.00,4,4.619,700.00,16.09,HIGH+MEDIUM,MEDIUM,headline_eligible
+Dior,DI-D01,Saddle,US,USD,MODEL_SUCCESSOR,successor_directional,2022,4200.00,2026-08-15,4400.00,3,4.619,200.00,4.76,HIGH+MEDIUM,MEDIUM-LOW,directional_or_sensitivity_only
+Dior,DI-D02,Dior Book Tote,FR,EUR,MODEL_SUCCESSOR,successor_directional,2024,2600.00,2026-08-15,3250.00,2,2.620,650.00,25.00,HIGH+MEDIUM,MEDIUM-LOW,directional_or_sensitivity_only
+Dior,DI-D02,Dior Book Tote,US,USD,MODEL_SUCCESSOR,successor_directional,2024,3250.00,2026-08-15,3900.00,2,2.620,650.00,20.00,HIGH+MEDIUM,MEDIUM-LOW,directional_or_sensitivity_only
+Dior,DI-D03,Dior Book Tote,FR,EUR,MODEL_SUCCESSOR,successor_directional,2024,2700.00,2026-08-15,3650.00,2,2.620,950.00,35.19,HIGH+MEDIUM,MEDIUM-LOW,directional_or_sensitivity_only
+Dior,DI-D03,Dior Book Tote,US,USD,MODEL_SUCCESSOR,successor_directional,2019,2700.00,2024,3350.00,5,5.000,650.00,24.07,MEDIUM,MEDIUM-LOW,directional_or_sensitivity_only
+Hermès,HM-H01,Geta,FR,EUR,SAME_MODEL_CONTINUOUS,same_model_comparable,2022,4550.00,2026-08-15,5300.00,3,4.619,750.00,16.48,HIGH+MEDIUM,MEDIUM,directional_or_sensitivity_only
+Hermès,HM-H01,Geta,US,USD,SAME_MODEL_CONTINUOUS,same_model_comparable,2023,5950.00,2026-08-15,7650.00,3,3.619,1700.00,28.57,HIGH+MEDIUM,MEDIUM,headline_eligible
+Hermès,HM-H02,Jypsière,FR,EUR,MODEL_SUCCESSOR,successor_directional,2023,5500.00,2026-08-15,6850.00,3,3.619,1350.00,24.55,HIGH+MEDIUM,MEDIUM-LOW,directional_or_sensitivity_only
+Louis Vuitton,LV-L01,Speedy,FR,EUR,MODEL_SUCCESSOR,successor_directional,2021,1180.00,2026-08-15,3200.00,5,5.618,2020.00,171.19,HIGH+MEDIUM,MEDIUM-LOW,directional_or_sensitivity_only
+Louis Vuitton,LV-L01,Speedy,US,USD,MODEL_SUCCESSOR,successor_directional,2021,1650.00,2026-08-15,4150.00,4,5.618,2500.00,151.52,HIGH+MEDIUM,MEDIUM-LOW,directional_or_sensitivity_only
+Louis Vuitton,LV-L02,Speedy,FR,EUR,SAME_MODEL_CONTINUOUS,same_model_comparable,2022,1960.00,2026-08-15,2400.00,3,4.619,440.00,22.45,HIGH+MEDIUM,MEDIUM,headline_eligible
+Louis Vuitton,LV-L03,Alma,FR,EUR,MODEL_SUCCESSOR,successor_directional,2021,1100.00,2026-08-15,2800.00,5,5.618,1700.00,154.55,HIGH+MEDIUM,MEDIUM-LOW,directional_or_sensitivity_only
+Louis Vuitton,LV-L03,Alma,US,USD,MODEL_SUCCESSOR,successor_directional,2021,1480.00,2026-08-15,2000.00,4,5.618,520.00,35.14,HIGH+MEDIUM,MEDIUM-LOW,directional_or_sensitivity_only
+Louis Vuitton,LV-L04,Neverfull,FR,EUR,SAME_MODEL_CONTINUOUS,same_model_comparable,2021,1150.00,2023,1500.00,3,2.000,350.00,30.43,MEDIUM,MEDIUM,headline_eligible
+Louis Vuitton,LV-L04,Neverfull,US,USD,SAME_MODEL_CONTINUOUS,same_model_comparable,2021,1540.00,2026-08-15,2240.00,4,5.618,700.00,45.45,HIGH+MEDIUM,MEDIUM,headline_eligible

@@ -1,0 +1,148 @@
+brand,market,currency,reference,product_family,price,band,bag_type_group,size_group,material_class,signature_class,source
+CHANEL,FR,EUR,A01112-B25720-UB663,Classic 11.12,10500,Exceptional / icon,flap,compact,leather,icon_inferred,chanel_fr_us_handbags_current/clean_data.csv
+CHANEL,US,USD,A01112-B25720-UB663,Classic 11.12,11700,Exceptional / icon,flap,compact,leather,icon_inferred,chanel_fr_us_handbags_current/clean_data.csv
+CHANEL,FR,EUR,A01112-B25747-94305,Classic 11.12,10500,Exceptional / icon,flap,compact,leather,icon_inferred,chanel_fr_us_handbags_current/clean_data.csv
+CHANEL,US,USD,A01112-B25747-94305,Classic 11.12,11700,Exceptional / icon,flap,compact,leather,icon_inferred,chanel_fr_us_handbags_current/clean_data.csv
+CHANEL,FR,EUR,A01112-B25879-UC671,Classic 11.12,10000,Exceptional / icon,flap,compact,textile_or_mixed,icon_inferred,chanel_fr_us_handbags_current/clean_data.csv
+CHANEL,US,USD,A01112-B25879-UC671,Classic 11.12,11000,Exceptional / icon,flap,compact,textile_or_mixed,icon_inferred,chanel_fr_us_handbags_current/clean_data.csv
+CHANEL,FR,EUR,A01112-Y04059-U8390,Classic 11.12,10500,Exceptional / icon,flap,compact,leather,icon_inferred,chanel_fr_us_handbags_current/clean_data.csv
+CHANEL,US,USD,A01112-Y04059-U8390,Classic 11.12,11700,Exceptional / icon,flap,compact,leather,icon_inferred,chanel_fr_us_handbags_current/clean_data.csv
+CHANEL,FR,EUR,A01112-B24872-UA957,Classic 11.12,10000,Exceptional / icon,flap,compact,textile_or_mixed,icon_inferred,chanel_fr_us_handbags_current/clean_data.csv
+CHANEL,US,USD,A01112-B24872-UA957,Classic 11.12,11000,Exceptional / icon,flap,compact,textile_or_mixed,icon_inferred,chanel_fr_us_handbags_current/clean_data.csv
+CHANEL,FR,EUR,A01112-B24048-94305,Classic 11.12,12250,Exceptional / icon,flap,compact,leather,icon_inferred,chanel_fr_us_handbags_current/clean_data.csv
+CHANEL,US,USD,A01112-B24048-94305,Classic 11.12,13500,Exceptional / icon,flap,compact,leather,icon_inferred,chanel_fr_us_handbags_current/clean_data.csv
+CHANEL,FR,EUR,A35200-Y04059-94305,Mini Classic,4850,Core,flap,compact,leather,non_icon_observed,chanel_fr_us_handbags_current/clean_data.csv
+CHANEL,US,USD,A35200-Y04059-94305,Mini Classic,5400,Core,flap,compact,leather,non_icon_observed,chanel_fr_us_handbags_current/clean_data.csv
+CHANEL,FR,EUR,A69900-Y04059-94305,Mini Classic,5050,Premium core,flap,compact,leather,non_icon_observed,chanel_fr_us_handbags_current/clean_data.csv
+CHANEL,US,USD,A69900-Y04059-94305,Mini Classic,5600,Core,flap,compact,leather,non_icon_observed,chanel_fr_us_handbags_current/clean_data.csv
+CHANEL,FR,EUR,A01113-Y01864-C3906,Small Classic,10100,Exceptional / icon,flap,compact,leather,icon_inferred,chanel_fr_us_handbags_current/clean_data.csv
+CHANEL,US,USD,A01113-Y01864-C3906,Small Classic,11300,Exceptional / icon,flap,compact,leather,icon_inferred,chanel_fr_us_handbags_current/clean_data.csv
+CHANEL,FR,EUR,AS6495-B25347-UA954,Shopping Bag,5800,Premium core,tote,large,leather,non_icon_observed,chanel_fr_us_handbags_current/clean_data.csv
+CHANEL,US,USD,AS6495-B25347-UA954,Shopping Bag,6600,Premium core,tote,compact,leather,non_icon_observed,chanel_fr_us_handbags_current/clean_data.csv
+CHANEL,FR,EUR,AS6199-B25388-94305,Shopping Bag,5600,Premium core,tote,standard,leather,non_icon_observed,chanel_fr_us_handbags_current/clean_data.csv
+CHANEL,US,USD,AS6199-B25388-94305,Shopping Bag,6300,Premium core,tote,compact,leather,non_icon_observed,chanel_fr_us_handbags_current/clean_data.csv
+CHANEL,US,USD,AS6200-B25749-UD596,Shopping Bag,6100,Premium core,tote,compact,textile_or_mixed,non_icon_observed,chanel_fr_us_handbags_current/clean_data.csv
+CHANEL,FR,EUR,AS6199-B25749-UD595,Shopping Bag,4900,Core,tote,standard,textile_or_mixed,non_icon_observed,chanel_fr_us_handbags_current/clean_data.csv
+CHANEL,US,USD,AS6199-B25749-UD595,Shopping Bag,5500,Core,tote,compact,textile_or_mixed,non_icon_observed,chanel_fr_us_handbags_current/clean_data.csv
+CHANEL,FR,EUR,AS6211-B25711-UB662,Bowling Bag,6200,Premium core,tote,large,leather,non_icon_observed,chanel_fr_us_handbags_current/clean_data.csv
+CHANEL,US,USD,AS6211-B25711-UB662,Bowling Bag,6900,Premium core,tote,compact,leather,non_icon_observed,chanel_fr_us_handbags_current/clean_data.csv
+CHANEL,FR,EUR,AS6580-B24074-U9390,Bowling Bag,5800,Premium core,tote,standard,leather,non_icon_observed,chanel_fr_us_handbags_current/clean_data.csv
+CHANEL,US,USD,AS6580-B24074-U9390,Bowling Bag,6500,Premium core,tote,compact,leather,non_icon_observed,chanel_fr_us_handbags_current/clean_data.csv
+CHANEL,FR,EUR,AS6590-B25996-U9390,Shopping Bag,6000,Premium core,tote,large,leather,non_icon_observed,chanel_fr_us_handbags_current/clean_data.csv
+CHANEL,US,USD,AS6590-B25996-U9390,Shopping Bag,6700,Premium core,tote,compact,leather,non_icon_observed,chanel_fr_us_handbags_current/clean_data.csv
+CHANEL,FR,EUR,AS6475-B25599-UD180,Shopping Bag,6500,Premium core,tote,large,leather,non_icon_observed,chanel_fr_us_handbags_current/clean_data.csv
+CHANEL,US,USD,AS6475-B25599-UD180,Shopping Bag,7300,Premium core,tote,compact,leather,non_icon_observed,chanel_fr_us_handbags_current/clean_data.csv
+CHANEL,FR,EUR,AS6224-B24988-UA104,Shopping Bag,6700,Premium core,tote,large,leather,non_icon_observed,chanel_fr_us_handbags_current/clean_data.csv
+CHANEL,US,USD,AS6224-B24988-UA104,Shopping Bag,7400,Premium core,tote,compact,leather,non_icon_observed,chanel_fr_us_handbags_current/clean_data.csv
+Dior,FR,EUR,M1409OHSU_M09I,Dior Promenade,3800,Core,tote,large,leather,other_unflagged_observed,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Dior,US,USD,M1409OHSU_M09I,Dior Promenade,4500,Core,tote,large,leather,other_unflagged_observed,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Dior,FR,EUR,M1410OHST_M911,Dior Promenade,3400,Core,tote,standard,leather,other_unflagged_observed,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Dior,US,USD,M1410OHST_M911,Dior Promenade,4000,Core,tote,standard,leather,other_unflagged_observed,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Dior,FR,EUR,M1410OHST_M912,Dior Promenade,3400,Core,tote,standard,leather,other_unflagged_observed,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Dior,US,USD,M1410OHST_M912,Dior Promenade,4000,Core,tote,standard,leather,other_unflagged_observed,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Dior,FR,EUR,M1409OTZQ_M928,Dior Promenade,3000,Core,tote,large,other_or_unclear,other_unflagged_observed,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Dior,US,USD,M1409OTZQ_M928,Dior Promenade,3600,Access / lower,tote,large,other_or_unclear,other_unflagged_observed,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Dior,FR,EUR,M1325OWHP_M900,Dior Book Tote,3250,Core,tote,large,leather,icon_supplied,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Dior,US,USD,M1325OWHP_M900,Dior Book Tote,3900,Access / lower,tote,large,leather,icon_supplied,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Dior,FR,EUR,M2867ODKZ_M900,Dior Toujours,3100,Core,hobo,compact,leather,other_unflagged_observed,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Dior,FR,EUR,M1388OEJP_M918,Dior Blooming,3100,Core,tote,large,leather,other_unflagged_observed,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Dior,US,USD,M1388OEJP_M918,Dior Blooming,3700,Access / lower,tote,large,leather,other_unflagged_observed,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Dior,FR,EUR,M1388OEJP_M19I,Dior Blooming,3100,Core,tote,large,leather,other_unflagged_observed,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Dior,US,USD,M1388OEJP_M19I,Dior Blooming,3700,Access / lower,tote,large,leather,other_unflagged_observed,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Dior,FR,EUR,M1324OWHP_M51U,Dior Book Tote,3650,Core,tote,large,leather,icon_supplied,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Dior,FR,EUR,M1354OEUB_M918,Dior Book Tote,3600,Core,tote,large,other_or_unclear,icon_supplied,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Dior,FR,EUR,M3920QDWP_M98H,Dior Médaillon,3500,Core,flap_or_clutch,compact,leather,other_unflagged_observed,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Dior,FR,EUR,M3919QDWP_M900,Dior Médaillon,3200,Core,flap_or_clutch,compact,leather,other_unflagged_observed,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Dior,FR,EUR,M1532QTZQ_M928,Dior Médaillon,3450,Core,bucket,large,other_or_unclear,other_unflagged_observed,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Dior,US,USD,M1532QTZQ_M928,Dior Médaillon,4000,Core,bucket,large,other_or_unclear,other_unflagged_observed,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Dior,FR,EUR,M1412PHJX_M79G,Diorly,3850,Core,shoulder,standard,leather,other_unflagged_observed,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Dior,FR,EUR,M1411OHJW_M911,Diorly,4500,Core,shoulder,large,leather,other_unflagged_observed,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Dior,US,USD,M1411OHJW_M911,Diorly,5200,Core,shoulder,large,leather,other_unflagged_observed,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Dior,FR,EUR,M0715OUQO_M900,Dior Bow,3700,Core,shoulder,standard,leather,other_unflagged_observed,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Dior,US,USD,M0715OUQO_M900,Dior Bow,4400,Core,shoulder,standard,leather,other_unflagged_observed,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Dior,FR,EUR,M0457CUQW_M900,Saddle,3650,Core,flap_or_clutch,compact,leather,icon_supplied,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Dior,US,USD,M0457CUQW_M900,Saddle,4400,Core,flap_or_clutch,compact,leather,icon_supplied,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Dior,FR,EUR,M2836OSNW_M900,Dior Toujours,3450,Core,tote,large,leather,other_unflagged_observed,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Dior,US,USD,M2836OSNW_M900,Dior Toujours,4100,Core,tote,large,leather,other_unflagged_observed,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Dior,FR,EUR,M2822OSNW_M900,Dior Toujours,3200,Core,tote,standard,leather,other_unflagged_observed,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Dior,US,USD,M2822OSNW_M900,Dior Toujours,3900,Access / lower,tote,standard,leather,other_unflagged_observed,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Louis Vuitton,FR,EUR,M29099,Multipass,1800,Access / lower,crossbody,compact,textile_or_mixed,icon_supplied,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Louis Vuitton,FR,EUR,M3A247,Multipass,2000,Access / lower,crossbody,compact,leather,icon_supplied,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Louis Vuitton,FR,EUR,M3A389,Multipass,2000,Access / lower,crossbody,compact,textile_or_mixed,icon_supplied,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Louis Vuitton,FR,EUR,M2A840,Multipass,2000,Access / lower,crossbody,compact,leather,icon_supplied,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Louis Vuitton,FR,EUR,M3A167,Squire,2200,Access / lower,top_handle,standard,leather,other_unflagged_observed,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Louis Vuitton,FR,EUR,M3A079,Speedy,2600,Access / lower,top_handle,standard,leather,icon_supplied,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Louis Vuitton,FR,EUR,M3A843,Alma,2800,Access / lower,top_handle,standard,leather,icon_supplied,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Louis Vuitton,FR,EUR,M3A269,Multipass,2650,Access / lower,shoulder,standard,leather,icon_supplied,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Louis Vuitton,FR,EUR,M3A285,Multipass,2650,Access / lower,shoulder,standard,leather,icon_supplied,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Louis Vuitton,FR,EUR,M3A388,Express,3800,Core,tote,large,textile_or_mixed,other_unflagged_observed,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Louis Vuitton,FR,EUR,M3A265,Express,3500,Core,top_handle,standard,leather,other_unflagged_observed,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Louis Vuitton,FR,EUR,M2A772,Bundle Trunk,3200,Core,shoulder,standard,leather,other_unflagged_observed,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Louis Vuitton,FR,EUR,M3A259,Bundle Trunk,3200,Core,shoulder,standard,leather,other_unflagged_observed,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Louis Vuitton,FR,EUR,M3A307,Side Trunk,3600,Core,shoulder,standard,leather,icon_supplied,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Louis Vuitton,FR,EUR,M3A165,Speedy,3600,Core,top_handle,large,leather,icon_supplied,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Louis Vuitton,FR,EUR,M29552,Express,3700,Core,top_handle,standard,textile_or_mixed,other_unflagged_observed,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Louis Vuitton,FR,EUR,M3A842,Alma,2800,Access / lower,top_handle,standard,leather,icon_supplied,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Louis Vuitton,FR,EUR,M2A038,Speedy,3200,Core,top_handle,standard,textile_or_mixed,icon_supplied,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Louis Vuitton,FR,EUR,M2A099,Speedy,2400,Access / lower,top_handle,standard,leather,icon_supplied,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Louis Vuitton,FR,EUR,M29976,OnTheGo,2900,Access / lower,tote,standard,leather,other_unflagged_observed,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Louis Vuitton,US,USD,M28613,Marelle,2890,Access / lower,shoulder,standard,textile_or_mixed,other_unflagged_observed,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Louis Vuitton,US,USD,M47031,Hang On,2850,Access / lower,tote,compact,textile_or_mixed,other_unflagged_observed,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Louis Vuitton,US,USD,M28953,Squire,2470,Access / lower,top_handle,standard,textile_or_mixed,other_unflagged_observed,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Louis Vuitton,US,USD,M28951,Squire,2860,Access / lower,top_handle,standard,textile_or_mixed,other_unflagged_observed,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Louis Vuitton,US,USD,M46784,High Rise,2020,Access / lower,other,standard,textile_or_mixed,other_unflagged_observed,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Louis Vuitton,US,USD,M28426,Madeleine,2170,Access / lower,crossbody,compact,textile_or_mixed,other_unflagged_observed,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Louis Vuitton,US,USD,M46990,Alma,2000,Access / lower,top_handle,standard,textile_or_mixed,icon_supplied,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Louis Vuitton,US,USD,M46987,Neverfull,2240,Access / lower,tote,large,textile_or_mixed,icon_supplied,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Louis Vuitton,US,USD,M29099,Multipass,2230,Access / lower,crossbody,compact,textile_or_mixed,icon_supplied,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Louis Vuitton,US,USD,M2A840,Multipass,2480,Access / lower,crossbody,compact,leather,icon_supplied,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Louis Vuitton,US,USD,M3A389,Multipass,2480,Access / lower,crossbody,compact,textile_or_mixed,icon_supplied,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Louis Vuitton,US,USD,M3A247,Multipass,2480,Access / lower,crossbody,compact,leather,icon_supplied,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Louis Vuitton,US,USD,M2A078,Multipass,2850,Access / lower,shoulder,standard,textile_or_mixed,icon_supplied,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Louis Vuitton,US,USD,M2A038,Speedy,4150,Core,top_handle,standard,textile_or_mixed,icon_supplied,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Louis Vuitton,US,USD,M29537,Frivole,2210,Access / lower,crossbody,compact,textile_or_mixed,other_unflagged_observed,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Louis Vuitton,US,USD,M83008,Liv,1950,Access / lower,shoulder,compact,textile_or_mixed,other_unflagged_observed,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Louis Vuitton,US,USD,M46049,Diane,2700,Access / lower,shoulder,standard,textile_or_mixed,other_unflagged_observed,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Louis Vuitton,US,USD,M46203,CarryAll,2940,Access / lower,tote,large,textile_or_mixed,other_unflagged_observed,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Louis Vuitton,US,USD,M11945,Speedy,3550,Access / lower,top_handle,large,textile_or_mixed,icon_supplied,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Louis Vuitton,US,USD,M45832,Boulogne,2700,Access / lower,shoulder,standard,textile_or_mixed,other_unflagged_observed,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Hermès,FR,EUR,H086559CC55,Plume,5650,Premium core,top_handle,compact,leather,unknown,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Hermès,FR,EUR,H084948CP0G,En Piste,5300,Premium core,flap_or_clutch,compact,leather,unknown,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Hermès,FR,EUR,H085003CK55,Mini Médor,4650,Core,shoulder,standard,leather,unknown,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Hermès,FR,EUR,H084847CK4D,Petite Course,4150,Core,crossbody,standard,leather,unknown,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Hermès,FR,EUR,H088002CKAH,Médor Clous,8150,High,shoulder,standard,leather,unknown,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Hermès,FR,EUR,H088503CKAB,Balusoie,2170,Access / lower,shoulder,standard,leather,unknown,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Hermès,FR,EUR,H088004CC7U,Jypsière,6850,Premium core,crossbody,compact,leather,unknown,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Hermès,FR,EUR,H085741CK89,Néo Médor,9100,High,flap_or_clutch,standard,leather,unknown,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Hermès,FR,EUR,H084337CKAE,Victoria,5750,Premium core,tote,compact,leather,unknown,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Hermès,FR,EUR,H071205CK89,Roulis,7150,High,crossbody,compact,leather,unknown,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Hermès,FR,EUR,H086915CK1C,Poche Cliquetis,5600,Premium core,shoulder,compact,leather,unknown,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Hermès,FR,EUR,H084658CKI8,Della Cavalleria Élan,5900,Premium core,crossbody,compact,leather,unknown,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Hermès,FR,EUR,H086915CKI8,Poche Cliquetis,5600,Premium core,shoulder,compact,leather,unknown,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Hermès,FR,EUR,H086707CAAG,Néo Double Sens,4050,Core,tote,large,leather,unknown,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Hermès,FR,EUR,H085668CKAB,P'tit Arçon,3950,Core,crossbody,standard,leather,unknown,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Hermès,FR,EUR,H087026CCQ0,Petit Tour,8900,High,tote,large,leather,unknown,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Hermès,FR,EUR,H085367CPQ0,Della Cavalleria mini II,5400,Premium core,crossbody,compact,leather,unknown,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Hermès,FR,EUR,H085408CKAW,Geta,5300,Premium core,shoulder,standard,leather,unknown,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Hermès,FR,EUR,H088914CK89,Videpoches,3800,Core,crossbody,compact,leather,unknown,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Hermès,FR,EUR,H084151CKAC,Videpoches,3300,Core,crossbody,compact,leather,unknown,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Hermès,US,USD,H086583CKAC,Tablier Sellier,5850,Core,top_handle,standard,leather,unknown,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Hermès,US,USD,H087987CK10,Videpoches,3975,Access / lower,crossbody,compact,leather,unknown,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Hermès,US,USD,H084658CK55,Della Cavalleria Elan,8550,High,crossbody,compact,leather,unknown,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Hermès,US,USD,H087987CKH0,Videpoches,3975,Access / lower,crossbody,compact,leather,unknown,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Hermès,US,USD,H086717CKAC,Neo Garden Voyage,5450,Core,tote,large,leather,unknown,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Hermès,US,USD,H088914CKP0,Videpoches,5500,Core,crossbody,compact,leather,unknown,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Hermès,US,USD,H086717CKAH,Neo Garden Voyage,5450,Core,tote,large,leather,unknown,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Hermès,US,USD,H088914CK37,Videpoches,5500,Core,crossbody,compact,leather,unknown,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Hermès,US,USD,H088914CK18,Videpoches,5500,Core,crossbody,compact,leather,unknown,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Hermès,US,USD,H084151CKAC,Videpoches,4750,Core,crossbody,compact,leather,unknown,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Hermès,US,USD,H083591CK7K,Hac a Dos,13200,Exceptional / icon,backpack,large,leather,unknown,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Hermès,US,USD,H087119CKAD,Jypsière,9350,High,crossbody,compact,leather,unknown,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Hermès,US,USD,H085961CKAB,Horseback,6850,Premium core,crossbody,large,leather,unknown,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Hermès,US,USD,H087128CKAC,Silkycity,3075,Access / lower,crossbody,compact,leather,unknown,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Hermès,US,USD,H086394CKAC,P'tit Arçon,5550,Core,crossbody,standard,leather,unknown,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Hermès,US,USD,H084489CKAC,Herbag,4550,Core,shoulder,large,leather,unknown,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Hermès,US,USD,H078401CK37,Kelly depeches,11100,Exceptional / icon,flap_or_clutch,standard,leather,unknown,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Hermès,US,USD,H084623CKAF,Herbag,4550,Core,shoulder,large,leather,unknown,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Hermès,US,USD,H085408CKAW,Geta,7650,Premium core,shoulder,standard,leather,unknown,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv
+Hermès,US,USD,H088914CK89,Videpoches,5500,Core,crossbody,compact,leather,unknown,luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv

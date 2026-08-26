@@ -1,0 +1,18 @@
+{
+  "input_observations": 77,
+  "input_numeric_observations": 76,
+  "input_lineages": 13,
+  "same_model_continuous_lineages": 7,
+  "model_successor_lineages": 6,
+  "input_event_rows": 35,
+  "output_market_paths": 19,
+  "output_cagr_rows": 19,
+  "unresolved_candidates": 10,
+  "conflict_observation_rows": 2,
+  "calculation_notes": [
+    "No missing years were interpolated.",
+    "SAME_MODEL_CONTINUOUS and MODEL_SUCCESSOR paths remain separate.",
+    "Conflict observations are excluded from primary path calculations and retained in readiness/event sensitivity fields.",
+    "Current 2026 anchors are included as current endpoint observations; successor paths are directional only."
+  ]
+}

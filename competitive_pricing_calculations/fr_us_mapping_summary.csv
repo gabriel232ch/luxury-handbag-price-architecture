@@ -1,0 +1,5 @@
+brand,numeric_exact_pairs,minimum_ratio,median_ratio,maximum_ratio,interpretation_boundary
+CHANEL,17,1.10,1.11,1.14,local display mapping only; not FX/tax-normalized
+Hermès,3,1.44,1.44,1.45,local display mapping only; not FX/tax-normalized
+Louis Vuitton,5,1.24,1.24,1.30,local display mapping only; not FX/tax-normalized
+Dior,13,1.16,1.19,1.22,local display mapping only; not FX/tax-normalized

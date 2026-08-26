@@ -1,0 +1,30 @@
+{
+  "total_observations": 161,
+  "total_numeric": 147,
+  "total_non_numeric": 14,
+  "brands": {
+    "CHANEL": {
+      "observations": 41,
+      "unique_references": 21,
+      "numeric": 35
+    },
+    "Hermès": {
+      "observations": 40,
+      "unique_references": 37,
+      "numeric": 40
+    },
+    "Louis Vuitton": {
+      "observations": 40,
+      "unique_references": 35,
+      "numeric": 40
+    },
+    "Dior": {
+      "observations": 40,
+      "unique_references": 20,
+      "numeric": 32
+    }
+  },
+  "matched_exact_reference_rows": 48,
+  "matched_numeric_pair_rows": 38,
+  "comparable_cells": 10
+}

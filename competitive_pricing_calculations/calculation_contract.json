@@ -1,0 +1,13 @@
+{
+  "observed_price_definition": "Official localized list price displayed in the supplied current-price extract; not realized price.",
+  "quantile_convention": "Inclusive linear interpolation with position=(n-1)*p.",
+  "numeric_inclusion": "price is present and price_status=numeric; missing price-upon-request and unresolved observations are excluded from numeric distribution metrics.",
+  "market_treatment": "France and United States are calculated separately; no FX, VAT, sales-tax, duty, or landed-cost normalization.",
+  "price_band_rule": "Rounded bands selected after inspecting pooled observed numeric price clusters separately by market; they are analytical bands, not affordability bands.",
+  "comparable_cell_rule": "Same market, broad bag-type group, dimension-derived size group, and broad material class; only numeric prices; pooled cell median is benchmark=100. These are directional, not global brand indices.",
+  "icon_rule": "CHANEL Classic 11.12 and Small Classic are inferred icons; competitor true flags are treated as icon observations and blank flags as other unflagged observations, not verified non-icons; Hermès has no supplied icon flags and is excluded from icon-premium ratios.",
+  "source_files": [
+    "chanel_fr_us_handbags_current/clean_data.csv",
+    "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv"
+  ]
+}

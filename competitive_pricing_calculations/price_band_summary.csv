@@ -1,0 +1,41 @@
+market,currency,brand,band,numeric_observations,share_of_brand_numeric,pooled_band_observations,share_of_pooled_band
+FR,EUR,CHANEL,Access / lower,0,0.0%,13,0.0%
+FR,EUR,CHANEL,Core,2,11.8%,35,5.7%
+FR,EUR,CHANEL,Premium core,8,47.1%,17,47.1%
+FR,EUR,CHANEL,High,0,0.0%,4,0.0%
+FR,EUR,CHANEL,Exceptional / icon,7,41.2%,7,100.0%
+FR,EUR,Hermès,Access / lower,1,5.0%,13,7.7%
+FR,EUR,Hermès,Core,6,30.0%,35,17.1%
+FR,EUR,Hermès,Premium core,9,45.0%,17,52.9%
+FR,EUR,Hermès,High,4,20.0%,4,100.0%
+FR,EUR,Hermès,Exceptional / icon,0,0.0%,7,0.0%
+FR,EUR,Louis Vuitton,Access / lower,12,60.0%,13,92.3%
+FR,EUR,Louis Vuitton,Core,8,40.0%,35,22.9%
+FR,EUR,Louis Vuitton,Premium core,0,0.0%,17,0.0%
+FR,EUR,Louis Vuitton,High,0,0.0%,4,0.0%
+FR,EUR,Louis Vuitton,Exceptional / icon,0,0.0%,7,0.0%
+FR,EUR,Dior,Access / lower,0,0.0%,13,0.0%
+FR,EUR,Dior,Core,19,100.0%,35,54.3%
+FR,EUR,Dior,Premium core,0,0.0%,17,0.0%
+FR,EUR,Dior,High,0,0.0%,4,0.0%
+FR,EUR,Dior,Exceptional / icon,0,0.0%,7,0.0%
+US,USD,CHANEL,Access / lower,0,0.0%,27,0.0%
+US,USD,CHANEL,Core,3,16.7%,23,13.0%
+US,USD,CHANEL,Premium core,8,44.4%,10,80.0%
+US,USD,CHANEL,High,0,0.0%,2,0.0%
+US,USD,CHANEL,Exceptional / icon,7,38.9%,9,77.8%
+US,USD,Hermès,Access / lower,3,15.0%,27,11.1%
+US,USD,Hermès,Core,11,55.0%,23,47.8%
+US,USD,Hermès,Premium core,2,10.0%,10,20.0%
+US,USD,Hermès,High,2,10.0%,2,100.0%
+US,USD,Hermès,Exceptional / icon,2,10.0%,9,22.2%
+US,USD,Louis Vuitton,Access / lower,19,95.0%,27,70.4%
+US,USD,Louis Vuitton,Core,1,5.0%,23,4.3%
+US,USD,Louis Vuitton,Premium core,0,0.0%,10,0.0%
+US,USD,Louis Vuitton,High,0,0.0%,2,0.0%
+US,USD,Louis Vuitton,Exceptional / icon,0,0.0%,9,0.0%
+US,USD,Dior,Access / lower,5,38.5%,27,18.5%
+US,USD,Dior,Core,8,61.5%,23,34.8%
+US,USD,Dior,Premium core,0,0.0%,10,0.0%
+US,USD,Dior,High,0,0.0%,2,0.0%
+US,USD,Dior,Exceptional / icon,0,0.0%,9,0.0%

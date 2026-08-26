@@ -1,0 +1,49 @@
+brand,reference,product_family,france_price,us_price,france_status,us_status,us_local_number_divided_by_fr_local_number,numeric_pair
+CHANEL,A01112-B24048-94305,Classic 11.12,12250,13500,numeric,numeric,1.10,yes
+CHANEL,A01112-B24526-UA091,Classic 11.12,,,price_upon_request,price_upon_request,,no
+CHANEL,A01112-B24872-UA957,Classic 11.12,10000,11000,numeric,numeric,1.10,yes
+CHANEL,A01112-B25087-UB640,Classic 11.12,,,price_upon_request,price_upon_request,,no
+CHANEL,A01112-B25176-UC191,Classic 11.12,,,price_upon_request,price_upon_request,,no
+CHANEL,A01112-B25720-UB663,Classic 11.12,10500,11700,numeric,numeric,1.11,yes
+CHANEL,A01112-B25747-94305,Classic 11.12,10500,11700,numeric,numeric,1.11,yes
+CHANEL,A01112-B25879-UC671,Classic 11.12,10000,11000,numeric,numeric,1.10,yes
+CHANEL,A01112-Y04059-U8390,Classic 11.12,10500,11700,numeric,numeric,1.11,yes
+CHANEL,A01113-Y01864-C3906,Small Classic,10100,11300,numeric,numeric,1.12,yes
+CHANEL,A35200-Y04059-94305,Mini Classic,4850,5400,numeric,numeric,1.11,yes
+CHANEL,A69900-Y04059-94305,Mini Classic,5050,5600,numeric,numeric,1.11,yes
+CHANEL,AS6199-B25388-94305,Shopping Bag,5600,6300,numeric,numeric,1.12,yes
+CHANEL,AS6199-B25749-UD595,Shopping Bag,4900,5500,numeric,numeric,1.12,yes
+CHANEL,AS6211-B25711-UB662,Bowling Bag,6200,6900,numeric,numeric,1.11,yes
+CHANEL,AS6224-B24988-UA104,Shopping Bag,6700,7400,numeric,numeric,1.10,yes
+CHANEL,AS6475-B25599-UD180,Shopping Bag,6500,7300,numeric,numeric,1.12,yes
+CHANEL,AS6495-B25347-UA954,Shopping Bag,5800,6600,numeric,numeric,1.14,yes
+CHANEL,AS6580-B24074-U9390,Bowling Bag,5800,6500,numeric,numeric,1.12,yes
+CHANEL,AS6590-B25996-U9390,Shopping Bag,6000,6700,numeric,numeric,1.12,yes
+Hermès,H084151CKAC,Videpoches,3300,4750,numeric,numeric,1.44,yes
+Hermès,H085408CKAW,Geta,5300,7650,numeric,numeric,1.44,yes
+Hermès,H088914CK89,Videpoches,3800,5500,numeric,numeric,1.45,yes
+Louis Vuitton,M29099,Multipass,1800,2230,numeric,numeric,1.24,yes
+Louis Vuitton,M2A038,Speedy,3200,4150,numeric,numeric,1.30,yes
+Louis Vuitton,M2A840,Multipass,2000,2480,numeric,numeric,1.24,yes
+Louis Vuitton,M3A247,Multipass,2000,2480,numeric,numeric,1.24,yes
+Louis Vuitton,M3A389,Multipass,2000,2480,numeric,numeric,1.24,yes
+Dior,M0457CUQW_M900,Saddle,3650,4400,numeric,numeric,1.21,yes
+Dior,M0715OUQO_M900,Dior Bow,3700,4400,numeric,numeric,1.19,yes
+Dior,M1324OWHP_M51U,Dior Book Tote,3650,,numeric,unresolved,,no
+Dior,M1325OWHP_M900,Dior Book Tote,3250,3900,numeric,numeric,1.20,yes
+Dior,M1354OEUB_M918,Dior Book Tote,3600,,numeric,unresolved,,no
+Dior,M1388OEJP_M19I,Dior Blooming,3100,3700,numeric,numeric,1.19,yes
+Dior,M1388OEJP_M918,Dior Blooming,3100,3700,numeric,numeric,1.19,yes
+Dior,M1409OHSU_M09I,Dior Promenade,3800,4500,numeric,numeric,1.18,yes
+Dior,M1409OTZQ_M928,Dior Promenade,3000,3600,numeric,numeric,1.20,yes
+Dior,M1410OHST_M911,Dior Promenade,3400,4000,numeric,numeric,1.18,yes
+Dior,M1410OHST_M912,Dior Promenade,3400,4000,numeric,numeric,1.18,yes
+Dior,M1411OHJW_M911,Diorly,4500,5200,numeric,numeric,1.16,yes
+Dior,M1412PHJX_M79G,Diorly,3850,,numeric,unresolved,,no
+Dior,M1532QTZQ_M928,Dior Médaillon,3450,4000,numeric,numeric,1.16,yes
+Dior,M2822OSNW_M900,Dior Toujours,3200,3900,numeric,numeric,1.22,yes
+Dior,M2836OSNW_M900,Dior Toujours,3450,4100,numeric,numeric,1.19,yes
+Dior,M2867ODKZ_M900,Dior Toujours,3100,,numeric,unresolved,,no
+Dior,M2867PDUN_M18S,Dior Toujours,,,unresolved,unresolved,,no
+Dior,M3919QDWP_M900,Dior Médaillon,3200,,numeric,unresolved,,no
+Dior,M3920QDWP_M98H,Dior Médaillon,3500,,numeric,unresolved,,no

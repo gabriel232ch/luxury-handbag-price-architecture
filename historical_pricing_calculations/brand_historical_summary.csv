@@ -1,0 +1,5 @@
+brand,accepted_panel_observations,noncurrent_historical_observations,numeric_panel_observations,lineages,same_model_lineages,successor_lineages,FR_observations,US_observations,same_model_market_paths_with_2plus_observations,successor_market_paths_with_2plus_observations,median_same_model_cumulative_change_pct,median_successor_directional_change_pct,median_same_model_cagr_pct,median_successor_directional_cagr_pct,event_rows,positive_event_rows,conflict_rows,unresolved_candidates,brand_level_readiness
+Chanel,21,13,21,4,4,0,17,4,4,0,18.16,,3.68,,9,9,0,2,READY WITH LIMITATIONS
+Hermès,12,8,12,2,1,1,8,4,2,1,22.52,24.55,5.28,6.25,4,4,2,3,NOT READY for broad brand-wide repricing; product-specific only
+Louis Vuitton,28,22,28,4,2,2,16,12,3,4,30.43,153.04,6.90,17.96,15,12,0,2,READY WITH LIMITATIONS
+Dior,16,10,15,3,0,3,5,11,0,5,,24.07,,7.21,7,7,0,3,READY WITH LIMITATIONS

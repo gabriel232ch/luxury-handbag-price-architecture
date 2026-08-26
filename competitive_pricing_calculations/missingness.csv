@@ -1,0 +1,25 @@
+brand,field,present,missing,coverage
+CHANEL,product_family,41,0,100.0%
+CHANEL,bag_type_group,41,0,100.0%
+CHANEL,material,41,0,100.0%
+CHANEL,size_group,41,0,100.0%
+CHANEL,numeric_price,35,6,85.4%
+CHANEL,signature_class,41,0,100.0%
+Hermès,product_family,40,0,100.0%
+Hermès,bag_type_group,40,0,100.0%
+Hermès,material,40,0,100.0%
+Hermès,size_group,40,0,100.0%
+Hermès,numeric_price,40,0,100.0%
+Hermès,signature_class,0,40,0.0%
+Louis Vuitton,product_family,40,0,100.0%
+Louis Vuitton,bag_type_group,40,0,100.0%
+Louis Vuitton,material,40,0,100.0%
+Louis Vuitton,size_group,40,0,100.0%
+Louis Vuitton,numeric_price,40,0,100.0%
+Louis Vuitton,signature_class,40,0,100.0%
+Dior,product_family,40,0,100.0%
+Dior,bag_type_group,40,0,100.0%
+Dior,material,40,0,100.0%
+Dior,size_group,40,0,100.0%
+Dior,numeric_price,32,8,80.0%
+Dior,signature_class,40,0,100.0%

@@ -1,0 +1,24 @@
+market,currency,cell,bag_type_group,size_group,material_class,brand,n_numeric,brand_median,cell_pooled_median_benchmark,comparable_price_index_benchmark_100,cell_brand_count,confidence
+FR,EUR,crossbody | compact | leather,crossbody,compact,leather,Hermès,6,5650,4600,122.83,2,low-medium
+FR,EUR,crossbody | compact | leather,crossbody,compact,leather,Louis Vuitton,2,2000,4600,43.48,2,low-medium
+FR,EUR,flap_or_clutch | compact | leather,flap_or_clutch,compact,leather,Dior,3,3500,3575,97.90,2,low-medium
+FR,EUR,flap_or_clutch | compact | leather,flap_or_clutch,compact,leather,Hermès,1,5300,3575,148.25,2,low-medium
+FR,EUR,shoulder | standard | leather,shoulder,standard,leather,Dior,2,3775,3600,104.86,3,medium
+FR,EUR,shoulder | standard | leather,shoulder,standard,leather,Hermès,4,4975,3600,138.19,3,medium
+FR,EUR,shoulder | standard | leather,shoulder,standard,leather,Louis Vuitton,5,3200,3600,88.89,3,medium
+FR,EUR,tote | large | leather,tote,large,leather,CHANEL,5,6200,4050,153.09,3,medium
+FR,EUR,tote | large | leather,tote,large,leather,Dior,6,3350,4050,82.72,3,medium
+FR,EUR,tote | large | leather,tote,large,leather,Hermès,2,6475,4050,159.88,3,medium
+FR,EUR,tote | standard | leather,tote,standard,leather,CHANEL,2,5700,3400,167.65,3,medium
+FR,EUR,tote | standard | leather,tote,standard,leather,Dior,3,3400,3400,100,3,medium
+FR,EUR,tote | standard | leather,tote,standard,leather,Louis Vuitton,1,2900,3400,85.29,3,low-medium
+US,USD,crossbody | compact | leather,crossbody,compact,leather,Hermès,10,5500,5125,107.32,2,low-medium
+US,USD,crossbody | compact | leather,crossbody,compact,leather,Louis Vuitton,2,2480,5125,48.39,2,low-medium
+US,USD,shoulder | large | leather,shoulder,large,leather,Dior,1,5200,4550,114.29,2,low-medium
+US,USD,shoulder | large | leather,shoulder,large,leather,Hermès,2,4550,4550,100,2,low-medium
+US,USD,shoulder | standard | leather,shoulder,standard,leather,Dior,1,4400,6025,73.03,2,low-medium
+US,USD,shoulder | standard | leather,shoulder,standard,leather,Hermès,1,7650,6025,126.97,2,low-medium
+US,USD,tote | compact | textile_or_mixed,tote,compact,textile_or_mixed,CHANEL,2,5800,5500,105.45,2,low-medium
+US,USD,tote | compact | textile_or_mixed,tote,compact,textile_or_mixed,Louis Vuitton,1,2850,5500,51.82,2,low-medium
+US,USD,tote | large | leather,tote,large,leather,Dior,5,3900,4100,95.12,2,low-medium
+US,USD,tote | large | leather,tote,large,leather,Hermès,2,5450,4100,132.93,2,low-medium

@@ -1,0 +1,9 @@
+brand,market,icon_definition,n_icon_numeric,icon_median,n_non_icon_numeric,non_icon_median,icon_premium_ratio,icon_premium_difference,confidence
+CHANEL,FR,inferred from Classic families,7,10500,10,5800,1.81,4700,medium
+CHANEL,US,inferred from Classic families,7,11700,11,6500,1.80,5200,medium
+Hermès,FR,not available,0,,0,,,,not estimable
+Hermès,US,not available,0,,0,,,,not estimable
+Louis Vuitton,FR,supplied true flag vs other unflagged observations,13,2650,7,3200,0.83,-550,low
+Louis Vuitton,US,supplied true flag vs other unflagged observations,9,2480,11,2700,0.92,-220,low
+Dior,FR,supplied true flag vs other unflagged observations,4,3625,15,3400,1.07,225,low
+Dior,US,supplied true flag vs other unflagged observations,2,4150,11,4000,1.04,150,low

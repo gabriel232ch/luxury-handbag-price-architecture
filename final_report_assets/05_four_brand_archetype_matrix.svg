@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="900" viewBox="0 0 1800 900">
+<rect width="1800" height="900" fill="#FCFBF8"/>
+<style>
+  .title { font-family:'Noto Sans CJK SC','PingFang SC','Heiti SC','Arial',sans-serif; font-size:30px; font-weight:700; fill:#1F2933; }
+  .subtitle { font-family:'Noto Sans CJK SC','PingFang SC','Heiti SC','Arial',sans-serif; font-size:15px; fill:#5B6570; }
+  .header { font-family:'Noto Sans CJK SC','PingFang SC','Heiti SC','Arial',sans-serif; font-size:16px; font-weight:700; fill:#FFFFFF; }
+  .brand { font-family:'Noto Sans CJK SC','PingFang SC','Heiti SC','Arial',sans-serif; font-size:20px; font-weight:700; fill:#1F2933; }
+  .entry { font-family:'Noto Sans CJK SC','PingFang SC','Heiti SC','Arial',sans-serif; font-size:20px; font-weight:700; fill:#1F2933; }
+  .label { font-family:'Noto Sans CJK SC','PingFang SC','Heiti SC','Arial',sans-serif; font-size:17px; fill:#39424E; }
+  .note { font-family:'Noto Sans CJK SC','PingFang SC','Heiti SC','Arial',sans-serif; font-size:14px; fill:#66727C; }
+  .grid { stroke:#DDD9D1; stroke-width:1; }
+</style>
+<text x="50" y="54" class="title">四品牌价格架构与历史路径</text>
+<text x="50" y="82" class="subtitle">基于公开标价样本的分析性概括；不代表品牌官方战略声明。</text>
+
+<rect x="50" y="135" width="190" height="64" fill="#26313B"/>
+<rect x="240" y="135" width="330" height="64" fill="#26313B"/>
+<rect x="570" y="135" width="600" height="64" fill="#26313B"/>
+<rect x="1170" y="135" width="580" height="64" fill="#26313B"/>
+<text x="145" y="175" text-anchor="middle" class="header">品牌</text>
+<text x="405" y="175" text-anchor="middle" class="header">进入门槛</text>
+<text x="870" y="175" text-anchor="middle" class="header">当前价格架构</text>
+<text x="1460" y="175" text-anchor="middle" class="header">历史演变特征</text>
+
+<rect x="50" y="199" width="190" height="140" fill="#F4F1EB" class="grid"/>
+<rect x="50" y="199" width="8" height="140" fill="#171717"/>
+<rect x="240" y="199" width="330" height="140" fill="#F4F1EB" class="grid"/>
+<rect x="570" y="199" width="600" height="140" fill="#F4F1EB" class="grid"/>
+<rect x="1170" y="199" width="580" height="140" fill="#F4F1EB" class="grid"/>
+<text x="78" y="280" class="brand">Chanel</text>
+<text x="405" y="280" text-anchor="middle" class="entry">高</text>
+<text x="600" y="254" class="label">高进入 + Classic 锚点 +</text>
+<text x="600" y="284" class="label">两个可见价格集群</text>
+<text x="1200" y="254" class="label">多个层级同步上移；</text>
+<text x="1200" y="284" class="label">绝对价差扩大</text>
+
+<rect x="50" y="339" width="190" height="140" fill="#FCFBF8" class="grid"/>
+<rect x="50" y="339" width="8" height="140" fill="#B07A3D"/>
+<rect x="240" y="339" width="330" height="140" fill="#FCFBF8" class="grid"/>
+<rect x="570" y="339" width="600" height="140" fill="#FCFBF8" class="grid"/>
+<rect x="1170" y="339" width="580" height="140" fill="#FCFBF8" class="grid"/>
+<text x="78" y="420" class="brand">Louis Vuitton</text>
+<text x="405" y="420" text-anchor="middle" class="entry">低</text>
+<text x="600" y="394" class="label">较宽的入门/核心价格梯，</text>
+<text x="600" y="424" class="label">仍保留较低入口</text>
+<text x="1200" y="394" class="label">多条产品线持续上移；</text>
+<text x="1200" y="424" class="label">部分为后续版本路径</text>
+
+<rect x="50" y="479" width="190" height="140" fill="#F4F1EB" class="grid"/>
+<rect x="50" y="479" width="8" height="140" fill="#7D2947"/>
+<rect x="240" y="479" width="330" height="140" fill="#F4F1EB" class="grid"/>
+<rect x="570" y="479" width="600" height="140" fill="#F4F1EB" class="grid"/>
+<rect x="1170" y="479" width="580" height="140" fill="#F4F1EB" class="grid"/>
+<text x="78" y="560" class="brand">Dior</text>
+<text x="405" y="560" text-anchor="middle" class="entry">中等</text>
+<text x="600" y="534" class="label">压缩的核心/中高端价格梯</text>
+<text x="1200" y="534" class="label">以后续版本为主；</text>
+<text x="1200" y="564" class="label">历史方向性上行</text>
+
+<rect x="50" y="619" width="190" height="140" fill="#FCFBF8" class="grid"/>
+<rect x="50" y="619" width="8" height="140" fill="#8C4A24"/>
+<rect x="240" y="619" width="330" height="140" fill="#FCFBF8" class="grid"/>
+<rect x="570" y="619" width="600" height="140" fill="#FCFBF8" class="grid"/>
+<rect x="1170" y="619" width="580" height="140" fill="#FCFBF8" class="grid"/>
+<text x="78" y="700" class="brand">Hermès</text>
+<text x="405" y="700" text-anchor="middle" class="entry">分布较宽</text>
+<text x="600" y="674" class="label">多系列宽价格梯 + 高价区间</text>
+<text x="1200" y="674" class="label">历史样本稀疏；</text>
+<text x="1200" y="704" class="label">仅支持产品线级方向</text>
+
+<line x1="50" y1="800" x2="1750" y2="800" stroke="#D8D5CF"/>
+<text x="50" y="832" class="note">注：当前样本非全量；历史连续性、证据强度与来源限制见附录。</text>
+<text x="50" y="858" class="note">历史判断区分同款连续与后续版本路径；Dior 后续版本为主，Hermès 历史样本稀疏且存在来源冲突。</text>
+</svg>
