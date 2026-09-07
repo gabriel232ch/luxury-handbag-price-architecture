@@ -52,3 +52,12 @@ R1 可复算门通过，研究状态为 `limited`，不是“旗舰研究完成�
 - `research_r1/baseline_audit.md`：把旧报告结论逐条映射到 R1 证据，明确保留、收窄和暂不进入主文的结论。
 
 本步没有新增网页采集、没有修改价格/历史计算，也没有把任何 Portfolio 内容带入研究仓库。下一步只有在审阅本步文件后，才进入 `product_master`、`sku_mapping` 和 Chanel 定向补充。
+
+## 第 2 步：产品主数据与 Chanel 定向补充（已完成）
+
+- `research_r1/data/product_master.csv`：11 个 Chanel 跨市场参考号，包含家族、用途、尺寸、材质、颜色、常规/季节性状态和官方 URL。
+- `research_r1/data/sku_mapping.csv`：11 个 FR/US exact-reference pair，身份与属性匹配置信度为 `HIGH`。
+- `research_r1/data/supplementary_current.csv` 与 `supplementary_current_raw.jsonl`：22 条补充观察（FR/US 各 11 条），全部为数值价格；WOC 两条仅作 sensitivity，季节性集合四条单独标记。
+- `research_r1/data/supplementary_collection_log.md`：记录了 Chanel 边缘访问控制导致的本地自动读取限制；字段采用官方页面搜索结果人工转录，未绕过 CAPTCHA、代理或其他访问控制。
+
+补充数据保持在 `supplementary_current_2026-09-07`，没有并入 `current_2026-08-15`，也没有重建竞品可比单元。下一步才是用这些属性建立正式配对筛选。

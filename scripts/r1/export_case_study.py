@@ -153,7 +153,10 @@ def main() -> int:
     (EXPORT / "figures" / "price-ladder.svg").write_text(ladder_svg(ladder, family), encoding="utf-8")
     (EXPORT / "figures" / "moving-together.svg").write_text(history_svg(aligned), encoding="utf-8")
 
-    source_records = [{"source_id": row["source_id"], "name": row["source_name"], "url": row["source_url"], "quality": row["source_quality"], "effectiveDate": row["source_effective_date"]} for row in source_rows]
+    # Keep the candidate case-study package stable while a supplementary
+    # snapshot is still outside the R1 baseline. Its sources remain in the
+    # registry and will enter the export only when the supplement is merged.
+    source_records = [{"source_id": row["source_id"], "name": row["source_name"], "url": row["source_url"], "quality": row["source_quality"], "effectiveDate": row["source_effective_date"]} for row in source_rows if not row["source_id"].startswith("SRC-SUPP-CH-")]
     case_study = {
         "schemaVersion": "luxury-case-study-1",
         "slug": "luxury-handbag-pricing-architecture",
