@@ -1,0 +1,103 @@
+{
+  "status": "limited",
+  "run_at": "2026-09-07T09:48:20+08:00",
+  "source_commit": "5ef2ee7e22e4010d7b951ec09df3e5337ee8e56f",
+  "checks": {
+    "required_observation_fields": {
+      "ok": true,
+      "missing": []
+    },
+    "observation_primary_key": {
+      "ok": true,
+      "duplicates": []
+    },
+    "market_currency_source": {
+      "ok": true,
+      "errors": [],
+      "error_count": 0
+    },
+    "price_status_contract": {
+      "ok": true,
+      "errors": [],
+      "error_count": 0
+    },
+    "lineage_references": {
+      "ok": true,
+      "orphans": []
+    },
+    "baseline_counts": {
+      "ok": true,
+      "expected": {
+        "current": 161,
+        "history": 77,
+        "current_numeric": 147,
+        "history_numeric": 76
+      },
+      "actual": {
+        "current": 161,
+        "history": 77,
+        "current_numeric": 147,
+        "history_numeric": 76
+      }
+    },
+    "required_outputs": {
+      "ok": true,
+      "outputs": {
+        "family_summary": {
+          "exists": true,
+          "rows": 78
+        },
+        "chanel_ladder": {
+          "exists": true,
+          "rows": 2
+        },
+        "band_sensitivity": {
+          "exists": true,
+          "rows": 360
+        },
+        "comparable_cells": {
+          "exists": true,
+          "rows": 7
+        },
+        "aligned_history": {
+          "exists": true,
+          "rows": 4
+        },
+        "robustness": {
+          "exists": true,
+          "rows": 46
+        },
+        "unresolved": {
+          "exists": true,
+          "rows": 24
+        }
+      }
+    },
+    "claim_references": {
+      "ok": true,
+      "errors": [],
+      "error_count": 0
+    },
+    "unresolved_register": {
+      "ok": true,
+      "rows": 24,
+      "critical_rows": 9,
+      "limited_reason": "Dior unresolved prices and Hermès Geta source conflict are retained and excluded or bounded."
+    }
+  },
+  "warnings": [
+    "Dior US and FR unresolved rows are not imputed.",
+    "Hermès Geta France 2023 conflict is retained as two source branches.",
+    "Historical secondary-source share and incomplete years limit the strength of the history claim."
+  ],
+  "errors": [],
+  "excluded_claims": [
+    "CLM-HERMES-GETA-CONFLICT"
+  ],
+  "unresolved_critical_count": 9,
+  "limited_display_thresholds": [
+    "Dior US numeric coverage is 65.0%.",
+    "Historical aligned years are observed years only.",
+    "No broad Hermès icon comparison is published."
+  ]
+}

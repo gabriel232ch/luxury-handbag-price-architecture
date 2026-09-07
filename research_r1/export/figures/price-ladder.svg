@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" role="img" aria-labelledby="title desc">
+  <title id="title">The Price Ladder</title><desc id="desc">Chanel family medians expand the brand point into an observed ladder.</desc>
+  <rect width="100%" height="100%" fill="#f8f6f1"/>
+  <style>text{font-family:Arial,sans-serif;fill:#24221e} .muted{fill:#6d665c;font-size:14px} .axis{stroke:#aaa397;stroke-width:1} .grid{stroke:#ded9cf;stroke-width:1} .label{font-size:16px} .value{font-size:14px;font-weight:600}</style>
+  <text x="54" y="48" font-size="25" font-weight="700">The Price Ladder</text>
+  <text x="54" y="75" class="muted">Chanel family medians expand the brand point into an observed ladder.</text>
+  <text x="54" y="145" class="label">FR · EUR</text>
+<line x1="190" y1="180" x2="930" y2="180" class="axis"/>
+<circle cx="501.5" cy="220" r="7" fill="#a64c3b"/><text x="514.5" y="225" class="label">Mini Classic · 4,950</text>
+<circle cx="561.3" cy="242" r="7" fill="#4d6b67"/><text x="574.3" y="247" class="label">Shopping Bag · 5,900</text>
+<circle cx="567.6" cy="264" r="7" fill="#4d6b67"/><text x="580.6" y="269" class="label">Bowling Bag · 6,000</text>
+<circle cx="850.7" cy="286" r="7" fill="#191817"/><text x="863.7" y="291" class="label">Classic 11.12 · 10,500</text>
+<circle cx="825.5" cy="308" r="7" fill="#191817"/><text x="838.5" y="313" class="label">Small Classic · 10,100</text>
+<text x="54" y="301" class="muted">Observed gap 3300 EUR · median distance 4700 · ratio 1.810</text>
+<text x="54" y="335" class="label">US · USD</text>
+<line x1="190" y1="370" x2="930" y2="370" class="axis"/>
+<circle cx="500.6" cy="410" r="7" fill="#a64c3b"/><text x="513.6" y="415" class="label">Mini Classic · 5,500</text>
+<circle cx="562.7" cy="432" r="7" fill="#4d6b67"/><text x="575.7" y="437" class="label">Shopping Bag · 6,600</text>
+<circle cx="568.4" cy="454" r="7" fill="#4d6b67"/><text x="581.4" y="459" class="label">Bowling Bag · 6,700</text>
+<circle cx="850.7" cy="476" r="7" fill="#191817"/><text x="863.7" y="481" class="label">Classic 11.12 · 11,700</text>
+<circle cx="828.1" cy="498" r="7" fill="#191817"/><text x="841.1" y="503" class="label">Small Classic · 11,300</text>
+<text x="54" y="491" class="muted">Observed gap 3600 USD · median distance 5200 · ratio 1.800</text>
+</svg>

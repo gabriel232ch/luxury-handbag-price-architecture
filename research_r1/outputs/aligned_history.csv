@@ -1,0 +1,5 @@
+brand,market,currency,observed_year,icon_lineages,access_lineages,icon_n,access_n,icon_median,access_median,absolute_gap,relative_ratio,fixed_member_note
+Chanel,FR,EUR,2022,CH-C01;CH-C02,CH-C03;CH-C04,2,2,8720,4250,4470,2.052,Common observed years only; lineage members are fixed and missing years are not interpolated.
+Chanel,FR,EUR,2023,CH-C01;CH-C02,CH-C03;CH-C04,2,2,9500,4600,4900,2.065,Common observed years only; lineage members are fixed and missing years are not interpolated.
+Chanel,FR,EUR,2024,CH-C01;CH-C02,CH-C03;CH-C04,2,2,10100,4850,5250,2.082,Common observed years only; lineage members are fixed and missing years are not interpolated.
+Chanel,FR,EUR,2026,CH-C01;CH-C02,CH-C03;CH-C04,2,2,10300,4950,5350,2.081,Common observed years only; lineage members are fixed and missing years are not interpolated.

@@ -1,0 +1,361 @@
+market,currency,scenario,band,brand,numeric_observations,share_of_brand_numeric,boundary_definition,denominator_note
+FR,EUR,baseline,Access / lower,Chanel,0,0%,3000;5000;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,baseline,Core,Chanel,2,11.8%,3000;5000;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,baseline,Premium core,Chanel,8,47.1%,3000;5000;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,baseline,High,Chanel,0,0%,3000;5000;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,baseline,Exceptional / icon,Chanel,7,41.2%,3000;5000;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,baseline,Access / lower,Hermès,1,5%,3000;5000;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,baseline,Core,Hermès,6,30%,3000;5000;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,baseline,Premium core,Hermès,9,45%,3000;5000;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,baseline,High,Hermès,4,20%,3000;5000;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,baseline,Exceptional / icon,Hermès,0,0%,3000;5000;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,baseline,Access / lower,Louis Vuitton,12,60%,3000;5000;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,baseline,Core,Louis Vuitton,8,40%,3000;5000;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,baseline,Premium core,Louis Vuitton,0,0%,3000;5000;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,baseline,High,Louis Vuitton,0,0%,3000;5000;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,baseline,Exceptional / icon,Louis Vuitton,0,0%,3000;5000;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,baseline,Access / lower,Dior,0,0%,3000;5000;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,baseline,Core,Dior,19,100%,3000;5000;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,baseline,Premium core,Dior,0,0%,3000;5000;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,baseline,High,Dior,0,0%,3000;5000;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,baseline,Exceptional / icon,Dior,0,0%,3000;5000;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_1_minus10pct,Access / lower,Chanel,0,0%,2700;5000;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_1_minus10pct,Core,Chanel,2,11.8%,2700;5000;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_1_minus10pct,Premium core,Chanel,8,47.1%,2700;5000;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_1_minus10pct,High,Chanel,0,0%,2700;5000;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_1_minus10pct,Exceptional / icon,Chanel,7,41.2%,2700;5000;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_1_minus10pct,Access / lower,Hermès,1,5%,2700;5000;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_1_minus10pct,Core,Hermès,6,30%,2700;5000;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_1_minus10pct,Premium core,Hermès,9,45%,2700;5000;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_1_minus10pct,High,Hermès,4,20%,2700;5000;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_1_minus10pct,Exceptional / icon,Hermès,0,0%,2700;5000;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_1_minus10pct,Access / lower,Louis Vuitton,9,45%,2700;5000;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_1_minus10pct,Core,Louis Vuitton,11,55%,2700;5000;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_1_minus10pct,Premium core,Louis Vuitton,0,0%,2700;5000;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_1_minus10pct,High,Louis Vuitton,0,0%,2700;5000;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_1_minus10pct,Exceptional / icon,Louis Vuitton,0,0%,2700;5000;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_1_minus10pct,Access / lower,Dior,0,0%,2700;5000;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_1_minus10pct,Core,Dior,19,100%,2700;5000;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_1_minus10pct,Premium core,Dior,0,0%,2700;5000;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_1_minus10pct,High,Dior,0,0%,2700;5000;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_1_minus10pct,Exceptional / icon,Dior,0,0%,2700;5000;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_1_plus10pct,Access / lower,Chanel,0,0%,3300;5000;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_1_plus10pct,Core,Chanel,2,11.8%,3300;5000;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_1_plus10pct,Premium core,Chanel,8,47.1%,3300;5000;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_1_plus10pct,High,Chanel,0,0%,3300;5000;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_1_plus10pct,Exceptional / icon,Chanel,7,41.2%,3300;5000;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_1_plus10pct,Access / lower,Hermès,2,10%,3300;5000;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_1_plus10pct,Core,Hermès,5,25%,3300;5000;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_1_plus10pct,Premium core,Hermès,9,45%,3300;5000;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_1_plus10pct,High,Hermès,4,20%,3300;5000;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_1_plus10pct,Exceptional / icon,Hermès,0,0%,3300;5000;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_1_plus10pct,Access / lower,Louis Vuitton,15,75%,3300;5000;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_1_plus10pct,Core,Louis Vuitton,5,25%,3300;5000;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_1_plus10pct,Premium core,Louis Vuitton,0,0%,3300;5000;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_1_plus10pct,High,Louis Vuitton,0,0%,3300;5000;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_1_plus10pct,Exceptional / icon,Louis Vuitton,0,0%,3300;5000;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_1_plus10pct,Access / lower,Dior,7,36.8%,3300;5000;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_1_plus10pct,Core,Dior,12,63.2%,3300;5000;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_1_plus10pct,Premium core,Dior,0,0%,3300;5000;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_1_plus10pct,High,Dior,0,0%,3300;5000;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_1_plus10pct,Exceptional / icon,Dior,0,0%,3300;5000;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_2_minus10pct,Access / lower,Chanel,0,0%,3000;4500;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_2_minus10pct,Core,Chanel,0,0%,3000;4500;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_2_minus10pct,Premium core,Chanel,10,58.8%,3000;4500;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_2_minus10pct,High,Chanel,0,0%,3000;4500;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_2_minus10pct,Exceptional / icon,Chanel,7,41.2%,3000;4500;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_2_minus10pct,Access / lower,Hermès,1,5%,3000;4500;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_2_minus10pct,Core,Hermès,5,25%,3000;4500;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_2_minus10pct,Premium core,Hermès,10,50%,3000;4500;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_2_minus10pct,High,Hermès,4,20%,3000;4500;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_2_minus10pct,Exceptional / icon,Hermès,0,0%,3000;4500;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_2_minus10pct,Access / lower,Louis Vuitton,12,60%,3000;4500;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_2_minus10pct,Core,Louis Vuitton,8,40%,3000;4500;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_2_minus10pct,Premium core,Louis Vuitton,0,0%,3000;4500;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_2_minus10pct,High,Louis Vuitton,0,0%,3000;4500;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_2_minus10pct,Exceptional / icon,Louis Vuitton,0,0%,3000;4500;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_2_minus10pct,Access / lower,Dior,0,0%,3000;4500;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_2_minus10pct,Core,Dior,18,94.7%,3000;4500;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_2_minus10pct,Premium core,Dior,1,5.3%,3000;4500;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_2_minus10pct,High,Dior,0,0%,3000;4500;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_2_minus10pct,Exceptional / icon,Dior,0,0%,3000;4500;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_2_plus10pct,Access / lower,Chanel,0,0%,3000;5500;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_2_plus10pct,Core,Chanel,3,17.6%,3000;5500;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_2_plus10pct,Premium core,Chanel,7,41.2%,3000;5500;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_2_plus10pct,High,Chanel,0,0%,3000;5500;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_2_plus10pct,Exceptional / icon,Chanel,7,41.2%,3000;5500;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_2_plus10pct,Access / lower,Hermès,1,5%,3000;5500;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_2_plus10pct,Core,Hermès,9,45%,3000;5500;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_2_plus10pct,Premium core,Hermès,6,30%,3000;5500;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_2_plus10pct,High,Hermès,4,20%,3000;5500;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_2_plus10pct,Exceptional / icon,Hermès,0,0%,3000;5500;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_2_plus10pct,Access / lower,Louis Vuitton,12,60%,3000;5500;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_2_plus10pct,Core,Louis Vuitton,8,40%,3000;5500;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_2_plus10pct,Premium core,Louis Vuitton,0,0%,3000;5500;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_2_plus10pct,High,Louis Vuitton,0,0%,3000;5500;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_2_plus10pct,Exceptional / icon,Louis Vuitton,0,0%,3000;5500;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_2_plus10pct,Access / lower,Dior,0,0%,3000;5500;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_2_plus10pct,Core,Dior,19,100%,3000;5500;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_2_plus10pct,Premium core,Dior,0,0%,3000;5500;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_2_plus10pct,High,Dior,0,0%,3000;5500;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_2_plus10pct,Exceptional / icon,Dior,0,0%,3000;5500;7000;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_3_minus10pct,Access / lower,Chanel,0,0%,3000;5000;6300;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_3_minus10pct,Core,Chanel,2,11.8%,3000;5000;6300;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_3_minus10pct,Premium core,Chanel,6,35.3%,3000;5000;6300;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_3_minus10pct,High,Chanel,2,11.8%,3000;5000;6300;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_3_minus10pct,Exceptional / icon,Chanel,7,41.2%,3000;5000;6300;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_3_minus10pct,Access / lower,Hermès,1,5%,3000;5000;6300;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_3_minus10pct,Core,Hermès,6,30%,3000;5000;6300;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_3_minus10pct,Premium core,Hermès,8,40%,3000;5000;6300;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_3_minus10pct,High,Hermès,5,25%,3000;5000;6300;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_3_minus10pct,Exceptional / icon,Hermès,0,0%,3000;5000;6300;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_3_minus10pct,Access / lower,Louis Vuitton,12,60%,3000;5000;6300;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_3_minus10pct,Core,Louis Vuitton,8,40%,3000;5000;6300;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_3_minus10pct,Premium core,Louis Vuitton,0,0%,3000;5000;6300;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_3_minus10pct,High,Louis Vuitton,0,0%,3000;5000;6300;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_3_minus10pct,Exceptional / icon,Louis Vuitton,0,0%,3000;5000;6300;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_3_minus10pct,Access / lower,Dior,0,0%,3000;5000;6300;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_3_minus10pct,Core,Dior,19,100%,3000;5000;6300;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_3_minus10pct,Premium core,Dior,0,0%,3000;5000;6300;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_3_minus10pct,High,Dior,0,0%,3000;5000;6300;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_3_minus10pct,Exceptional / icon,Dior,0,0%,3000;5000;6300;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_3_plus10pct,Access / lower,Chanel,0,0%,3000;5000;7700;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_3_plus10pct,Core,Chanel,2,11.8%,3000;5000;7700;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_3_plus10pct,Premium core,Chanel,8,47.1%,3000;5000;7700;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_3_plus10pct,High,Chanel,0,0%,3000;5000;7700;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_3_plus10pct,Exceptional / icon,Chanel,7,41.2%,3000;5000;7700;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_3_plus10pct,Access / lower,Hermès,1,5%,3000;5000;7700;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_3_plus10pct,Core,Hermès,6,30%,3000;5000;7700;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_3_plus10pct,Premium core,Hermès,10,50%,3000;5000;7700;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_3_plus10pct,High,Hermès,3,15%,3000;5000;7700;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_3_plus10pct,Exceptional / icon,Hermès,0,0%,3000;5000;7700;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_3_plus10pct,Access / lower,Louis Vuitton,12,60%,3000;5000;7700;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_3_plus10pct,Core,Louis Vuitton,8,40%,3000;5000;7700;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_3_plus10pct,Premium core,Louis Vuitton,0,0%,3000;5000;7700;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_3_plus10pct,High,Louis Vuitton,0,0%,3000;5000;7700;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_3_plus10pct,Exceptional / icon,Louis Vuitton,0,0%,3000;5000;7700;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_3_plus10pct,Access / lower,Dior,0,0%,3000;5000;7700;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_3_plus10pct,Core,Dior,19,100%,3000;5000;7700;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_3_plus10pct,Premium core,Dior,0,0%,3000;5000;7700;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_3_plus10pct,High,Dior,0,0%,3000;5000;7700;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_3_plus10pct,Exceptional / icon,Dior,0,0%,3000;5000;7700;10000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_4_minus10pct,Access / lower,Chanel,0,0%,3000;5000;7000;9000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_4_minus10pct,Core,Chanel,2,11.8%,3000;5000;7000;9000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_4_minus10pct,Premium core,Chanel,8,47.1%,3000;5000;7000;9000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_4_minus10pct,High,Chanel,0,0%,3000;5000;7000;9000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_4_minus10pct,Exceptional / icon,Chanel,7,41.2%,3000;5000;7000;9000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_4_minus10pct,Access / lower,Hermès,1,5%,3000;5000;7000;9000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_4_minus10pct,Core,Hermès,6,30%,3000;5000;7000;9000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_4_minus10pct,Premium core,Hermès,9,45%,3000;5000;7000;9000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_4_minus10pct,High,Hermès,3,15%,3000;5000;7000;9000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_4_minus10pct,Exceptional / icon,Hermès,1,5%,3000;5000;7000;9000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_4_minus10pct,Access / lower,Louis Vuitton,12,60%,3000;5000;7000;9000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_4_minus10pct,Core,Louis Vuitton,8,40%,3000;5000;7000;9000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_4_minus10pct,Premium core,Louis Vuitton,0,0%,3000;5000;7000;9000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_4_minus10pct,High,Louis Vuitton,0,0%,3000;5000;7000;9000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_4_minus10pct,Exceptional / icon,Louis Vuitton,0,0%,3000;5000;7000;9000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_4_minus10pct,Access / lower,Dior,0,0%,3000;5000;7000;9000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_4_minus10pct,Core,Dior,19,100%,3000;5000;7000;9000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_4_minus10pct,Premium core,Dior,0,0%,3000;5000;7000;9000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_4_minus10pct,High,Dior,0,0%,3000;5000;7000;9000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_4_minus10pct,Exceptional / icon,Dior,0,0%,3000;5000;7000;9000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_4_plus10pct,Access / lower,Chanel,0,0%,3000;5000;7000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_4_plus10pct,Core,Chanel,2,11.8%,3000;5000;7000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_4_plus10pct,Premium core,Chanel,8,47.1%,3000;5000;7000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_4_plus10pct,High,Chanel,6,35.3%,3000;5000;7000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_4_plus10pct,Exceptional / icon,Chanel,1,5.9%,3000;5000;7000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_4_plus10pct,Access / lower,Hermès,1,5%,3000;5000;7000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_4_plus10pct,Core,Hermès,6,30%,3000;5000;7000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_4_plus10pct,Premium core,Hermès,9,45%,3000;5000;7000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_4_plus10pct,High,Hermès,4,20%,3000;5000;7000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_4_plus10pct,Exceptional / icon,Hermès,0,0%,3000;5000;7000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_4_plus10pct,Access / lower,Louis Vuitton,12,60%,3000;5000;7000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_4_plus10pct,Core,Louis Vuitton,8,40%,3000;5000;7000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_4_plus10pct,Premium core,Louis Vuitton,0,0%,3000;5000;7000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_4_plus10pct,High,Louis Vuitton,0,0%,3000;5000;7000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_4_plus10pct,Exceptional / icon,Louis Vuitton,0,0%,3000;5000;7000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_4_plus10pct,Access / lower,Dior,0,0%,3000;5000;7000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_4_plus10pct,Core,Dior,19,100%,3000;5000;7000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_4_plus10pct,Premium core,Dior,0,0%,3000;5000;7000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_4_plus10pct,High,Dior,0,0%,3000;5000;7000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+FR,EUR,boundary_4_plus10pct,Exceptional / icon,Dior,0,0%,3000;5000;7000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,baseline,Access / lower,Chanel,0,0%,4000;6000;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,baseline,Core,Chanel,3,16.7%,4000;6000;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,baseline,Premium core,Chanel,8,44.4%,4000;6000;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,baseline,High,Chanel,0,0%,4000;6000;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,baseline,Exceptional / icon,Chanel,7,38.9%,4000;6000;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,baseline,Access / lower,Hermès,3,15%,4000;6000;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,baseline,Core,Hermès,11,55%,4000;6000;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,baseline,Premium core,Hermès,2,10%,4000;6000;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,baseline,High,Hermès,2,10%,4000;6000;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,baseline,Exceptional / icon,Hermès,2,10%,4000;6000;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,baseline,Access / lower,Louis Vuitton,19,95%,4000;6000;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,baseline,Core,Louis Vuitton,1,5%,4000;6000;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,baseline,Premium core,Louis Vuitton,0,0%,4000;6000;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,baseline,High,Louis Vuitton,0,0%,4000;6000;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,baseline,Exceptional / icon,Louis Vuitton,0,0%,4000;6000;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,baseline,Access / lower,Dior,5,38.5%,4000;6000;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,baseline,Core,Dior,8,61.5%,4000;6000;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,baseline,Premium core,Dior,0,0%,4000;6000;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,baseline,High,Dior,0,0%,4000;6000;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,baseline,Exceptional / icon,Dior,0,0%,4000;6000;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_1_minus10pct,Access / lower,Chanel,0,0%,3600;6000;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_1_minus10pct,Core,Chanel,3,16.7%,3600;6000;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_1_minus10pct,Premium core,Chanel,8,44.4%,3600;6000;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_1_minus10pct,High,Chanel,0,0%,3600;6000;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_1_minus10pct,Exceptional / icon,Chanel,7,38.9%,3600;6000;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_1_minus10pct,Access / lower,Hermès,1,5%,3600;6000;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_1_minus10pct,Core,Hermès,13,65%,3600;6000;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_1_minus10pct,Premium core,Hermès,2,10%,3600;6000;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_1_minus10pct,High,Hermès,2,10%,3600;6000;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_1_minus10pct,Exceptional / icon,Hermès,2,10%,3600;6000;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_1_minus10pct,Access / lower,Louis Vuitton,19,95%,3600;6000;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_1_minus10pct,Core,Louis Vuitton,1,5%,3600;6000;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_1_minus10pct,Premium core,Louis Vuitton,0,0%,3600;6000;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_1_minus10pct,High,Louis Vuitton,0,0%,3600;6000;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_1_minus10pct,Exceptional / icon,Louis Vuitton,0,0%,3600;6000;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_1_minus10pct,Access / lower,Dior,0,0%,3600;6000;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_1_minus10pct,Core,Dior,13,100%,3600;6000;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_1_minus10pct,Premium core,Dior,0,0%,3600;6000;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_1_minus10pct,High,Dior,0,0%,3600;6000;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_1_minus10pct,Exceptional / icon,Dior,0,0%,3600;6000;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_1_plus10pct,Access / lower,Chanel,0,0%,4400;6000;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_1_plus10pct,Core,Chanel,3,16.7%,4400;6000;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_1_plus10pct,Premium core,Chanel,8,44.4%,4400;6000;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_1_plus10pct,High,Chanel,0,0%,4400;6000;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_1_plus10pct,Exceptional / icon,Chanel,7,38.9%,4400;6000;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_1_plus10pct,Access / lower,Hermès,3,15%,4400;6000;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_1_plus10pct,Core,Hermès,11,55%,4400;6000;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_1_plus10pct,Premium core,Hermès,2,10%,4400;6000;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_1_plus10pct,High,Hermès,2,10%,4400;6000;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_1_plus10pct,Exceptional / icon,Hermès,2,10%,4400;6000;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_1_plus10pct,Access / lower,Louis Vuitton,20,100%,4400;6000;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_1_plus10pct,Core,Louis Vuitton,0,0%,4400;6000;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_1_plus10pct,Premium core,Louis Vuitton,0,0%,4400;6000;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_1_plus10pct,High,Louis Vuitton,0,0%,4400;6000;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_1_plus10pct,Exceptional / icon,Louis Vuitton,0,0%,4400;6000;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_1_plus10pct,Access / lower,Dior,9,69.2%,4400;6000;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_1_plus10pct,Core,Dior,4,30.8%,4400;6000;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_1_plus10pct,Premium core,Dior,0,0%,4400;6000;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_1_plus10pct,High,Dior,0,0%,4400;6000;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_1_plus10pct,Exceptional / icon,Dior,0,0%,4400;6000;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_2_minus10pct,Access / lower,Chanel,0,0%,4000;5400;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_2_minus10pct,Core,Chanel,0,0%,4000;5400;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_2_minus10pct,Premium core,Chanel,11,61.1%,4000;5400;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_2_minus10pct,High,Chanel,0,0%,4000;5400;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_2_minus10pct,Exceptional / icon,Chanel,7,38.9%,4000;5400;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_2_minus10pct,Access / lower,Hermès,3,15%,4000;5400;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_2_minus10pct,Core,Hermès,3,15%,4000;5400;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_2_minus10pct,Premium core,Hermès,10,50%,4000;5400;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_2_minus10pct,High,Hermès,2,10%,4000;5400;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_2_minus10pct,Exceptional / icon,Hermès,2,10%,4000;5400;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_2_minus10pct,Access / lower,Louis Vuitton,19,95%,4000;5400;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_2_minus10pct,Core,Louis Vuitton,1,5%,4000;5400;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_2_minus10pct,Premium core,Louis Vuitton,0,0%,4000;5400;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_2_minus10pct,High,Louis Vuitton,0,0%,4000;5400;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_2_minus10pct,Exceptional / icon,Louis Vuitton,0,0%,4000;5400;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_2_minus10pct,Access / lower,Dior,5,38.5%,4000;5400;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_2_minus10pct,Core,Dior,8,61.5%,4000;5400;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_2_minus10pct,Premium core,Dior,0,0%,4000;5400;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_2_minus10pct,High,Dior,0,0%,4000;5400;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_2_minus10pct,Exceptional / icon,Dior,0,0%,4000;5400;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_2_plus10pct,Access / lower,Chanel,0,0%,4000;6600;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_2_plus10pct,Core,Chanel,7,38.9%,4000;6600;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_2_plus10pct,Premium core,Chanel,4,22.2%,4000;6600;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_2_plus10pct,High,Chanel,0,0%,4000;6600;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_2_plus10pct,Exceptional / icon,Chanel,7,38.9%,4000;6600;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_2_plus10pct,Access / lower,Hermès,3,15%,4000;6600;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_2_plus10pct,Core,Hermès,11,55%,4000;6600;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_2_plus10pct,Premium core,Hermès,2,10%,4000;6600;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_2_plus10pct,High,Hermès,2,10%,4000;6600;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_2_plus10pct,Exceptional / icon,Hermès,2,10%,4000;6600;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_2_plus10pct,Access / lower,Louis Vuitton,19,95%,4000;6600;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_2_plus10pct,Core,Louis Vuitton,1,5%,4000;6600;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_2_plus10pct,Premium core,Louis Vuitton,0,0%,4000;6600;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_2_plus10pct,High,Louis Vuitton,0,0%,4000;6600;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_2_plus10pct,Exceptional / icon,Louis Vuitton,0,0%,4000;6600;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_2_plus10pct,Access / lower,Dior,5,38.5%,4000;6600;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_2_plus10pct,Core,Dior,8,61.5%,4000;6600;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_2_plus10pct,Premium core,Dior,0,0%,4000;6600;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_2_plus10pct,High,Dior,0,0%,4000;6600;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_2_plus10pct,Exceptional / icon,Dior,0,0%,4000;6600;8000;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_3_minus10pct,Access / lower,Chanel,0,0%,4000;6000;7200;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_3_minus10pct,Core,Chanel,3,16.7%,4000;6000;7200;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_3_minus10pct,Premium core,Chanel,6,33.3%,4000;6000;7200;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_3_minus10pct,High,Chanel,2,11.1%,4000;6000;7200;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_3_minus10pct,Exceptional / icon,Chanel,7,38.9%,4000;6000;7200;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_3_minus10pct,Access / lower,Hermès,3,15%,4000;6000;7200;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_3_minus10pct,Core,Hermès,11,55%,4000;6000;7200;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_3_minus10pct,Premium core,Hermès,1,5%,4000;6000;7200;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_3_minus10pct,High,Hermès,3,15%,4000;6000;7200;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_3_minus10pct,Exceptional / icon,Hermès,2,10%,4000;6000;7200;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_3_minus10pct,Access / lower,Louis Vuitton,19,95%,4000;6000;7200;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_3_minus10pct,Core,Louis Vuitton,1,5%,4000;6000;7200;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_3_minus10pct,Premium core,Louis Vuitton,0,0%,4000;6000;7200;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_3_minus10pct,High,Louis Vuitton,0,0%,4000;6000;7200;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_3_minus10pct,Exceptional / icon,Louis Vuitton,0,0%,4000;6000;7200;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_3_minus10pct,Access / lower,Dior,5,38.5%,4000;6000;7200;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_3_minus10pct,Core,Dior,8,61.5%,4000;6000;7200;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_3_minus10pct,Premium core,Dior,0,0%,4000;6000;7200;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_3_minus10pct,High,Dior,0,0%,4000;6000;7200;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_3_minus10pct,Exceptional / icon,Dior,0,0%,4000;6000;7200;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_3_plus10pct,Access / lower,Chanel,0,0%,4000;6000;8800;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_3_plus10pct,Core,Chanel,3,16.7%,4000;6000;8800;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_3_plus10pct,Premium core,Chanel,8,44.4%,4000;6000;8800;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_3_plus10pct,High,Chanel,0,0%,4000;6000;8800;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_3_plus10pct,Exceptional / icon,Chanel,7,38.9%,4000;6000;8800;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_3_plus10pct,Access / lower,Hermès,3,15%,4000;6000;8800;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_3_plus10pct,Core,Hermès,11,55%,4000;6000;8800;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_3_plus10pct,Premium core,Hermès,3,15%,4000;6000;8800;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_3_plus10pct,High,Hermès,1,5%,4000;6000;8800;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_3_plus10pct,Exceptional / icon,Hermès,2,10%,4000;6000;8800;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_3_plus10pct,Access / lower,Louis Vuitton,19,95%,4000;6000;8800;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_3_plus10pct,Core,Louis Vuitton,1,5%,4000;6000;8800;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_3_plus10pct,Premium core,Louis Vuitton,0,0%,4000;6000;8800;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_3_plus10pct,High,Louis Vuitton,0,0%,4000;6000;8800;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_3_plus10pct,Exceptional / icon,Louis Vuitton,0,0%,4000;6000;8800;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_3_plus10pct,Access / lower,Dior,5,38.5%,4000;6000;8800;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_3_plus10pct,Core,Dior,8,61.5%,4000;6000;8800;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_3_plus10pct,Premium core,Dior,0,0%,4000;6000;8800;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_3_plus10pct,High,Dior,0,0%,4000;6000;8800;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_3_plus10pct,Exceptional / icon,Dior,0,0%,4000;6000;8800;11000,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_4_minus10pct,Access / lower,Chanel,0,0%,4000;6000;8000;9900,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_4_minus10pct,Core,Chanel,3,16.7%,4000;6000;8000;9900,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_4_minus10pct,Premium core,Chanel,8,44.4%,4000;6000;8000;9900,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_4_minus10pct,High,Chanel,0,0%,4000;6000;8000;9900,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_4_minus10pct,Exceptional / icon,Chanel,7,38.9%,4000;6000;8000;9900,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_4_minus10pct,Access / lower,Hermès,3,15%,4000;6000;8000;9900,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_4_minus10pct,Core,Hermès,11,55%,4000;6000;8000;9900,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_4_minus10pct,Premium core,Hermès,2,10%,4000;6000;8000;9900,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_4_minus10pct,High,Hermès,2,10%,4000;6000;8000;9900,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_4_minus10pct,Exceptional / icon,Hermès,2,10%,4000;6000;8000;9900,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_4_minus10pct,Access / lower,Louis Vuitton,19,95%,4000;6000;8000;9900,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_4_minus10pct,Core,Louis Vuitton,1,5%,4000;6000;8000;9900,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_4_minus10pct,Premium core,Louis Vuitton,0,0%,4000;6000;8000;9900,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_4_minus10pct,High,Louis Vuitton,0,0%,4000;6000;8000;9900,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_4_minus10pct,Exceptional / icon,Louis Vuitton,0,0%,4000;6000;8000;9900,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_4_minus10pct,Access / lower,Dior,5,38.5%,4000;6000;8000;9900,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_4_minus10pct,Core,Dior,8,61.5%,4000;6000;8000;9900,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_4_minus10pct,Premium core,Dior,0,0%,4000;6000;8000;9900,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_4_minus10pct,High,Dior,0,0%,4000;6000;8000;9900,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_4_minus10pct,Exceptional / icon,Dior,0,0%,4000;6000;8000;9900,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_4_plus10pct,Access / lower,Chanel,0,0%,4000;6000;8000;12100,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_4_plus10pct,Core,Chanel,3,16.7%,4000;6000;8000;12100,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_4_plus10pct,Premium core,Chanel,8,44.4%,4000;6000;8000;12100,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_4_plus10pct,High,Chanel,6,33.3%,4000;6000;8000;12100,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_4_plus10pct,Exceptional / icon,Chanel,1,5.6%,4000;6000;8000;12100,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_4_plus10pct,Access / lower,Hermès,3,15%,4000;6000;8000;12100,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_4_plus10pct,Core,Hermès,11,55%,4000;6000;8000;12100,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_4_plus10pct,Premium core,Hermès,2,10%,4000;6000;8000;12100,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_4_plus10pct,High,Hermès,3,15%,4000;6000;8000;12100,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_4_plus10pct,Exceptional / icon,Hermès,1,5%,4000;6000;8000;12100,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_4_plus10pct,Access / lower,Louis Vuitton,19,95%,4000;6000;8000;12100,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_4_plus10pct,Core,Louis Vuitton,1,5%,4000;6000;8000;12100,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_4_plus10pct,Premium core,Louis Vuitton,0,0%,4000;6000;8000;12100,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_4_plus10pct,High,Louis Vuitton,0,0%,4000;6000;8000;12100,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_4_plus10pct,Exceptional / icon,Louis Vuitton,0,0%,4000;6000;8000;12100,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_4_plus10pct,Access / lower,Dior,5,38.5%,4000;6000;8000;12100,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_4_plus10pct,Core,Dior,8,61.5%,4000;6000;8000;12100,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_4_plus10pct,Premium core,Dior,0,0%,4000;6000;8000;12100,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_4_plus10pct,High,Dior,0,0%,4000;6000;8000;12100,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.
+US,USD,boundary_4_plus10pct,Exceptional / icon,Dior,0,0%,4000;6000;8000;12100,Denominator is brand × market numeric observations; bands are post-hoc descriptive bins.

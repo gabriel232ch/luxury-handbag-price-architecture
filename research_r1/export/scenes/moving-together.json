@@ -1,0 +1,10 @@
+{
+  "id": "moving-together",
+  "title": "Moving Together",
+  "dataFile": "research_r1/outputs/aligned_history.csv",
+  "figure": "research_r1/export/figures/moving-together.svg",
+  "markets": [
+    "FR"
+  ],
+  "noJsEquivalent": true
+}

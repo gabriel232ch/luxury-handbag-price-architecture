@@ -44,6 +44,19 @@ python3 historical_pricing_calculations.py
 python3 build_final_report_assets.py
 ```
 
+## Research Upgrade R1
+
+本仓库已执行 Luxury Handbag 旗舰研究方案的 R0–R5 研究部分。R1 保留 `2026-08-15` 当前快照与历史面板为独立 snapshot，生成规范观察表、来源/血缘、覆盖审计、Chanel 梯度、价格带敏感性、对齐历史、稳健性、主张登记、报告和静态案例导出。Portfolio 网站 P1–P5 属于另一个项目，不在本仓库范围内。
+
+```bash
+python3 scripts/r1/build.py
+python3 scripts/r1/validate.py
+python3 scripts/r1/export_case_study.py
+python3 -m unittest discover -s tests/r1 -p 'test_*.py'
+```
+
+当前验证状态为 `limited`：核心计算可复算且契约测试通过，但 Dior 当前价格有未解析行、Hermès Geta 法国 2023 有来源冲突、历史样本与年份覆盖有限。详见 [`research_r1/report/REPORT_CN.md`](research_r1/report/REPORT_CN.md) 与 [`docs/progress/luxury-r1-handoff.md`](docs/progress/luxury-r1-handoff.md)。
+
 脚本只使用 Python 标准库，默认读取仓库内的采集数据与历史面板，并将计算结果写入 `competitive_pricing_calculations/` 与 `historical_pricing_calculations/`。原始采集记录、清洗数据、来源日志和计算合同均保留在对应目录，便于审计。
 
 ## 数据边界

@@ -1,0 +1,96 @@
+{
+  "schemaVersion": "research-r1-baseline-1",
+  "generated_at": "2026-09-07T09:46:31+08:00",
+  "source_commit": "5ef2ee7e22e4010d7b951ec09df3e5337ee8e56f",
+  "current_snapshot": "current_2026-08-15",
+  "historical_snapshot": "historical_panel_2026-08-15",
+  "input_files": [
+    {
+      "path": "chanel_fr_us_handbags_current/clean_data.csv",
+      "sha256": "d2b9e88cefd58ed0aa05cc34d72234785202bdddf75aeff36a3cf760e7d9946f",
+      "rows": 41
+    },
+    {
+      "path": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "sha256": "bb0cec3cce62fbff6f0f67a676a65346a7a8e95be6f6baaa4541fd3cc923adad",
+      "rows": 120
+    },
+    {
+      "path": "luxury_historical_pricing/clean/historical_pricing_clean.csv",
+      "sha256": "fa3e05a01a181a9bd6b3b823dd3ad26cf9e1d78f417c47d03d8f1a4dbef9e402",
+      "rows": 77
+    },
+    {
+      "path": "luxury_historical_pricing/lineage/product_lineage.csv",
+      "sha256": "67c4f84394800f776413b91b669ee94dd5c598fc6741dfa88ffaf98eab8d42eb",
+      "rows": 13
+    },
+    {
+      "path": "luxury_historical_pricing/logs/HISTORICAL_SOURCE_REGISTRY.csv",
+      "sha256": "babf5ef6c22c5d1d2e95dac4a532cf0932d0ac47275be73e3e2f5acf32f41646",
+      "rows": 49
+    },
+    {
+      "path": "luxury_competitor_pricing_current/errors/errors.jsonl",
+      "sha256": "6b248a8b9860db06ce2f69c357a709cb77b7e8d450eb4017fe39a49a1f565591"
+    },
+    {
+      "path": "chanel_fr_us_handbags_current/errors.jsonl",
+      "sha256": "69474ab4800b7f54e0fab0bd9c00c5b93af4f064623a8946231f3b47b341c017"
+    },
+    {
+      "path": "luxury_historical_pricing/errors/unresolved_history.jsonl",
+      "sha256": "b8dc14fe0b9da59cb8297c76b61a9949697efbda10ae6213990cde6075b6ead3"
+    }
+  ],
+  "key_counts": {
+    "current_observations": 161,
+    "current_numeric": 147,
+    "historical_observations": 77,
+    "historical_numeric": 76,
+    "lineages": 13,
+    "sources": 210,
+    "current_by_brand_market": {
+      "Chanel:FR": 20,
+      "Chanel:US": 21,
+      "Hermès:FR": 20,
+      "Hermès:US": 20,
+      "Louis Vuitton:FR": 20,
+      "Louis Vuitton:US": 20,
+      "Dior:FR": 20,
+      "Dior:US": 20
+    }
+  },
+  "reproduction_chain": [
+    {
+      "command": "python3 build_competitor_dataset.py",
+      "exit_code": 0,
+      "observed_result": "120 competitor rows; 12 recorded errors"
+    },
+    {
+      "command": "python3 competitive_pricing_calculations.py",
+      "exit_code": 0,
+      "observed_result": "161 total observations; 147 numeric"
+    },
+    {
+      "command": "python3 build_historical_dataset.py",
+      "exit_code": 0,
+      "observed_result": "77 rows; 76 numeric; 35 events"
+    },
+    {
+      "command": "python3 historical_pricing_calculations.py",
+      "exit_code": 0,
+      "observed_result": "19 market paths; 13 lineages"
+    },
+    {
+      "command": "python3 build_final_report_assets.py",
+      "exit_code": 0,
+      "observed_result": "5 SVG assets"
+    }
+  ],
+  "reproduction_notes": [
+    "The original competitor builder uses the current clock for observed_at and observation IDs; its rerun was not treated as a new historical observation.",
+    "Derived files were restored after the baseline rerun; R1 uses the preserved 2026-08-15 snapshots.",
+    "Current anchor exact-SKU rows and historical lineage continuity are separate fields and must not be conflated."
+  ]
+}

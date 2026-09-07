@@ -1,0 +1,11 @@
+{
+  "id": "price-landscape",
+  "title": "Price Landscape",
+  "dataFile": "research_r1/outputs/brand_family_summary.csv",
+  "figure": "research_r1/export/figures/price-landscape.svg",
+  "markets": [
+    "FR",
+    "US"
+  ],
+  "noJsEquivalent": true
+}

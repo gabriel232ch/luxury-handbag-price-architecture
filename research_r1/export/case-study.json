@@ -1,0 +1,1647 @@
+{
+  "schemaVersion": "luxury-case-study-1",
+  "slug": "luxury-handbag-pricing-architecture",
+  "language": "en",
+  "researchVersion": "R1",
+  "publication": "candidate",
+  "noindex": true,
+  "observationScope": {
+    "markets": [
+      "France",
+      "United States"
+    ],
+    "currencies": [
+      "EUR",
+      "USD"
+    ],
+    "currentSnapshot": "2026-08-15",
+    "acceptedCurrentObservations": 161,
+    "numericCurrentObservations": 147,
+    "note": "Observed official local list-price sample; not an assortment census or affordability measure."
+  },
+  "title": "The Architecture of Access — Chanel's Handbag Price Ladder in Context",
+  "summary": "A source-linked study of visible Chanel entry, family steps and Classic anchors, with three brands as external coordinates.",
+  "sections": [
+    {
+      "id": "open",
+      "title": "Open",
+      "summary": "The question and its observation boundary.",
+      "paragraphs": [
+        "How does Chanel present visible entry, family-level steps and the Classic high anchor in local official list-price observations?"
+      ],
+      "claimIds": [
+        "CLM-LADDER-FR",
+        "CLM-LADDER-US"
+      ],
+      "sceneIds": []
+    },
+    {
+      "id": "context",
+      "title": "Context",
+      "summary": "Four brands on separate local price axes.",
+      "paragraphs": [
+        "Chanel is the focal case. Hermès, Louis Vuitton and Dior provide external coordinates; the panel is non-weighted and coverage differs by brand and market."
+      ],
+      "claimIds": [
+        "CLM-COVERAGE-DIOR-US"
+      ],
+      "sceneIds": [
+        "price-landscape"
+      ]
+    },
+    {
+      "id": "architecture",
+      "title": "Architecture",
+      "summary": "A brand point expanded into family positions.",
+      "paragraphs": [
+        "Classic 11.12 and Small Classic form the Classic group. Mini Classic is an entry observation even though its name contains Classic; Shopping Bag and Bowling Bag are other core observations. Price-upon-request rows stay outside the numeric axis."
+      ],
+      "claimIds": [
+        "CLM-LADDER-FR",
+        "CLM-LADDER-US"
+      ],
+      "sceneIds": [
+        "price-ladder"
+      ]
+    },
+    {
+      "id": "evolution",
+      "title": "Evolution",
+      "summary": "Common observed years only.",
+      "paragraphs": [
+        "The Chanel France history panel compares fixed lineages without interpolating missing years. The values are product-line observations, mostly from secondary historical tables."
+      ],
+      "claimIds": [
+        "CLM-HISTORY-CHANEL-FR"
+      ],
+      "sceneIds": [
+        "moving-together"
+      ]
+    },
+    {
+      "id": "interpretation",
+      "title": "Interpretation",
+      "summary": "Bounded findings and decision questions.",
+      "paragraphs": [
+        "If the visible distance survives de-variant sensitivity, verify the full SKU ladder and upgrade path. If it moves with family coverage, map the assortment before making a pricing decision."
+      ],
+      "claimIds": [
+        "CLM-LADDER-FR",
+        "CLM-LADDER-US",
+        "CLM-COVERAGE-DIOR-US"
+      ],
+      "sceneIds": []
+    },
+    {
+      "id": "afterlife",
+      "title": "Afterlife",
+      "summary": "Methods, sources and limitations.",
+      "paragraphs": [
+        "The candidate remains noindex and unpublished. All figures point to R1 outputs; Hermès Geta's 2023 France conflict remains excluded from the core narrative."
+      ],
+      "claimIds": [],
+      "sceneIds": []
+    }
+  ],
+  "claims": [
+    {
+      "claimId": "CLM-LADDER-FR",
+      "text": "In the accepted FR numeric snapshot, the lowest Classic observation is 10000 EUR versus a highest entry/core observation of 6700 EUR; the observed gap is 3300 EUR.",
+      "grade": "B",
+      "scope": "Chanel; FR; current_2026-08-15; Classic=Classic 11.12 + Small Classic; comparison=Mini Classic + Shopping Bag + Bowling Bag.",
+      "outputPath": "research_r1/outputs/chanel_ladder.csv",
+      "limitation": "Accepted observed rows are not a complete assortment and do not establish purchase substitution."
+    },
+    {
+      "claimId": "CLM-LADDER-US",
+      "text": "In the accepted US numeric snapshot, the lowest Classic observation is 11000 USD versus a highest entry/core observation of 7400 USD; the observed gap is 3600 USD.",
+      "grade": "B",
+      "scope": "Chanel; US; current_2026-08-15; Classic=Classic 11.12 + Small Classic; comparison=Mini Classic + Shopping Bag + Bowling Bag.",
+      "outputPath": "research_r1/outputs/chanel_ladder.csv",
+      "limitation": "Accepted observed rows are not a complete assortment and do not establish purchase substitution."
+    },
+    {
+      "claimId": "CLM-COVERAGE-DIOR-US",
+      "text": "Dior US has 13 numeric prices among 20 accepted observations (65.0% numeric coverage); unresolved rows remain excluded from price distributions.",
+      "grade": "A",
+      "scope": "Dior; US; current_2026-08-15; accepted observed product rows.",
+      "outputPath": "research_r1/data/coverage.csv",
+      "limitation": "This is numeric coverage, not official website assortment coverage."
+    },
+    {
+      "claimId": "CLM-HISTORY-CHANEL-FR",
+      "text": "The Chanel France icon/access panel has common observed years 2022, 2023, 2024, 2026; the median absolute distance is 4470 EUR in 2022 and 5350 EUR in 2026.",
+      "grade": "B",
+      "scope": "Chanel; FR; fixed CH-C01/CH-C02 versus CH-C03/CH-C04 lineages; common observed years only.",
+      "outputPath": "research_r1/outputs/aligned_history.csv",
+      "limitation": "Historical values are primarily secondary-source observations and continuity is model-level, not exact historical SKU proof."
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "SRC-CH-C01-BAGAHOLIC-2024",
+      "name": "Bagaholic Chanel Classic EU price reference guide 2024",
+      "url": "https://lvbagaholic.com/fr/blogs/blog-de-bagaholic-1/chanel-classic-bag-sac-eu-prix-list-reference-guide",
+      "quality": "MEDIUM",
+      "effectiveDate": "2024"
+    },
+    {
+      "source_id": "SRC-CH-C01-CURRENT-FR",
+      "name": "Official localized current product page captured in supplied 2026 current dataset (FR)",
+      "url": "https://www.chanel.com/fr/mode/p/A01112Y04059U8390/sac-classique-11-12-agneau-metal-dore/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CH-C01-CURRENT-US",
+      "name": "Official localized current product page captured in supplied 2026 current dataset (US)",
+      "url": "https://www.chanel.com/us/fashion/p/A01112Y04059U8390/classic-11-12-handbag-lambskin-gold-tone-metal/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CH-C02-BAGAHOLIC-2024",
+      "name": "Bagaholic Chanel Classic EU price reference guide 2024",
+      "url": "https://lvbagaholic.com/fr/blogs/blog-de-bagaholic-1/chanel-classic-bag-sac-eu-prix-list-reference-guide",
+      "quality": "MEDIUM",
+      "effectiveDate": "2024"
+    },
+    {
+      "source_id": "SRC-CH-C02-CURRENT-FR",
+      "name": "Official localized current product page captured in supplied 2026 current dataset (FR)",
+      "url": "https://www.chanel.com/fr/mode/p/A01113Y01864C3906/petit-sac-classique-veau-graine-metal-dore/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CH-C02-CURRENT-US",
+      "name": "Official localized current product page captured in supplied 2026 current dataset (US)",
+      "url": "https://www.chanel.com/us/fashion/p/A01113Y01864C3906/small-classic-handbag-grained-calfskin-gold-tone-metal/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CH-C03-BAGAHOLIC-2024",
+      "name": "Bagaholic Chanel Classic EU price reference guide 2024",
+      "url": "https://lvbagaholic.com/fr/blogs/blog-de-bagaholic-1/chanel-classic-bag-sac-eu-prix-list-reference-guide",
+      "quality": "MEDIUM",
+      "effectiveDate": "2024"
+    },
+    {
+      "source_id": "SRC-CH-C03-CURRENT-FR",
+      "name": "Official localized current product page captured in supplied 2026 current dataset (FR)",
+      "url": "https://www.chanel.com/fr/mode/p/A35200Y0405994305/mini-sac-classique-agneau-metal-dore/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CH-C03-CURRENT-US",
+      "name": "Official localized current product page captured in supplied 2026 current dataset (US)",
+      "url": "https://www.chanel.com/us/fashion/p/A35200Y0405994305/mini-classic-handbag-lambskin-gold-tone-metal/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CH-C03-PURSEBOP-2020",
+      "name": "PurseBop Chanel price increase 2020",
+      "url": "https://www.pursebop.com/chanel-admits-to-price-increase-here-are-the-new-prices-2020/",
+      "quality": "MEDIUM",
+      "effectiveDate": "2020"
+    },
+    {
+      "source_id": "SRC-CH-C04-BAGAHOLIC-2024",
+      "name": "Bagaholic Chanel Classic EU price reference guide 2024",
+      "url": "https://lvbagaholic.com/fr/blogs/blog-de-bagaholic-1/chanel-classic-bag-sac-eu-prix-list-reference-guide",
+      "quality": "MEDIUM",
+      "effectiveDate": "2024"
+    },
+    {
+      "source_id": "SRC-CH-C04-CURRENT-FR",
+      "name": "Official localized current product page captured in supplied 2026 current dataset (FR)",
+      "url": "https://www.chanel.com/fr/mode/p/A69900Y0405994305/mini-sac-classique-agneau-metal-dore/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CH-C04-CURRENT-US",
+      "name": "Official localized current product page captured in supplied 2026 current dataset (US)",
+      "url": "https://www.chanel.com/us/fashion/p/A69900Y0405994305/mini-classic-handbag-lambskin-gold-tone-metal/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-CHANEL-FR-A01112_B24048_94305-7ab2a88e5d",
+      "name": "chanel_fr_us_handbags_current/clean_data.csv",
+      "url": "https://www.chanel.com/fr/mode/p/A01112B2404894305/sac-classique-11-12-agneau-email-strass-metal-argente-dore/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-CHANEL-FR-A01112_B24526_UA091-1ec4e77c1e",
+      "name": "chanel_fr_us_handbags_current/clean_data.csv",
+      "url": "https://www.chanel.com/fr/mode/p/A01112B24526UA091/sac-classique-11-12-jersey-brode-broderies-fleurs-metal-dore/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-CHANEL-FR-A01112_B24872_UA957-e7d7d28b24",
+      "name": "chanel_fr_us_handbags_current/clean_data.csv",
+      "url": "https://www.chanel.com/fr/mode/p/A01112B24872UA957/sac-classique-11-12-tweed-de-coton-et-de-laine-metal-dore/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-CHANEL-FR-A01112_B25087_UB640-ff287614cd",
+      "name": "chanel_fr_us_handbags_current/clean_data.csv",
+      "url": "https://www.chanel.com/fr/mode/p/A01112B25087UB640/sac-classique-11-12-denim-brode-perles-de-verres-strass-metal-dore/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-CHANEL-FR-A01112_B25176_UC191-0d1a492253",
+      "name": "chanel_fr_us_handbags_current/clean_data.csv",
+      "url": "https://www.chanel.com/fr/mode/p/A01112B25176UC191/sac-classique-11-12-crepe-de-laine-brodee-raphia-perles-de-verre-metal-dore/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-CHANEL-FR-A01112_B25720_UB663-7cd78669e1",
+      "name": "chanel_fr_us_handbags_current/clean_data.csv",
+      "url": "https://www.chanel.com/fr/mode/p/A01112B25720UB663/sac-classique-11-12-veau-graine-brillant-metal-dore/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-CHANEL-FR-A01112_B25747_94305-4f9a4a7240",
+      "name": "chanel_fr_us_handbags_current/clean_data.csv",
+      "url": "https://www.chanel.com/fr/mode/p/A01112B2574794305/sac-classique-11-12-agneau-metal-dore/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-CHANEL-FR-A01112_B25879_UC671-d8746dff47",
+      "name": "chanel_fr_us_handbags_current/clean_data.csv",
+      "url": "https://www.chanel.com/fr/mode/p/A01112B25879UC671/sac-classique-11-12-tweed-de-coton-et-de-laine-metal-dore/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-CHANEL-FR-A01112_Y04059_U8390-a3f29bfe86",
+      "name": "chanel_fr_us_handbags_current/clean_data.csv",
+      "url": "https://www.chanel.com/fr/mode/p/A01112Y04059U8390/sac-classique-11-12-agneau-metal-dore/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-CHANEL-FR-A01113_Y01864_C3906-b0891e3902",
+      "name": "chanel_fr_us_handbags_current/clean_data.csv",
+      "url": "https://www.chanel.com/fr/mode/p/A01113Y01864C3906/petit-sac-classique-veau-graine-metal-dore/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-CHANEL-FR-A35200_Y04059_94305-22ffdb123d",
+      "name": "chanel_fr_us_handbags_current/clean_data.csv",
+      "url": "https://www.chanel.com/fr/mode/p/A35200Y0405994305/mini-sac-classique-agneau-metal-dore/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-CHANEL-FR-A69900_Y04059_94305-10a68dd783",
+      "name": "chanel_fr_us_handbags_current/clean_data.csv",
+      "url": "https://www.chanel.com/fr/mode/p/A69900Y0405994305/mini-sac-classique-agneau-metal-dore/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-CHANEL-FR-AS6199_B25388_94305-a9fac304cc",
+      "name": "chanel_fr_us_handbags_current/clean_data.csv",
+      "url": "https://www.chanel.com/fr/mode/p/AS6199B2538894305/mini-cabas-veau-metal-dore/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-CHANEL-FR-AS6199_B25749_UD595-6679f7b97c",
+      "name": "chanel_fr_us_handbags_current/clean_data.csv",
+      "url": "https://www.chanel.com/fr/mode/p/AS6199B25749UD595/mini-cabas-toile-metal-dore/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-CHANEL-FR-AS6211_B25711_UB662-f79c553131",
+      "name": "chanel_fr_us_handbags_current/clean_data.csv",
+      "url": "https://www.chanel.com/fr/mode/p/AS6211B25711UB662/grand-sac-bowling-veau-metal-argente/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-CHANEL-FR-AS6224_B24988_UA104-91b3500335",
+      "name": "chanel_fr_us_handbags_current/clean_data.csv",
+      "url": "https://www.chanel.com/fr/mode/p/AS6224B24988UA104/petit-cabas-veau-graine-agneau-metal-dore/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-CHANEL-FR-AS6475_B25599_UD180-0e37c299b2",
+      "name": "chanel_fr_us_handbags_current/clean_data.csv",
+      "url": "https://www.chanel.com/fr/mode/p/AS6475B25599UD180/cabas-veau-velours-metal-dore/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-CHANEL-FR-AS6495_B25347_UA954-28d87924e2",
+      "name": "chanel_fr_us_handbags_current/clean_data.csv",
+      "url": "https://www.chanel.com/fr/mode/p/AS6495B25347UA954/petit-cabas-agneau-metal-dore/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-CHANEL-FR-AS6580_B24074_U9390-9be43a91ff",
+      "name": "chanel_fr_us_handbags_current/clean_data.csv",
+      "url": "https://www.chanel.com/fr/mode/p/AS6580B24074U9390/grand-sac-bowling-veau-velours-veau-metal-dore/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-CHANEL-FR-AS6590_B25996_U9390-a3ea83c33c",
+      "name": "chanel_fr_us_handbags_current/clean_data.csv",
+      "url": "https://www.chanel.com/fr/mode/p/AS6590B25996U9390/cabas-veau-velours-metal-dore/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-CHANEL-US-A01112_B24048_94305-324cc7e282",
+      "name": "chanel_fr_us_handbags_current/clean_data.csv",
+      "url": "https://www.chanel.com/us/fashion/p/A01112B2404894305/classic-11-12-handbag-lambskin-enamel-strass-silver-tone-gold-tone-metal/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-CHANEL-US-A01112_B24526_UA091-be7bd25cd8",
+      "name": "chanel_fr_us_handbags_current/clean_data.csv",
+      "url": "https://www.chanel.com/us/fashion/p/A01112B24526UA091/classic-11-12-handbag-embroidered-jersey-flowers-embroideries-gold-tone-metal/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-CHANEL-US-A01112_B24872_UA957-9c7b162e18",
+      "name": "chanel_fr_us_handbags_current/clean_data.csv",
+      "url": "https://www.chanel.com/us/fashion/p/A01112B24872UA957/classic-11-12-handbag-cotton-wool-tweed-gold-tone-metal/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-CHANEL-US-A01112_B25087_UB640-982169af52",
+      "name": "chanel_fr_us_handbags_current/clean_data.csv",
+      "url": "https://www.chanel.com/us/fashion/p/A01112B25087UB640/classic-11-12-handbag-embroidered-denim-glass-beads-strass-gold-tone-metal/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-CHANEL-US-A01112_B25176_UC191-36757b090f",
+      "name": "chanel_fr_us_handbags_current/clean_data.csv",
+      "url": "https://www.chanel.com/us/fashion/p/A01112B25176UC191/classic-11-12-handbag-embroidered-wool-crepe-raffia-glass-beads-gold-tone-metal/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-CHANEL-US-A01112_B25720_UB663-46b89ffc64",
+      "name": "chanel_fr_us_handbags_current/clean_data.csv",
+      "url": "https://www.chanel.com/us/fashion/p/A01112B25720UB663/classic-11-12-handbag-grained-shiny-calfskin-gold-tone-metal/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-CHANEL-US-A01112_B25747_94305-11383097bb",
+      "name": "chanel_fr_us_handbags_current/clean_data.csv",
+      "url": "https://www.chanel.com/us/fashion/p/A01112B2574794305/classic-11-12-handbag-lambskin-gold-tone-metal/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-CHANEL-US-A01112_B25879_UC671-8c0a26fb02",
+      "name": "chanel_fr_us_handbags_current/clean_data.csv",
+      "url": "https://www.chanel.com/us/fashion/p/A01112B25879UC671/classic-11-12-handbag-cotton-wool-tweed-gold-tone-metal/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-CHANEL-US-A01112_Y04059_U8390-d3be957cd9",
+      "name": "chanel_fr_us_handbags_current/clean_data.csv",
+      "url": "https://www.chanel.com/us/fashion/p/A01112Y04059U8390/classic-11-12-handbag-lambskin-gold-tone-metal/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-CHANEL-US-A01113_Y01864_C3906-ec56687efd",
+      "name": "chanel_fr_us_handbags_current/clean_data.csv",
+      "url": "https://www.chanel.com/us/fashion/p/A01113Y01864C3906/small-classic-handbag-grained-calfskin-gold-tone-metal/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-CHANEL-US-A35200_Y04059_94305-fb4044e021",
+      "name": "chanel_fr_us_handbags_current/clean_data.csv",
+      "url": "https://www.chanel.com/us/fashion/p/A35200Y0405994305/mini-classic-handbag-lambskin-gold-tone-metal/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-CHANEL-US-A69900_Y04059_94305-f1b8eb67a1",
+      "name": "chanel_fr_us_handbags_current/clean_data.csv",
+      "url": "https://www.chanel.com/us/fashion/p/A69900Y0405994305/mini-classic-handbag-lambskin-gold-tone-metal/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-CHANEL-US-AS6199_B25388_94305-a4e0c0a64a",
+      "name": "chanel_fr_us_handbags_current/clean_data.csv",
+      "url": "https://www.chanel.com/us/fashion/p/AS6199B2538894305/mini-shopping-bag-calfskin-gold-tone-metal/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-CHANEL-US-AS6199_B25749_UD595-ac9b0f174d",
+      "name": "chanel_fr_us_handbags_current/clean_data.csv",
+      "url": "https://www.chanel.com/us/fashion/p/AS6199B25749UD595/mini-shopping-bag-canvas-gold-tone-metal/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-CHANEL-US-AS6200_B25749_UD596-ba6992cbef",
+      "name": "chanel_fr_us_handbags_current/clean_data.csv",
+      "url": "https://www.chanel.com/us/fashion/p/AS6200B25749UD596/small-shopping-bag-canvas-gold-tone-metal/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-CHANEL-US-AS6211_B25711_UB662-da0e0b27c8",
+      "name": "chanel_fr_us_handbags_current/clean_data.csv",
+      "url": "https://www.chanel.com/us/fashion/p/AS6211B25711UB662/large-bowling-bag-calfskin-silver-tone-metal/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-CHANEL-US-AS6224_B24988_UA104-7d8cefaf36",
+      "name": "chanel_fr_us_handbags_current/clean_data.csv",
+      "url": "https://www.chanel.com/us/fashion/p/AS6224B24988UA104/small-shopping-bag-grained-calfskin-lambskin-gold-tone-metal/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-CHANEL-US-AS6475_B25599_UD180-e28d5b8948",
+      "name": "chanel_fr_us_handbags_current/clean_data.csv",
+      "url": "https://www.chanel.com/us/fashion/p/AS6475B25599UD180/shopping-bag-suede-calfskin-gold-tone-metal/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-CHANEL-US-AS6495_B25347_UA954-3e4cec1ee4",
+      "name": "chanel_fr_us_handbags_current/clean_data.csv",
+      "url": "https://www.chanel.com/us/fashion/p/AS6495B25347UA954/small-shopping-bag-lambskin-gold-tone-metal/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-CHANEL-US-AS6580_B24074_U9390-48a811f051",
+      "name": "chanel_fr_us_handbags_current/clean_data.csv",
+      "url": "https://www.chanel.com/us/fashion/p/AS6580B24074U9390/large-bowling-bag-suede-calfskin-calfskin-gold-tone-metal/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-CHANEL-US-AS6590_B25996_U9390-6fa79928eb",
+      "name": "chanel_fr_us_handbags_current/clean_data.csv",
+      "url": "https://www.chanel.com/us/fashion/p/AS6590B25996U9390/shopping-bag-suede-calfskin-gold-tone-metal/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-DIOR-FR-M0457CUQW_M900-dfb622dff7",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.dior.com/fr_fr/fashion/products/M0457CUQW_M900",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-DIOR-FR-M0715OUQO_M900-b9096487b1",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.dior.com/fr_fr/fashion/products/M0715OUQO_M900",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-DIOR-FR-M1324OWHP_M51U-02725ca70f",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.dior.com/fr_fr/fashion/products/M1324OWHP_M51U",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-DIOR-FR-M1325OWHP_M900-c963d46ec1",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.dior.com/fr_fr/fashion/products/M1325OWHP_M900",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-DIOR-FR-M1354OEUB_M918-033dae1fbe",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.dior.com/fr_fr/fashion/products/M1354OEUB_M918",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-DIOR-FR-M1388OEJP_M19I-21733197da",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.dior.com/fr_fr/fashion/products/M1388OEJP_M19I",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-DIOR-FR-M1388OEJP_M918-e742dd6322",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.dior.com/fr_fr/fashion/products/M1388OEJP_M918",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-DIOR-FR-M1409OHSU_M09I-0ddec38dfb",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.dior.com/fr_fr/fashion/products/M1409OHSU_M09I",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-DIOR-FR-M1409OTZQ_M928-14753260f8",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.dior.com/fr_fr/fashion/products/M1409OTZQ_M928",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-DIOR-FR-M1410OHST_M911-3e2f3e3e67",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.dior.com/fr_fr/fashion/products/M1410OHST_M911",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-DIOR-FR-M1410OHST_M912-0d67f13bd5",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.dior.com/fr_fr/fashion/products/M1410OHST_M912",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-DIOR-FR-M1411OHJW_M911-7ea005f1ae",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.dior.com/fr_fr/fashion/products/M1411OHJW_M911",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-DIOR-FR-M1412PHJX_M79G-f23703d1bf",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.dior.com/fr_fr/fashion/products/M1412PHJX_M79G",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-DIOR-FR-M1532QTZQ_M928-56cfd5c4dd",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.dior.com/fr_fr/fashion/products/M1532QTZQ_M928",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-DIOR-FR-M2822OSNW_M900-a03104d02a",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.dior.com/fr_fr/fashion/products/M2822OSNW_M900",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-DIOR-FR-M2836OSNW_M900-688c4f903e",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.dior.com/fr_fr/fashion/products/M2836OSNW_M900",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-DIOR-FR-M2867ODKZ_M900-7565d2a467",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.dior.com/fr_fr/fashion/products/M2867ODKZ_M900",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-DIOR-FR-M2867PDUN_M18S-ea335846ad",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.dior.com/fr_fr/fashion/products/M2867PDUN_M18S",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-DIOR-FR-M3919QDWP_M900-17e9691b9f",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.dior.com/fr_fr/fashion/products/M3919QDWP_M900",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-DIOR-FR-M3920QDWP_M98H-0f2e28d914",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.dior.com/fr_fr/fashion/products/M3920QDWP_M98H",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-DIOR-US-M0457CUQW_M900-9a8a78b5fd",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.dior.com/en_us/fashion/products/M0457CUQW_M900",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-DIOR-US-M0715OUQO_M900-f420eccb96",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.dior.com/en_us/fashion/products/M0715OUQO_M900",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-DIOR-US-M1324OWHP_M51U-ed0e9a0287",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.dior.com/en_us/fashion/products/M1324OWHP_M51U",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-DIOR-US-M1325OWHP_M900-984ce27ae4",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.dior.com/en_us/fashion/products/M1325OWHP_M900",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-DIOR-US-M1354OEUB_M918-51e36a8226",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.dior.com/en_us/fashion/products/M1354OEUB_M918",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-DIOR-US-M1388OEJP_M19I-90ef2d9841",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.dior.com/en_us/fashion/products/M1388OEJP_M19I",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-DIOR-US-M1388OEJP_M918-335f267465",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.dior.com/en_us/fashion/products/M1388OEJP_M918",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-DIOR-US-M1409OHSU_M09I-9e6102818e",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.dior.com/en_us/fashion/products/M1409OHSU_M09I",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-DIOR-US-M1409OTZQ_M928-0b144f6a9a",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.dior.com/en_us/fashion/products/M1409OTZQ_M928",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-DIOR-US-M1410OHST_M911-080f0de3e8",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.dior.com/en_us/fashion/products/M1410OHST_M911",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-DIOR-US-M1410OHST_M912-12e16494fb",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.dior.com/en_us/fashion/products/M1410OHST_M912",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-DIOR-US-M1411OHJW_M911-49abaf70b0",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.dior.com/en_us/fashion/products/M1411OHJW_M911",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-DIOR-US-M1412PHJX_M79G-f9b39fa0eb",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.dior.com/en_us/fashion/products/M1412PHJX_M79G",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-DIOR-US-M1532QTZQ_M928-95de155022",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.dior.com/en_us/fashion/products/M1532QTZQ_M928",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-DIOR-US-M2822OSNW_M900-7e0b592030",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.dior.com/en_us/fashion/products/M2822OSNW_M900",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-DIOR-US-M2836OSNW_M900-aeb7c7debd",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.dior.com/en_us/fashion/products/M2836OSNW_M900",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-DIOR-US-M2867ODKZ_M900-f3142d5a5e",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.dior.com/en_us/fashion/products/M2867ODKZ_M900",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-DIOR-US-M2867PDUN_M18S-77a456c0e4",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.dior.com/en_us/fashion/products/M2867PDUN_M18S",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-DIOR-US-M3919QDWP_M900-520e8cfbef",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.dior.com/en_us/fashion/products/M3919QDWP_M900",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-DIOR-US-M3920QDWP_M98H-ff07480f03",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.dior.com/en_us/fashion/products/M3920QDWP_M98H",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-HERM_S-FR-H071205CK89-3a705c7bfd",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.hermes.com/fr/fr/product/sac-roulis-mini-H071205CK89/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-HERM_S-FR-H084151CKAC-3ae65b5a89",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.hermes.com/fr/fr/product/sac-hermes-videpoches-H084151CKAC/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-HERM_S-FR-H084337CKAE-2077112d04",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.hermes.com/fr/fr/product/sac-victoria-iii-fourre-tout-mini-H084337CKAE/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-HERM_S-FR-H084658CKI8-c1c2474262",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.hermes.com/fr/fr/product/sac-hermes-della-cavalleria-elan-H084658CKI8/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-HERM_S-FR-H084847CK4D-0d9aa6c9d5",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.hermes.com/fr/fr/product/sac-petite-course-H084847CK4D/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-HERM_S-FR-H084948CP0G-b771ffbc66",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.hermes.com/fr/fr/product/minaudiere-en-piste-H084948CP0G/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-HERM_S-FR-H085003CK55-9b6f45feea",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.hermes.com/fr/fr/product/sac-mini-medor-H085003CK55/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-HERM_S-FR-H085367CPQ0-196b0d4efa",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.hermes.com/fr/fr/product/sac-hermes-della-cavalleria-mini-ii-H085367CPQ0/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-HERM_S-FR-H085408CKAW-8df17d693f",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.hermes.com/fr/fr/product/sac-hermes-geta-H085408CKAW/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-HERM_S-FR-H085668CKAB-2599ea89b2",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.hermes.com/fr/fr/product/sac-p-tit-arcon-H085668CKAB/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-HERM_S-FR-H085741CK89-7523e20165",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.hermes.com/fr/fr/product/minaudiere-neo-medor-H085741CK89/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-HERM_S-FR-H086559CC55-5f5fa2564a",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.hermes.com/fr/fr/product/sac-plume-mini-H086559CC55/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-HERM_S-FR-H086707CAAG-96d1601503",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.hermes.com/fr/fr/product/sac-neo-double-sens-35-bicolore-H086707CAAG/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-HERM_S-FR-H086915CK1C-3cf11bd726",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.hermes.com/fr/fr/product/sac-poche-cliquetis-H086915CK1C/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-HERM_S-FR-H086915CKI8-432893c83f",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.hermes.com/fr/fr/product/sac-poche-cliquetis-H086915CKI8/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-HERM_S-FR-H087026CCQ0-e9e5d6a1e1",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.hermes.com/fr/fr/product/sac-petit-tour-34-H087026CCQ0/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-HERM_S-FR-H088002CKAH-bc238bc019",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.hermes.com/fr/fr/product/sac-medor-clous-H088002CKAH/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-HERM_S-FR-H088004CC7U-8469bc1a53",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.hermes.com/fr/fr/product/sac-jypsiere-mini-H088004CC7U/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-HERM_S-FR-H088503CKAB-958aa58878",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.hermes.com/fr/fr/product/sac-balusoie-H088503CKAB/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-HERM_S-FR-H088914CK89-cd498d3ec9",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.hermes.com/fr/fr/product/sac-hermes-videpoches-H088914CK89/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-HERM_S-US-H078401CK37-206af4861c",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.hermes.com/us/en/product/kelly-depeches-25-pouch-H078401CK37/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-HERM_S-US-H083591CK7K-c370964db1",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.hermes.com/us/en/product/hac-a-dos-gm-backpack-H083591CK7K/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-HERM_S-US-H084151CKAC-e27b26b21a",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.hermes.com/us/en/product/hermes-videpoches-bag-H084151CKAC/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-HERM_S-US-H084489CKAC-050b0181da",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.hermes.com/us/en/product/herbag-messenger-39-bag-H084489CKAC/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-HERM_S-US-H084623CKAF-2b44b80914",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.hermes.com/us/en/product/herbag-messenger-39-bag-H084623CKAF/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-HERM_S-US-H084658CK55-8cc391a9bd",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.hermes.com/us/en/product/hermes-della-cavalleria-elan-bag-H084658CK55/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-HERM_S-US-H085408CKAW-7e939d9576",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.hermes.com/us/en/product/hermes-geta-bag-H085408CKAW/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-HERM_S-US-H085961CKAB-e13f30517e",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.hermes.com/us/en/product/horseback-bag-H085961CKAB/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-HERM_S-US-H086394CKAC-44dea81985",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.hermes.com/us/en/product/p-tit-arcon-toile-and-cuir-bag-H086394CKAC/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-HERM_S-US-H086583CKAC-6dcd3def29",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.hermes.com/us/en/product/tablier-sellier-bag-H086583CKAC/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-HERM_S-US-H086717CKAC-0b1c175266",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.hermes.com/us/en/product/neo-garden-voyage-41-bag-H086717CKAC/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-HERM_S-US-H086717CKAH-21bc51bb98",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.hermes.com/us/en/product/neo-garden-voyage-41-bag-H086717CKAH/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-HERM_S-US-H087119CKAD-233f452a71",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.hermes.com/us/en/product/jypsiere-mini-toile-and-cuir-bag-H087119CKAD/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-HERM_S-US-H087128CKAC-bd31e03dbb",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.hermes.com/us/en/product/silkycity-33-bag-H087128CKAC/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-HERM_S-US-H087987CK10-3f95d4bf3d",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.hermes.com/us/en/product/hermes-videpoches-bag-H087987CK10/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-HERM_S-US-H087987CKH0-4a9331b147",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.hermes.com/us/en/product/hermes-videpoches-bag-H087987CKH0/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-HERM_S-US-H088914CK18-5f8c8c661e",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.hermes.com/us/en/product/hermes-videpoches-bag-H088914CK18/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-HERM_S-US-H088914CK37-bd8a4775b5",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.hermes.com/us/en/product/hermes-videpoches-bag-H088914CK37/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-HERM_S-US-H088914CK89-c7add9a12d",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.hermes.com/us/en/product/hermes-videpoches-bag-H088914CK89/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-HERM_S-US-H088914CKP0-523c6f75a4",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://www.hermes.com/us/en/product/hermes-videpoches-bag-H088914CKP0/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-LOUIS_VUITTON-FR-M29099-40f214e3ef",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://fr.louisvuitton.com/fra-fr/produits/sac-multipass-mini-monogram-nvprod7890075v/M29099",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-LOUIS_VUITTON-FR-M29552-30a4e9326d",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://fr.louisvuitton.com/fra-fr/produits/sac-express-pm-nvprod7890039v/M29552",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-LOUIS_VUITTON-FR-M29976-88db6cd4aa",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://fr.louisvuitton.com/fra-fr/produits/cabas-onthego-pm-monogram-empreinte-nvprod7890052v/M29976",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-LOUIS_VUITTON-FR-M2A038-d7eebe514a",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://fr.louisvuitton.com/fra-fr/produits/sac-speedy-soft-25-lv-crafty-autres-toiles-monogram-nvprod7890058v/M2A038",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-LOUIS_VUITTON-FR-M2A099-e1b3f6163b",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://fr.louisvuitton.com/fra-fr/produits/sac-speedy-bandouliere-20-monogram-empreinte-nvprod7890054v/M2A099",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-LOUIS_VUITTON-FR-M2A772-27658967ee",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://fr.louisvuitton.com/fra-fr/produits/bundle-trunk-other-leathers-nvprod7890062v/M2A772",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-LOUIS_VUITTON-FR-M2A840-0ac8a6719b",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://fr.louisvuitton.com/fra-fr/produits/sac-multipass-mini-other-leathers-nvprod7890076v/M2A840",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-LOUIS_VUITTON-FR-M3A079-89d69cf12b",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://fr.louisvuitton.com/fra-fr/produits/sac-speedy-bandouliere-20-g75-nvprod7890169v/M3A079",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-LOUIS_VUITTON-FR-M3A165-918cc9e071",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://fr.louisvuitton.com/fra-fr/produits/sac-speedy-soft-30-g75-nvprod7890171v/M3A165",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-LOUIS_VUITTON-FR-M3A167-9d4032fa40",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://fr.louisvuitton.com/fra-fr/produits/sac-squire-east-west-nvprod7890168v/M3A167",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-LOUIS_VUITTON-FR-M3A247-a25a088fec",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://fr.louisvuitton.com/fra-fr/produits/sac-multipass-mini-other-leathers-nvprod7890076v/M3A247",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-LOUIS_VUITTON-FR-M3A259-5f56834eda",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://fr.louisvuitton.com/fra-fr/produits/bundle-trunk-other-leathers-nvprod7890062v/M3A259",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-LOUIS_VUITTON-FR-M3A265-8f7144b6e9",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://fr.louisvuitton.com/fra-fr/produits/sac-express-pm-other-leathers-nvprod7890079v/M3A265",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-LOUIS_VUITTON-FR-M3A269-61467b3ed0",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://fr.louisvuitton.com/fra-fr/produits/sac-multipass-other-leathers-nvprod7150031v/M3A269",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-LOUIS_VUITTON-FR-M3A285-7945c2c31e",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://fr.louisvuitton.com/fra-fr/produits/sac-multipass-other-leathers-nvprod7150031v/M3A285",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-LOUIS_VUITTON-FR-M3A307-3e982b31d0",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://fr.louisvuitton.com/fra-fr/produits/side-trunk-mm-other-leathers-nvprod7890078v/M3A307",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-LOUIS_VUITTON-FR-M3A388-f665c35307",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://fr.louisvuitton.com/fra-fr/produits/sac-express-mm-nvprod7890082v/M3A388",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-LOUIS_VUITTON-FR-M3A389-de0f9739b8",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://fr.louisvuitton.com/fra-fr/produits/sac-multipass-mini-nvprod7890081v/M3A389",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-LOUIS_VUITTON-FR-M3A842-1ef6ac2608",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://fr.louisvuitton.com/fra-fr/produits/alma-bb-other-leathers-nvprod7890071v/M3A842",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-LOUIS_VUITTON-FR-M3A843-c98752f15d",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://fr.louisvuitton.com/fra-fr/produits/alma-bb-other-leathers-nvprod7890071v/M3A843",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-LOUIS_VUITTON-US-M11945-42c7a83780",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://us.louisvuitton.com/eng-us/products/speedy-soft-30-crafty-monogram-nvprod5790344v/M11945",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-LOUIS_VUITTON-US-M28426-c421c88a96",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://us.louisvuitton.com/eng-us/products/nano-madeleine-monogram-nvprod7530021v/M28426",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-LOUIS_VUITTON-US-M28613-3999e2c713",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://us.louisvuitton.com/eng-us/products/marelle-monogram-nvprod7890174v/M28613",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-LOUIS_VUITTON-US-M28951-c5ed258b8c",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://us.louisvuitton.com/eng-us/products/squire-pm-monogram-nvprod7310167v/M28951",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-LOUIS_VUITTON-US-M28953-d458cdc847",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://us.louisvuitton.com/eng-us/products/squire-east-west-monogram-nvprod7310168v/M28953",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-LOUIS_VUITTON-US-M29099-954b0c469d",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://us.louisvuitton.com/eng-us/products/multipass-mini-monogram-nvprod7890075v/M29099",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-LOUIS_VUITTON-US-M29537-c13042c7e7",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://us.louisvuitton.com/eng-us/products/nano-frivole-monogram-nvprod7830229v/M29537",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-LOUIS_VUITTON-US-M2A038-0dedf199c0",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://us.louisvuitton.com/eng-us/products/speedy-bandouliere-25-autres-toiles-monogram-nvprod7890058v/M2A038",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-LOUIS_VUITTON-US-M2A078-fe98716eee",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://us.louisvuitton.com/eng-us/products/multipass-monogram-nvprod7770009v/M2A078",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-LOUIS_VUITTON-US-M2A840-edfcd76288",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://us.louisvuitton.com/eng-us/products/multipass-mini-other-leathers-nvprod7890076v/M2A840",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-LOUIS_VUITTON-US-M3A247-9cc49f8dd5",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://us.louisvuitton.com/eng-us/products/multipass-mini-other-leathers-nvprod7890076v/M3A247",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-LOUIS_VUITTON-US-M3A389-aa1bb709e3",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://us.louisvuitton.com/eng-us/products/multipass-mini-nvprod7890081v/M3A389",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-LOUIS_VUITTON-US-M45832-7281cd7ac7",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://us.louisvuitton.com/eng-us/products/boulogne-pm-monogram-nvprod2900152v/M45832",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-LOUIS_VUITTON-US-M46049-43a3c43242",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://us.louisvuitton.com/eng-us/products/diane-monogram-nvprod3400009v/M46049",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-LOUIS_VUITTON-US-M46203-1d208b0781",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://us.louisvuitton.com/eng-us/products/carryall-pm-monogram-nvprod3770016v/M46203",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-LOUIS_VUITTON-US-M46784-1d2c7af79a",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://us.louisvuitton.com/eng-us/products/high-rise-monogram-nvprod4690067v/M46784",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-LOUIS_VUITTON-US-M46987-e23471038d",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://us.louisvuitton.com/eng-us/products/neverfull-mm-monogram-nvprod5350101v/M46987",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-LOUIS_VUITTON-US-M46990-c2e9ee75fa",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://us.louisvuitton.com/eng-us/products/alma-bb-monogram-nvprod5190086v/M46990",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-LOUIS_VUITTON-US-M47031-d7cbff57ef",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://us.louisvuitton.com/eng-us/products/hang-on-monogram-nvprod6720005v/M47031",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-CURRENT-LOUIS_VUITTON-US-M83008-17b632837c",
+      "name": "luxury_competitor_pricing_current/clean/competitor_pricing_clean.csv",
+      "url": "https://us.louisvuitton.com/eng-us/products/liv-pochette-monogram-nvprod5200009v/M83008",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-DI-D01-CURRENT-FR",
+      "name": "Official localized current product page captured in supplied 2026 current dataset (FR)",
+      "url": "https://www.dior.com/fr_fr/fashion/products/M0457CUQW_M900",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-DI-D01-CURRENT-US",
+      "name": "Official localized current product page captured in supplied 2026 current dataset (US)",
+      "url": "https://www.dior.com/en_us/fashion/products/M0457CUQW_M900",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-DI-D01-FIFTHAVENUE-2023",
+      "name": "Fifth Avenue Girl Dior price increase July 2023",
+      "url": "https://fifthavenuegirl.com/dior-price-increase-july-2023/",
+      "quality": "MEDIUM",
+      "effectiveDate": "2023-07-09"
+    },
+    {
+      "source_id": "SRC-DI-D01-PURSEBOP-2020",
+      "name": "PurseBop Dior price increase 2020",
+      "url": "https://www.pursebop.com/dior-follows-louis-vuitton-and-chanel-with-price-increases/",
+      "quality": "MEDIUM",
+      "effectiveDate": "2020-07-09"
+    },
+    {
+      "source_id": "SRC-DI-D02-BAGAHOLIC-2024",
+      "name": "Bagaholic Dior Book Tote reference guide 2024",
+      "url": "https://lvbagaholic.com/blogs/lv_bagaholic/dior-book-tote-reference-guide",
+      "quality": "MEDIUM",
+      "effectiveDate": "2024"
+    },
+    {
+      "source_id": "SRC-DI-D02-CURRENT-FR",
+      "name": "Official localized current product page captured in supplied 2026 current dataset (FR)",
+      "url": "https://www.dior.com/fr_fr/fashion/products/M1325OWHP_M900",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-DI-D02-CURRENT-US",
+      "name": "Official localized current product page captured in supplied 2026 current dataset (US)",
+      "url": "https://www.dior.com/en_us/fashion/products/M1325OWHP_M900",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-DI-D03-BAGAHOLIC-2024",
+      "name": "Bagaholic Dior Book Tote reference guide 2024",
+      "url": "https://lvbagaholic.com/blogs/lv_bagaholic/dior-book-tote-reference-guide",
+      "quality": "MEDIUM",
+      "effectiveDate": "2024"
+    },
+    {
+      "source_id": "SRC-DI-D03-CURRENT-FR",
+      "name": "Official localized current product page captured in supplied 2026 current dataset (FR)",
+      "url": "https://www.dior.com/fr_fr/fashion/products/M1324OWHP_M51U",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-DI-D03-CURRENT-US",
+      "name": "Official localized current product page captured in supplied 2026 current dataset (US)",
+      "url": "https://www.dior.com/en_us/fashion/products/M1324OWHP_M51U",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-DI-D03-FIFTHAVENUE-2023",
+      "name": "Fifth Avenue Girl Dior price increase July 2023",
+      "url": "https://fifthavenuegirl.com/dior-price-increase-july-2023/",
+      "quality": "MEDIUM",
+      "effectiveDate": "2023-07-09"
+    },
+    {
+      "source_id": "SRC-DI-D03-PURSEBOP-2020",
+      "name": "PurseBop Dior price increase 2020",
+      "url": "https://www.pursebop.com/dior-follows-louis-vuitton-and-chanel-with-price-increases/",
+      "quality": "MEDIUM",
+      "effectiveDate": "2020-07-09"
+    },
+    {
+      "source_id": "SRC-HM-H01-CURRENT-FR",
+      "name": "Official localized current product page captured in supplied 2026 current dataset (FR)",
+      "url": "https://www.hermes.com/fr/fr/product/sac-hermes-geta-H085408CKAW/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-HM-H01-CURRENT-US",
+      "name": "Official localized current product page captured in supplied 2026 current dataset (US)",
+      "url": "https://www.hermes.com/us/en/product/hermes-geta-bag-H085408CKAW/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-HM-H01-LUXEFRONT-2022",
+      "name": "Luxe Front Hermès bag prices",
+      "url": "https://luxefront.com/2022/12/02/hermes-bag-prices/",
+      "quality": "MEDIUM",
+      "effectiveDate": "2022-12-02"
+    },
+    {
+      "source_id": "SRC-HM-H01-PURSEBLOG-US-2024",
+      "name": "PurseBlog Hermès price increase 2024",
+      "url": "https://www.purseblog.com/hermes/hermes-price-increase-2024-its-here-already/",
+      "quality": "MEDIUM",
+      "effectiveDate": "2024"
+    },
+    {
+      "source_id": "SRC-HM-H01-PURSEBOP-EU-2024",
+      "name": "PurseBop confirmed Hermès Europe prices 2024",
+      "url": "https://www.pursebop.com/new-confirmed-hermes-prices-in-europe-2024/",
+      "quality": "MEDIUM",
+      "effectiveDate": "2024"
+    },
+    {
+      "source_id": "SRC-HM-H02-CURRENT-FR",
+      "name": "Official localized current product page captured in supplied 2026 current dataset (FR)",
+      "url": "https://www.hermes.com/fr/fr/product/sac-jypsiere-mini-H088004CC7U/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-HM-H02-CURRENT-US",
+      "name": "Official localized current product page captured in supplied 2026 current dataset (US)",
+      "url": "https://www.hermes.com/us/en/product/jypsiere-mini-toile-and-cuir-bag-H087119CKAD/",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-HM-H02-PURSEBOP-EU-2024",
+      "name": "PurseBop confirmed Hermès Europe prices 2024",
+      "url": "https://www.pursebop.com/new-confirmed-hermes-prices-in-europe-2024/",
+      "quality": "MEDIUM",
+      "effectiveDate": "2024"
+    },
+    {
+      "source_id": "SRC-LV-L01-BAGAHOLIC-2021",
+      "name": "Bagaholic Louis Vuitton price increase January 2021",
+      "url": "https://lvbagaholic.com/blogs/lv_bagaholic/louis-vuitton-increases-prices-worldwide-in-january-2021",
+      "quality": "MEDIUM",
+      "effectiveDate": "2021"
+    },
+    {
+      "source_id": "SRC-LV-L01-CURRENT-FR",
+      "name": "Official localized current product page captured in supplied 2026 current dataset (FR)",
+      "url": "https://fr.louisvuitton.com/fra-fr/produits/sac-speedy-soft-25-lv-crafty-autres-toiles-monogram-nvprod7890058v/M2A038",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-LV-L01-CURRENT-US",
+      "name": "Official localized current product page captured in supplied 2026 current dataset (US)",
+      "url": "https://us.louisvuitton.com/eng-us/products/speedy-bandouliere-25-autres-toiles-monogram-nvprod7890058v/M2A038",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-LV-L01-LUXEFRONT-2022",
+      "name": "Luxe Front Louis Vuitton price list",
+      "url": "https://luxefront.com/2022/12/13/louis-vuitton-bag-price-list-complete-guide-usd-eur/",
+      "quality": "MEDIUM",
+      "effectiveDate": "2022-12-13"
+    },
+    {
+      "source_id": "SRC-LV-L01-PURSEBOP-2024",
+      "name": "PurseBop Louis Vuitton global price increase 2024",
+      "url": "https://www.pursebop.com/louis-vuitton-global-price-increase-2024/",
+      "quality": "MEDIUM",
+      "effectiveDate": "2024"
+    },
+    {
+      "source_id": "SRC-LV-L02-CURRENT-FR",
+      "name": "Official localized current product page captured in supplied 2026 current dataset (FR)",
+      "url": "https://fr.louisvuitton.com/fra-fr/produits/sac-speedy-bandouliere-20-monogram-empreinte-nvprod7890054v/M2A099",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-LV-L02-LUXEFRONT-2022",
+      "name": "Luxe Front Louis Vuitton price list",
+      "url": "https://luxefront.com/2022/12/13/louis-vuitton-bag-price-list-complete-guide-usd-eur/",
+      "quality": "MEDIUM",
+      "effectiveDate": "2022-12-13"
+    },
+    {
+      "source_id": "SRC-LV-L03-BAGAHOLIC-2021",
+      "name": "Bagaholic Louis Vuitton price increase January 2021",
+      "url": "https://lvbagaholic.com/blogs/lv_bagaholic/louis-vuitton-increases-prices-worldwide-in-january-2021",
+      "quality": "MEDIUM",
+      "effectiveDate": "2021"
+    },
+    {
+      "source_id": "SRC-LV-L03-CURRENT-FR",
+      "name": "Official localized current product page captured in supplied 2026 current dataset (FR)",
+      "url": "https://fr.louisvuitton.com/fra-fr/produits/alma-bb-other-leathers-nvprod7890071v/M3A842",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-LV-L03-CURRENT-US",
+      "name": "Official localized current product page captured in supplied 2026 current dataset (US)",
+      "url": "https://us.louisvuitton.com/eng-us/products/alma-bb-monogram-nvprod5190086v/M46990",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-LV-L03-LUXEFRONT-2022",
+      "name": "Luxe Front Louis Vuitton price list",
+      "url": "https://luxefront.com/2022/12/13/louis-vuitton-bag-price-list-complete-guide-usd-eur/",
+      "quality": "MEDIUM",
+      "effectiveDate": "2022-12-13"
+    },
+    {
+      "source_id": "SRC-LV-L03-PURSEBOP-2024",
+      "name": "PurseBop Louis Vuitton global price increase 2024",
+      "url": "https://www.pursebop.com/louis-vuitton-global-price-increase-2024/",
+      "quality": "MEDIUM",
+      "effectiveDate": "2024"
+    },
+    {
+      "source_id": "SRC-LV-L04-BAGAHOLIC-2021",
+      "name": "Bagaholic Louis Vuitton price increase January 2021",
+      "url": "https://lvbagaholic.com/blogs/lv_bagaholic/louis-vuitton-increases-prices-worldwide-in-january-2021",
+      "quality": "MEDIUM",
+      "effectiveDate": "2021"
+    },
+    {
+      "source_id": "SRC-LV-L04-CURRENT-US",
+      "name": "Official localized current product page captured in supplied 2026 current dataset (US)",
+      "url": "https://us.louisvuitton.com/eng-us/products/neverfull-mm-monogram-nvprod5350101v/M46987",
+      "quality": "HIGH",
+      "effectiveDate": "2026-08-15"
+    },
+    {
+      "source_id": "SRC-LV-L04-LUXEFRONT-2022",
+      "name": "Luxe Front Louis Vuitton price list",
+      "url": "https://luxefront.com/2022/12/13/louis-vuitton-bag-price-list-complete-guide-usd-eur/",
+      "quality": "MEDIUM",
+      "effectiveDate": "2022-12-13"
+    },
+    {
+      "source_id": "SRC-LV-L04-PETITEINPARIS-2023",
+      "name": "Petite in Paris Neverfull price guide",
+      "url": "https://petiteinparis.com/is-the-louis-vuitton-neverfull-worth-the-price/",
+      "quality": "MEDIUM",
+      "effectiveDate": "2023"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "price-landscape",
+      "title": "Price Landscape",
+      "dataFile": "research_r1/outputs/brand_family_summary.csv",
+      "figure": "research_r1/export/figures/price-landscape.svg",
+      "markets": [
+        "FR",
+        "US"
+      ],
+      "noJsEquivalent": true
+    },
+    {
+      "id": "price-ladder",
+      "title": "The Price Ladder",
+      "dataFile": "research_r1/outputs/chanel_ladder.csv",
+      "supportingDataFile": "research_r1/outputs/brand_family_summary.csv",
+      "figure": "research_r1/export/figures/price-ladder.svg",
+      "markets": [
+        "FR",
+        "US"
+      ],
+      "noJsEquivalent": true
+    },
+    {
+      "id": "moving-together",
+      "title": "Moving Together",
+      "dataFile": "research_r1/outputs/aligned_history.csv",
+      "figure": "research_r1/export/figures/moving-together.svg",
+      "markets": [
+        "FR"
+      ],
+      "noJsEquivalent": true
+    }
+  ]
+}

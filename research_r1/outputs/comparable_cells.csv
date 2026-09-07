@@ -1,0 +1,8 @@
+market,currency,comparison_group_id,brand_counts,brand_medians,pooled_cell_median,headline_eligible,publication_decision,limitation
+FR,EUR,FR|crossbody|mini|leather,Chanel:0;Hermès:3;Louis Vuitton:2;Dior:0,Hermès:6850;Louis Vuitton:2000,5400,FALSE,appendix_only,Directional cell only; not a strict substitute set or probability sample.
+FR,EUR,FR|flap|medium|leather,Chanel:4;Hermès:0;Louis Vuitton:0;Dior:1,Chanel:10500;Dior:3500,10500,FALSE,appendix_only,Directional cell only; not a strict substitute set or probability sample.
+FR,EUR,FR|flap|mini|leather,Chanel:2;Hermès:1;Louis Vuitton:0;Dior:0,Chanel:4950;Hermès:5300,5050,FALSE,appendix_only,Directional cell only; not a strict substitute set or probability sample.
+FR,EUR,FR|flap|small|leather,Chanel:1;Hermès:0;Louis Vuitton:0;Dior:2,Chanel:10100;Dior:3425,3650,FALSE,appendix_only,Directional cell only; not a strict substitute set or probability sample.
+FR,EUR,FR|shoulder|standard|leather,Chanel:0;Hermès:4;Louis Vuitton:4;Dior:0,Hermès:5600;Louis Vuitton:2925,4250,FALSE,appendix_only,Directional cell only; not a strict substitute set or probability sample.
+US,USD,US|crossbody|mini|leather,Chanel:0;Hermès:1;Louis Vuitton:2;Dior:0,Hermès:8550;Louis Vuitton:2480,2480,FALSE,appendix_only,Directional cell only; not a strict substitute set or probability sample.
+US,USD,US|flap|small|leather,Chanel:1;Hermès:0;Louis Vuitton:0;Dior:1,Chanel:11300;Dior:4400,7850,FALSE,appendix_only,Directional cell only; not a strict substitute set or probability sample.
