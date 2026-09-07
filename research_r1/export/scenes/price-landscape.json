@@ -1,11 +1,13 @@
 {
   "id": "price-landscape",
   "title": "Price Landscape",
+  "description": "Family medians on separate local-currency axes; observed sample only.",
   "dataFile": "research_r1/outputs/brand_family_summary.csv",
   "figure": "research_r1/export/figures/price-landscape.svg",
   "markets": [
     "FR",
     "US"
   ],
+  "observationSnapshot": "2026-08-15",
   "noJsEquivalent": true
 }

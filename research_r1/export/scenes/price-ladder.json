@@ -1,6 +1,7 @@
 {
   "id": "price-ladder",
   "title": "The Price Ladder",
+  "description": "Chanel family medians expand the brand point into an observed ladder.",
   "dataFile": "research_r1/outputs/chanel_ladder.csv",
   "supportingDataFile": "research_r1/outputs/brand_family_summary.csv",
   "figure": "research_r1/export/figures/price-ladder.svg",
@@ -8,5 +9,6 @@
     "FR",
     "US"
   ],
+  "observationSnapshot": "2026-08-15",
   "noJsEquivalent": true
 }

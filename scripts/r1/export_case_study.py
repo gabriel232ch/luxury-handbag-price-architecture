@@ -129,6 +129,105 @@ def history_svg(rows: list[dict[str, str]]) -> str:
     return svg_document("Moving Together", "Fixed Chanel France lineages; missing years are not interpolated.", "\n".join(body))
 
 
+def repo_path(relative_path: str) -> Path:
+    """Resolve a repository-relative artifact path and reject path escapes."""
+    path = ROOT / relative_path
+    try:
+        path.relative_to(ROOT)
+    except ValueError as exc:
+        raise ValueError(f"artifact path escapes repository: {relative_path}") from exc
+    return path
+
+
+def validate_case_study(case_study: dict, scenes: dict[str, dict], source_ids: set[str]) -> None:
+    """Validate the public export contract before writing any candidate files."""
+    required_top_level = {
+        "schemaVersion", "slug", "language", "researchVersion", "publication", "noindex",
+        "observationScope", "title", "summary", "sections", "claims", "sources", "scenes",
+    }
+    missing = required_top_level - set(case_study)
+    if missing:
+        raise ValueError(f"case study missing top-level fields: {sorted(missing)}")
+    if case_study["publication"] != "candidate" or case_study["noindex"] is not True:
+        raise ValueError("candidate export must remain publication=candidate and noindex=true")
+    if case_study["researchVersion"] != "R1":
+        raise ValueError("case study researchVersion must be R1")
+
+    scope = case_study["observationScope"]
+    for field in ("markets", "currencies", "currentSnapshot"):
+        if not scope.get(field):
+            raise ValueError(f"observationScope.{field} is required")
+    if not scope.get("supplementarySnapshots"):
+        raise ValueError("observationScope.supplementarySnapshots is required")
+    audit = scope.get("supplementaryPairingAudit")
+    if not isinstance(audit, dict) or not audit.get("candidatePairs") or not audit.get("cells"):
+        raise ValueError("observationScope.supplementaryPairingAudit is required")
+
+    section_ids = [section.get("id") for section in case_study["sections"]]
+    if any(not section_id for section_id in section_ids) or len(section_ids) != len(set(section_ids)):
+        raise ValueError("case study section ids must be present and unique")
+    section_fields = {"id", "title", "summary", "paragraphs", "claimIds", "sceneIds"}
+    for section in case_study["sections"]:
+        missing_section_fields = section_fields - set(section)
+        if missing_section_fields:
+            raise ValueError(f"section {section.get('id')} missing fields: {sorted(missing_section_fields)}")
+        if not section["paragraphs"]:
+            raise ValueError(f"section {section['id']} has no paragraphs")
+
+    claim_ids = [claim.get("claimId") for claim in case_study["claims"]]
+    if any(not claim_id for claim_id in claim_ids) or len(claim_ids) != len(set(claim_ids)):
+        raise ValueError("claim ids must be present and unique")
+    claim_fields = {"claimId", "text", "grade", "scope", "outputPath", "limitation"}
+    for claim in case_study["claims"]:
+        missing_claim_fields = claim_fields - set(claim)
+        if missing_claim_fields:
+            raise ValueError(f"claim {claim.get('claimId')} missing fields: {sorted(missing_claim_fields)}")
+        if not claim["scope"] or claim["grade"] not in {"A", "B", "C", "X"}:
+            raise ValueError(f"claim {claim['claimId']} has invalid scope or grade")
+        if not repo_path(claim["outputPath"]).exists():
+            raise ValueError(f"claim {claim['claimId']} output does not exist: {claim['outputPath']}")
+
+    source_record_ids = [source.get("source_id") for source in case_study["sources"]]
+    if not source_record_ids or len(source_record_ids) != len(set(source_record_ids)):
+        raise ValueError("source registry records must be present and unique")
+    source_fields = {"source_id", "name", "url", "quality", "effectiveDate"}
+    for source in case_study["sources"]:
+        missing_source_fields = source_fields - set(source)
+        if missing_source_fields:
+            raise ValueError(f"source {source.get('source_id')} missing fields: {sorted(missing_source_fields)}")
+        if not source["url"]:
+            raise ValueError(f"source {source['source_id']} has no URL")
+    if not set(source_record_ids).issubset(source_ids):
+        raise ValueError("case study references a source outside the selected source registry")
+
+    scene_records = case_study["scenes"]
+    scene_ids = [scene.get("id") for scene in scene_records]
+    if any(not scene_id for scene_id in scene_ids) or len(scene_ids) != len(set(scene_ids)):
+        raise ValueError("scene ids must be present and unique")
+    if set(scene_ids) != set(scenes):
+        raise ValueError("scene metadata and case-study scene ids differ")
+    scene_fields = {"id", "title", "dataFile", "figure", "markets", "noJsEquivalent"}
+    for scene in scene_records:
+        missing_scene_fields = scene_fields - set(scene)
+        if missing_scene_fields:
+            raise ValueError(f"scene {scene.get('id')} missing fields: {sorted(missing_scene_fields)}")
+        if not scene["markets"] or scene["noJsEquivalent"] is not True:
+            raise ValueError(f"scene {scene['id']} must declare markets and a no-JS equivalent")
+        for artifact_key in ("dataFile", "figure"):
+            if not repo_path(scene[artifact_key]).exists():
+                raise ValueError(f"scene {scene['id']} artifact does not exist: {scene[artifact_key]}")
+        if scene.get("supportingDataFile") and not repo_path(scene["supportingDataFile"]).exists():
+            raise ValueError(f"scene {scene['id']} supporting artifact does not exist")
+
+    claim_id_set = set(claim_ids)
+    scene_id_set = set(scene_ids)
+    for section in case_study["sections"]:
+        if not set(section["claimIds"]).issubset(claim_id_set):
+            raise ValueError(f"section {section['id']} references a missing claim")
+        if not set(section["sceneIds"]).issubset(scene_id_set):
+            raise ValueError(f"section {section['id']} references a missing scene")
+
+
 def main() -> int:
     validation_path = R1 / "outputs" / "validation.json"
     validation = json.loads(validation_path.read_text(encoding="utf-8"))
@@ -139,13 +238,16 @@ def main() -> int:
     aligned = read_csv(R1 / "outputs" / "aligned_history.csv")
     claims = read_csv(R1 / "claims.csv")
     source_rows = read_csv(R1 / "source_registry.csv")
+    pairing_candidates = read_csv(R1 / "outputs" / "comparable_pair_candidates.csv")
+    pairing_cells = read_csv(R1 / "outputs" / "comparable_cells_supplementary.csv")
     claim_ids = {row["claim_id"] for row in claims if row.get("publication_decision") != "exclude_from_core"}
-    source_ids = {row["source_id"] for row in source_rows}
+    public_source_rows = [row for row in source_rows if not row["source_id"].startswith("SRC-SUPP-CH-")]
+    source_ids = {row["source_id"] for row in public_source_rows}
 
     scenes = {
-        "price-landscape": {"id": "price-landscape", "title": "Price Landscape", "dataFile": "research_r1/outputs/brand_family_summary.csv", "figure": "research_r1/export/figures/price-landscape.svg", "markets": ["FR", "US"], "noJsEquivalent": True},
-        "price-ladder": {"id": "price-ladder", "title": "The Price Ladder", "dataFile": "research_r1/outputs/chanel_ladder.csv", "supportingDataFile": "research_r1/outputs/brand_family_summary.csv", "figure": "research_r1/export/figures/price-ladder.svg", "markets": ["FR", "US"], "noJsEquivalent": True},
-        "moving-together": {"id": "moving-together", "title": "Moving Together", "dataFile": "research_r1/outputs/aligned_history.csv", "figure": "research_r1/export/figures/moving-together.svg", "markets": ["FR"], "noJsEquivalent": True},
+        "price-landscape": {"id": "price-landscape", "title": "Price Landscape", "description": "Family medians on separate local-currency axes; observed sample only.", "dataFile": "research_r1/outputs/brand_family_summary.csv", "figure": "research_r1/export/figures/price-landscape.svg", "markets": ["FR", "US"], "observationSnapshot": "2026-08-15", "noJsEquivalent": True},
+        "price-ladder": {"id": "price-ladder", "title": "The Price Ladder", "description": "Chanel family medians expand the brand point into an observed ladder.", "dataFile": "research_r1/outputs/chanel_ladder.csv", "supportingDataFile": "research_r1/outputs/brand_family_summary.csv", "figure": "research_r1/export/figures/price-ladder.svg", "markets": ["FR", "US"], "observationSnapshot": "2026-08-15", "noJsEquivalent": True},
+        "moving-together": {"id": "moving-together", "title": "Moving Together", "description": "Fixed Chanel France lineages; missing years are not interpolated.", "dataFile": "research_r1/outputs/aligned_history.csv", "figure": "research_r1/export/figures/moving-together.svg", "markets": ["FR"], "observationSnapshot": "historical_panel_2026-08-15", "noJsEquivalent": True},
     }
     for scene in scenes.values():
         write_json(EXPORT / "scenes" / f"{scene['id']}.json", scene)
@@ -156,7 +258,15 @@ def main() -> int:
     # Keep the candidate case-study package stable while a supplementary
     # snapshot is still outside the R1 baseline. Its sources remain in the
     # registry and will enter the export only when the supplement is merged.
-    source_records = [{"source_id": row["source_id"], "name": row["source_name"], "url": row["source_url"], "quality": row["source_quality"], "effectiveDate": row["source_effective_date"]} for row in source_rows if not row["source_id"].startswith("SRC-SUPP-CH-")]
+    source_records = [{"source_id": row["source_id"], "name": row["source_name"], "url": row["source_url"], "quality": row["source_quality"], "effectiveDate": row["source_effective_date"]} for row in public_source_rows]
+    pairing_audit = {
+        "candidatePairs": len(pairing_candidates),
+        "cells": len(pairing_cells),
+        "headlineEligibleCells": sum(row.get("headline_eligible", "").upper() == "TRUE" for row in pairing_cells),
+        "pairingStatuses": sorted({row["pairing_status"] for row in pairing_cells}),
+        "priceComparisonStatuses": sorted({row["price_comparison_status"] for row in pairing_cells}),
+        "gate": "cross_snapshot",
+    }
     case_study = {
         "schemaVersion": "luxury-case-study-1",
         "slug": "luxury-handbag-pricing-architecture",
@@ -164,30 +274,22 @@ def main() -> int:
         "researchVersion": "R1",
         "publication": "candidate",
         "noindex": True,
-        "observationScope": {"markets": ["France", "United States"], "currencies": ["EUR", "USD"], "currentSnapshot": "2026-08-15", "acceptedCurrentObservations": 161, "numericCurrentObservations": 147, "note": "Observed official local list-price sample; not an assortment census or affordability measure."},
+        "observationScope": {"markets": ["France", "United States"], "currencies": ["EUR", "USD"], "currentSnapshot": "2026-08-15", "supplementarySnapshots": ["supplementary_current_2026-09-07"], "acceptedCurrentObservations": 161, "numericCurrentObservations": 147, "supplementaryPairingAudit": pairing_audit, "note": "Observed official local list-price sample; not an assortment census or affordability measure."},
         "title": "The Architecture of Access — Chanel's Handbag Price Ladder in Context",
-        "summary": "A source-linked study of visible Chanel entry, family steps and Classic anchors, with three brands as external coordinates.",
+        "summary": "A source-linked, bounded study of visible Chanel entry, family steps and Classic anchors, with three brands as external coordinates and a separately gated supplementary pairing audit.",
         "sections": [
             {"id": "open", "title": "Open", "summary": "The question and its observation boundary.", "paragraphs": ["How does Chanel present visible entry, family-level steps and the Classic high anchor in local official list-price observations?"], "claimIds": ["CLM-LADDER-FR", "CLM-LADDER-US"], "sceneIds": []},
-            {"id": "context", "title": "Context", "summary": "Four brands on separate local price axes.", "paragraphs": ["Chanel is the focal case. Hermès, Louis Vuitton and Dior provide external coordinates; the panel is non-weighted and coverage differs by brand and market."], "claimIds": ["CLM-COVERAGE-DIOR-US"], "sceneIds": ["price-landscape"]},
-            {"id": "architecture", "title": "Architecture", "summary": "A brand point expanded into family positions.", "paragraphs": ["Classic 11.12 and Small Classic form the Classic group. Mini Classic is an entry observation even though its name contains Classic; Shopping Bag and Bowling Bag are other core observations. Price-upon-request rows stay outside the numeric axis."], "claimIds": ["CLM-LADDER-FR", "CLM-LADDER-US"], "sceneIds": ["price-ladder"]},
-            {"id": "evolution", "title": "Evolution", "summary": "Common observed years only.", "paragraphs": ["The Chanel France history panel compares fixed lineages without interpolating missing years. The values are product-line observations, mostly from secondary historical tables."], "claimIds": ["CLM-HISTORY-CHANEL-FR"], "sceneIds": ["moving-together"]},
-            {"id": "interpretation", "title": "Interpretation", "summary": "Bounded findings and decision questions.", "paragraphs": ["If the visible distance survives de-variant sensitivity, verify the full SKU ladder and upgrade path. If it moves with family coverage, map the assortment before making a pricing decision."], "claimIds": ["CLM-LADDER-FR", "CLM-LADDER-US", "CLM-COVERAGE-DIOR-US"], "sceneIds": []},
-            {"id": "afterlife", "title": "Afterlife", "summary": "Methods, sources and limitations.", "paragraphs": ["The candidate remains noindex and unpublished. All figures point to R1 outputs; Hermès Geta's 2023 France conflict remains excluded from the core narrative."], "claimIds": [], "sceneIds": []},
+            {"id": "context", "title": "Context", "summary": "Four brands on separate local price axes.", "paragraphs": ["Chanel is the focal case. Hermès, Louis Vuitton and Dior provide external coordinates; the panel is non-weighted and coverage differs by brand and market. Dior US has 13 numeric prices among 20 accepted observations. The eight unresolved rows remain missing and are not imputed. Hermès has no supplied signature flag in the current panel, so its prices do not support a like-for-like icon-premium calculation."], "claimIds": ["CLM-COVERAGE-DIOR-US"], "sceneIds": ["price-landscape"]},
+            {"id": "architecture", "title": "Architecture", "summary": "A brand point expanded into family positions.", "paragraphs": ["Classic 11.12 and Small Classic form the Classic group. Mini Classic is treated as an entry observation even though its name contains Classic. Shopping Bag and Bowling Bag are retained as other core observations. In the France baseline snapshot, the visible sample gap is 3,300 EUR; the US snapshot shows a 3,600 USD gap. Price-upon-request rows remain a separate state and are not placed above the numeric axis."], "claimIds": ["CLM-LADDER-FR", "CLM-LADDER-US"], "sceneIds": ["price-ladder"]},
+            {"id": "evolution", "title": "Evolution", "summary": "Common observed years only.", "paragraphs": ["The aligned Chanel France panel compares fixed lineages only in common observed years: 2022, 2023, 2024 and 2026. The absolute median distance moves from 4,470 EUR in 2022 to 5,350 EUR in 2026. Missing years are not interpolated, and the secondary-source panel is not a complete official repricing calendar."], "claimIds": ["CLM-HISTORY-CHANEL-FR"], "sceneIds": ["moving-together"]},
+            {"id": "interpretation", "title": "Interpretation", "summary": "Bounded findings and decision questions.", "paragraphs": ["The visible Chanel ladder survives the raw-versus-de-variant check in both markets, but the supplementary pairing audit remains blocked across snapshots: 15 directional candidates and 18 cells show where a same-date refresh should look, not a ranking of brands. If a same-date, attribute-complete refresh preserves the gap, verify the full SKU ladder and upgrade path; if it moves with family coverage, map the assortment before making a pricing decision."], "claimIds": ["CLM-LADDER-FR", "CLM-LADDER-US", "CLM-COVERAGE-DIOR-US"], "sceneIds": []},
+            {"id": "afterlife", "title": "Afterlife", "summary": "Methods, sources and limitations.", "paragraphs": ["The candidate remains noindex and unpublished. Baseline numbers point to R1 outputs and claim IDs; supplementary pairing evidence stays in separate CSVs with explicit snapshot gates. The source registry distinguishes access dates from effective dates, and Hermès Geta's 2023 France conflict remains excluded from the core narrative."], "claimIds": [], "sceneIds": []},
         ],
         "claims": [{"claimId": row["claim_id"], "text": row["claim_text"], "grade": row["evidence_grade"], "scope": row["scope"], "outputPath": row["output_path"], "limitation": row["limitation"]} for row in claims if row["claim_id"] in claim_ids],
         "sources": source_records,
         "scenes": list(scenes.values()),
     }
-    # Contract checks before writing the public candidate.
-    all_case_claims = {row["claimId"] for row in case_study["claims"]}
-    for section in case_study["sections"]:
-        if not set(section["claimIds"]).issubset(all_case_claims):
-            raise SystemExit(f"section {section['id']} references a missing claim")
-        if not set(section["sceneIds"]).issubset(scenes):
-            raise SystemExit(f"section {section['id']} references a missing scene")
-    if not source_ids:
-        raise SystemExit("source registry is empty")
+    validate_case_study(case_study, scenes, source_ids)
     write_json(EXPORT / "case-study.json", case_study)
     file_entries = []
     for path in sorted(EXPORT.rglob("*")):

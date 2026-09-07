@@ -79,3 +79,11 @@ R1 可复算门通过，研究状态为 `limited`，不是“旗舰研究完成�
 - `tests/r1/test_reports.py` 固定报告数字、补充配对门控和“无价格动作建议”合同。
 
 本步没有重新生成网站 `export/` 内容包；后续导出步骤再把经核实的章节和 claims 同步到候选案例包。
+
+## 第 5 步：候选案例导出（已完成）
+
+- 由 `scripts/r1/export_case_study.py` 从 R1 验证输出重新生成 `case-study.json`、三个场景 JSON、三个静态 SVG 和 `manifest.json`。
+- 导出保留 `publication=candidate`、`noindex=true` 和 `limited` 研究状态；观测范围明确区分 `current_2026-08-15` 与 `supplementary_current_2026-09-07`。
+- 导出元数据记录 15 条方向性候选、18 个补充单元、0 个 headline-eligible 单元，并把跨快照门控写入案例内容；没有生成价格排名或定价建议。
+- 合同检查覆盖唯一 section/claim/source/scene ID、scope 与快照字段、输出文件存在性、source/scene 引用和静态图路径；导出失败会在写入候选包前停止。
+- 运行 `python3 -m unittest discover -s tests/r1 -p 'test_*.py'`、`python3 -m compileall -q scripts/r1 tests/r1` 和 `git diff --check`；Portfolio P1–P5 仍未执行。

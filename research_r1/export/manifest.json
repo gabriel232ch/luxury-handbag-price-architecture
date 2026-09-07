@@ -1,12 +1,12 @@
 {
   "schemaVersion": "luxury-case-study-manifest-1",
-  "generated_at": "2026-09-07T09:48:32+08:00",
-  "source_commit": "5ef2ee7e22e4010d7b951ec09df3e5337ee8e56f",
+  "generated_at": "2026-09-07T15:29:18+08:00",
+  "source_commit": "52f0c2ed51a1f2d17a6b74e24d40135e42da75eb",
   "research_status": "limited",
   "files": [
     {
       "path": "research_r1/export/case-study.json",
-      "sha256": "38c237e7bc6062b2ff0a2a58c4480954260635ab357142e9172ade0db87728de"
+      "sha256": "8627352d11d97047204372c645f395a71a53f17833d50ff54dee16a7b8aca59e"
     },
     {
       "path": "research_r1/export/figures/moving-together.svg",
@@ -22,15 +22,15 @@
     },
     {
       "path": "research_r1/export/scenes/moving-together.json",
-      "sha256": "ada30f85d90a06bd4e1aad2e04f7b861f0f3b453a40ced04d069446571eb98b1"
+      "sha256": "d5b20d8d00042a7dd62d467f7ff6492253d81d71ef7cd6e3e76ebd39256a70f2"
     },
     {
       "path": "research_r1/export/scenes/price-ladder.json",
-      "sha256": "6b7eeb7191faafc7f1ede17a9772466b2274cfcdd096b08a8f5f25dac1b85a2a"
+      "sha256": "c5b04c5308a733443fd9f115a31218a011a076914a6feef4bae5c7a823da39d6"
     },
     {
       "path": "research_r1/export/scenes/price-landscape.json",
-      "sha256": "e30fb5ba4851e9217bd952925409e46659f5a97337a5b34909a7d0fbea52d4dc"
+      "sha256": "f15f5e28ab1d35008e298f003253a7d19ba0cb95269f8c978a57cdc769468df3"
     }
   ]
 }

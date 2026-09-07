@@ -1,10 +1,12 @@
 {
   "id": "moving-together",
   "title": "Moving Together",
+  "description": "Fixed Chanel France lineages; missing years are not interpolated.",
   "dataFile": "research_r1/outputs/aligned_history.csv",
   "figure": "research_r1/export/figures/moving-together.svg",
   "markets": [
     "FR"
   ],
+  "observationSnapshot": "historical_panel_2026-08-15",
   "noJsEquivalent": true
 }
