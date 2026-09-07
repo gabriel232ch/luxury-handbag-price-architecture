@@ -61,3 +61,12 @@ R1 可复算门通过，研究状态为 `limited`，不是“旗舰研究完成�
 - `research_r1/data/supplementary_collection_log.md`：记录了 Chanel 边缘访问控制导致的本地自动读取限制；字段采用官方页面搜索结果人工转录，未绕过 CAPTCHA、代理或其他访问控制。
 
 补充数据保持在 `supplementary_current_2026-09-07`，没有并入 `current_2026-08-15`，也没有重建竞品可比单元。下一步才是用这些属性建立正式配对筛选。
+
+## 第 3 步：属性配对与可比重建审计（已完成）
+
+- `scripts/r1/build_pairing_audit.py` 按同市场、包型、尺寸标签和材质组建立方向性候选，不按相似名称模糊配对。
+- `research_r1/outputs/comparable_pair_candidates.csv` 记录 15 条补充 Chanel 与基线竞品的属性候选；它们全部标为 `blocked_cross_snapshot`，不计算价格差。
+- `research_r1/outputs/comparable_cells_supplementary.csv` 记录 18 个补充属性单元；季节款、WOC、未知尺寸和无同组竞品均保留门控原因，全部不具备主文资格。
+- `research_r1/outputs/comparable_pairing_log.md` 记录本步边界与停止条件。
+
+本步没有改写 `current_2026-08-15`、既有 `outputs/comparable_cells.csv` 或 R1 报告数字。要形成正式跨品牌价格比较，仍需同一日期的竞品属性记录或一次完整的同日刷新。
