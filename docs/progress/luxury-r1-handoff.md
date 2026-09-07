@@ -70,3 +70,12 @@ R1 可复算门通过，研究状态为 `limited`，不是“旗舰研究完成�
 - `research_r1/outputs/comparable_pairing_log.md` 记录本步边界与停止条件。
 
 本步没有改写 `current_2026-08-15`、既有 `outputs/comparable_cells.csv` 或 R1 报告数字。要形成正式跨品牌价格比较，仍需同一日期的竞品属性记录或一次完整的同日刷新。
+
+## 第 4 步：研究报告与决策备忘录（已完成）
+
+- 重写 `research_r1/report/REPORT_CN.md`：修正 Dior 美国数值覆盖为 13/20，纳入价格梯度、历史距离、价格带敏感性和配对日期门控。
+- 重写 `research_r1/report/CASE_STUDY_EN.md`：保留 `limited` 状态，补充跨日期配对、敏感性和最强反驳，不把价格台阶写成替代关系或定价结论。
+- 重写 `research_r1/report/DECISION_MEMO_CN.md`：最多三条带触发条件的后续行动，明确日期不一致时停止价格差/排名计算，不据此提出新品价位或涨价方案。
+- `tests/r1/test_reports.py` 固定报告数字、补充配对门控和“无价格动作建议”合同。
+
+本步没有重新生成网站 `export/` 内容包；后续导出步骤再把经核实的章节和 claims 同步到候选案例包。
