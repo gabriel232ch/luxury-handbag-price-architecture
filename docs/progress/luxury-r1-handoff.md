@@ -6,7 +6,7 @@
 
 - 仓库：`gabriel232ch/luxury-handbag-price-architecture`
 - 基线提交：`5ef2ee7e22e4010d7b951ec09df3e5337ee8e56f`
-- 当前 checkout：`main`。按 worktree 技能尝试创建隔离 worktree/分支时，沙箱拒绝写入 `.git/index.lock`；未修改 main 的既有文件，继续在当前副本生成 R1 文件。
+- 当前 checkout：`codex/luxury-handbag-r1`。R1 已提交；`origin/main` 未被修改或推送。
 - 原复现链五条命令均返回 0。竞品构建脚本使用执行日时钟生成 `observed_at`，重跑产生的派生变化已恢复；R1 使用保留的 2026-08-15 快照。
 
 ## 实际命令与结果
@@ -44,3 +44,11 @@ git diff --check -> exit 0
 ## 门槛与下一步
 
 R1 可复算门通过，研究状态为 `limited`，不是“旗舰研究完成”。最小下一步是：补齐 Dior 未解析价格的直接证据；核实 Hermès Geta 冲突；若需要历史决策，再补同款参考号、共同日期和一手历史价格来源。未执行新的全市场刷新、消费者/销售数据采购或网站实现。
+
+## 第 1 步：采样框与基线审计（已完成）
+
+- `research_r1/sampling_plan.md`：定义核心/扩展范围、合格采样单位、状态字典、试采停止规则和 QA 指标。
+- `research_r1/feasibility_matrix.csv`：按品牌 × 市场记录当前观察家族、数值覆盖、未解析机制和下一次试采动作；Chanel 2.55、Boy、19、22、25、WOC 作为待验证候选，不被写成已完成覆盖。
+- `research_r1/baseline_audit.md`：把旧报告结论逐条映射到 R1 证据，明确保留、收窄和暂不进入主文的结论。
+
+本步没有新增网页采集、没有修改价格/历史计算，也没有把任何 Portfolio 内容带入研究仓库。下一步只有在审阅本步文件后，才进入 `product_master`、`sku_mapping` 和 Chanel 定向补充。
