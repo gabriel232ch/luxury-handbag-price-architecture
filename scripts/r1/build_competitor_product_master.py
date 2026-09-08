@@ -92,14 +92,14 @@ LV_RULES = {
     "M2A467": ("Neverfull", "Neverfull Inside Out BB", "BB", "tote/shopper", "tote"),
     "M2A323": ("Low Key", "Hobo", "PM", "shoulder", "hobo"),
     "M28354": ("Neverfull", "Neverfull Inside Out MM", "MM", "tote/shopper", "tote"),
-    "M2A711": ("CarryAll", "Nano CarryAll", "nano", "small-leather-goods", "mini"),
+    "M2A711": ("CarryAll", "Nano CarryAll", "nano", "evening/mini", "mini"),
     "M46203": ("CarryAll", "CarryAll PM", "PM", "tote/shopper", "tote"),
     "M45832": ("Boulogne", "Boulogne PM", "PM", "shoulder", "shoulder"),
     "M46049": ("Diane", "Diane", "unknown", "shoulder", "shoulder"),
     "M2A126": ("Alma", "Alma BB", "BB", "top-handle", "top-handle"),
     "M29977": ("Speedy", "Speedy Bandoulière 20", "20", "top-handle", "top-handle"),
     "M2A335": ("Diane", "Diane", "unknown", "shoulder", "shoulder"),
-    "M2A011": ("Madeleine", "Nano Madeleine", "nano", "small-leather-goods", "mini"),
+    "M2A011": ("Madeleine", "Nano Madeleine", "nano", "evening/mini", "mini"),
     "M46990": ("Alma", "Alma BB", "BB", "top-handle", "top-handle"),
     "M46784": ("High Rise", "High Rise", "unknown", "crossbody", "bumbag"),
     "M46987": ("Neverfull", "Neverfull MM", "MM", "tote/shopper", "tote"),
@@ -194,7 +194,7 @@ def main() -> None:
 
     fields = list(rows[0])
     with OUTPUT.open("w", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=fields)
+        writer = csv.DictWriter(handle, fieldnames=fields, lineterminator="\n")
         writer.writeheader()
         writer.writerows(rows)
     print(f"wrote {len(rows)} rows to {OUTPUT}")
