@@ -21,6 +21,7 @@ DATA = ROOT / "research_r1/data"
 OUTPUT = ROOT / "research_r1/outputs"
 LIVE_REFRESH = DATA / "live_refresh_2026-09-07_us.csv"
 COMPETITOR_MASTER = DATA / "product_master_competitors_2026-09-07_us.csv"
+SEASONAL_OVERRIDES = DATA / "seasonal_tote_attribute_overrides_2026-09-07_us.csv"
 SNAPSHOT_ID = "refresh_2026-09-07_us"
 SOURCE_DATE = "2026-09-07"
 MINIMUM_PER_BRAND = 2
@@ -37,6 +38,15 @@ def write_csv(path: Path, rows: list[dict[str, str]], fields: list[str]) -> None
         writer = csv.DictWriter(handle, fieldnames=fields, extrasaction="ignore", lineterminator="\n")
         writer.writeheader()
         writer.writerows(rows)
+
+
+def read_seasonal_overrides(path: Path = SEASONAL_OVERRIDES) -> dict[str, dict[str, str]]:
+    """Read verified seasonal labels without altering the raw live snapshot."""
+    if not path.exists():
+        return {}
+    with path.open(newline="", encoding="utf-8") as handle:
+        rows = list(csv.DictReader(handle))
+    return {row["reference_code"]: row for row in rows}
 
 
 def material_group(material: str) -> str:
@@ -69,7 +79,7 @@ def material_group(material: str) -> str:
     return "unknown"
 
 
-def classify_chanel_row(row: dict[str, str]) -> dict[str, str]:
+def classify_chanel_row(row: dict[str, str], seasonal_overrides: dict[str, dict[str, str]] | None = None) -> dict[str, str]:
     """Infer a bounded taxonomy for a Chanel live-refresh row."""
     name = row.get("product_name", "")
     lower = name.lower()
@@ -122,9 +132,19 @@ def classify_chanel_row(row: dict[str, str]) -> dict[str, str]:
         reasons.append("woc_or_small_leather_goods")
     if size_label == "unknown":
         reasons.append("size_label_unknown")
-    reasons.append("regular_special_not_disclosed")
+    override = (seasonal_overrides or {}).get(row.get("reference_code", ""))
+    if override:
+        reasons.append("explicit_seasonal_collection")
+        regular_special = override["regular_special"]
+        collection_label = override.get("collection_label", "")
+    else:
+        reasons.append("regular_special_not_disclosed")
+        regular_special = "not_disclosed"
+        collection_label = ""
     if "woc_or_small_leather_goods" in reasons:
         scope_status = "sensitivity_only"
+    elif "explicit_seasonal_collection" in reasons:
+        scope_status = "seasonal_excluded"
     elif size_label == "unknown":
         scope_status = "unknown_size"
     else:
@@ -139,7 +159,8 @@ def classify_chanel_row(row: dict[str, str]) -> dict[str, str]:
         "material_group": material_group(row.get("material_raw", "")),
         "material_raw": row.get("material_raw", ""),
         "dimensions_cm": "",
-        "regular_special": "not_disclosed",
+        "regular_special": regular_special,
+        "collection_label": collection_label,
         "scope_status": scope_status,
         "isolation_reason": ";".join(reasons),
         "pairing_readiness": "blocked" if scope_status != "status_pending" else "conditional_regular_special_review",
@@ -177,6 +198,7 @@ def classify_competitor_row(row: dict[str, str]) -> dict[str, str]:
         "material_raw": row["material_raw"],
         "dimensions_cm": row["dimensions_cm"],
         "regular_special": row["regular_special"],
+        "collection_label": "",
         "scope_status": scope_status,
         "isolation_reason": ";".join(reasons),
         "pairing_readiness": "blocked" if scope_status != "status_pending" else "conditional_regular_special_review",
@@ -220,14 +242,18 @@ def gate_cell(rows: list[dict[str, str]], minimum_per_brand: int = MINIMUM_PER_B
     return {"headline_eligible": True, "pairing_status": "same_date_exact_attributes", "limitation": limitation}
 
 
-def enrich_panel(live_rows: list[dict[str, str]], competitor_rows: list[dict[str, str]]) -> list[dict[str, str]]:
+def enrich_panel(
+    live_rows: list[dict[str, str]],
+    competitor_rows: list[dict[str, str]],
+    seasonal_overrides: dict[str, dict[str, str]] | None = None,
+) -> list[dict[str, str]]:
     competitors = {(row["brand"], row["canonical_reference"]): row for row in competitor_rows}
     panel: list[dict[str, str]] = []
     for source in live_rows:
         if source["source_effective_date"] != SOURCE_DATE or source["market"] != "US":
             continue
         if source["brand"] == "Chanel":
-            attrs = classify_chanel_row(source)
+            attrs = classify_chanel_row(source, seasonal_overrides)
             source_url = source["source_url"]
         else:
             master = competitors[(source["brand"], source["reference_code"])]
@@ -262,7 +288,8 @@ def fmt_number(value: float) -> str:
 def main() -> None:
     live_rows = read_csv(LIVE_REFRESH)
     competitor_rows = read_csv(COMPETITOR_MASTER)
-    panel = enrich_panel(live_rows, competitor_rows)
+    seasonal_overrides = read_seasonal_overrides()
+    panel = enrich_panel(live_rows, competitor_rows, seasonal_overrides)
     grouped: dict[str, list[dict[str, str]]] = defaultdict(list)
     for row in panel:
         row["comparison_group_id"] = group_id(row)
@@ -332,7 +359,7 @@ def main() -> None:
     panel_fields = [
         "snapshot_id", "source_effective_date", "brand", "market", "currency", "reference_code", "product_name",
         "price_status", "price", "family", "model", "size_label", "use_tag", "bag_type", "material_raw",
-        "material_group", "dimensions_cm", "regular_special", "scope_status", "isolation_reason", "pairing_readiness",
+        "material_group", "dimensions_cm", "regular_special", "collection_label", "scope_status", "isolation_reason", "pairing_readiness",
         "dimension_status", "comparison_group_id", "source_url",
     ]
     cell_fields = list(cell_rows[0]) if cell_rows else []
@@ -350,7 +377,7 @@ def main() -> None:
 - 同日门槛：`market=US`、`source_effective_date=2026-09-07`。
 - 严格属性门槛：同市场、同日期、同包型、同尺寸、同材质；显式季节款、WOC/小皮具和未知尺寸单独隔离。
 - 样本门槛：每个品牌在单元内至少 {MINIMUM_PER_BRAND} 条数值观察，且至少包含 Chanel 与另一个品牌。
-- `regular_special=not_disclosed` 不被猜成常规款；若其他门槛通过，单元可作为条件性主文候选，并在限制列保留该缺口。
+- `regular_special=not_disclosed` 不被猜成常规款；若其他门槛通过，单元可作为条件性主文候选，并在限制列保留该缺口。已核实的季节覆盖写入 `seasonal_tote_attribute_overrides_2026-09-07_us.csv`，明确季节款不进入常规核心。
 
 结果：共 {len(cell_rows)} 个属性单元，{len(candidate_rows)} 条 Chanel-竞品候选配对，{len(eligible)} 个单元通过主文门槛。
 
@@ -358,7 +385,7 @@ def main() -> None:
 
 输出：
 
-- `same_date_pairing_panel_2026-09-07_us.csv`：用于审计的 81 行同日面板及归类字段。
+- `same_date_pairing_panel_2026-09-07_us.csv`：用于审计的 81 行同日面板及归类字段，其中两条 AS6495 已标记为季节款。
 - `same_date_pairing_cells_2026-09-07_us.csv`：单元级门槛和品牌中位数。
 - `same_date_pair_candidates_2026-09-07_us.csv`：Chanel 与竞品的逐行候选配对。
 

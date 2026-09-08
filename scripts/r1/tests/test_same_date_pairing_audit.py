@@ -21,6 +21,29 @@ class SameDatePairingAuditTests(unittest.TestCase):
         self.assertEqual(result["size_label"], "small")
         self.assertEqual(result["material_group"], "leather")
 
+    def test_verified_seasonal_override_blocks_regular_core(self):
+        row = {
+            "brand": "Chanel",
+            "reference_code": "AS6495B25347UC476",
+            "product_name": "Small Shopping Bag",
+            "material_raw": "Lambskin & Gold-Tone Metal",
+        }
+
+        result = classify_chanel_row(
+            row,
+            {
+                "AS6495B25347UC476": {
+                    "regular_special": "seasonal_collection",
+                    "collection_label": "Fall Winter 2026 Pre-Collection",
+                }
+            },
+        )
+
+        self.assertEqual(result["regular_special"], "seasonal_collection")
+        self.assertEqual(result["collection_label"], "Fall Winter 2026 Pre-Collection")
+        self.assertEqual(result["scope_status"], "seasonal_excluded")
+        self.assertEqual(result["pairing_readiness"], "blocked")
+
     def test_cell_requires_two_numeric_rows_per_brand_and_two_brands(self):
         rows = [
             {"brand": "Chanel", "price": "6600", "scope_status": "status_pending", "size_label": "small"},

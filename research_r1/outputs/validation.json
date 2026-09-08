@@ -1,7 +1,7 @@
 {
   "status": "limited",
-  "run_at": "2026-09-07T09:48:20+08:00",
-  "source_commit": "5ef2ee7e22e4010d7b951ec09df3e5337ee8e56f",
+  "run_at": "2026-09-08T15:53:47+08:00",
+  "source_commit": "7bb02cd675a7b8514e6dba0713a0edf0ec7a6bcb",
   "checks": {
     "required_observation_fields": {
       "ok": true,
