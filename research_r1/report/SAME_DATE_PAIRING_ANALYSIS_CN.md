@@ -76,6 +76,7 @@ Hermès 和 Louis Vuitton 已进入 2026-09-07 同日面板，但没有与 Chane
 - [属性单元结果](../outputs/same_date_pairing_cells_2026-09-07_us.csv)
 - [逐行候选配对](../outputs/same_date_pair_candidates_2026-09-07_us.csv)
 - [季节覆盖规则](../data/seasonal_tote_attribute_overrides_2026-09-07_us.csv)
+- [季节路线门槛审计](../outputs/seasonal_tote_sensitivity_audit_2026-09-08_us.md)
 - [审计脚本](../../scripts/r1/build_same_date_pairing_audit.py)
 
 已重新计算并核对：面板 81 行，品牌计数为 Chanel 20、Hermès 21、Louis Vuitton 20、Dior 20；属性单元 45 个；候选配对 17 条；常规核心通过门槛的单元 0 个。原始价格和季节记录仍可从面板与敏感性路线复现。

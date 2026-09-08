@@ -25,6 +25,6 @@
 - 只有在每个比较角色达到至少 3 个独立配置，并能解释常规/季节状态后，才考虑输出描述性季节敏感性统计。
 - Mini、WOC、未知尺寸和未知包型继续隔离。
 
-逐条记录见同名 CSV；主面板仍不写入本路线的跨品牌价格比较。
+逐条记录见同名 CSV；正式门槛审计见 [seasonal_tote_sensitivity_audit_2026-09-08_us.md](../outputs/seasonal_tote_sensitivity_audit_2026-09-08_us.md)。主面板仍不写入本路线的跨品牌价格比较。
 
 本轮补采：Dior 新增 M2835PNUC_M900（Dior Toujours）和 1LLME216MAL_H00N（Dior Normandie）；两条均为小号 Tote、calfskin、数值价格和尺寸，但官网未披露常规/季节状态。
