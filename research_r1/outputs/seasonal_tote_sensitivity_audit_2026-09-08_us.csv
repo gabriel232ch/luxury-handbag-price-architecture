@@ -1,4 +1,4 @@
 audit_id,snapshot_date,market,bag_type,size_label,material_group,chanel_configurations,dior_configurations,chanel_median_usd,dior_median_usd,chanel_statuses,dior_statuses,sample_gate,status_gate,comparison_status,publication_decision,blocking_reasons
 SEASONAL-US-2026-09-07-tote-small-leather,2026-09-07,US,tote,small,leather,2,5,6600,4000,seasonal_collection,not_disclosed,blocked,blocked,not_computed,sensitivity_context_only,chanel_sample_lt3;dior_regular_season_status_undisclosed
-SEASONAL-US-2026-09-08-tote-small-leather,2026-09-08,US,tote,small,leather,2,3,7050,3900,seasonal_collection,not_disclosed,blocked,blocked,not_computed,sensitivity_context_only,chanel_sample_lt3;dior_regular_season_status_undisclosed
+SEASONAL-US-2026-09-08-tote-small-leather,2026-09-08,US,tote,small,leather,3,3,6700,3900,seasonal_collection,not_disclosed,pass,blocked,not_computed,sensitivity_context_only,dior_regular_season_status_undisclosed
 SEASONAL-US-2026-09-08-tote-mini-leather,2026-09-08,US,tote,mini,leather,1,0,5400,,seasonal_collection,,blocked,blocked,not_computed,excluded_size_mismatch,mini_outside_small_tote_route;no_dior_peer
