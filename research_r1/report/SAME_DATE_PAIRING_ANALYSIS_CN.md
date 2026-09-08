@@ -2,40 +2,57 @@
 
 **研究对象：**Chanel、Hermès、Louis Vuitton、Dior 的官方美国站公开标价观察
 
-**观察日期：**2026-09-07
+**主审计日期：**2026-09-07
 
-**用途：**把同日配对审计转成可解释的条件性分析；不覆盖原有 R1 主报告，也不把本附录当作全品牌价格排名。
+**用途：**解释同日属性配对审计结果，并把明确季节款保留在独立敏感性路线；本附录不覆盖原有 R1 主报告，也不把季节款价格差当作常规核心结论。
 
 ## 结论先行
 
-同日、同市场、同包型、同尺寸、同材质并达到最小样本门槛的单元只有 1 个：`tote / small / leather`。Chanel 有 2 条观察，中位价为 **6,600 USD**；Dior 有 5 条观察，中位价为 **4,000 USD**。在这个可见样本单元内，Chanel 的中位价高出 Dior **2,600 USD**，约为 Dior 的 **1.65 倍**。
+重新核实 Chanel 官方分类页和详情页后，原 `tote / small / leather` 单元中的两条 Chanel AS6495 记录被确认属于 Fall Winter 2026 Pre-Collection。[Chanel 分类页](https://www.chanel.com/us/fashion/handbags/c/1x1x1/)、[AS6495 官方页](https://www.chanel.com/us/fashion/p/AS6495B25347UA954/small-shopping-bag-lambskin-gold-tone-metal/)
 
-这只是一个条件性主文候选。两品牌的 `regular_special` 都是 `not_disclosed`，因此不能确认这些行都属于常规核心组合；Dior 的数值尺寸也没有从页面可见的 Size & Fit 区块取得，本次“small”来自官方产品名称和主数据标签。结论可以描述这个单元的挂牌价差，不能扩展为 Chanel 对 Dior 的全品类溢价或替代关系。
+因此，2026-09-07 同日审计当前没有通过常规核心主文门槛的跨品牌单元。原单元仍保留 2 条 Chanel 和 5 条 Dior 的数值价格，但状态已经改为：
+
+- `headline_eligible=FALSE`
+- `pairing_status=blocked_seasonal_excluded`
+- `price_comparison_status=not_computed`
+
+Chanel 6,600 USD 与 Dior 4,000 USD 的中位数仍作为记录中的描述性字段保留，但不再计算或报告为常规核心品牌价格差。
 
 ## 口径与门槛
 
-本附录使用 [同日面板](../outputs/same_date_pairing_panel_2026-09-07_us.csv) 的 81 行观察。所有行均为美国市场、2026-09-07 有效日期和数值价格；货币统一为 USD，不做汇率、税费或落地成本调整。
+本附录使用 [同日面板](../outputs/same_date_pairing_panel_2026-09-07_us.csv) 的 81 行观察。主审计行均为美国市场、2026-09-07 有效日期和数值价格；货币统一为 USD，不做汇率、税费或落地成本调整。
 
-主文候选单元同时满足：
+常规核心候选单元必须同时满足：
 
 1. 同市场、同有效日期、同包型、同尺寸标签、同材质组；
 2. 至少包含 Chanel 与另一个品牌；
 3. 每个品牌至少 2 条数值观察；
 4. 显式季节款、WOC/小皮具、未知尺寸、未知包型或未知材质不进入主文候选。
 
-同一单元内先按品牌计算中位价，再计算品牌中位价之间的差异。逐行候选配对用于追溯，不把颜色或参考号变体当作独立的品牌权重。
+`regular_special=not_disclosed` 不被猜成常规款；如果其他门槛通过，只能标为条件性候选。已确认的季节款直接进入季节敏感性路线。
 
-## 通过门槛的单元
+## 常规核心审计结果
 
-| 市场/日期 | 包型 | 尺寸 | 材质组 | Chanel 样本 | Chanel 中位价 | 竞品样本 | 竞品中位价 | Chanel 相对竞品 |
-|---|---|---|---|---:|---:|---|---:|---:|
-| US / 2026-09-07 | tote | small | leather | 2 | 6,600 USD | Dior（5） | 4,000 USD | +2,600 USD；1.65× |
+| 市场/日期 | 属性单元 | 品牌样本 | 原始中位数记录 | 当前状态 | 价格比较 |
+|---|---|---|---|---|---|
+| US / 2026-09-07 | tote / small / leather | Chanel（2）；Dior（5） | Chanel 6,600 USD；Dior 4,000 USD | `blocked_seasonal_excluded` | 不计算 |
 
-Chanel 两条记录都是 Small Shopping Bag（参考号 `AS6495B25347UC476`、`AS6495B25347UA954`）。Dior 五条记录来自 Small Dior Promenade Shopping Bag 和 Small Dior Toujours Vertical Tote Bag。`leather` 是材质组，不代表五条产品使用同一皮种、同一工艺或同一结构。
+该单元的阻断来自 Chanel 两条 AS6495 记录的明确季节标签，而不是价格缺失或样本数量不足。逐行候选仍用于追溯，但所有候选的 `price_comparison_status` 均为 `not_computed`。
 
-## 为什么其他品牌没有进入这个单元
+## 季节款敏感性路线
 
-Hermès 和 Louis Vuitton 的数据已进入同日面板，但没有与 Chanel 同时满足全部属性和样本要求的单元。阻断情况按属性单元计数如下：
+季节路线与常规核心主文分开保存，见 [季节敏感性路线说明](../data/seasonal_tote_sensitivity_2026-09-08_us.md) 和 [逐条数据](../data/seasonal_tote_sensitivity_2026-09-08_us.csv)。当前只做描述性记录，不计算跨品牌价格差：
+
+| 快照日期 | Chanel 季节小号 Tote | Dior 上下文 | 阻断原因 |
+|---|---:|---:|---|
+| 2026-09-07 | 2；中位数 6,600 USD | 5；中位数 4,000 USD | Dior 常规/季节状态未披露，不能构成清晰的季节对季节比较 |
+| 2026-09-08 | 2；中位数 7,050 USD | 1；3,900 USD | Dior 只有 1 个独立配置，未达到后续敏感性统计目标 |
+
+`AS6248` 是 Spring Summer 2026 的 Mini Shopping Bag，继续作为尺寸不匹配的季节上下文隔离，不进入小号 Tote 路线。WOC、未知尺寸和未知包型继续沿用各自的敏感性或阻断状态。
+
+## 其他品牌的阻断情况
+
+Hermès 和 Louis Vuitton 已进入 2026-09-07 同日面板，但没有与 Chanel 同时满足完整属性和样本要求的常规核心单元。阻断情况按属性单元计数如下：
 
 | 审计状态 | 单元数 | 含义 |
 |---|---:|---|
@@ -45,26 +62,20 @@ Hermès 和 Louis Vuitton 的数据已进入同日面板，但没有与 Chanel �
 | `blocked_no_cross_brand_peer` | 2 | Chanel 单独形成单元，没有第二品牌共享全部属性 |
 | `blocked_sample_insufficient` | 2 | 有跨品牌交集，但至少一个品牌只有 1 条数值观察 |
 | `blocked_woc_sensitivity_only` | 1 | WOC/小皮具只保留为敏感性观察 |
-
-新快照中没有被明确标注为季节款的竞品行；但四品牌的 `regular_special` 信息都没有完整披露，所以没有把 `not_disclosed` 擅自改成“常规款”。
+| `blocked_seasonal_excluded` | 1 | 明确季节款，移出常规核心并保留在敏感性路线 |
 
 ## 分析含义
 
-当前结果支持一个较窄的判断：在同一美国站日期、相同宽口径包型/尺寸/材质组和当前样本门槛下，Chanel 小号皮革托特的公开挂牌价高于 Dior 同组样本。这个结果比旧的跨快照方向性比较更可复核，因为两边日期已经对齐。
+当前证据支持的结论是：在严格常规核心口径下，2026-09-07 美国站没有可报告的 Chanel 跨品牌价格差单元。季节路线显示了可供后续研究的价格背景，但不能解释为 Chanel 对 Dior 的常规溢价，也不能扩展为全品类价格排名、需求或替代关系。
 
-结果仍不能回答三个更大的问题：
-
-- 这是否代表完整 Chanel 手袋组合的普遍溢价；
-- Dior 或 Chanel 的产品结构、皮种、五金、容量和系列定位是否造成了单元内剩余差异；
-- 客户是否把这些产品视为可替代选择。
-
-目前最需要补的证据是：把这个单元扩展到至少 3–5 个去变体配置，取得常规/季节状态，并补齐 Dior 的数值尺寸或其他可复核的尺寸依据。只有在这些条件稳定后，才适合把结果从条件性候选提升为旗舰主文结论。
+下一阶段需要取得更多同日期、同包型、同尺寸、同材质的独立配置，并明确常规/季节状态。只有当每个比较角色至少达到 3 个独立配置、状态口径清晰且属性可复核时，才考虑发布季节敏感性统计。
 
 ## 校验与复现
 
 - [同日审计说明](../outputs/same_date_pairing_audit_2026-09-07_us.md)
 - [属性单元结果](../outputs/same_date_pairing_cells_2026-09-07_us.csv)
 - [逐行候选配对](../outputs/same_date_pair_candidates_2026-09-07_us.csv)
+- [季节覆盖规则](../data/seasonal_tote_attribute_overrides_2026-09-07_us.csv)
 - [审计脚本](../../scripts/r1/build_same_date_pairing_audit.py)
 
-已重新计算并核对：面板 81 行，品牌计数为 Chanel 20、Hermès 21、Louis Vuitton 20、Dior 20；属性单元 45 个；候选配对 17 条；通过门槛的单元 1 个。由于只有一个合格单元，本附录使用表格而没有制作趋势图或品牌排名图，避免把单个属性单元视觉化成全品类结论。
+已重新计算并核对：面板 81 行，品牌计数为 Chanel 20、Hermès 21、Louis Vuitton 20、Dior 20；属性单元 45 个；候选配对 17 条；常规核心通过门槛的单元 0 个。原始价格和季节记录仍可从面板与敏感性路线复现。
