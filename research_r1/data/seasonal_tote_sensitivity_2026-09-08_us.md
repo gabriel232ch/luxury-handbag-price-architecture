@@ -9,13 +9,13 @@
 | 快照日期 | Chanel 季节小号 Tote | Dior 上下文 | 路线状态 |
 |---|---:|---:|---|
 | 2026-09-07 | 2（AS6495 UC476、UA954） | 5 | 阻断：Dior 常规/季节状态未披露，不能构成清晰的季节对季节比较 |
-| 2026-09-08 | 2（AS6392、AS6224） | 1（M1325） | 阻断：Dior 只有 1 个独立配置，未达到样本门槛 |
+| 2026-09-08 | 2（AS6392、AS6224） | 3（M1325、M2835、1LLME216） | 阻断：Dior 样本量已达到 3 个独立配置，但常规/季节状态仍未披露 |
 
 `AS6248` 是 Spring Summer 2026 的 Mini Shopping Bag，继续单独作为尺寸不匹配的季节上下文，不进入小号 Tote 路线。
 
 ## 对原主文单元的修正
 
-原 `CELL-US-tote-small-leather` 曾因字段未披露而显示为条件性通过。2026-09-08 对官方分类页和详情页复核后，Chanel 的两条 AS6495 记录均明确属于 Fall Winter 2026 Pre-Collection，因此从常规核心口径移到本路线。下一步重跑主配对审计时，必须把原单元改为 `blocked_seasonal_excluded`；本步不直接改写原审计输出。
+原 `CELL-US-tote-small-leather` 曾因字段未披露而显示为条件性通过。2026-09-08 对官方分类页和详情页复核后，Chanel 的两条 AS6495 记录均明确属于 Fall Winter 2026 Pre-Collection，因此从常规核心口径移到本路线。主配对审计已在 2026-09-08 重跑，原单元现为 `blocked_seasonal_excluded`；本路线仍不改写常规核心价格比较。
 
 ## 计算规则
 
@@ -26,3 +26,5 @@
 - Mini、WOC、未知尺寸和未知包型继续隔离。
 
 逐条记录见同名 CSV；主面板仍不写入本路线的跨品牌价格比较。
+
+本轮补采：Dior 新增 M2835PNUC_M900（Dior Toujours）和 1LLME216MAL_H00N（Dior Normandie）；两条均为小号 Tote、calfskin、数值价格和尺寸，但官网未披露常规/季节状态。
