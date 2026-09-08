@@ -15,9 +15,9 @@
 
 目标单元为 `US|tote|small|leather`。当前 Chanel 有 2 条、1 个独立 Shopping 家族；Dior 有 5 条、2 个独立家族。下一轮至少新增 Chanel 2 个独立配置、Dior 1 个独立配置，才接近每品牌 3 个独立组的正式门槛。
 
-### 波次 2：验证第二个 Chanel–Dior 单元
+### 波次 2：验证第二个 Chanel–Dior 单元（已收口为方向性）
 
-目标单元为 `US|hobo|small|leather`。当前 Chanel 只有 1 条、Dior 的 6 条主要集中在 Toujours。下一轮至少新增 Chanel 2 个独立配置、Dior 2 个独立配置；如果仍集中在同一家族，保留为方向性单元，不升级为正式主文。
+目标单元为 `US|hobo|small|leather`。搜索后，Chanel 仍只有 1 条明确 Small 的当前配置，新增候选要么是显式季节款、要么没有 Small 标签；Dior 当前明确 Small 的 Hobo 仍是已有的 6 个 Dior Toujours 变体，Diorstar 没有 Small 标签。因此本波状态为 `blocked_sample_insufficient`，只保留方向性背景，不升级为正式主文。
 
 ### 波次 3：为 Hermès/Louis Vuitton 建立可行的尺寸交集
 
