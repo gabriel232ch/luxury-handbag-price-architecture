@@ -60,6 +60,12 @@ def audit_group(snapshot_date: str, chanel: list[dict[str, str]], dior: list[dic
     if not chanel or any(status != "seasonal_collection" for status in chanel_statuses):
         blockers.append("chanel_season_status_not_explicit")
     comparison_status = "computed" if not blockers else "not_computed"
+    if comparison_status == "computed":
+        publication_decision = "eligible_for_sensitivity_statistic"
+    elif "dior_regular_season_status_undisclosed" in blockers:
+        publication_decision = "descriptive_only_status_undisclosed"
+    else:
+        publication_decision = "sensitivity_context_only"
     return {
         "audit_id": f"SEASONAL-US-{snapshot_date}-tote-small-leather",
         "snapshot_date": snapshot_date,
@@ -76,7 +82,7 @@ def audit_group(snapshot_date: str, chanel: list[dict[str, str]], dior: list[dic
         "sample_gate": "pass" if not any(item.endswith("_sample_lt3") for item in blockers) else "blocked",
         "status_gate": "pass" if not any(item.endswith("status_undisclosed") or item.endswith("status_not_explicit") for item in blockers) else "blocked",
         "comparison_status": comparison_status,
-        "publication_decision": "sensitivity_context_only" if comparison_status != "computed" else "eligible_for_sensitivity_statistic",
+        "publication_decision": publication_decision,
         "blocking_reasons": ";".join(blockers),
     }
 
@@ -155,7 +161,7 @@ def main() -> None:
         "",
         "## 结论",
         "",
-        "本轮没有任何可发布的季节对季节价格差。2026-09-08 的样本量门槛已达到，但 Dior 状态门槛仍未通过；当前输出只能作为敏感性路线的描述性背景。",
+        "本轮没有任何可发布的季节对季节价格差。2026-09-08 的样本量门槛已达到，但 Dior 状态门槛仍未通过；官网详情页可正常访问且未出现 collection/season/Fall/Spring 标记，因此本路线正式收口为描述性敏感性背景。",
         "",
         "来源数据：[seasonal_tote_sensitivity_2026-09-08_us.csv](../data/seasonal_tote_sensitivity_2026-09-08_us.csv)。",
         "",

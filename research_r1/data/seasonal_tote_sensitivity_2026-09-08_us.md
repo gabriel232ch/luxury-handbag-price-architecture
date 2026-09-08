@@ -28,3 +28,5 @@
 逐条记录见同名 CSV；正式门槛审计见 [seasonal_tote_sensitivity_audit_2026-09-08_us.md](../outputs/seasonal_tote_sensitivity_audit_2026-09-08_us.md)。主面板仍不写入本路线的跨品牌价格比较。
 
 本轮补采：Dior 新增 M2835PNUC_M900（Dior Toujours）和 1LLME216MAL_H00N（Dior Normandie）；两条均为小号 Tote、calfskin、数值价格和尺寸，但官网未披露常规/季节状态。
+
+Dior 状态核验见 [dior_status_verification_2026-09-08_us.md](dior_status_verification_2026-09-08_us.md)。三条官方详情页可正常访问，但未出现 collection/season/Fall/Spring 标记；本路线正式收口为描述性敏感性背景。

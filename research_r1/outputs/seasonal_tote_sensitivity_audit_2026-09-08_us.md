@@ -6,8 +6,8 @@
 
 | 快照日期 | Chanel 配置 | Dior 配置 | Chanel 中位数 | Dior 中位数 | 样本门槛 | 状态门槛 | 价格比较 | 发布决定 |
 |---|---:|---:|---:|---:|---|---|---|---|
-| 2026-09-07 / small | 2 | 5 | 6600 | 4000 | blocked | blocked | `not_computed` | `sensitivity_context_only` |
-| 2026-09-08 / small | 3 | 3 | 6700 | 3900 | pass | blocked | `not_computed` | `sensitivity_context_only` |
+| 2026-09-07 / small | 2 | 5 | 6600 | 4000 | blocked | blocked | `not_computed` | `descriptive_only_status_undisclosed` |
+| 2026-09-08 / small | 3 | 3 | 6700 | 3900 | pass | blocked | `not_computed` | `descriptive_only_status_undisclosed` |
 | 2026-09-08 / mini | 1 | 0 | 5400 | — | blocked | blocked | `not_computed` | `excluded_size_mismatch` |
 
 ## 阻断原因
@@ -18,6 +18,6 @@
 
 ## 结论
 
-本轮没有任何可发布的季节对季节价格差。2026-09-08 的样本量门槛已达到，但 Dior 状态门槛仍未通过；当前输出只能作为敏感性路线的描述性背景。
+本轮没有任何可发布的季节对季节价格差。2026-09-08 的样本量门槛已达到，但 Dior 状态门槛仍未通过；官网详情页可正常访问且未出现 collection/season/Fall/Spring 标记，因此本路线正式收口为描述性敏感性背景。
 
-来源数据：[seasonal_tote_sensitivity_2026-09-08_us.csv](../data/seasonal_tote_sensitivity_2026-09-08_us.csv)。
+来源数据：[seasonal_tote_sensitivity_2026-09-08_us.csv](../data/seasonal_tote_sensitivity_2026-09-08_us.csv)。Dior 状态核验：[dior_status_verification_2026-09-08_us.md](../data/dior_status_verification_2026-09-08_us.md)。
