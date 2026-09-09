@@ -7,6 +7,8 @@
 **补充快照：**2026-09-07，仅用于 Chanel 属性配对审计
 **研究状态：**`limited`
 
+**最新独立刷新：**2026-09-09，美国站四品牌 hobo/皮革路线；未并入 2026-09-08 或基线面板
+
 ## 执行摘要
 
 本轮回答的是一个范围受限的问题：在公开本地标价样本中，Chanel 如何呈现进入价格、家族梯度和 Classic 高位锚点。样本不是品牌全量组合，也不衡量可负担性、需求或利润。
@@ -78,3 +80,9 @@ Chanel 的 M2 去变体检查在法国和美国都保持 3,300 / 3,600 的观察
 样本为非加权公开本地标价观察；不能推出需求、购买替代、支付意愿、利润、品牌资产、管理层意图或最优价格。缺失年份不表示没有变化；`SAME_MODEL_CONTINUOUS` 与 `MODEL_SUCCESSOR` 也不等于 exact historical SKU。
 
 基线来源、观察身份、计算输出和未解决项分别保存在 `research_r1/source_registry.csv`、`research_r1/data/`、`research_r1/outputs/`。补充配对的来源和门控记录见 `research_r1/outputs/comparable_pair_candidates.csv`、`research_r1/outputs/comparable_cells_supplementary.csv` 与 `research_r1/outputs/comparable_pairing_log.md`。R1 保持 `limited`，因为覆盖、历史来源和同日竞品配对仍未完全满足旗舰叙事门槛。
+
+## 7. 最新同日刷新结果（2026-09-09）
+
+最新独立快照包含 8 行：Chanel 2、Hermès 1、Louis Vuitton 3、Dior 2。按同市场、同日期、同包型、同尺寸、同材质和数值尺寸门槛审计后，主文合格单元为 0。唯一通过三轴尺寸容差的方向是 Chanel AS5293（Small）与 Louis Vuitton M25354（PM），但命名尺寸不一致，且 regular/season 状态未披露、独立家族样本不足，因此不计算价格差。Hermès Videpoches 保留在 crossbody/unknown-size 路线；Dior Toujours 的 Autumn-Winter 2026-2027 行保留在季节敏感性路线。
+
+完整逐对结果见 `research_r1/outputs/wave6_same_date_pairing_audit_2026-09-09_us.md`。该结果是新增证据层，不覆盖本报告的 2026-08-15 基线数字。

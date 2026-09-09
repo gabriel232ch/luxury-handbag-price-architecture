@@ -87,3 +87,10 @@ R1 可复算门通过，研究状态为 `limited`，不是“旗舰研究完成�
 - 导出元数据记录 15 条方向性候选、18 个补充单元、0 个 headline-eligible 单元，并把跨快照门控写入案例内容；没有生成价格排名或定价建议。
 - 合同检查覆盖唯一 section/claim/source/scene ID、scope 与快照字段、输出文件存在性、source/scene 引用和静态图路径；导出失败会在写入候选包前停止。
 - 运行 `python3 -m unittest discover -s tests/r1 -p 'test_*.py'`、`python3 -m compileall -q scripts/r1 tests/r1` 和 `git diff --check`；Portfolio P1–P5 仍未执行。
+
+## 第 6 步以后：同日刷新与最终门控（已完成）
+
+- Wave 3–5 先后补充了 2026-09-08 尺寸、hobo/皮革和 2026-09-09 Chanel/Louis Vuitton 候选；所有跨日期数据均保持独立，不回填 2026-09-07 或 2026-08-15 面板。
+- Wave 6 新增 2026-09-09 美国站四品牌独立快照：8 行（Chanel 2、Hermès 1、Louis Vuitton 3、Dior 2），并用 `scripts/r1/build_wave6_same_date_pairing_audit.py` 运行精确属性、数值尺寸、状态和独立家族门槛。
+- 审计结果为 5 个属性单元、2 条 Chanel-竞品属性候选、0 个严格主文合格单元。唯一通过三轴尺寸容差的 Chanel–Louis Vuitton 方向是 Small 对 PM，因命名尺寸不一致、regular/season 未披露和样本不足而阻断；Hermès Videpoches 被保留在 crossbody/unknown-size 路线；Dior Toujours 的 AW 2026-2027 行被隔离为季节款。
+- `research_r1/report/FINAL_STATUS_CN.md` 是截至 2026-09-09 的最终研究状态；当前项目结论仍为 `limited`，不产生价格动作建议。若要升级状态，需要新的同日、同尺寸、regular 状态可核验且每边至少 3 个独立家族的证据，不应通过放宽门槛制造比较单元。
