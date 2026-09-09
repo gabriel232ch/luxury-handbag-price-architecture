@@ -1,12 +1,12 @@
 {
   "schemaVersion": "luxury-case-study-manifest-1",
-  "generated_at": "2026-09-09T10:03:22+08:00",
-  "source_commit": "fee53bd385c58d6b4929d07e2aa179d9e2336669",
+  "generated_at": "2026-09-09T10:11:52+08:00",
+  "source_commit": "6d6de5624ee82ac2a3974f86a7a920d08990ee17",
   "research_status": "limited",
   "files": [
     {
       "path": "research_r1/export/case-study.json",
-      "sha256": "8627352d11d97047204372c645f395a71a53f17833d50ff54dee16a7b8aca59e"
+      "sha256": "af1a22560d39a4b1100a4e38717e6e41daf64281cd518f14233de54adb1df4c6"
     },
     {
       "path": "research_r1/export/figures/moving-together.svg",

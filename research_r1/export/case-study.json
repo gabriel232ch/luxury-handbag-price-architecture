@@ -16,7 +16,8 @@
     ],
     "currentSnapshot": "2026-08-15",
     "supplementarySnapshots": [
-      "supplementary_current_2026-09-07"
+      "supplementary_current_2026-09-07",
+      "wave6_same_date_refresh_2026-09-09_us"
     ],
     "acceptedCurrentObservations": 161,
     "numericCurrentObservations": 147,
@@ -34,6 +35,36 @@
         "not_computed"
       ],
       "gate": "cross_snapshot"
+    },
+    "latestSameDateAudit": {
+      "snapshot": "wave6_same_date_refresh_2026-09-09_us",
+      "rows": 8,
+      "cells": 5,
+      "candidatePairs": 2,
+      "strictMainTextEligibleCells": 0,
+      "hoboDimensionPairs": 10,
+      "hoboDimensionMatches": 1,
+      "priceComparisonStatuses": [
+        "not_computed"
+      ],
+      "gate": "same_date_exact_attributes_dimensions_sample_and_status",
+      "artifacts": [
+        "research_r1/data/wave6_same_date_refresh_2026-09-09_us.csv",
+        "research_r1/outputs/wave6_same_date_pairing_audit_2026-09-09_us.md",
+        "research_r1/outputs/wave6_same_date_pairing_cells_2026-09-09_us.csv",
+        "research_r1/outputs/wave6_same_date_pair_candidates_2026-09-09_us.csv",
+        "research_r1/outputs/wave6_same_date_hobo_dimension_pairs_2026-09-09_us.csv"
+      ],
+      "sourceUrls": [
+        "https://us.louisvuitton.com/eng-us/products/carryall-pm-monogram-empreinte-nvprod3990011v/M47180",
+        "https://us.louisvuitton.com/eng-us/products/coussin-hobo-mm-h32-nvprod5900076v/M12068",
+        "https://us.louisvuitton.com/eng-us/products/low-key-hobo-pm-h31-nvprod5580029v/M25354",
+        "https://www.chanel.com/us/fashion/p/AS3260B1905994305/chanel-22-small-handbag-shiny-calfskin-gold-tone-metal/",
+        "https://www.chanel.com/us/fashion/p/AS5293B2030494305/chanel-25-small-handbag-grained-calfskin-gold-tone-metal/",
+        "https://www.dior.com/en_us/fashion/products/M2867PDUN_M18S",
+        "https://www.dior.com/en_us/fashion/products/M9319UMOL_M900",
+        "https://www.hermes.com/us/en/product/hermes-videpoches-bag-H087987CK10/"
+      ]
     },
     "note": "Observed official local list-price sample; not an assortment census or affordability measure."
   },
@@ -101,7 +132,7 @@
       "title": "Interpretation",
       "summary": "Bounded findings and decision questions.",
       "paragraphs": [
-        "The visible Chanel ladder survives the raw-versus-de-variant check in both markets, but the supplementary pairing audit remains blocked across snapshots: 15 directional candidates and 18 cells show where a same-date refresh should look, not a ranking of brands. If a same-date, attribute-complete refresh preserves the gap, verify the full SKU ladder and upgrade path; if it moves with family coverage, map the assortment before making a pricing decision."
+        "The visible Chanel ladder survives the raw-versus-de-variant check in both markets, but the supplementary pairing audit remains blocked across snapshots: 15 directional candidates and 18 cells show where a same-date refresh should look, not a ranking of brands. The independent 9 September refresh adds eight rows, five exact cells and zero strict main-text cells; the only dimension match is Small versus PM, so its price comparison also remains blocked. If a later same-date, attribute-complete refresh clears the gates, verify the full SKU ladder and upgrade path; if the gap moves with family coverage, map the assortment before making a pricing decision."
       ],
       "claimIds": [
         "CLM-LADDER-FR",
@@ -115,7 +146,7 @@
       "title": "Afterlife",
       "summary": "Methods, sources and limitations.",
       "paragraphs": [
-        "The candidate remains noindex and unpublished. Baseline numbers point to R1 outputs and claim IDs; supplementary pairing evidence stays in separate CSVs with explicit snapshot gates. The source registry distinguishes access dates from effective dates, and Hermès Geta's 2023 France conflict remains excluded from the core narrative."
+        "The candidate remains noindex and unpublished. Baseline numbers point to R1 outputs and claim IDs; the 7 September and 9 September supplementary pairing evidence stays in separate CSVs with explicit snapshot gates. The source registry distinguishes access dates from effective dates, and Hermès Geta's 2023 France conflict remains excluded from the core narrative."
       ],
       "claimIds": [],
       "sceneIds": []

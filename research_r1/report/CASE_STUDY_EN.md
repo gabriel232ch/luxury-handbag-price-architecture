@@ -6,6 +6,8 @@
 
 **Supplementary pairing snapshot:** 7 September 2026
 
+**Latest independent refresh:** 9 September 2026, United States hobo/leather route
+
 **Research status:** limited
 
 ## Open
@@ -42,6 +44,14 @@ Several candidates illustrate why the gate is necessary. A Small Boy row can sha
 
 The audit also records negative results. No same-group baseline peer was found for several Chanel 22 and Chanel 25 cells. The 2.55 supplement has an unknown size label in the normalized observation table, even though its page dimensions are retained in the product master; the analysis does not infer a commercial size class from dimensions alone. Seasonal collection rows and Wallet on Chain rows remain outside the regular handbag denominator.
 
+## Latest same-date refresh
+
+The independent 9 September 2026 US refresh contains eight official rows: two Chanel, one Hermès, three Louis Vuitton and two Dior. It produces five exact market/bag-type/size/material cells and two Chanel-peer candidates: zero strict main-text cells pass the gates.
+
+The only hobo/leather pair that passes the sorted three-axis `max(2 cm, 10%)` dimension tolerance is Chanel AS5293 CHANEL 25 Small versus Louis Vuitton M25354 Low Key Hobo PM. The named sizes are Small and PM, so the pair is not like-for-like. Regular/season status is also undisclosed and independent-family counts remain below the three-family threshold. Hermès Videpoches stays in a crossbody/unknown-size route. Dior Bobby is Medium, while the Dior Toujours row is explicitly Autumn-Winter 2026-2027 and is isolated as seasonal. No price gap, ranking or premium is calculated from this refresh.
+
+The refresh is stored as a separate evidence layer and does not overwrite the 15 August baseline or the 7 September supplementary panel. The reproducible audit is in `research_r1/outputs/wave6_same_date_pairing_audit_2026-09-09_us.md`.
+
 ## Sensitivity and challenge
 
 The visible ladder survives the raw-versus-de-variant gap check in both markets: the France gap remains 3,300 EUR and the US gap remains 3,600 USD. That is a stability result for this definition, not a correction for sampling. The price bands behave differently. Because their boundaries were set after seeing the observations, moving an internal boundary by plus or minus ten percent changes several counts; for example, the France Chanel Premium core count ranges from six to ten, and the US Core count ranges from zero to seven. The bands are therefore a descriptive view, not an independent validation of a market tier.
@@ -54,8 +64,8 @@ The strongest supported reading is narrow: in the visible baseline sample, Chane
 
 If a same-date, attribute-complete refresh preserves the gap, the next question is the full SKU ladder and the customer upgrade path. If the gap moves when family coverage changes, assortment mapping has priority. If a historical decision is required, same-model identity, common effective dates and primary historical price records are the next evidence. The sample cannot establish demand, substitution, profit, brand equity or an optimal future price.
 
-The practical handoff is consequently staged. First, refresh the competitor rows on the same observation date and apply the four-field attribute filter. Second, map the complete Chanel family ladder and test whether the visible interval is filled by omitted families. Third, only if historical movement is decision-relevant, replace the secondary lineage points with same-reference, dated primary observations. Until those gates clear, the responsible output is a bounded research candidate rather than a pricing recommendation.
+The practical handoff is consequently staged. The latest same-date refresh has now been completed, and its strict gate remains closed. The remaining upgrade path is to map at least three independent Chanel hobo families and three independent same-size competitor hobo families on one date, with numeric dimensions and regular/season status visible. Only if those gates clear should a price comparison be calculated. If historical movement is decision-relevant, replace the secondary lineage points with same-reference, dated primary observations. Until then, the responsible output is a bounded research candidate rather than a pricing recommendation.
 
 ## Afterlife
 
-The candidate remains noindex and unpublished. Baseline numbers point to the R1 outputs and claim IDs; supplementary pairing evidence is kept in separate CSVs with explicit snapshot gates. The source registry distinguishes access dates from effective dates. Reproduction uses the local standard-library scripts and `python3 -m unittest discover -s tests/r1 -p 'test_*.py'`.
+The candidate remains noindex and unpublished. Baseline numbers point to the R1 outputs and claim IDs; the 7 September and 9 September supplementary evidence layers are kept in separate CSVs with explicit snapshot gates. The source registry distinguishes access dates from effective dates. Reproduction uses the local standard-library scripts and `python3 -m unittest discover -s tests/r1 -p 'test_*.py'`.

@@ -26,6 +26,12 @@ class ReportContractTest(unittest.TestCase):
         self.assertIn("不据此提出新品价位或涨价方案", text)
         self.assertIn("最多三条", text)
 
+    def test_english_case_study_carries_wave6_gate(self):
+        text = (REPORT / "CASE_STUDY_EN.md").read_text(encoding="utf-8")
+        self.assertIn("Latest independent refresh", text)
+        self.assertIn("zero strict main-text cells", text)
+        self.assertIn("Small and PM", text)
+
 
 if __name__ == "__main__":
     unittest.main()
