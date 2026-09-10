@@ -617,10 +617,45 @@ def build_unresolved(rows: list[dict]) -> list[dict]:
     return unresolved
 
 
-def build_reports(ladder: list[dict], family: list[dict], aligned: list[dict], unresolved: list[dict], validation_status: str = "limited") -> None:
+def build_reports(
+    ladder: list[dict],
+    family: list[dict],
+    aligned: list[dict],
+    unresolved: list[dict],
+    coverage: list[dict],
+    validation_status: str = "limited",
+) -> None:
     fr = next(r for r in ladder if r["market"] == "FR")
     us = next(r for r in ladder if r["market"] == "US")
     common_years = ", ".join(r["observed_year"] for r in aligned) or "none"
+    current_coverage = [row for row in coverage if row["snapshot_id"] == CURRENT_SNAPSHOT]
+    as_int = lambda value: int(value or 0)
+    current_accepted = sum(as_int(row["accepted_observations"]) for row in current_coverage)
+    current_numeric = sum(as_int(row["numeric_observations"]) for row in current_coverage)
+    brand_counts = {
+        brand: sum(as_int(row["accepted_observations"]) for row in current_coverage if row["brand"] == brand)
+        for brand in BRANDS
+    }
+    dior_us = [row for row in current_coverage if row["brand"] == "Dior" and row["market"] == "US"]
+    dior_us_accepted = sum(as_int(row["accepted_observations"]) for row in dior_us)
+    dior_us_numeric = sum(as_int(row["numeric_observations"]) for row in dior_us)
+    dior_us_unresolved = dior_us_accepted - dior_us_numeric
+    optional_rows = lambda path: read_csv(path) if path.exists() else []
+    pairing_candidates = optional_rows(OUT / "comparable_pair_candidates.csv")
+    pairing_cells = optional_rows(OUT / "comparable_cells_supplementary.csv")
+    wave6_refresh = optional_rows(DATA / "wave6_same_date_refresh_2026-09-09_us.csv")
+    wave6_cells = optional_rows(OUT / "wave6_same_date_pairing_cells_2026-09-09_us.csv")
+    wave6_dimensions = optional_rows(OUT / "wave6_same_date_hobo_dimension_pairs_2026-09-09_us.csv")
+    wave6_strict_count = sum(row.get("main_text_status") == "main_text_eligible" for row in wave6_cells)
+    wave6_strict_word = "zero" if wave6_strict_count == 0 else str(wave6_strict_count)
+    wave6_strict_word_cn = str(wave6_strict_count)
+    matched_sizes = {
+        f"{row.get('chanel_size_label', '').title()} and {row.get('peer_size_label', '').upper()}"
+        for row in wave6_dimensions
+        if row.get("dimension_match") == "TRUE"
+    }
+    matched_size_text = ", ".join(sorted(matched_sizes)) or "no matched size labels"
+    brand_summary_cn = "，".join(f"{brand} {brand_counts[brand]} 条" for brand in BRANDS)
     report_cn = f"""# Luxury Handbag Research Upgrade R1：Chanel 价格架构（研究版）
 
 ## 执行摘要
@@ -629,7 +664,9 @@ def build_reports(ladder: list[dict], family: list[dict], aligned: list[dict], u
 
 ## 1. 观察范围与覆盖
 
-当前接受观察共 161 条，其中 147 条为数值价格。Chanel 41 条（法国 20、美国 21），Hermès、Louis Vuitton、Dior 各 40 条。Dior 美国只有 32 条数值价格，其余 8 条不插补；因此“数值覆盖率”只能描述可解析行的比例，不能称为官网覆盖率。颜色变体与近重复在原始视图保留，去变体视图只用于敏感性比较。
+当前接受观察共 {current_accepted} 条，其中 {current_numeric} 条为数值价格。{brand_summary_cn}。Dior 美国有 {dior_us_numeric} 条数值价格（共 {dior_us_accepted} 条接受观察），其余 {dior_us_unresolved} 条不插补；因此“数值覆盖率”只能描述可解析行的比例，不能称为官网覆盖率。颜色变体与近重复在原始视图保留，去变体视图只用于敏感性比较。
+
+补充配对审计产生 {len(pairing_candidates)} 条属性匹配的方向性候选配对和 {len(pairing_cells)} 个补充属性单元；补充快照与基线竞品日期不一致，所有跨品牌价格比较保持 `not_computed`。最新独立刷新含 {len(wave6_refresh)} 行、{len(wave6_cells)} 个精确属性单元和 {wave6_strict_word_cn} 个严格主文单元；尺寸检查中出现 {matched_size_text}，但仍受属性、状态或独立家族样本门槛限制。
 
 Hermès 的 40 条当前观察没有供应商标注的 signature flag；它可以提供价格坐标，不能支撑同口径的品牌图标溢价比较。当前快照的来源是原仓库已保存的官方本地页面观察，R1 没有把执行日的新页面回填到 8 月 15 日。
 
@@ -661,11 +698,11 @@ Chanel 法国固定使用 CH-C01/CH-C02 对 CH-C03/CH-C04，取两组共同观�
 
 ## Open
 
-This case asks how Chanel presents visible entry, family-level steps and the Classic high anchor in local official list-price observations. The dataset is a non-weighted sample of accepted product rows: 161 observations, 147 numeric prices. It is a map of what was visible in the captured pages, not a census of a brand assortment and not a measure of affordability.
+This case asks how Chanel presents visible entry, family-level steps and the Classic high anchor in local official list-price observations. The dataset is a non-weighted sample of accepted product rows: {current_accepted} observations, {current_numeric} numeric prices. It is a map of what was visible in the captured pages, not a census of a brand assortment and not a measure of affordability.
 
 ## Context
 
-Chanel is read against Hermès, Louis Vuitton and Dior on separate local currency axes. The competitor panel supplies an external coordinate system, while the deeper interpretation stays with Chanel. Dior US has 32 numeric prices out of 40 accepted rows; eight unresolved prices remain missing. Hermès has no supplied signature flag in the current panel, so its prices do not support a like-for-like icon premium calculation.
+Chanel is read against Hermès, Louis Vuitton and Dior on separate local currency axes. The competitor panel supplies an external coordinate system, while the deeper interpretation stays with Chanel. Dior US has {dior_us_numeric} numeric prices out of {dior_us_accepted} accepted rows; {dior_us_unresolved} unresolved prices remain missing. Hermès has no supplied signature flag in the current panel, so its prices do not support a like-for-like icon premium calculation.
 
 ## The price ladder
 
@@ -676,6 +713,8 @@ The membership rule matters. Classic 11.12 and Small Classic form the Classic gr
 ## Moving together
 
 The aligned Chanel France panel compares fixed lineages CH-C01/CH-C02 with CH-C03/CH-C04 only in common observed years ({common_years}). It reports group medians, absolute distance, ratio and lineage counts without interpolating missing years. Historical rows are mostly secondary-source tables, so the result is a bounded product-line observation rather than a complete official repricing calendar. The Hermès Geta France 2023 conflict is kept as two branches and excluded from the primary path.
+
+The later Chanel supplement was filtered by the same market, bag type, size label and material group. It produces {len(pairing_candidates)} directional peer candidates across {len(pairing_cells)} supplementary cells. The price comparison is blocked because the supplement is dated 7 September 2026 while the competitor baseline is dated 15 August 2026. The audit keeps unknown-size, seasonal-collection and Wallet on Chain rows in separate gates. Latest independent refresh evidence contains {len(wave6_refresh)} rows, {len(wave6_cells)} exact cells and {wave6_strict_word} strict main-text cells. The only dimension match is {matched_size_text}, so its price comparison also remains blocked.
 
 ## What the evidence can support
 
@@ -693,13 +732,15 @@ All numbers in the public candidate export point to R1 outputs and claim IDs. Th
 
 - 法国 Classic 最低观察价 {fr['classic_min']} EUR，进入/其他核心最高观察价 {fr['entry_core_max']} EUR，样本间隔 {fr['observed_gap']} EUR。
 - 美国对应样本间隔为 {us['observed_gap']} USD。
+- Dior 美国有 {dior_us_numeric} 条数值价格（共 {dior_us_accepted} 条接受观察）；未解析行不插补。
+- 补充配对审计产生 {len(pairing_candidates)} 条属性匹配的方向性候选配对和 {len(pairing_cells)} 个补充属性单元；2026-09-07 补充快照与 2026-08-15 竞品基线日期不一致。
 - 历史法国 Chanel 只在共同观察年份（{common_years}）比较固定产品线；未插值。
 
 ## 解释
 
 当前样本显示 Classic 与较低/其他核心家族之间存在可见距离，但距离是观察样本中的结构，不能直接解释为购买替代、需求或品牌管理意图。
 
-## 待核实的决策问题
+## 待核实问题与最多三条行动
 
 1. 间隔在完整 SKU 组合与去变体视图中是否仍然存在？
 2. 客户是否沿这些产品家族升级，还是不同家族满足不同场景？
@@ -776,8 +817,20 @@ def main() -> None:
     write_csv(DATA / "observations.csv", rows, OBSERVATION_FIELDS)
     write_csv(DATA / "lineage.csv", lineage_rows, LINEAGE_FIELDS)
     write_csv(DATA / "coverage.csv", coverage, list(coverage[0].keys()) if coverage else ["brand"])
-    write_csv(DATA / "supplementary_current.csv", [], OBSERVATION_FIELDS)
-    write_csv(R1 / "source_registry.csv", sources, SOURCE_FIELDS)
+    supplementary_path = DATA / "supplementary_current.csv"
+    if not supplementary_path.exists():
+        write_csv(supplementary_path, [], OBSERVATION_FIELDS)
+    registry_path = R1 / "source_registry.csv"
+    if not registry_path.exists():
+        write_csv(registry_path, sources, SOURCE_FIELDS)
+    else:
+        existing_registry = read_csv(registry_path)
+        existing_by_id = {row.get("source_id"): row for row in existing_registry}
+        registry_is_current = all(existing_by_id.get(row["source_id"]) == row for row in sources)
+        if not registry_is_current:
+            generated_source_ids = {row["source_id"] for row in sources}
+            preserved_registry = [row for row in existing_registry if row.get("source_id") not in generated_source_ids]
+            write_csv(registry_path, [*sources, *preserved_registry], SOURCE_FIELDS)
     write_csv(R1 / "claims.csv", claims, list(claims[0].keys()) if claims else ["claim_id"])
     write_csv(OUT / "brand_family_summary.csv", family, list(family[0].keys()) if family else ["brand"])
     write_csv(OUT / "chanel_ladder.csv", ladder, list(ladder[0].keys()) if ladder else ["brand"])
@@ -787,10 +840,11 @@ def main() -> None:
     write_csv(OUT / "robustness.csv", robustness, list(robustness[0].keys()) if robustness else ["module"])
     write_csv(OUT / "unresolved.csv", unresolved, list(unresolved[0].keys()) if unresolved else ["issue_id"])
     build_baseline_manifest(rows, sources, lineage_rows)
-    build_reports(ladder, family, aligned, unresolved)
+    build_reports(ladder, family, aligned, unresolved, coverage)
     write_json(OUT / "validation.json", {"status": "pending", "run_at": "", "source_commit": git_sha(), "checks": {}, "excluded_claims": [], "unresolved_critical_count": 0})
-    write_text = R1 / "CHANGELOG.md"
-    write_text.write_text("""# Research R1 change log\n\n- R1 baseline: preserved the 2026-08-15 current snapshot and the historical panel as separate snapshots.\n- Added a canonical observation schema, explicit source registry, lineage map, coverage audit and unresolved issue register.\n- Added M1–M5 outputs for family distributions, Chanel ladder, band sensitivity, bounded comparable cells and aligned Chanel history.\n- Added claims with evidence grades; the Hermès Geta conflict remains excluded from core claims.\n- No new web collection or historical-date backfill was performed.\n""", encoding="utf-8")
+    changelog_path = R1 / "CHANGELOG.md"
+    if not changelog_path.exists():
+        changelog_path.write_text("""# Research R1 change log\n\n- R1 baseline: preserved the 2026-08-15 current snapshot and the historical panel as separate snapshots.\n- Added a canonical observation schema, explicit source registry, lineage map, coverage audit and unresolved issue register.\n- Added M1–M5 outputs for family distributions, Chanel ladder, band sensitivity, bounded comparable cells and aligned Chanel history.\n- Added claims with evidence grades; the Hermès Geta conflict remains excluded from core claims.\n- No new web collection or historical-date backfill was performed.\n""", encoding="utf-8")
     print(json.dumps({"current_observations": len(current), "historical_observations": len(history), "numeric_current": sum(r["price_status"] == "numeric" for r in current), "numeric_history": sum(r["price_status"] == "numeric" for r in history), "aligned_years": [r["observed_year"] for r in aligned], "unresolved": len(unresolved)}, ensure_ascii=False))
 
 

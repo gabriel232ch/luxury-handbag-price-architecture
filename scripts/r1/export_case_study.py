@@ -236,6 +236,7 @@ def main() -> int:
     ladder = read_csv(R1 / "outputs" / "chanel_ladder.csv")
     family = read_csv(R1 / "outputs" / "brand_family_summary.csv")
     aligned = read_csv(R1 / "outputs" / "aligned_history.csv")
+    observations = read_csv(R1 / "data" / "observations.csv")
     claims = read_csv(R1 / "claims.csv")
     source_rows = read_csv(R1 / "source_registry.csv")
     pairing_candidates = read_csv(R1 / "outputs" / "comparable_pair_candidates.csv")
@@ -244,6 +245,19 @@ def main() -> int:
     wave6_cells = read_csv(R1 / "outputs" / "wave6_same_date_pairing_cells_2026-09-09_us.csv")
     wave6_candidates = read_csv(R1 / "outputs" / "wave6_same_date_pair_candidates_2026-09-09_us.csv")
     wave6_dimension_pairs = read_csv(R1 / "outputs" / "wave6_same_date_hobo_dimension_pairs_2026-09-09_us.csv")
+    current_observations = [row for row in observations if row["snapshot_id"] == "current_2026-08-15"]
+    dior_us = [row for row in current_observations if row["brand"] == "Dior" and row["market"] == "US"]
+    dior_us_accepted = len(dior_us)
+    dior_us_numeric = sum(row["price_status"] == "numeric" for row in dior_us)
+    dior_us_unresolved = dior_us_accepted - dior_us_numeric
+    wave6_strict_count = sum(row.get("main_text_status") == "main_text_eligible" for row in wave6_cells)
+    wave6_strict_word = "zero" if wave6_strict_count == 0 else str(wave6_strict_count)
+    matched_sizes = {
+        f"{row.get('chanel_size_label', '').title()} versus {row.get('peer_size_label', '').upper()}"
+        for row in wave6_dimension_pairs
+        if row.get("dimension_match") == "TRUE"
+    }
+    matched_size_text = ", ".join(sorted(matched_sizes)) or "no matched size labels"
     claim_ids = {row["claim_id"] for row in claims if row.get("publication_decision") != "exclude_from_core"}
     public_source_rows = [row for row in source_rows if not row["source_id"].startswith("SRC-SUPP-CH-")]
     source_ids = {row["source_id"] for row in public_source_rows}
@@ -297,15 +311,15 @@ def main() -> int:
         "researchVersion": "R1",
         "publication": "candidate",
         "noindex": True,
-        "observationScope": {"markets": ["France", "United States"], "currencies": ["EUR", "USD"], "currentSnapshot": "2026-08-15", "supplementarySnapshots": ["supplementary_current_2026-09-07", "wave6_same_date_refresh_2026-09-09_us"], "acceptedCurrentObservations": 161, "numericCurrentObservations": 147, "supplementaryPairingAudit": pairing_audit, "latestSameDateAudit": latest_same_date_audit, "note": "Observed official local list-price sample; not an assortment census or affordability measure."},
+        "observationScope": {"markets": ["France", "United States"], "currencies": ["EUR", "USD"], "currentSnapshot": "2026-08-15", "supplementarySnapshots": ["supplementary_current_2026-09-07", "wave6_same_date_refresh_2026-09-09_us"], "acceptedCurrentObservations": len(current_observations), "numericCurrentObservations": sum(row["price_status"] == "numeric" for row in current_observations), "supplementaryPairingAudit": pairing_audit, "latestSameDateAudit": latest_same_date_audit, "note": "Observed official local list-price sample; not an assortment census or affordability measure."},
         "title": "The Architecture of Access — Chanel's Handbag Price Ladder in Context",
         "summary": "A source-linked, bounded study of visible Chanel entry, family steps and Classic anchors, with three brands as external coordinates and a separately gated supplementary pairing audit.",
         "sections": [
             {"id": "open", "title": "Open", "summary": "The question and its observation boundary.", "paragraphs": ["How does Chanel present visible entry, family-level steps and the Classic high anchor in local official list-price observations?"], "claimIds": ["CLM-LADDER-FR", "CLM-LADDER-US"], "sceneIds": []},
-            {"id": "context", "title": "Context", "summary": "Four brands on separate local price axes.", "paragraphs": ["Chanel is the focal case. Hermès, Louis Vuitton and Dior provide external coordinates; the panel is non-weighted and coverage differs by brand and market. Dior US has 13 numeric prices among 20 accepted observations. The eight unresolved rows remain missing and are not imputed. Hermès has no supplied signature flag in the current panel, so its prices do not support a like-for-like icon-premium calculation."], "claimIds": ["CLM-COVERAGE-DIOR-US"], "sceneIds": ["price-landscape"]},
+            {"id": "context", "title": "Context", "summary": "Four brands on separate local price axes.", "paragraphs": [f"Chanel is the focal case. Hermès, Louis Vuitton and Dior provide external coordinates; the panel is non-weighted and coverage differs by brand and market. Dior US has {dior_us_numeric} numeric prices among {dior_us_accepted} accepted observations. The {dior_us_unresolved} unresolved rows remain missing and are not imputed. Hermès has no supplied signature flag in the current panel, so its prices do not support a like-for-like icon-premium calculation."], "claimIds": ["CLM-COVERAGE-DIOR-US"], "sceneIds": ["price-landscape"]},
             {"id": "architecture", "title": "Architecture", "summary": "A brand point expanded into family positions.", "paragraphs": ["Classic 11.12 and Small Classic form the Classic group. Mini Classic is treated as an entry observation even though its name contains Classic. Shopping Bag and Bowling Bag are retained as other core observations. In the France baseline snapshot, the visible sample gap is 3,300 EUR; the US snapshot shows a 3,600 USD gap. Price-upon-request rows remain a separate state and are not placed above the numeric axis."], "claimIds": ["CLM-LADDER-FR", "CLM-LADDER-US"], "sceneIds": ["price-ladder"]},
             {"id": "evolution", "title": "Evolution", "summary": "Common observed years only.", "paragraphs": ["The aligned Chanel France panel compares fixed lineages only in common observed years: 2022, 2023, 2024 and 2026. The absolute median distance moves from 4,470 EUR in 2022 to 5,350 EUR in 2026. Missing years are not interpolated, and the secondary-source panel is not a complete official repricing calendar."], "claimIds": ["CLM-HISTORY-CHANEL-FR"], "sceneIds": ["moving-together"]},
-            {"id": "interpretation", "title": "Interpretation", "summary": "Bounded findings and decision questions.", "paragraphs": ["The visible Chanel ladder survives the raw-versus-de-variant check in both markets, but the supplementary pairing audit remains blocked across snapshots: 15 directional candidates and 18 cells show where a same-date refresh should look, not a ranking of brands. The independent 9 September refresh adds eight rows, five exact cells and zero strict main-text cells; the only dimension match is Small versus PM, so its price comparison also remains blocked. If a later same-date, attribute-complete refresh clears the gates, verify the full SKU ladder and upgrade path; if the gap moves with family coverage, map the assortment before making a pricing decision."], "claimIds": ["CLM-LADDER-FR", "CLM-LADDER-US", "CLM-COVERAGE-DIOR-US"], "sceneIds": []},
+            {"id": "interpretation", "title": "Interpretation", "summary": "Bounded findings and decision questions.", "paragraphs": [f"The visible Chanel ladder survives the raw-versus-de-variant check in both markets, but the supplementary pairing audit remains blocked across snapshots: {len(pairing_candidates)} directional candidates and {len(pairing_cells)} cells show where a same-date refresh should look, not a ranking of brands. The independent 9 September refresh adds {len(wave6_refresh)} rows, {len(wave6_cells)} exact cells and {wave6_strict_word} strict main-text cells; the only dimension match is {matched_size_text}, so its price comparison also remains blocked. If a later same-date, attribute-complete refresh clears the gates, verify the full SKU ladder and upgrade path; if the gap moves with family coverage, map the assortment before making a pricing decision."], "claimIds": ["CLM-LADDER-FR", "CLM-LADDER-US", "CLM-COVERAGE-DIOR-US"], "sceneIds": []},
             {"id": "afterlife", "title": "Afterlife", "summary": "Methods, sources and limitations.", "paragraphs": ["The candidate remains noindex and unpublished. Baseline numbers point to R1 outputs and claim IDs; the 7 September and 9 September supplementary pairing evidence stays in separate CSVs with explicit snapshot gates. The source registry distinguishes access dates from effective dates, and Hermès Geta's 2023 France conflict remains excluded from the core narrative."], "claimIds": [], "sceneIds": []},
         ],
         "claims": [{"claimId": row["claim_id"], "text": row["claim_text"], "grade": row["evidence_grade"], "scope": row["scope"], "outputPath": row["output_path"], "limitation": row["limitation"]} for row in claims if row["claim_id"] in claim_ids],

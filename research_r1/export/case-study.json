@@ -89,7 +89,7 @@
       "title": "Context",
       "summary": "Four brands on separate local price axes.",
       "paragraphs": [
-        "Chanel is the focal case. Hermès, Louis Vuitton and Dior provide external coordinates; the panel is non-weighted and coverage differs by brand and market. Dior US has 13 numeric prices among 20 accepted observations. The eight unresolved rows remain missing and are not imputed. Hermès has no supplied signature flag in the current panel, so its prices do not support a like-for-like icon-premium calculation."
+        "Chanel is the focal case. Hermès, Louis Vuitton and Dior provide external coordinates; the panel is non-weighted and coverage differs by brand and market. Dior US has 13 numeric prices among 20 accepted observations. The 7 unresolved rows remain missing and are not imputed. Hermès has no supplied signature flag in the current panel, so its prices do not support a like-for-like icon-premium calculation."
       ],
       "claimIds": [
         "CLM-COVERAGE-DIOR-US"
@@ -132,7 +132,7 @@
       "title": "Interpretation",
       "summary": "Bounded findings and decision questions.",
       "paragraphs": [
-        "The visible Chanel ladder survives the raw-versus-de-variant check in both markets, but the supplementary pairing audit remains blocked across snapshots: 15 directional candidates and 18 cells show where a same-date refresh should look, not a ranking of brands. The independent 9 September refresh adds eight rows, five exact cells and zero strict main-text cells; the only dimension match is Small versus PM, so its price comparison also remains blocked. If a later same-date, attribute-complete refresh clears the gates, verify the full SKU ladder and upgrade path; if the gap moves with family coverage, map the assortment before making a pricing decision."
+        "The visible Chanel ladder survives the raw-versus-de-variant check in both markets, but the supplementary pairing audit remains blocked across snapshots: 15 directional candidates and 18 cells show where a same-date refresh should look, not a ranking of brands. The independent 9 September refresh adds 8 rows, 5 exact cells and zero strict main-text cells; the only dimension match is Small versus PM, so its price comparison also remains blocked. If a later same-date, attribute-complete refresh clears the gates, verify the full SKU ladder and upgrade path; if the gap moves with family coverage, map the assortment before making a pricing decision."
       ],
       "claimIds": [
         "CLM-LADDER-FR",

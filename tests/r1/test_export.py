@@ -1,3 +1,4 @@
+import csv
 import json
 import copy
 import importlib.util
@@ -19,6 +20,16 @@ def load_export_module():
 
 
 class ExportContractTest(unittest.TestCase):
+    def current_dior_counts(self):
+        with (ROOT / "research_r1/data/observations.csv").open(newline="", encoding="utf-8") as handle:
+            rows = [
+                row for row in csv.DictReader(handle)
+                if row["snapshot_id"] == "current_2026-08-15"
+                and row["brand"] == "Dior"
+                and row["market"] == "US"
+            ]
+        return sum(row["price_status"] == "numeric" for row in rows), len(rows)
+
     def test_case_study_has_six_sections_three_scenes_and_candidate_status(self):
         case = json.loads((EXPORT / "case-study.json").read_text(encoding="utf-8"))
         self.assertEqual(case["publication"], "candidate")
@@ -36,11 +47,24 @@ class ExportContractTest(unittest.TestCase):
         scope = case["observationScope"]
         self.assertEqual(scope["currentSnapshot"], "2026-08-15")
         self.assertIn("supplementary_current_2026-09-07", scope["supplementarySnapshots"])
-        self.assertEqual(scope["supplementaryPairingAudit"]["candidatePairs"], 15)
-        self.assertEqual(scope["supplementaryPairingAudit"]["cells"], 18)
+        with (ROOT / "research_r1/outputs/comparable_pair_candidates.csv").open(newline="", encoding="utf-8") as handle:
+            candidate_count = sum(1 for _ in csv.DictReader(handle))
+        with (ROOT / "research_r1/outputs/comparable_cells_supplementary.csv").open(newline="", encoding="utf-8") as handle:
+            cell_count = sum(1 for _ in csv.DictReader(handle))
+        self.assertEqual(scope["supplementaryPairingAudit"]["candidatePairs"], candidate_count)
+        self.assertEqual(scope["supplementaryPairingAudit"]["cells"], cell_count)
         sections = {section["id"]: section for section in case["sections"]}
-        self.assertIn("13 numeric prices among 20", sections["context"]["paragraphs"][0])
+        numeric, accepted = self.current_dior_counts()
+        self.assertIn(f"{numeric} numeric prices among {accepted}", sections["context"]["paragraphs"][0])
         self.assertIn("blocked", sections["interpretation"]["paragraphs"][0])
+
+    def test_case_study_uses_current_dior_coverage_counts(self):
+        numeric, accepted = self.current_dior_counts()
+        unresolved = accepted - numeric
+        case = json.loads((EXPORT / "case-study.json").read_text(encoding="utf-8"))
+        context = next(section for section in case["sections"] if section["id"] == "context")["paragraphs"][0]
+        self.assertIn(f"{numeric} numeric prices among {accepted}", context)
+        self.assertIn(f"{unresolved} unresolved rows remain missing", context)
 
     def test_case_study_contract_rejects_duplicate_sections_and_missing_scope(self):
         module = load_export_module()

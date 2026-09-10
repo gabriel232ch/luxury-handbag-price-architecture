@@ -113,12 +113,15 @@ python3 price_architecture_diagnostics.py
 python3 build_final_report_assets.py
 python3 build_financial_report_assets.py
 python3 -m unittest discover -s tests/financial -p 'test_*.py'
+python3 scripts/r1/build.py
+python3 scripts/r1/validate.py
+python3 scripts/r1/export_case_study.py
 python3 -m unittest discover -s tests/r1 -p 'test_*.py'
 git diff --check
 ```
 
 ## 10. Existing R1 compatibility note
 
-The R1 validator script completed with `status=limited`, `errors=0`, and three expected warnings for unresolved Dior prices, the Hermès Geta conflict, and uneven historical coverage. The new Phase 2 financial / architecture test suite is `12/12` passing.
+The R1 validator script completes with `status=limited`, `errors=0`, and three expected warnings for unresolved Dior prices, the Hermès Geta conflict, and uneven historical coverage. The full `tests/r1` suite is green after the report-contract repair, and the Phase 2 financial / architecture test suite remains `12/12` passing.
 
-The legacy `tests/r1` unittest suite has one report-contract failure against the pre-existing user-edited `research_r1/report/REPORT_CN.md` (it expects the prior wording `13 条数值价格`). That file and its untracked duplicate were present before Phase 2 and were deliberately not overwritten. The failure does not involve the new financial panel, calculations, assets, or public Phase 2 report.
+`research_r1/report/REPORT_CN.md` is an authoritative generated R1 deliverable because `scripts/r1/build.py` writes it as part of the release build. The generator now derives report counts from the structured R1 coverage and pairing outputs, including Dior US coverage and the supplementary / Wave 6 gates; `tests/r1/test_reports.py` checks those data-driven invariants rather than obsolete literal prose. The separate top-level final report remains the portfolio-facing Phase 2 narrative.
