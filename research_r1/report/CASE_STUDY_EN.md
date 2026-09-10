@@ -2,17 +2,17 @@
 
 **Observation markets:** France (EUR) and United States (USD) · **Current snapshot:** 15 August 2026 · **Research status:** limited
 
-## Open
+## Research question
 
 The case examines how Chanel presents visible entry points, family-level steps and the Classic high anchor in local official list-price observations. The dataset contains 161 accepted product rows, of which 147 have numeric prices. It maps what was visible on the captured pages; it is not a census of the assortment or a measure of affordability.
 
 ## Context
 
-Chanel is the focal case. Hermès, Louis Vuitton and Dior provide external coordinates on separate local-currency axes. Dior US has 13 numeric prices among 20 accepted rows; the remaining 7 prices are unresolved and are not imputed. Hermès has no supplied signature flag in the current panel, so its prices do not support a like-for-like icon-premium calculation.
+Chanel is the focal case. Hermès, Louis Vuitton and Dior provide competitive context on separate local-currency axes. Dior US has 13 numeric prices among 20 accepted rows; the remaining 7 prices are unresolved and are not imputed. Hermès has no supplied signature flag in the current panel, so its prices do not support a like-for-like icon-premium calculation.
 
 ## The price ladder
 
-Within the France snapshot, the lowest Classic observation is 10000 EUR and the highest entry/core comparison observation is 6700 EUR, a visible sample gap of 3300 EUR. The median distance is 4700 EUR and the median ratio is 1.810. The US snapshot shows 11000 versus 7400 USD, a gap of 3600 USD, with a median distance of 5200 USD and a ratio of 1.800.
+Within the France snapshot, the lowest Classic observation is €10,000 and the highest entry/core comparison observation is €6,700, a visible sample gap of €3,300. The median distance is €4,700 and the median ratio is 1.810. The US snapshot shows $11,000 versus $7,400, a gap of $3,600, with a median distance of $5,200 and a ratio of 1.800.
 
 The membership rule matters. Classic 11.12 and Small Classic form the Classic group. Mini Classic is an entry observation even though its product name contains “Classic”; Shopping Bag and Bowling Bag remain other core observations. Price-upon-request rows stay separate and are not placed above the numeric axis.
 
@@ -26,6 +26,6 @@ The later Chanel supplement uses the same market, bag type, size label and mater
 
 The evidence supports three conditional next steps. If the ladder gap survives de-variant sensitivity, verify the full SKU ladder and customer upgrade path. If it moves when family coverage changes, map the assortment first. If a historical movement matters to the decision, the next evidence should include same-model identities, common dates and primary price records. The sample cannot establish demand, substitution, profit, brand-equity effects or an optimal future price.
 
-## Afterlife
+## Audit trail and reproducibility
 
 The public candidate export links its numbers to R1 outputs and claim IDs. The source registry separates page-access dates from effective dates, and the 15 August current snapshot remains separate from later refreshes. Reproduction uses the local Python standard-library scripts and `python3 -m unittest discover -s tests/r1 -p 'test_*.py'`.

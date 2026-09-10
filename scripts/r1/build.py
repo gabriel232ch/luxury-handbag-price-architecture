@@ -655,6 +655,22 @@ def build_reports(
         if row.get("dimension_match") == "TRUE"
     }
     matched_size_text = ", ".join(sorted(matched_sizes)) or "no matched size labels"
+    def currency(value: str, symbol: str) -> str:
+        parsed = parse_price(value)
+        if parsed is None:
+            return f"{symbol}{value}"
+        if parsed.is_integer():
+            return f"{symbol}{int(parsed):,}"
+        return f"{symbol}{parsed:,.2f}".rstrip("0").rstrip(".")
+
+    fr_classic_min = currency(fr["classic_min"], "€")
+    fr_entry_core_max = currency(fr["entry_core_max"], "€")
+    fr_observed_gap = currency(fr["observed_gap"], "€")
+    fr_median_distance = currency(fr["median_distance"], "€")
+    us_classic_min = currency(us["classic_min"], "$")
+    us_entry_core_max = currency(us["entry_core_max"], "$")
+    us_observed_gap = currency(us["observed_gap"], "$")
+    us_median_distance = currency(us["median_distance"], "$")
     brand_summary_cn = "，".join(f"{brand} {brand_counts[brand]} 条" for brand in BRANDS)
     report_cn = f"""# Luxury Handbag Research Upgrade R1：Chanel 价格架构（研究版）
 
@@ -696,17 +712,17 @@ Chanel 法国只在共同观察年份（{common_years}）比较固定产品线 C
 
 **Observation markets:** France (EUR) and United States (USD) · **Current snapshot:** 15 August 2026 · **Research status:** {validation_status}
 
-## Open
+## Research question
 
 The case examines how Chanel presents visible entry points, family-level steps and the Classic high anchor in local official list-price observations. The dataset contains {current_accepted} accepted product rows, of which {current_numeric} have numeric prices. It maps what was visible on the captured pages; it is not a census of the assortment or a measure of affordability.
 
 ## Context
 
-Chanel is the focal case. Hermès, Louis Vuitton and Dior provide external coordinates on separate local-currency axes. Dior US has {dior_us_numeric} numeric prices among {dior_us_accepted} accepted rows; the remaining {dior_us_unresolved} prices are unresolved and are not imputed. Hermès has no supplied signature flag in the current panel, so its prices do not support a like-for-like icon-premium calculation.
+Chanel is the focal case. Hermès, Louis Vuitton and Dior provide competitive context on separate local-currency axes. Dior US has {dior_us_numeric} numeric prices among {dior_us_accepted} accepted rows; the remaining {dior_us_unresolved} prices are unresolved and are not imputed. Hermès has no supplied signature flag in the current panel, so its prices do not support a like-for-like icon-premium calculation.
 
 ## The price ladder
 
-Within the France snapshot, the lowest Classic observation is {fr['classic_min']} EUR and the highest entry/core comparison observation is {fr['entry_core_max']} EUR, a visible sample gap of {fr['observed_gap']} EUR. The median distance is {fr['median_distance']} EUR and the median ratio is {fr['relative_ratio']}. The US snapshot shows {us['classic_min']} versus {us['entry_core_max']} USD, a gap of {us['observed_gap']} USD, with a median distance of {us['median_distance']} USD and a ratio of {us['relative_ratio']}.
+Within the France snapshot, the lowest Classic observation is {fr_classic_min} and the highest entry/core comparison observation is {fr_entry_core_max}, a visible sample gap of {fr_observed_gap}. The median distance is {fr_median_distance} and the median ratio is {fr['relative_ratio']}. The US snapshot shows {us_classic_min} versus {us_entry_core_max}, a gap of {us_observed_gap}, with a median distance of {us_median_distance} and a ratio of {us['relative_ratio']}.
 
 The membership rule matters. Classic 11.12 and Small Classic form the Classic group. Mini Classic is an entry observation even though its product name contains “Classic”; Shopping Bag and Bowling Bag remain other core observations. Price-upon-request rows stay separate and are not placed above the numeric axis.
 
@@ -720,7 +736,7 @@ The later Chanel supplement uses the same market, bag type, size label and mater
 
 The evidence supports three conditional next steps. If the ladder gap survives de-variant sensitivity, verify the full SKU ladder and customer upgrade path. If it moves when family coverage changes, map the assortment first. If a historical movement matters to the decision, the next evidence should include same-model identities, common dates and primary price records. The sample cannot establish demand, substitution, profit, brand-equity effects or an optimal future price.
 
-## Afterlife
+## Audit trail and reproducibility
 
 The public candidate export links its numbers to R1 outputs and claim IDs. The source registry separates page-access dates from effective dates, and the 15 August current snapshot remains separate from later refreshes. Reproduction uses the local Python standard-library scripts and `python3 -m unittest discover -s tests/r1 -p 'test_*.py'`.
 """
