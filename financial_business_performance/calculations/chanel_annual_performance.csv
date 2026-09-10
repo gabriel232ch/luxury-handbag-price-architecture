@@ -1,0 +1,10 @@
+fiscal_year,revenue_usd_m,reported_growth_pct,comparable_growth_pct,calculated_revenue_change_pct,operating_profit_usd_m,operating_margin_pct,operating_profit_change_pct,free_cash_flow_usd_m,fcf_margin_pct,free_cash_flow_change_pct,capex_usd_m,capex_revenue_pct,capex_change_pct,brand_support_investment_usd_m,brand_support_revenue_pct,brand_support_change_pct,employees,performance_phase,source_ids
+2017,9623.0,,11.0,,2692.0,28.0,,1628.0,16.9,,429.0,4.5,,1457.0,15.1,,20197.0,pre_core_window,CH-FY17
+2018,11119.0,,10.5,15.5,2998.0,27.0,11.4,1214.0,10.9,-25.4,1007.0,9.1,134.7,1653.0,14.9,13.5,25295.0,pre_core_window,CH-FY18
+2019,12273.0,,13.0,10.4,3496.0,28.5,16.6,2245.0,18.3,84.9,771.0,6.3,-23.4,1770.0,14.4,7.1,27713.0,pre_core_window,CH-FY19
+2020,10108.0,,-18.0,-17.6,2018.0,20.0,-42.3,679.0,6.7,-69.8,1077.0,10.7,39.7,1360.0,13.5,-23.2,27018.0,pandemic_shock,CH-FY21
+2021,15639.0,,49.6,54.7,5461.0,34.9,170.6,4540.0,29.0,568.6,758.0,4.8,-29.6,1795.0,11.5,32.0,28467.0,rebound_and_expansion,CH-FY21
+2022,17200.0,,17.0,10.0,5776.0,33.6,5.8,3534.0,20.5,-22.2,668.0,3.9,-11.9,2052.0,11.9,14.3,32000.0,rebound_and_expansion,CH-FY22
+2023,19700.0,,16.0,14.5,6407.0,32.5,10.9,3755.0,19.1,6.3,1227.0,6.2,83.7,2463.0,12.5,20.0,36500.0,rebound_and_expansion,CH-FY23
+2024,18699.0,,-4.3,-5.1,4479.0,24.0,-30.1,1842.0,9.9,-50.9,1755.0,9.4,43.0,2445.0,13.1,-0.7,38422.0,deterioration_with_record_investment,CH-FY24
+2025,19269.0,3.0,1.8,3.0,4712.0,24.5,5.2,2646.0,13.7,43.6,1449.0,7.5,-17.4,2395.0,12.4,-2.0,37984.0,reported_recovery_with_elevated_investment,CH-FY25

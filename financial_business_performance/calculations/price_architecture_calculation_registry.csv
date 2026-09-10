@@ -1,0 +1,7 @@
+calculation,definition,unit,caveat
+sku_price_steps,"Adjacent sorted numeric SKU observations, including zero steps for duplicate prices.",local currency,Observed sample is not a complete assortment census.
+family_step_up,Adjacent product-family median prices sorted by observed median.,local currency,Family composition and sample counts differ by brand.
+tier_density,Numeric SKU count and share in collapsed existing market-specific price bands.,count / percent,Analytical tiers are not affordability or willingness-to-pay tiers.
+entry_to_core_step,Lowest observed core numeric price minus lowest observed entry/lower numeric price.,local currency,Blank when the snapshot contains no numeric entry/lower-tier SKU.
+core_to_icon_step,Lowest observed icon price minus highest observed pre-icon numeric price.,local currency,Visible list-price gap; not evidence of a demand barrier.
+numeric_vs_non_numeric,Displayed numeric price versus non-numeric/POR or unresolved observation.,count / percent,Unresolved does not prove formal price upon request.

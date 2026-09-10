@@ -1,0 +1,9 @@
+brand,market,currency,total_observations,numeric_observations,non_numeric_or_por_observations,numeric_share_pct,visibility_definition,caveat
+CHANEL,FR,EUR,20,17,3,85.0,numeric displayed list price vs non-numeric/POR or unresolved observation,Non-numeric observations are excluded from price distributions; unresolved does not prove formal POR.
+CHANEL,US,USD,21,18,3,85.71428571428571,numeric displayed list price vs non-numeric/POR or unresolved observation,Non-numeric observations are excluded from price distributions; unresolved does not prove formal POR.
+Hermès,FR,EUR,20,20,0,100.0,numeric displayed list price vs non-numeric/POR or unresolved observation,Non-numeric observations are excluded from price distributions; unresolved does not prove formal POR.
+Hermès,US,USD,20,20,0,100.0,numeric displayed list price vs non-numeric/POR or unresolved observation,Non-numeric observations are excluded from price distributions; unresolved does not prove formal POR.
+Louis Vuitton,FR,EUR,20,20,0,100.0,numeric displayed list price vs non-numeric/POR or unresolved observation,Non-numeric observations are excluded from price distributions; unresolved does not prove formal POR.
+Louis Vuitton,US,USD,20,20,0,100.0,numeric displayed list price vs non-numeric/POR or unresolved observation,Non-numeric observations are excluded from price distributions; unresolved does not prove formal POR.
+Dior,FR,EUR,20,19,1,95.0,numeric displayed list price vs non-numeric/POR or unresolved observation,Non-numeric observations are excluded from price distributions; unresolved does not prove formal POR.
+Dior,US,USD,20,13,7,65.0,numeric displayed list price vs non-numeric/POR or unresolved observation,Non-numeric observations are excluded from price distributions; unresolved does not prove formal POR.

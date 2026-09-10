@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "failures": [],
+  "current_observations": 161,
+  "current_numeric_observations": 147,
+  "historical_observations": 77,
+  "financial_panel_rows": 166,
+  "official_source_rows": 21,
+  "charts_checked": 8,
+  "claim_reconciliation": {
+    "chanel_2025_revenue_usd_m": "19269.0",
+    "hermes_2025_leather_revenue_eur_m": "7070.0",
+    "lvmh_2025_flg_organic_growth_pct": "-5.0"
+  }
+}

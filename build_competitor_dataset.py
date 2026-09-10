@@ -15,7 +15,10 @@ LOGS = ROOT / "logs"
 for folder in (RAW, CLEAN, ERRORS, LOGS):
     folder.mkdir(parents=True, exist_ok=True)
 
-OBSERVED_AT = datetime.now(timezone(timedelta(hours=8))).isoformat(timespec="seconds")
+# Keep the public price snapshot reproducible.  The collection window is
+# intentionally frozen; rerunning the build must not silently create a new
+# "current" observation date.
+OBSERVED_AT = "2026-08-15T20:20:39+08:00"
 EXTRACTION_METHOD = "browser_rendered_web_dom"
 
 FIELDS = [

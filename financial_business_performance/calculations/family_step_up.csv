@@ -1,0 +1,71 @@
+brand,market,currency,step_rank,lower_family,upper_family,lower_median,upper_median,absolute_step,relative_step_pct,step_definition
+CHANEL,FR,EUR,1,Mini Classic,Shopping Bag,4950,5900,950,19.19,adjacent product-family medians sorted by observed numeric median
+CHANEL,FR,EUR,2,Shopping Bag,Bowling Bag,5900,6000,100,1.69,adjacent product-family medians sorted by observed numeric median
+CHANEL,FR,EUR,3,Bowling Bag,Small Classic,6000,10100,4100,68.33,adjacent product-family medians sorted by observed numeric median
+CHANEL,FR,EUR,4,Small Classic,Classic 11.12,10100,10500,400,3.96,adjacent product-family medians sorted by observed numeric median
+CHANEL,US,USD,1,Mini Classic,Shopping Bag,5500,6600,1100,20,adjacent product-family medians sorted by observed numeric median
+CHANEL,US,USD,2,Shopping Bag,Bowling Bag,6600,6700,100,1.52,adjacent product-family medians sorted by observed numeric median
+CHANEL,US,USD,3,Bowling Bag,Small Classic,6700,11300,4600,68.66,adjacent product-family medians sorted by observed numeric median
+CHANEL,US,USD,4,Small Classic,Classic 11.12,11300,11700,400,3.54,adjacent product-family medians sorted by observed numeric median
+Hermès,FR,EUR,1,Balusoie,Videpoches,2170,3550,1380,63.59,adjacent product-family medians sorted by observed numeric median
+Hermès,FR,EUR,2,Videpoches,P'tit Arçon,3550,3950,400,11.27,adjacent product-family medians sorted by observed numeric median
+Hermès,FR,EUR,3,P'tit Arçon,Néo Double Sens,3950,4050,100,2.53,adjacent product-family medians sorted by observed numeric median
+Hermès,FR,EUR,4,Néo Double Sens,Petite Course,4050,4150,100,2.47,adjacent product-family medians sorted by observed numeric median
+Hermès,FR,EUR,5,Petite Course,Mini Médor,4150,4650,500,12.05,adjacent product-family medians sorted by observed numeric median
+Hermès,FR,EUR,6,Mini Médor,En Piste,4650,5300,650,13.98,adjacent product-family medians sorted by observed numeric median
+Hermès,FR,EUR,7,En Piste,Geta,5300,5300,0,0,adjacent product-family medians sorted by observed numeric median
+Hermès,FR,EUR,8,Geta,Della Cavalleria mini II,5300,5400,100,1.89,adjacent product-family medians sorted by observed numeric median
+Hermès,FR,EUR,9,Della Cavalleria mini II,Poche Cliquetis,5400,5600,200,3.70,adjacent product-family medians sorted by observed numeric median
+Hermès,FR,EUR,10,Poche Cliquetis,Plume,5600,5650,50,0.89,adjacent product-family medians sorted by observed numeric median
+Hermès,FR,EUR,11,Plume,Victoria,5650,5750,100,1.77,adjacent product-family medians sorted by observed numeric median
+Hermès,FR,EUR,12,Victoria,Della Cavalleria Élan,5750,5900,150,2.61,adjacent product-family medians sorted by observed numeric median
+Hermès,FR,EUR,13,Della Cavalleria Élan,Jypsière,5900,6850,950,16.10,adjacent product-family medians sorted by observed numeric median
+Hermès,FR,EUR,14,Jypsière,Roulis,6850,7150,300,4.38,adjacent product-family medians sorted by observed numeric median
+Hermès,FR,EUR,15,Roulis,Médor Clous,7150,8150,1000,13.99,adjacent product-family medians sorted by observed numeric median
+Hermès,FR,EUR,16,Médor Clous,Petit Tour,8150,8900,750,9.20,adjacent product-family medians sorted by observed numeric median
+Hermès,FR,EUR,17,Petit Tour,Néo Médor,8900,9100,200,2.25,adjacent product-family medians sorted by observed numeric median
+Hermès,US,USD,1,Silkycity,Herbag,3075,4550,1475,47.97,adjacent product-family medians sorted by observed numeric median
+Hermès,US,USD,2,Herbag,Neo Garden Voyage,4550,5450,900,19.78,adjacent product-family medians sorted by observed numeric median
+Hermès,US,USD,3,Neo Garden Voyage,Videpoches,5450,5500,50,0.92,adjacent product-family medians sorted by observed numeric median
+Hermès,US,USD,4,Videpoches,P'tit Arçon,5500,5550,50,0.91,adjacent product-family medians sorted by observed numeric median
+Hermès,US,USD,5,P'tit Arçon,Tablier Sellier,5550,5850,300,5.41,adjacent product-family medians sorted by observed numeric median
+Hermès,US,USD,6,Tablier Sellier,Horseback,5850,6850,1000,17.09,adjacent product-family medians sorted by observed numeric median
+Hermès,US,USD,7,Horseback,Geta,6850,7650,800,11.68,adjacent product-family medians sorted by observed numeric median
+Hermès,US,USD,8,Geta,Della Cavalleria Elan,7650,8550,900,11.76,adjacent product-family medians sorted by observed numeric median
+Hermès,US,USD,9,Della Cavalleria Elan,Jypsière,8550,9350,800,9.36,adjacent product-family medians sorted by observed numeric median
+Hermès,US,USD,10,Jypsière,Kelly depeches,9350,11100,1750,18.72,adjacent product-family medians sorted by observed numeric median
+Hermès,US,USD,11,Kelly depeches,Hac a Dos,11100,13200,2100,18.92,adjacent product-family medians sorted by observed numeric median
+Louis Vuitton,FR,EUR,1,Multipass,Squire,2000,2200,200,10,adjacent product-family medians sorted by observed numeric median
+Louis Vuitton,FR,EUR,2,Squire,Alma,2200,2800,600,27.27,adjacent product-family medians sorted by observed numeric median
+Louis Vuitton,FR,EUR,3,Alma,OnTheGo,2800,2900,100,3.57,adjacent product-family medians sorted by observed numeric median
+Louis Vuitton,FR,EUR,4,OnTheGo,Speedy,2900,2900,0,0,adjacent product-family medians sorted by observed numeric median
+Louis Vuitton,FR,EUR,5,Speedy,Bundle Trunk,2900,3200,300,10.34,adjacent product-family medians sorted by observed numeric median
+Louis Vuitton,FR,EUR,6,Bundle Trunk,Side Trunk,3200,3600,400,12.50,adjacent product-family medians sorted by observed numeric median
+Louis Vuitton,FR,EUR,7,Side Trunk,Express,3600,3700,100,2.78,adjacent product-family medians sorted by observed numeric median
+Louis Vuitton,US,USD,1,Liv,Alma,1950,2000,50,2.56,adjacent product-family medians sorted by observed numeric median
+Louis Vuitton,US,USD,2,Alma,High Rise,2000,2020,20,1,adjacent product-family medians sorted by observed numeric median
+Louis Vuitton,US,USD,3,High Rise,Madeleine,2020,2170,150,7.43,adjacent product-family medians sorted by observed numeric median
+Louis Vuitton,US,USD,4,Madeleine,Frivole,2170,2210,40,1.84,adjacent product-family medians sorted by observed numeric median
+Louis Vuitton,US,USD,5,Frivole,Neverfull,2210,2240,30,1.36,adjacent product-family medians sorted by observed numeric median
+Louis Vuitton,US,USD,6,Neverfull,Multipass,2240,2480,240,10.71,adjacent product-family medians sorted by observed numeric median
+Louis Vuitton,US,USD,7,Multipass,Squire,2480,2665,185,7.46,adjacent product-family medians sorted by observed numeric median
+Louis Vuitton,US,USD,8,Squire,Boulogne,2665,2700,35,1.31,adjacent product-family medians sorted by observed numeric median
+Louis Vuitton,US,USD,9,Boulogne,Diane,2700,2700,0,0,adjacent product-family medians sorted by observed numeric median
+Louis Vuitton,US,USD,10,Diane,Hang On,2700,2850,150,5.56,adjacent product-family medians sorted by observed numeric median
+Louis Vuitton,US,USD,11,Hang On,Marelle,2850,2890,40,1.40,adjacent product-family medians sorted by observed numeric median
+Louis Vuitton,US,USD,12,Marelle,CarryAll,2890,2940,50,1.73,adjacent product-family medians sorted by observed numeric median
+Louis Vuitton,US,USD,13,CarryAll,Speedy,2940,3850,910,30.95,adjacent product-family medians sorted by observed numeric median
+Dior,FR,EUR,1,Dior Blooming,Dior Toujours,3100,3200,100,3.23,adjacent product-family medians sorted by observed numeric median
+Dior,FR,EUR,2,Dior Toujours,Dior Promenade,3200,3400,200,6.25,adjacent product-family medians sorted by observed numeric median
+Dior,FR,EUR,3,Dior Promenade,Dior Médaillon,3400,3450,50,1.47,adjacent product-family medians sorted by observed numeric median
+Dior,FR,EUR,4,Dior Médaillon,Dior Book Tote,3450,3600,150,4.35,adjacent product-family medians sorted by observed numeric median
+Dior,FR,EUR,5,Dior Book Tote,Saddle,3600,3650,50,1.39,adjacent product-family medians sorted by observed numeric median
+Dior,FR,EUR,6,Saddle,Dior Bow,3650,3700,50,1.37,adjacent product-family medians sorted by observed numeric median
+Dior,FR,EUR,7,Dior Bow,Diorly,3700,4175,475,12.84,adjacent product-family medians sorted by observed numeric median
+Dior,US,USD,1,Dior Blooming,Dior Book Tote,3700,3900,200,5.41,adjacent product-family medians sorted by observed numeric median
+Dior,US,USD,2,Dior Book Tote,Dior Médaillon,3900,4000,100,2.56,adjacent product-family medians sorted by observed numeric median
+Dior,US,USD,3,Dior Médaillon,Dior Promenade,4000,4000,0,0,adjacent product-family medians sorted by observed numeric median
+Dior,US,USD,4,Dior Promenade,Dior Toujours,4000,4000,0,0,adjacent product-family medians sorted by observed numeric median
+Dior,US,USD,5,Dior Toujours,Dior Bow,4000,4400,400,10,adjacent product-family medians sorted by observed numeric median
+Dior,US,USD,6,Dior Bow,Saddle,4400,4400,0,0,adjacent product-family medians sorted by observed numeric median
+Dior,US,USD,7,Saddle,Diorly,4400,5200,800,18.18,adjacent product-family medians sorted by observed numeric median

@@ -1,0 +1,11 @@
+{
+  "research_as_of": "2026-09-10",
+  "raw_observations": 166,
+  "clean_panel_rows": 166,
+  "numeric_reported_rows": 158,
+  "conflict_groups": 2,
+  "missingness_rows": 8,
+  "source_count": 21,
+  "scope_matrix_rows": 5,
+  "conflict_policy": "no silent overwrite; all observations are retained and calculation basis is explicit"
+}

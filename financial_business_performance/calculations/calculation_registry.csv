@@ -1,0 +1,9 @@
+calculation_id,output,formula,unit,type,caveat
+CALC-01,Chanel operating margin,operating_profit / revenue * 100,percent,derived,Consolidated company; operating profit label is company-reported.
+CALC-02,Chanel FCF margin,free_cash_flow / revenue * 100,percent,derived,Company-disclosed FCF definition; not comparable as a universal accounting metric across companies.
+CALC-03,Chanel capex intensity,capex / revenue * 100,percent,derived,"Company capital investment; company-wide, not handbag-only."
+CALC-04,Chanel brand-support intensity,brand_support_investment / revenue * 100,percent,derived,Brand-support investment includes disclosed client-support activities and is not a handbag marketing expense.
+CALC-05,Hermès leather-goods share,Leather Goods & Saddlery revenue / group revenue * 100,percent,derived,"Métier includes bags, travel items, small leather goods, saddlery and equestrian products."
+CALC-06,LVMH Fashion & Leather Goods margin,segment recurring operating profit / segment revenue * 100,percent,derived,Multi-brand segment; not Louis Vuitton or Dior standalone.
+CALC-07,Indexed evolution,value / value_in_2020 * 100,index,derived,Within-series only; no cross-currency or cross-grain nominal ranking.
+CALC-08,Hermès group recurring operating margin,use official displayed margin; retain derived check from rounded profit / revenue,percent,reported_plus_check,Official displayed margin is preferred because source revenue and profit may be rounded; Leather Goods & Saddlery segment margin is unavailable.

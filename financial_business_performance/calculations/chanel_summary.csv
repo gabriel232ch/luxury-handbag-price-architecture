@@ -1,0 +1,7 @@
+metric,window,value,unit,calculation_note
+revenue_cagr,2020-2025,13.8,percent,Nominal USD revenue CAGR from selected official company figures; not a constant-currency CAGR.
+operating_margin_change,2020-2025,4.5,percentage_points,Derived operating profit / revenue margin change; 2020 uses FY2021 restated KPI basis.
+peak_operating_margin,2017-2025,34.9,percent,Derived from reported consolidated company revenue and operating profit.
+peak_operating_margin_year,2017-2025,2021,fiscal_year,Derived from reported consolidated company revenue and operating profit.
+2024_revenue_decline,2023-2024,-4.3,percent,Company-reported comparable constant-currency growth; not calculated from rounded / nominal revenue.
+2025_fcf_change,2024-2025,43.6,percent,Derived from selected official FCF values.

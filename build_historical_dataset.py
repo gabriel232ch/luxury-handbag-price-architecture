@@ -14,7 +14,9 @@ OBSERVED_AT = "2026-08-15T20:20:39+08:00"
 COLLECTION_DATE = "2026-08-16"
 REQUESTED_PERIOD = "2020-01-01 through 2026-08-16"
 TZ_CN = timezone(timedelta(hours=8))
-ACCESSED_AT = datetime.now(TZ_CN).isoformat(timespec="seconds")
+# Access metadata is frozen for reproducible builds; observation dates remain
+# the dates encoded in the source records.
+ACCESSED_AT = "2026-08-16T17:58:39+08:00"
 
 
 FIELDS = [

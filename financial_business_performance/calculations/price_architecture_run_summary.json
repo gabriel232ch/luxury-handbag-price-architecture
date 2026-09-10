@@ -1,0 +1,13 @@
+{
+  "accepted_observations": 161,
+  "numeric_observations": 147,
+  "outputs": [
+    "architecture_summary.csv",
+    "architecture_visibility.csv",
+    "sku_price_steps.csv",
+    "family_step_up.csv",
+    "tier_density.csv",
+    "price_architecture_calculation_registry.csv"
+  ],
+  "price_window": "2026 current snapshot as observed 2026-08-15"
+}

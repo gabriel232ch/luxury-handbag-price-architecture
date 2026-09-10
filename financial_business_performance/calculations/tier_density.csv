@@ -1,0 +1,33 @@
+brand,market,currency,tier,numeric_skus,share_of_brand_numeric_pct,minimum,maximum,tier_definition
+CHANEL,FR,EUR,entry,0,0.0%,,,collapsed from the existing market-specific observed-price bands; not affordability bands
+CHANEL,FR,EUR,core,2,11.8%,4850,4900,collapsed from the existing market-specific observed-price bands; not affordability bands
+CHANEL,FR,EUR,premium,8,47.1%,5050,6700,collapsed from the existing market-specific observed-price bands; not affordability bands
+CHANEL,FR,EUR,icon,7,41.2%,10000,12250,collapsed from the existing market-specific observed-price bands; not affordability bands
+CHANEL,US,USD,entry,0,0.0%,,,collapsed from the existing market-specific observed-price bands; not affordability bands
+CHANEL,US,USD,core,3,16.7%,5400,5600,collapsed from the existing market-specific observed-price bands; not affordability bands
+CHANEL,US,USD,premium,8,44.4%,6100,7400,collapsed from the existing market-specific observed-price bands; not affordability bands
+CHANEL,US,USD,icon,7,38.9%,11000,13500,collapsed from the existing market-specific observed-price bands; not affordability bands
+Hermès,FR,EUR,entry,1,5.0%,2170,2170,collapsed from the existing market-specific observed-price bands; not affordability bands
+Hermès,FR,EUR,core,6,30.0%,3300,4650,collapsed from the existing market-specific observed-price bands; not affordability bands
+Hermès,FR,EUR,premium,13,65.0%,5300,9100,collapsed from the existing market-specific observed-price bands; not affordability bands
+Hermès,FR,EUR,icon,0,0.0%,,,collapsed from the existing market-specific observed-price bands; not affordability bands
+Hermès,US,USD,entry,3,15.0%,3075,3975,collapsed from the existing market-specific observed-price bands; not affordability bands
+Hermès,US,USD,core,11,55.0%,4550,5850,collapsed from the existing market-specific observed-price bands; not affordability bands
+Hermès,US,USD,premium,4,20.0%,6850,9350,collapsed from the existing market-specific observed-price bands; not affordability bands
+Hermès,US,USD,icon,2,10.0%,11100,13200,collapsed from the existing market-specific observed-price bands; not affordability bands
+Louis Vuitton,FR,EUR,entry,12,60.0%,1800,2900,collapsed from the existing market-specific observed-price bands; not affordability bands
+Louis Vuitton,FR,EUR,core,8,40.0%,3200,3800,collapsed from the existing market-specific observed-price bands; not affordability bands
+Louis Vuitton,FR,EUR,premium,0,0.0%,,,collapsed from the existing market-specific observed-price bands; not affordability bands
+Louis Vuitton,FR,EUR,icon,0,0.0%,,,collapsed from the existing market-specific observed-price bands; not affordability bands
+Louis Vuitton,US,USD,entry,19,95.0%,1950,3550,collapsed from the existing market-specific observed-price bands; not affordability bands
+Louis Vuitton,US,USD,core,1,5.0%,4150,4150,collapsed from the existing market-specific observed-price bands; not affordability bands
+Louis Vuitton,US,USD,premium,0,0.0%,,,collapsed from the existing market-specific observed-price bands; not affordability bands
+Louis Vuitton,US,USD,icon,0,0.0%,,,collapsed from the existing market-specific observed-price bands; not affordability bands
+Dior,FR,EUR,entry,0,0.0%,,,collapsed from the existing market-specific observed-price bands; not affordability bands
+Dior,FR,EUR,core,19,100.0%,3000,4500,collapsed from the existing market-specific observed-price bands; not affordability bands
+Dior,FR,EUR,premium,0,0.0%,,,collapsed from the existing market-specific observed-price bands; not affordability bands
+Dior,FR,EUR,icon,0,0.0%,,,collapsed from the existing market-specific observed-price bands; not affordability bands
+Dior,US,USD,entry,5,38.5%,3600,3900,collapsed from the existing market-specific observed-price bands; not affordability bands
+Dior,US,USD,core,8,61.5%,4000,5200,collapsed from the existing market-specific observed-price bands; not affordability bands
+Dior,US,USD,premium,0,0.0%,,,collapsed from the existing market-specific observed-price bands; not affordability bands
+Dior,US,USD,icon,0,0.0%,,,collapsed from the existing market-specific observed-price bands; not affordability bands

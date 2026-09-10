@@ -1,0 +1,9 @@
+observation_id,entity,reporting_scope,segment,fiscal_year,metric,metric_status,selection_status,reason
+CH-NA-handbag-revenue,Chanel,consolidated_company,,2017-2025,handbag_revenue,unavailable,unavailable,Chanel does not publicly disclose handbag-only revenue; not estimable from consolidated accounts.
+CH-NA-handbag-units,Chanel,consolidated_company,,2017-2025,handbag_units,unavailable,unavailable,Handbag unit sales are not publicly disclosed.
+CH-NA-handbag-margin,Chanel,consolidated_company,,2017-2025,handbag_gross_margin,unavailable,unavailable,Handbag gross margin is not publicly disclosed.
+CH-NA-classic-revenue,Chanel,consolidated_company,,2017-2025,classic_revenue,unavailable,unavailable,Classic handbag revenue is not publicly disclosed.
+HM-NA-leather-profit,Hermès,group_and_métier,Leather Goods & Saddlery,2017-2025,segment_operating_profit,unavailable,unavailable,Hermès does not disclose Leather Goods & Saddlery operating profit in the source set; group recurring operating income is the compatible profitability context.
+LVMH-NA-flg-investments,LVMH,group_and_business_group,Fashion & Leather Goods,2017-2025,segment_operating_investments,unavailable,unavailable,Segment-level investment is not consistently disclosed in the source set; group operating investments are not substituted into the segment panel.
+LVMH-NA-lv-revenue,Louis Vuitton,brand_level,,2017-2025,standalone_brand_revenue,unavailable,unavailable,No standalone audited Louis Vuitton revenue is disclosed in this evidence set.
+LVMH-NA-dior-revenue,Dior,brand_level,,2017-2025,standalone_brand_revenue,unavailable,unavailable,No comparable standalone Dior couture-brand revenue is disclosed; LVMH segment or Christian Dior SE figures are not substituted.
