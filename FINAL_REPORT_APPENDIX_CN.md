@@ -218,3 +218,84 @@ Dior 的原始高值被 3 条当前锚点转移抬高；Hermès 的法国 Geta �
 - 数据来源、清洗边界与连续性判定：`chanel_fr_us_handbags_current/collection_log.md`、`luxury_competitor_pricing_current/logs/collection_log.md`、`luxury_historical_pricing/logs/HISTORICAL_COLLECTION_LOG.md`、`luxury_historical_pricing/logs/HISTORICAL_SOURCE_REGISTRY.csv` 与 `luxury_historical_pricing/lineage/product_lineage.csv`
 
 这些文件用于复核计算与证据链，不替代本文对外使用的官方/历史来源链接。
+
+## M. Financial & Business Performance workstream
+
+### M1. Financial scope matrix
+
+| Entity | Financial grain | Main use | Explicit non-use |
+|---|---|---|---|
+| Chanel | Chanel Limited consolidated company | Chanel FY2017–FY2025 business performance | Handbag / Classic revenue、units、gross margin、SKU profitability |
+| Hermès | Group + Leather Goods & Saddlery métier | Leather-goods benchmark | Métier operating profit、handbags-only economics |
+| LVMH | Group + Fashion & Leather Goods business group | Broad luxury leather-goods environment | Louis Vuitton revenue、Dior revenue、brand-level margin |
+| Louis Vuitton | No standalone audited financials in this evidence set | Qualitative brand context and price architecture | Standalone revenue / profit / margin |
+| Dior | No comparable standalone couture-brand financials in this evidence set | Qualitative brand context and price architecture | Dior couture standalone revenue / profit / margin |
+
+The machine-readable version is [`financial_scope_matrix.csv`](financial_business_performance/clean/financial_scope_matrix.csv). This asymmetry is a finding about public disclosure, not a data-cleaning defect.
+
+### M2. Structured financial panel contract
+
+Every raw observation is retained in [`financial_observations_raw.jsonl`](financial_business_performance/raw/financial_observations_raw.jsonl) and normalized in [`financial_panel.csv`](financial_business_performance/clean/financial_panel.csv). Required audit fields are:
+
+`entity`, `reporting_scope`, `segment`, `fiscal_year`, `period`, `metric`, `value`, `unit`, `currency`, `reported_or_constant_currency`, `source_id`, `source_title`, `source_url`, `publication_date`, `page_or_section`, `extraction_note`, `confidence`, `caveat`, `selection_status`, `metric_status`, `precision_note`, `source_basis`.
+
+The build preserves all observations when a same-key conflict exists. The selected calculation basis is explicit in `selection_status`, and the conflict is logged in [`conflicts.csv`](financial_business_performance/logs/conflicts.csv). Missing / unavailable disclosures are logged in [`missingness.csv`](financial_business_performance/logs/missingness.csv), not filled by proxy.
+
+### M3. Chanel financial panel: FY2020–FY2025
+
+| FY | Revenue USD m | Comparable growth | Operating profit USD m | Operating margin | FCF USD m | Capex USD m | Brand-support investment USD m |
+|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2020 | 10,108 | -18.0% | 2,018 | 20.0% | 679 | 1,077 | 1,360 |
+| 2021 | 15,639 | +49.6% | 5,461 | 34.9% | 4,540 | 758 | 1,795 |
+| 2022 | 17,200 | +17.0% | 5,776 | 33.6% | 3,534 | 668 | 2,052 |
+| 2023 | 19,700 | +16.0% | 6,407 | 32.5% | 3,755 | 1,227 | 2,463 |
+| 2024 | 18,699 | -4.3% | 4,479 | 24.0% | 1,842 | 1,755 | 2,445 |
+| 2025 | 19,269 | +1.8% comparable / +3.0% reported | 4,712 | 24.5% | 2,646 | 1,449 | 2,395 |
+
+Operating margin、FCF margin、capex / revenue、brand-support / revenue、annual changes 与 CAGR 均由 [`chanel_annual_performance.csv`](financial_business_performance/calculations/chanel_annual_performance.csv) 与 [`chanel_summary.csv`](financial_business_performance/calculations/chanel_summary.csv) 生成。2020–2025 nominal revenue CAGR 为 13.8%；2020–2025 operating margin change 为 +4.5 percentage points；这些是 company-level derived metrics，不是 handbag economics。
+
+### M4. Benchmark panels
+
+- [`hermes_benchmark.csv`](financial_business_performance/calculations/hermes_benchmark.csv)：Hermès group revenue / growth / recurring operating margin / investments / adjusted FCF，以及 Leather Goods & Saddlery revenue、share 和 reported / constant-currency growth。
+- [`lvmh_fashion_leather_goods.csv`](financial_business_performance/calculations/lvmh_fashion_leather_goods.csv)：LVMH Fashion & Leather Goods revenue、reported / organic growth、recurring operating profit 与 derived margin。
+- [`comparative_trends.csv`](financial_business_performance/calculations/comparative_trends.csv)：以 2020=100 的 within-series index；不做跨币种 nominal ranking。
+
+Hermès Leather Goods & Saddlery 的 segment share 2020 为 50.2%、2025 为 44.2%；LVMH Fashion & Leather Goods 2025 organic growth 为 -5.0%。二者都不能被改写为 handbags-only 或单一品牌数据。
+
+### M5. Official financial source register
+
+| Source family | Coverage | Official source |
+|---|---:|---|
+| Chanel Limited Financial Results | FY2017–FY2025 | [Chanel Financial Results](https://www.chanel.com/es/financial-results/) |
+| Hermès annual results / URD | FY2020–FY2025 | [Hermès FY2025 full-year results](https://assets-finance.hermes.com/s3fs-public/node/pdf_file/2026-02/1770842738/hermes_20260212_pr_2025fullyearresults_va.pdf) |
+| LVMH annual results | FY2020–FY2025 | [LVMH FY2025 official results](https://www.lvmh.com/en/publications/solid-performance-in-a-disrupted-global-economic-and-geopolitical-environment) |
+
+The full row-level registry, including each fiscal-year publication date and page / section, is [`source_registry.csv`](financial_business_performance/sources/source_registry.csv). The source set is first-party; no secondary estimate replaces an official disclosure.
+
+### M6. Financial non-estimables
+
+The following remain explicitly unavailable: Chanel handbag revenue, handbag units, handbag gross margin, Classic revenue; Hermès Leather Goods & Saddlery operating profit; LVMH Fashion & Leather Goods segment investment; Louis Vuitton standalone revenue; Dior standalone brand revenue. They are marked `not publicly disclosed / not estimable from available evidence` in the panel.
+
+## N. Phase 2 calculation registry
+
+| Output | Script | Main boundary |
+|---|---|---|
+| Current architecture, price bands, family summaries | `competitive_pricing_calculations.py` | Non-weighted observed list-price sample |
+| SKU / family steps, tier density, visibility, Chanel gaps | `price_architecture_diagnostics.py` | Numeric prices only; missing / unresolved states retained separately |
+| Historical paths, same-model / successor, icon-access gap | `historical_pricing_calculations.py` | No interpolation; successor paths are directional |
+| Financial panel | `build_financial_dataset.py` | No silent conflict overwrite; no unavailable metric imputation |
+| Financial performance / benchmarks | `financial_performance_calculations.py` | Currency and reporting grain remain visible |
+| Financial charts | `build_financial_report_assets.py` | No price / revenue dual-axis correlation chart |
+
+## O. Final evidence governance
+
+The external claim map is [`docs/EVIDENCE_MAP.md`](docs/EVIDENCE_MAP.md). The release gate is [`docs/VALIDATION.md`](docs/VALIDATION.md). Together they document:
+
+- claim → price evidence → financial evidence → benchmark → confidence → caveat;
+- current and historical price reconciliation;
+- headline financial reconciliation and restated comparative treatment;
+- reporting grain, currency and reported / constant-currency controls;
+- causal-language QA and chart QA;
+- remaining unestimable metrics and readiness status.
+
+Final status is **READY WITH LIMITATIONS**. The project is strong enough for a portfolio business-analysis case because the evidence chain is structured and auditable; it is not a substitute for internal Chanel customer, volume, mix, inventory or product-economics data.

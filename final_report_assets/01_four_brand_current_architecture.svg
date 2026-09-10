@@ -11,8 +11,8 @@
           .grid { stroke:#D8D5CF; stroke-width:1; }
           .axis { stroke:#8D959C; stroke-width:1.2; }
         </style>
-<text x="56" y="52" class="title">四品牌当前手袋价格架构（法国 / 美国）</text>
-<text x="56" y="79" class="subtitle">法国与美国分面；横线为最小–最大观察范围，粗线为 P25–P75，圆点为中位数；数值均为各市场本地货币。</text>
+<text x="56" y="52" class="title">四品牌当前价格架构</text>
+<text x="56" y="79" class="subtitle">法国与美国分面；横线为可见数值价格范围，粗线为中间 50% 区间，圆点为中位数。</text>
 <text x="90" y="150" class="section">法国｜EUR</text>
 <line x1="240.0" y1="182" x2="240.0" y2="442" class="grid"/>
 <text x="240.0" y="466" text-anchor="middle" class="small">€0</text>
@@ -58,7 +58,7 @@
 <text x="720" y="599" text-anchor="end" class="value">€3,450</text>
 <text x="348.6" y="574" text-anchor="middle" class="small">€3,000</text>
 <text x="397.9" y="574" text-anchor="middle" class="small">€4,500</text>
-<text x="250" y="715" class="note">基于数值观察样本｜范围 = 最小–最大；粗线 = P25–P75；点 = 中位数｜本地货币</text>
+<text x="250" y="715" class="note">范围 = min–max；粗线 = P25–P75；点 = 中位数</text>
 <text x="850" y="150" class="section">美国｜USD</text>
 <line x1="1000.0" y1="182" x2="1000.0" y2="442" class="grid"/>
 <text x="1000.0" y="466" text-anchor="middle" class="small">$0</text>
@@ -104,7 +104,7 @@
 <text x="1480" y="599" text-anchor="end" class="value">$4,000</text>
 <text x="1120.4" y="574" text-anchor="middle" class="small">$3,600</text>
 <text x="1169.5" y="574" text-anchor="middle" class="small">$5,200</text>
-<text x="1010" y="715" class="note">基于数值观察样本｜范围 = 最小–最大；粗线 = P25–P75；点 = 中位数｜本地货币</text>
+<text x="1010" y="715" class="note">范围 = min–max；粗线 = P25–P75；点 = 中位数</text>
 <line x1="56" y1="760" x2="1544" y2="760" stroke="#D8D5CF"/>
 <text x="56" y="790" class="note">主读法：Chanel 的可见起点更高；Louis Vuitton / Dior 密集于较低层；Hermès 的观察范围更宽。各市场使用本地货币，不合并比较。</text>
 <text x="56" y="815" class="note">样本注：2026-08-15 官方页面采样；161 条接受观察、147 条数值价格；非加权快照，非全量产品普查。</text>

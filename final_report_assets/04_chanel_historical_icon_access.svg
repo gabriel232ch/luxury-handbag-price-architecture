@@ -11,8 +11,8 @@
           .grid { stroke:#D8D5CF; stroke-width:1; }
           .axis { stroke:#8D959C; stroke-width:1.2; }
         </style>
-<text x="56" y="52" class="title">Chanel 法国选定产品线：Classic 与 Mini 价格演变（2022–2026）</text>
-<text x="56" y="79" class="subtitle">共同观察年份；Classic 11.12 / Small Classic 对比两条 Mini Classic 产品线，非 Chanel 全部手袋组合。</text>
+<text x="56" y="52" class="title">Chanel 法国选定产品线：图标与 Mini/access 价格演化</text>
+<text x="56" y="79" class="subtitle">2022–2026 共同观察年份；Classic 11.12 / Small Classic 对比两条 Mini Classic 线，非 Chanel 全部手袋组合。</text>
 <line x1="140" y1="610.0" x2="1120" y2="610.0" class="grid"/>
 <text x="126" y="615.0" text-anchor="end" class="small">€0</text>
 <line x1="140" y1="531.7" x2="1120" y2="531.7" class="grid"/>
@@ -40,7 +40,7 @@
 <text x="793.3" y="200.8" text-anchor="middle" class="small">€10,100</text>
 <circle cx="1120.0" cy="207.0" r="7" fill="#FCFBF8" stroke="#171717" stroke-width="4"/>
 <text x="1120.0" y="193.0" text-anchor="middle" class="small">€10,300</text>
-<text x="1138.0" y="212.0" class="value" fill="#171717">Classic/经典产品组中位数</text>
+<text x="1138.0" y="212.0" class="value" fill="#171717">图标中位数</text>
 <polyline points="140.0,443.7 466.7,430.0 793.3,420.2 1120.0,416.3" fill="none" stroke="#B07A3D" stroke-width="4"/>
 <circle cx="140.0" cy="443.7" r="7" fill="#FCFBF8" stroke="#B07A3D" stroke-width="4"/>
 <text x="140.0" y="429.7" text-anchor="middle" class="small">€4,250</text>
@@ -50,15 +50,15 @@
 <text x="793.3" y="406.2" text-anchor="middle" class="small">€4,850</text>
 <circle cx="1120.0" cy="416.3" r="7" fill="#FCFBF8" stroke="#B07A3D" stroke-width="4"/>
 <text x="1120.0" y="402.3" text-anchor="middle" class="small">€4,950</text>
-<text x="1138.0" y="421.3" class="value" fill="#B07A3D">Mini/进入组中位数</text>
+<text x="1138.0" y="421.3" class="value" fill="#B07A3D">Mini/access 中位数</text>
 <rect x="1190" y="180" width="330" height="250" rx="10" fill="#F1EEE8" stroke="#D8D5CF"/>
 <text x="1220" y="220" class="section">结论</text>
-<text x="1220" y="257" class="label">Classic/经典产品组：+18.1%</text>
-<text x="1220" y="289" class="label">Mini/进入组：+16.5%</text>
+<text x="1220" y="257" class="label">图标中位数：+18.1%</text>
+<text x="1220" y="289" class="label">Mini/access 中位数：+16.5%</text>
 <text x="1220" y="321" class="label">比例：2.05× → 2.08×</text>
 <text x="1220" y="353" class="label">绝对价差：€4,470 → €5,350</text>
-<text x="1220" y="385" class="label">两组价格都上移；Classic 仅适度领先。</text>
-<text x="140" y="700" class="note">解释：这支持“整体价格体系持续上移 + 持续的 Classic 高位锚点”，而不是“只有经典产品大幅涨价”。</text>
-<text x="140" y="726" class="note">方法注：使用共同观察年份，不插值；历史非当前观察主要来自专业第三方历史价格资料，2026 端点来自官方当前页面。</text>
-<text x="140" y="752" class="note">来源：historical_pricing_calculations/icon_core_evolution.csv；选定 Chanel France 产品线：CH-C01、CH-C02、CH-C03、CH-C04。</text>
+<text x="1220" y="385" class="label">两组价格都上移；图标仅适度领先。</text>
+<text x="140" y="700" class="note">解释：这支持“广泛重定价 + 持续的高图标锚点”，而不是“只有图标产品大幅涨价”。</text>
+<text x="140" y="726" class="note">方法注：使用 common observed years，不插值；历史非当前观察主要来自已登记的专业二手历史价格表，2026 端点来自官方当前页面。</text>
+<text x="140" y="752" class="note">来源：historical_pricing_calculations/icon_core_evolution.csv；选定 Chanel France lineages：CH-C01、CH-C02、CH-C03、CH-C04。</text>
 </svg>

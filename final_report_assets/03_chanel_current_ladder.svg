@@ -11,8 +11,8 @@
           .grid { stroke:#D8D5CF; stroke-width:1; }
           .axis { stroke:#8D959C; stroke-width:1.2; }
         </style>
-<text x="56" y="52" class="title">Chanel 当前价格梯度：入门/核心 → Classic 高位锚点 → 询价上端</text>
-<text x="56" y="79" class="subtitle">仅展示本次官方页面采样中可见的 Chanel 产品家族区间；灰色询价标记不映射到数值轴。</text>
+<text x="56" y="52" class="title">Chanel 当前价格梯：lower/core → Classic/icon → 询价上端</text>
+<text x="56" y="79" class="subtitle">仅展示本次官方页面采样中可见的 Chanel 家族区间；灰色询价标记不映射到数值轴。</text>
 <text x="90" y="150" class="section">法国｜EUR</text>
 <line x1="290.0" y1="182" x2="290.0" y2="442" class="grid"/>
 <text x="290.0" y="466" text-anchor="middle" class="small">€0</text>
@@ -48,7 +48,7 @@
 <text x="276" y="585" text-anchor="end" class="label">Classic 11.12 询价</text>
 <rect x="290" y="568" width="280" height="24" rx="12" fill="#D4D1CA" opacity="0.8"/>
 <text x="430" y="585" text-anchor="middle" class="small">3 条记录｜不显示数值</text>
-<text x="90" y="715" class="note">入门/核心产品 = Mini、Shopping、Bowling；经典产品 = Classic 11.12、Small Classic</text>
+<text x="90" y="715" class="note">lower/core = Mini、Shopping、Bowling；Classic/icon = Classic 11.12、Small Classic</text>
 <text x="850" y="150" class="section">美国｜USD</text>
 <line x1="1050.0" y1="182" x2="1050.0" y2="442" class="grid"/>
 <text x="1050.0" y="466" text-anchor="middle" class="small">$0</text>
@@ -86,8 +86,8 @@
 <text x="1036" y="585" text-anchor="end" class="label">Classic 11.12 询价</text>
 <rect x="1050" y="568" width="280" height="24" rx="12" fill="#D4D1CA" opacity="0.8"/>
 <text x="1190" y="585" text-anchor="middle" class="small">3 条记录｜不显示数值</text>
-<text x="850" y="715" class="note">入门/核心产品 = Mini、Shopping、Bowling；经典产品 = Classic 11.12、Small Classic</text>
+<text x="850" y="715" class="note">lower/core = Mini、Shopping、Bowling；Classic/icon = Classic 11.12、Small Classic</text>
 <line x1="56" y1="780" x2="1544" y2="780" stroke="#D8D5CF"/>
-<text x="56" y="810" class="note">主读法：Chanel 的可见价格不是一条均匀上升的连续梯，而是入门/核心产品集群与 Classic 产品集群之间存在明显跳升，上端还部分转为询价。</text>
-<text x="56" y="835" class="note">边界：本图描述本次采样中的数值观察；遗漏的中间 SKU 或询价产品可能改变完整在售组合的价格梯度。</text>
+<text x="56" y="810" class="note">主读法：Chanel 的可见价格不是一条均匀上升的连续梯，而是 lower/core 集群与 Classic/icon 集群之间存在明显跳升，上端还部分转为询价。</text>
+<text x="56" y="835" class="note">边界：本图描述捕获到的数值样本；遗漏的中间 SKU 或询价产品可能改变完整在售组合的梯形。</text>
 </svg>

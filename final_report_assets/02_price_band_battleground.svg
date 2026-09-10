@@ -11,14 +11,14 @@
           .grid { stroke:#D8D5CF; stroke-width:1; }
           .axis { stroke:#8D959C; stroke-width:1.2; }
         </style>
-<text x="56" y="52" class="title">价格带竞争格局：竞争对象随层级变化</text>
-<text x="56" y="79" class="subtitle">每个单元格为“数值观察数（占该品牌本地数值样本）”；0 表示本次采样未捕获数值观察，不代表品牌全球没有该价格区间产品。</text>
+<text x="56" y="52" class="title">价格带战场：竞争集合随层级变化</text>
+<text x="56" y="79" class="subtitle">每个单元格为“数值观察数（占该品牌本地数值样本）”；0 表示本次采样没有捕获数值观察，不表示品牌全球没有该价格带产品。</text>
 <text x="80" y="150" class="section">法国｜EUR</text>
 <text x="312.5" y="188" text-anchor="middle" class="label">Chanel</text>
 <text x="457.5" y="188" text-anchor="middle" class="label">Hermès</text>
 <text x="602.5" y="188" text-anchor="middle" class="label">Louis Vuitton</text>
 <text x="747.5" y="188" text-anchor="middle" class="label">Dior</text>
-<text x="226" y="252" text-anchor="end" class="label">入门层（&lt;€3,000）</text>
+<text x="226" y="252" text-anchor="end" class="label">Access / lower</text>
 <rect x="240" y="210" width="141" height="66" rx="4" fill="#171717" opacity="0.07" stroke="#E5E2DC"/>
 <text x="310.5" y="239" text-anchor="middle" font-family="'Noto Sans CJK SC','PingFang SC','Heiti SC','Arial',sans-serif" font-size="18" font-weight="700" fill="#26313B">0</text>
 <text x="310.5" y="260" text-anchor="middle" font-family="'Noto Sans CJK SC','PingFang SC','Heiti SC','Arial',sans-serif" font-size="12" fill="#26313B">0.0%</text>
@@ -31,7 +31,7 @@
 <rect x="675" y="210" width="141" height="66" rx="4" fill="#7D2947" opacity="0.07" stroke="#E5E2DC"/>
 <text x="745.5" y="239" text-anchor="middle" font-family="'Noto Sans CJK SC','PingFang SC','Heiti SC','Arial',sans-serif" font-size="18" font-weight="700" fill="#26313B">0</text>
 <text x="745.5" y="260" text-anchor="middle" font-family="'Noto Sans CJK SC','PingFang SC','Heiti SC','Arial',sans-serif" font-size="12" fill="#26313B">0.0%</text>
-<text x="226" y="322" text-anchor="end" class="label">核心层（€3,000–4,999）</text>
+<text x="226" y="322" text-anchor="end" class="label">Core</text>
 <rect x="240" y="280" width="141" height="66" rx="4" fill="#171717" opacity="0.15" stroke="#E5E2DC"/>
 <text x="310.5" y="309" text-anchor="middle" font-family="'Noto Sans CJK SC','PingFang SC','Heiti SC','Arial',sans-serif" font-size="18" font-weight="700" fill="#26313B">2</text>
 <text x="310.5" y="330" text-anchor="middle" font-family="'Noto Sans CJK SC','PingFang SC','Heiti SC','Arial',sans-serif" font-size="12" fill="#26313B">11.8%</text>
@@ -44,7 +44,7 @@
 <rect x="675" y="280" width="141" height="66" rx="4" fill="#7D2947" opacity="0.79" stroke="#E5E2DC"/>
 <text x="745.5" y="309" text-anchor="middle" font-family="'Noto Sans CJK SC','PingFang SC','Heiti SC','Arial',sans-serif" font-size="18" font-weight="700" fill="#FFFFFF">19</text>
 <text x="745.5" y="330" text-anchor="middle" font-family="'Noto Sans CJK SC','PingFang SC','Heiti SC','Arial',sans-serif" font-size="12" fill="#FFFFFF">100.0%</text>
-<text x="226" y="392" text-anchor="end" class="label">高端核心层（€5,000–6,999）</text>
+<text x="226" y="392" text-anchor="end" class="label">Premium core</text>
 <rect x="240" y="350" width="141" height="66" rx="4" fill="#171717" opacity="0.37" stroke="#E5E2DC"/>
 <text x="310.5" y="379" text-anchor="middle" font-family="'Noto Sans CJK SC','PingFang SC','Heiti SC','Arial',sans-serif" font-size="18" font-weight="700" fill="#26313B">8</text>
 <text x="310.5" y="400" text-anchor="middle" font-family="'Noto Sans CJK SC','PingFang SC','Heiti SC','Arial',sans-serif" font-size="12" fill="#26313B">47.1%</text>
@@ -57,7 +57,7 @@
 <rect x="675" y="350" width="141" height="66" rx="4" fill="#7D2947" opacity="0.07" stroke="#E5E2DC"/>
 <text x="745.5" y="379" text-anchor="middle" font-family="'Noto Sans CJK SC','PingFang SC','Heiti SC','Arial',sans-serif" font-size="18" font-weight="700" fill="#26313B">0</text>
 <text x="745.5" y="400" text-anchor="middle" font-family="'Noto Sans CJK SC','PingFang SC','Heiti SC','Arial',sans-serif" font-size="12" fill="#26313B">0.0%</text>
-<text x="226" y="462" text-anchor="end" class="label">高价层（€7,000–9,999）</text>
+<text x="226" y="462" text-anchor="end" class="label">High</text>
 <rect x="240" y="420" width="141" height="66" rx="4" fill="#171717" opacity="0.07" stroke="#E5E2DC"/>
 <text x="310.5" y="449" text-anchor="middle" font-family="'Noto Sans CJK SC','PingFang SC','Heiti SC','Arial',sans-serif" font-size="18" font-weight="700" fill="#26313B">0</text>
 <text x="310.5" y="470" text-anchor="middle" font-family="'Noto Sans CJK SC','PingFang SC','Heiti SC','Arial',sans-serif" font-size="12" fill="#26313B">0.0%</text>
@@ -70,7 +70,7 @@
 <rect x="675" y="420" width="141" height="66" rx="4" fill="#7D2947" opacity="0.07" stroke="#E5E2DC"/>
 <text x="745.5" y="449" text-anchor="middle" font-family="'Noto Sans CJK SC','PingFang SC','Heiti SC','Arial',sans-serif" font-size="18" font-weight="700" fill="#26313B">0</text>
 <text x="745.5" y="470" text-anchor="middle" font-family="'Noto Sans CJK SC','PingFang SC','Heiti SC','Arial',sans-serif" font-size="12" fill="#26313B">0.0%</text>
-<text x="226" y="532" text-anchor="end" class="label">经典/超高价层（≥€10,000）</text>
+<text x="226" y="532" text-anchor="end" class="label">Exceptional / icon</text>
 <rect x="240" y="490" width="141" height="66" rx="4" fill="#171717" opacity="0.34" stroke="#E5E2DC"/>
 <text x="310.5" y="519" text-anchor="middle" font-family="'Noto Sans CJK SC','PingFang SC','Heiti SC','Arial',sans-serif" font-size="18" font-weight="700" fill="#26313B">7</text>
 <text x="310.5" y="540" text-anchor="middle" font-family="'Noto Sans CJK SC','PingFang SC','Heiti SC','Arial',sans-serif" font-size="12" fill="#26313B">41.2%</text>
@@ -83,14 +83,13 @@
 <rect x="675" y="490" width="141" height="66" rx="4" fill="#7D2947" opacity="0.07" stroke="#E5E2DC"/>
 <text x="745.5" y="519" text-anchor="middle" font-family="'Noto Sans CJK SC','PingFang SC','Heiti SC','Arial',sans-serif" font-size="18" font-weight="700" fill="#26313B">0</text>
 <text x="745.5" y="540" text-anchor="middle" font-family="'Noto Sans CJK SC','PingFang SC','Heiti SC','Arial',sans-serif" font-size="12" fill="#26313B">0.0%</text>
-<text x="240" y="592" class="note">价格带为分析分组，不是消费者可负担性区间。</text>
-<text x="240" y="620" class="note">0 表示本次采样未捕获数值观察，不代表品牌全球没有该价格区间产品。</text>
+<text x="240" y="592" class="note">观察到的价格带为分析分组，不是消费者可负担性分组。</text>
 <text x="850" y="150" class="section">美国｜USD</text>
 <text x="1082.5" y="188" text-anchor="middle" class="label">Chanel</text>
 <text x="1227.5" y="188" text-anchor="middle" class="label">Hermès</text>
 <text x="1372.5" y="188" text-anchor="middle" class="label">Louis Vuitton</text>
 <text x="1517.5" y="188" text-anchor="middle" class="label">Dior</text>
-<text x="996" y="252" text-anchor="end" class="label">入门层（&lt;$4,000）</text>
+<text x="996" y="252" text-anchor="end" class="label">Access / lower</text>
 <rect x="1010" y="210" width="141" height="66" rx="4" fill="#171717" opacity="0.07" stroke="#E5E2DC"/>
 <text x="1080.5" y="239" text-anchor="middle" font-family="'Noto Sans CJK SC','PingFang SC','Heiti SC','Arial',sans-serif" font-size="18" font-weight="700" fill="#26313B">0</text>
 <text x="1080.5" y="260" text-anchor="middle" font-family="'Noto Sans CJK SC','PingFang SC','Heiti SC','Arial',sans-serif" font-size="12" fill="#26313B">0.0%</text>
@@ -103,7 +102,7 @@
 <rect x="1445" y="210" width="141" height="66" rx="4" fill="#7D2947" opacity="0.26" stroke="#E5E2DC"/>
 <text x="1515.5" y="239" text-anchor="middle" font-family="'Noto Sans CJK SC','PingFang SC','Heiti SC','Arial',sans-serif" font-size="18" font-weight="700" fill="#26313B">5</text>
 <text x="1515.5" y="260" text-anchor="middle" font-family="'Noto Sans CJK SC','PingFang SC','Heiti SC','Arial',sans-serif" font-size="12" fill="#26313B">38.5%</text>
-<text x="996" y="322" text-anchor="end" class="label">核心层（$4,000–5,999）</text>
+<text x="996" y="322" text-anchor="end" class="label">Core</text>
 <rect x="1010" y="280" width="141" height="66" rx="4" fill="#171717" opacity="0.18" stroke="#E5E2DC"/>
 <text x="1080.5" y="309" text-anchor="middle" font-family="'Noto Sans CJK SC','PingFang SC','Heiti SC','Arial',sans-serif" font-size="18" font-weight="700" fill="#26313B">3</text>
 <text x="1080.5" y="330" text-anchor="middle" font-family="'Noto Sans CJK SC','PingFang SC','Heiti SC','Arial',sans-serif" font-size="12" fill="#26313B">16.7%</text>
@@ -116,7 +115,7 @@
 <rect x="1445" y="280" width="141" height="66" rx="4" fill="#7D2947" opacity="0.37" stroke="#E5E2DC"/>
 <text x="1515.5" y="309" text-anchor="middle" font-family="'Noto Sans CJK SC','PingFang SC','Heiti SC','Arial',sans-serif" font-size="18" font-weight="700" fill="#26313B">8</text>
 <text x="1515.5" y="330" text-anchor="middle" font-family="'Noto Sans CJK SC','PingFang SC','Heiti SC','Arial',sans-serif" font-size="12" fill="#26313B">61.5%</text>
-<text x="996" y="392" text-anchor="end" class="label">高端核心层（$6,000–7,999）</text>
+<text x="996" y="392" text-anchor="end" class="label">Premium core</text>
 <rect x="1010" y="350" width="141" height="66" rx="4" fill="#171717" opacity="0.37" stroke="#E5E2DC"/>
 <text x="1080.5" y="379" text-anchor="middle" font-family="'Noto Sans CJK SC','PingFang SC','Heiti SC','Arial',sans-serif" font-size="18" font-weight="700" fill="#26313B">8</text>
 <text x="1080.5" y="400" text-anchor="middle" font-family="'Noto Sans CJK SC','PingFang SC','Heiti SC','Arial',sans-serif" font-size="12" fill="#26313B">44.4%</text>
@@ -129,7 +128,7 @@
 <rect x="1445" y="350" width="141" height="66" rx="4" fill="#7D2947" opacity="0.07" stroke="#E5E2DC"/>
 <text x="1515.5" y="379" text-anchor="middle" font-family="'Noto Sans CJK SC','PingFang SC','Heiti SC','Arial',sans-serif" font-size="18" font-weight="700" fill="#26313B">0</text>
 <text x="1515.5" y="400" text-anchor="middle" font-family="'Noto Sans CJK SC','PingFang SC','Heiti SC','Arial',sans-serif" font-size="12" fill="#26313B">0.0%</text>
-<text x="996" y="462" text-anchor="end" class="label">高价层（$8,000–10,999）</text>
+<text x="996" y="462" text-anchor="end" class="label">High</text>
 <rect x="1010" y="420" width="141" height="66" rx="4" fill="#171717" opacity="0.07" stroke="#E5E2DC"/>
 <text x="1080.5" y="449" text-anchor="middle" font-family="'Noto Sans CJK SC','PingFang SC','Heiti SC','Arial',sans-serif" font-size="18" font-weight="700" fill="#26313B">0</text>
 <text x="1080.5" y="470" text-anchor="middle" font-family="'Noto Sans CJK SC','PingFang SC','Heiti SC','Arial',sans-serif" font-size="12" fill="#26313B">0.0%</text>
@@ -142,7 +141,7 @@
 <rect x="1445" y="420" width="141" height="66" rx="4" fill="#7D2947" opacity="0.07" stroke="#E5E2DC"/>
 <text x="1515.5" y="449" text-anchor="middle" font-family="'Noto Sans CJK SC','PingFang SC','Heiti SC','Arial',sans-serif" font-size="18" font-weight="700" fill="#26313B">0</text>
 <text x="1515.5" y="470" text-anchor="middle" font-family="'Noto Sans CJK SC','PingFang SC','Heiti SC','Arial',sans-serif" font-size="12" fill="#26313B">0.0%</text>
-<text x="996" y="532" text-anchor="end" class="label">经典/超高价层（≥$11,000）</text>
+<text x="996" y="532" text-anchor="end" class="label">Exceptional / icon</text>
 <rect x="1010" y="490" width="141" height="66" rx="4" fill="#171717" opacity="0.34" stroke="#E5E2DC"/>
 <text x="1080.5" y="519" text-anchor="middle" font-family="'Noto Sans CJK SC','PingFang SC','Heiti SC','Arial',sans-serif" font-size="18" font-weight="700" fill="#26313B">7</text>
 <text x="1080.5" y="540" text-anchor="middle" font-family="'Noto Sans CJK SC','PingFang SC','Heiti SC','Arial',sans-serif" font-size="12" fill="#26313B">38.9%</text>
@@ -155,9 +154,8 @@
 <rect x="1445" y="490" width="141" height="66" rx="4" fill="#7D2947" opacity="0.07" stroke="#E5E2DC"/>
 <text x="1515.5" y="519" text-anchor="middle" font-family="'Noto Sans CJK SC','PingFang SC','Heiti SC','Arial',sans-serif" font-size="18" font-weight="700" fill="#26313B">0</text>
 <text x="1515.5" y="540" text-anchor="middle" font-family="'Noto Sans CJK SC','PingFang SC','Heiti SC','Arial',sans-serif" font-size="12" fill="#26313B">0.0%</text>
-<text x="1010" y="592" class="note">价格带为分析分组，不是消费者可负担性区间。</text>
-<text x="1010" y="620" class="note">0 表示本次采样未捕获数值观察，不代表品牌全球没有该价格区间产品。</text>
+<text x="1010" y="592" class="note">观察到的价格带为分析分组，不是消费者可负担性分组。</text>
 <line x1="56" y1="760" x2="1544" y2="760" stroke="#D8D5CF"/>
-<text x="56" y="790" class="note">主读法：LV 在入门层最密集；Dior 在法国核心层最集中；Chanel 在高端核心与经典/超高价层更突出；Hermès 跨越多个层级并拥有较宽高价区间。</text>
+<text x="56" y="790" class="note">主读法：LV 在 lower/access 最密集；Dior 在法国 core 最集中；Chanel 在 premium-core 与 exceptional/icon 层更突出；Hermès 跨越多个层级并拥有较宽上尾。</text>
 <text x="56" y="815" class="note">来源：competitive_pricing_calculations/price_band_summary.csv；分带阈值按市场分别设定，EUR 与 USD 不在同一数值轴上。</text>
 </svg>
