@@ -10,14 +10,14 @@
 
 ### 结论先行
 
-Chanel 的 premiumization 体现为一套价格架构的抬升，而不是只提高 Classic 的标价：
+Chanel 的 premiumization 是整套价格架构上移，不只是提高 Classic 的标价：
 
 - 当前样本中，Chanel 具有较高的可见 entry/core 起点、集中的 premium 区域和明确的 Classic/icon 高位锚点；
 - 2022–2026 对齐的法国选定产品线显示，Mini/access-core 与 Classic/icon 都上移，Classic 的高位关系保持，绝对价差扩大；
 - 在同一时期，Chanel consolidated company 的收入复苏、经营利润率、现金创造和品牌 / 资本投入与 premiumization 共存；
 - 但 2024 年收入、经营利润和 FCF 同时承压，2025 年部分恢复。这说明价格上移不能被当作已验证的增长引擎，也不能消除行业周期、地域需求或再投资要求。
 
-因此，最稳健的战略判断是：**Chanel 的 premiumization quality 取决于价格梯、Classic 锚点、品牌 desirability、分销 / client experience、craftsmanship / supply 和现金 / 利润表现能否共同维持；公开资料只支持这种共存关系和战略张力，不支持价格对经营结果的因果结论。**
+更稳健的判断是：**Chanel 的 premiumization quality 取决于价格梯、Classic 锚点、品牌 desirability、分销 / client experience、craftsmanship / supply 和现金 / 利润表现能否共同维持。公开资料支持这些因素共存，也暴露出它们之间的张力，但不支持价格对经营结果的因果结论。**
 
 ## 2. How Chanel’s handbag price architecture works
 
@@ -45,9 +45,9 @@ Chanel 本次可见的 numeric range 为法国 €4,850–€12,250、美国 $5,
 
 *图 2。Chanel 价格梯度基于观察到的 numeric list prices；可见间隔不等同于完整 assortment 的产品缺口，也不等同于需求 barrier。*
 
-这意味着 Chanel 的差异不是“所有产品都在最高价”，而是：品牌内部仍有 Mini / Shopping / Bowling 等入口与核心家族，但可见 numeric ladder 没有从这些层级连续铺到 Classic 高位锚点。这里的“entry threshold”是公开样本中的观察价格位置，不是消费者可负担性测量。
+Chanel 的差异不在于“所有产品都在最高价”，而在于：品牌内部仍有 Mini / Shopping / Bowling 等入口与核心家族，但可见 numeric ladder 没有从这些层级连续铺到 Classic 高位锚点。这里的“entry threshold”是公开样本中的观察价格位置，不是消费者可负担性测量。
 
-### 当前竞争是 tier-specific
+### 竞争按 tier 发生
 
 四品牌当前接受观察为 161 条，其中 147 条有 numeric price。价格带显示：较低区间更靠近 Louis Vuitton 和 Dior；Chanel 与 Hermès 的重叠主要出现在较高价格区间；但品牌之间不能用一个全局“谁更贵”顺序代表。
 
@@ -63,7 +63,7 @@ Chanel 本次可见的 numeric range 为法国 €4,850–€12,250、美国 $5,
 
 ## 3. How the architecture has changed
 
-现有历史 foundation 重新运行后，Chanel France 的四条 selected continuous line 在共同年份 2022、2023、2024、2026 给出以下结果：
+重跑历史面板后，Chanel France 的四条 selected continuous line 在共同年份 2022、2023、2024、2026 给出以下结果：
 
 | FY / observed year | Classic / icon median | Mini / access-core median | Relative ratio | Absolute gap |
 |---:|---:|---:|---:|---:|
@@ -72,7 +72,7 @@ Chanel 本次可见的 numeric range 为法国 €4,850–€12,250、美国 $5,
 | 2024 | €10,100 | €4,850 | 2.082× | €5,250 |
 | 2026 | €10,300 | €4,950 | 2.081× | €5,350 |
 
-2022–2026，Classic median 上涨 18.1%，Mini/access-core median 上涨 16.5%；ratio 变化有限，但 absolute gap 增加 €880。最合适的解释是：**multiple tiers broad repricing，同时随着价格基数上升出现一定 ladder stretching；不是只有 Classic 在涨价。**
+2022–2026，Classic median 上涨 18.1%，Mini/access-core median 上涨 16.5%；ratio 变化有限，但 absolute gap 增加 €880。数据更支持这样的表述：**multiple tiers broad repricing，同时随着价格基数上升出现一定 ladder stretching；不是只有 Classic 在涨价。**
 
 ![Chanel 法国 Classic 与 Mini 价格演变](final_report_assets/04_chanel_historical_icon_access.svg)
 
@@ -112,15 +112,15 @@ Chanel 本次可见的 numeric range 为法国 €4,850–€12,250、美国 $5,
 
 ### 再投资与 brand economics
 
-Chanel 官方 FY2024–FY2025 commentary 继续披露 boutiques、client experience、real estate、craftsmanship、supplier expertise / capacity 等投入；FY2025 release 还披露超过 $700m 的 supplier / craftsmanship investment。把这些信息放回架构分析，较完整的商业关系是：
+Chanel 官方 FY2024–FY2025 commentary 继续披露 boutiques、client experience、real estate、craftsmanship、supplier expertise / capacity 等投入；FY2025 release 还披露超过 $700m 的 supplier / craftsmanship investment。放回价格架构看，这些投入共同构成了：
 
 `Pricing ↕ Desirability ↕ Distribution / client experience ↕ Craftsmanship / supply ↕ Brand investment ↕ Cash generation / profitability`
 
-这是一个 strategic operating system 的解释框架，不是本项目已经验证的因果模型。公开数据能够证明“price elevation 与持续再投资共同存在”，不能分解哪一项投入带来哪一项需求或利润结果。
+这是一套解释框架，不是本项目已经验证的因果模型。公开数据只能证明 price elevation 与持续再投资共同存在，不能分解哪一项投入带来哪一项需求或利润结果。
 
-## 5. Is Chanel unique?
+## 5. Chanel 与竞品的差异
 
-### Hermès：最重要的 leather-goods economic benchmark
+### Hermès：皮具业务 benchmark
 
 Hermès Leather Goods & Saddlery 的规模和增长最接近本项目需要的皮具经济 benchmark，但其 métier 不等于 handbags-only。以下仍同时保留 group grain 和 segment grain：
 
@@ -154,29 +154,29 @@ LVMH F&LG 2024–2025 的放缓与 Chanel 2024–2025 的 recovery 并不一致�
 
 *图 7。各系列在自己的 currency / reporting grain 内以 2020=100；不得跨币种比较 nominal size。*
 
-## 6. Six strategic questions
+## 6. 六个判断
 
-### Q1 — Has Chanel been premiumizing?
+### Q1 — Pricing evidence supports premiumization
 
 **是，限定在 pricing evidence。** 当前架构显示较高 entry/core 起点和 Classic/icon 锚点；历史 aligned panel 显示 access/core 与 icon 都上移，absolute gap 扩大而 relative ratio 相对稳定。结论来自价格，不来自 revenue。
 
-### Q2 — Has premiumization coexisted with healthy business performance?
+### Q2 — Premiumization 与经营表现共存，但不稳定
 
-**整体上共存，但跨年份质量不均匀。** 2021–2023 revenue、margin、FCF 表现强；2024 明显恶化；2025 revenue、operating profit 和 FCF 恢复。可以写 `coexisted with recovery and continued investment`，不能把 pricing 与 growth 写成因果关系。
+**整体上共存，但跨年份质量不均匀。** 2021–2023 revenue、margin、FCF 表现强；2024 明显恶化；2025 revenue、operating profit 和 FCF 恢复。更准确的表述是 `coexisted with recovery and continued investment`，不能把 pricing 与 growth 写成因果关系。
 
-### Q3 — Is Chanel’s pricing architecture economically resilient?
+### Q3 — 价格架构保持，但不能证明需求韧性
 
 **可以说 architecture 在不同周期中保持，但不能从价格证明 demand resilience。** 价格结构没有因为 2024 经营压力而在公开 snapshot 中下降，说明 architecture persistence；同时 2024 的 margin / FCF 压力说明业务仍暴露于周期与再投资要求。需求量、volume / mix、转化和客户迁移需要内部数据。
 
-### Q4 — How is Chanel different from Hermès?
+### Q4 — Chanel 与 Hermès 的差异
 
 Chanel 的公开架构表现为较高可见起点 + Classic 锚点 + 较大的中间 gap；Hermès 当前 price ladder 更宽且上端更分散，经济 benchmark 则有 Leather Goods & Saddlery métier 与较高 group margin context。Hermès 不是“更贵”的简单答案，而是更适合做 leather-goods business momentum / margin context 的 benchmark。
 
-### Q5 — How is Chanel different from the LVMH F&LG environment?
+### Q5 — Chanel 与 LVMH F&LG 环境的差异
 
 LVMH F&LG 在 2020–2023 强劲、2024–2025 放缓；Chanel 2025 已报告 recovery。Chanel 的表现不能完全归因于行业周期，也不能被写成脱离行业周期；此处最稳健的结论是两者轨迹存在差异，但差异受 reporting grain、brand mix、FX 和 geographic exposure 影响。
 
-### Q6 — What investment supports premiumization?
+### Q6 — Premiumization 伴随哪些投入？
 
 Chanel financial releases 显示高水平 brand-support investment 和持续 capex，并辅以 boutiques、client experience、craftsmanship、supplier capacity、real estate 等官方 commentary。它支持“premiumization 伴随 reinvestment requirement”的解释；不支持把 brand-support investment 直接当作 handbag marketing expense，或证明 investment 导致 price / profit。
 
@@ -196,7 +196,7 @@ Chanel financial releases 显示高水平 brand-support investment 和持续 cap
 
 ## 8. Strategic implications
 
-1. **Manage the ladder, not only the Classic anchor.** Classic 的锚点清晰，但现有 evidence 也把中间可见 gap 变成需要监测的 architecture issue；不应在缺少内部行为数据时直接调整产品或价格。
+1. **Manage the ladder, not only the Classic anchor.** Classic 的锚点清晰，但现有 evidence 也把中间可见 gap 变成需要监测的 architecture issue。缺少内部行为数据时，不应直接调整产品或价格。
 2. **Monitor middle-ladder continuity.** 对 entry → core → icon 的 family step、numeric visibility 和 future assortment coverage 建立定期诊断；先确认 gap 是真实组合缺口还是公开样本缺失。
 3. **Benchmark competitors by tier and grain.** 用 LV / Dior 观察 lower-core battleground，用 Hermès Leather Goods & Saddlery 看皮具业务 context，用 LVMH F&LG 看 broad multi-brand environment；不要使用单一 global price ranking。
 4. **Evaluate premiumization with growth quality and investment.** 每次价格决策同时审视 revenue growth、margin、FCF、capex、brand-support intensity 和 regional commentary；价格本身不是 success metric。

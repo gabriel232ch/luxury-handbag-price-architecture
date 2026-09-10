@@ -1,6 +1,6 @@
 # 最终报告附录：数据、方法与证据审计
 
-本附录服务于复核与追溯，不重复主报告的完整叙事。所有结论均保留“公开标价观察”边界：它们不等同于成交价格、需求、支付意愿、利润或管理层意图。
+本附录用于复核与追溯，不重复主报告的完整叙事。所有结论都限定在“公开标价观察”范围内，不等同于成交价格、需求、支付意愿、利润或管理层意图。
 
 ## A. 数据范围与覆盖
 
@@ -26,7 +26,7 @@
 | Dior | 16 | 15 | 10 | 3 | 0 | 3 | 无接受的同款连续线 |
 | **合计** | **77** | **76** | **53** | **13** | **7** | **6** | 当前端点为官方锚点，历史非当前观察主要来自专业第三方历史价格资料 |
 
-历史面板包含 24 条高置信度当前端点和 53 条非当前历史观察；历史非当前观察主要来自二级来源的专业价格记录，整体为中等质量。缺失年份不被视为零涨价，也未进行插值。
+历史面板包含 24 条高置信度当前端点和 53 条非当前历史观察。后者主要来自二级来源的专业价格记录，整体质量为中等。缺失年份不视为零涨价，也不做插值。
 
 ## B. 价格指标与分位数定义
 
@@ -68,7 +68,7 @@
 | 法国 / shoulder · standard · leather | Hermès | 4 | €4,975 | €3,600 | 138 | 中 |
 | 法国 / shoulder · standard · leather | Louis Vuitton | 5 | €3,200 | €3,600 | 89 | 中 |
 
-可比单元没有被升级为主图，是因为它们的样本量和产品等价性不足以支撑全局竞争结论。主报告只使用其最稳定的方向性信息：Chanel 在法国部分 tote 单元明显高于 Dior / Louis Vuitton，并接近 Hermès。
+可比单元没有进入主图，因为样本量和产品等价性不足以支撑全局竞争结论。主报告只采用其中较稳定的方向性信息：Chanel 在法国部分 tote 单元明显高于 Dior / Louis Vuitton，并接近 Hermès。
 
 ## E. 产品线连续性规则
 
@@ -231,15 +231,15 @@ Dior 的原始高值被 3 条当前锚点转移抬高；Hermès 的法国 Geta �
 | Louis Vuitton | No standalone audited financials in this evidence set | Qualitative brand context and price architecture | Standalone revenue / profit / margin |
 | Dior | No comparable standalone couture-brand financials in this evidence set | Qualitative brand context and price architecture | Dior couture standalone revenue / profit / margin |
 
-The machine-readable version is [`financial_scope_matrix.csv`](financial_business_performance/clean/financial_scope_matrix.csv). This asymmetry is a finding about public disclosure, not a data-cleaning defect.
+机器可读版本见 [`financial_scope_matrix.csv`](financial_business_performance/clean/financial_scope_matrix.csv)。这种不对称反映的是公开披露范围，不是数据清洗缺陷。
 
 ### M2. Structured financial panel contract
 
-Every raw observation is retained in [`financial_observations_raw.jsonl`](financial_business_performance/raw/financial_observations_raw.jsonl) and normalized in [`financial_panel.csv`](financial_business_performance/clean/financial_panel.csv). Required audit fields are:
+每条原始 observation 都保留在 [`financial_observations_raw.jsonl`](financial_business_performance/raw/financial_observations_raw.jsonl)，并标准化到 [`financial_panel.csv`](financial_business_performance/clean/financial_panel.csv)。必需的审计字段包括：
 
 `entity`, `reporting_scope`, `segment`, `fiscal_year`, `period`, `metric`, `value`, `unit`, `currency`, `reported_or_constant_currency`, `source_id`, `source_title`, `source_url`, `publication_date`, `page_or_section`, `extraction_note`, `confidence`, `caveat`, `selection_status`, `metric_status`, `precision_note`, `source_basis`.
 
-The build preserves all observations when a same-key conflict exists. The selected calculation basis is explicit in `selection_status`, and the conflict is logged in [`conflicts.csv`](financial_business_performance/logs/conflicts.csv). Missing / unavailable disclosures are logged in [`missingness.csv`](financial_business_performance/logs/missingness.csv), not filled by proxy.
+同一 key 出现冲突时，build 保留所有 observation，并在 `selection_status` 中标明计算口径。冲突记录在 [`conflicts.csv`](financial_business_performance/logs/conflicts.csv)；缺失或未披露指标记录在 [`missingness.csv`](financial_business_performance/logs/missingness.csv)，不使用 proxy 填补。
 
 ### M3. Chanel financial panel: FY2020–FY2025
 
@@ -270,7 +270,7 @@ Hermès Leather Goods & Saddlery 的 segment share 2020 为 50.2%、2025 为 44.
 | Hermès annual results / URD | FY2020–FY2025 | [Hermès FY2025 full-year results](https://assets-finance.hermes.com/s3fs-public/node/pdf_file/2026-02/1770842738/hermes_20260212_pr_2025fullyearresults_va.pdf) |
 | LVMH annual results | FY2020–FY2025 | [LVMH FY2025 official results](https://www.lvmh.com/en/publications/solid-performance-in-a-disrupted-global-economic-and-geopolitical-environment) |
 
-The full row-level registry, including each fiscal-year publication date and page / section, is [`source_registry.csv`](financial_business_performance/sources/source_registry.csv). The source set is first-party; no secondary estimate replaces an official disclosure.
+逐行 registry（包括每个 fiscal year 的发布日期与页码 / section）见 [`source_registry.csv`](financial_business_performance/sources/source_registry.csv)。这组来源全部是一手资料，没有用二手估计替代官方披露。
 
 ### M6. Financial non-estimables
 
@@ -298,4 +298,4 @@ The external claim map is [`docs/EVIDENCE_MAP.md`](docs/EVIDENCE_MAP.md). The re
 - causal-language QA and chart QA;
 - remaining unestimable metrics and readiness status.
 
-Final status is **READY WITH LIMITATIONS**. The project is strong enough for a portfolio business-analysis case because the evidence chain is structured and auditable; it is not a substitute for internal Chanel customer, volume, mix, inventory or product-economics data.
+最终状态为 **READY WITH LIMITATIONS**。证据链结构清楚、可审计，足以支撑 portfolio business-analysis case；但它不能替代 Chanel 内部的客户、销量、mix、库存或产品经济性数据。

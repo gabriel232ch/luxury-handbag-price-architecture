@@ -660,69 +660,69 @@ def build_reports(
 
 ## 执行摘要
 
-本轮只分析公开本地标价样本，不把样本写成品牌全量组合。当前快照为 2026-08-15，法国以 EUR、美国以 USD 分开处理。研究中心是 Chanel：Classic 11.12 与 Small Classic 作为 Classic 组，Mini Classic、Shopping Bag 与 Bowling Bag 作为进入/其他核心对照。当前研究门状态为 **{validation_status}**：数据可复算，至少有两项可追溯的限定性发现，但样本覆盖、Dior 未解析价格和历史来源冲突仍限制旗舰叙事强度。
+本报告只读公开本地标价样本，不把它当作品牌全量组合。当前快照为 2026-08-15，法国以 EUR、美国以 USD 分开处理。Chanel 的分析分组固定为：Classic 11.12 与 Small Classic 属于 Classic 组，Mini Classic、Shopping Bag 与 Bowling Bag 属于进入/其他核心对照。当前研究状态为 **{validation_status}**：数据可以复算，但样本覆盖、Dior 未解析价格和历史来源冲突限制了结论强度。
 
 ## 1. 观察范围与覆盖
 
-当前接受观察共 {current_accepted} 条，其中 {current_numeric} 条为数值价格。{brand_summary_cn}。Dior 美国有 {dior_us_numeric} 条数值价格（共 {dior_us_accepted} 条接受观察），其余 {dior_us_unresolved} 条不插补；因此“数值覆盖率”只能描述可解析行的比例，不能称为官网覆盖率。颜色变体与近重复在原始视图保留，去变体视图只用于敏感性比较。
+当前接受观察共 {current_accepted} 条，其中 {current_numeric} 条为数值价格。{brand_summary_cn}。Dior 美国有 {dior_us_numeric} 条数值价格（共 {dior_us_accepted} 条接受观察），其余 {dior_us_unresolved} 条不插补。“数值覆盖率”只能描述可解析行的比例，不能称为官网覆盖率。颜色变体与近重复保留在原始视图，去变体视图只用于敏感性比较。
 
-补充配对审计产生 {len(pairing_candidates)} 条属性匹配的方向性候选配对和 {len(pairing_cells)} 个补充属性单元；补充快照与基线竞品日期不一致，所有跨品牌价格比较保持 `not_computed`。最新独立刷新含 {len(wave6_refresh)} 行、{len(wave6_cells)} 个精确属性单元和 {wave6_strict_word_cn} 个严格主文单元；尺寸检查中出现 {matched_size_text}，但仍受属性、状态或独立家族样本门槛限制。
+补充配对审计找到 {len(pairing_candidates)} 条属性匹配的方向性候选配对和 {len(pairing_cells)} 个补充属性单元。补充快照与竞品基线日期不一致，因此跨品牌价格比较保持 `not_computed`。最新独立刷新含 {len(wave6_refresh)} 行、{len(wave6_cells)} 个精确属性单元和 {wave6_strict_word_cn} 个严格主文单元；尺寸检查中出现 {matched_size_text}，但仍受属性、状态或独立家族样本门槛限制。
 
-Hermès 的 40 条当前观察没有供应商标注的 signature flag；它可以提供价格坐标，不能支撑同口径的品牌图标溢价比较。当前快照的来源是原仓库已保存的官方本地页面观察，R1 没有把执行日的新页面回填到 8 月 15 日。
+Hermès 的 40 条当前观察没有供应商标注的 signature flag。因此，它可以提供价格坐标，但不能支撑同口径的品牌图标溢价比较。当前快照来自仓库已保存的官方本地页面观察，R1 没有把执行日的新页面回填到 8 月 15 日。
 
 ## 2. Chanel 价格梯度
 
 法国样本中，Classic 组最低观察价为 {fr['classic_min']} EUR，进入/其他核心对照最高观察价为 {fr['entry_core_max']} EUR，观察间隔为 {fr['observed_gap']} EUR；两组中位数距离为 {fr['median_distance']} EUR，相对比值为 {fr['relative_ratio']}。美国对应数字为 {us['classic_min']}、{us['entry_core_max']}、{us['observed_gap']} USD，中位数距离 {us['median_distance']} USD，相对比值 {us['relative_ratio']}。
 
-这些数字是同一市场、同一快照内的观察间隔。询价状态保持为状态字段，不放到价格轴顶端。Mini Classic 名称含 Classic，但在本轮被明确定义为进入组；它与 Classic 11.12/Small Classic 的分析身份不同。去变体视图会报告间隔是否因颜色行重复而变化，不把合并后的 N 说成抽样偏差已被纠正。
+这些数字是同一市场、同一快照内的观察间隔。询价状态保留在状态字段，不放到价格轴顶端。Mini Classic 虽然名称含 Classic，本轮仍将它定义为进入组；它与 Classic 11.12/Small Classic 的分析身份不同。去变体视图只回答间隔是否对颜色行重复敏感，不代表抽样偏差已经被纠正。
 
 ## 3. 日期对齐的历史观察
 
-Chanel 法国固定使用 CH-C01/CH-C02 对 CH-C03/CH-C04，取两组共同观察年份（{common_years}），没有插值。每年同时输出两组中位数、绝对距离、相对比值及产品线数量。历史名称与当前锚点的对应为产品线级连续性，主要历史价格来自二手表格；它支持有限的方向性描述，不等同于每一年官方调价日历。Hermès Geta 法国 2023 年的 EUR 4,550 与 EUR 5,550 冲突两边保留，不强选一个数值。
+Chanel 法国只在共同观察年份（{common_years}）比较固定产品线 CH-C01/CH-C02 与 CH-C03/CH-C04，不做插值。每年输出两组中位数、绝对距离、相对比值和产品线数量。历史名称与当前锚点按产品线规则对应，主要历史价格来自二手表格，因此只能支持有限的方向性描述，不能替代逐年官方调价日历。Hermès Geta 法国 2023 年的 EUR 4,550 与 EUR 5,550 均保留，不强选一个数值。
 
 ## 4. 稳健性与商业意义
 
-本轮保留原始观察、去变体视图、家族汇总及价格带 ±10% 内部边界敏感性。原价格带是在看到观察后划定的描述工具，不是独立检验。可比单元只有在每品牌至少 3 个去变体组且关键属性可核实时才进入主文，其余放入附录。
+这轮保留原始观察、去变体视图、家族汇总，以及价格带 ±10% 的内部边界敏感性。原价格带是在看到观察后划定的描述工具，不是独立检验。只有每品牌至少有 3 个去变体组、且关键属性可核实的可比单元才进入主文，其余放入附录。
 
-对品类负责人，数据当前支持三条有条件的下一步：第一，若两个市场的间隔在去变体视图仍保持方向一致，核实完整 SKU 梯度及客户升级路径；第二，若间隔随家族覆盖改变，优先补做组合映射；第三，在使用历史路径前先补齐同款身份、共同日期和一手价格证据。以上是决策问题与证据需求，不是新品价位或涨价建议。
+对品类负责人，当前有三条有条件的下一步：如果两个市场的间隔在去变体视图中仍保持方向一致，核实完整 SKU 梯度和客户升级路径；如果间隔随家族覆盖改变，先补做组合映射；如果要把历史路径用于决策，先补齐同款身份、共同日期和一手价格证据。这些是决策问题与证据需求，不是新品价位或涨价建议。
 
 ## 5. 局限与来源
 
-样本为非加权公开本地标价观察，不估计需求、利润、品牌资产、消费者替代或最优价格。FR/US 不做 FX、税费、关税或落地成本标准化。缺失年份不表示没有变化，连续性为 SAME_MODEL_CONTINUOUS 或 MODEL_SUCCESSOR，当前锚点的 EXACT_SKU 标记与历史连续性分开。完整来源、计算输出和未解决项见 `research_r1/data/`、`research_r1/outputs/` 与 `research_r1/export/`。
+样本是非加权的公开本地标价观察，不估计需求、利润、品牌资产、消费者替代或最优价格。FR/US 不做 FX、税费、关税或落地成本标准化。缺失年份不表示没有变化；连续性分为 SAME_MODEL_CONTINUOUS 与 MODEL_SUCCESSOR，当前锚点的 EXACT_SKU 标记也与历史连续性分开。完整来源、计算输出和未解决项见 `research_r1/data/`、`research_r1/outputs/` 与 `research_r1/export/`。
 """
     (REPORT / "REPORT_CN.md").write_text(report_cn, encoding="utf-8")
 
-    report_en = f"""# The Architecture of Access — Chanel's Handbag Price Ladder in Context
+    report_en = f"""# The Architecture of Access: Chanel's Handbag Price Ladder in Context
 
 **Observation markets:** France (EUR) and United States (USD) · **Current snapshot:** 15 August 2026 · **Research status:** {validation_status}
 
 ## Open
 
-This case asks how Chanel presents visible entry, family-level steps and the Classic high anchor in local official list-price observations. The dataset is a non-weighted sample of accepted product rows: {current_accepted} observations, {current_numeric} numeric prices. It is a map of what was visible in the captured pages, not a census of a brand assortment and not a measure of affordability.
+The case examines how Chanel presents visible entry points, family-level steps and the Classic high anchor in local official list-price observations. The dataset contains {current_accepted} accepted product rows, of which {current_numeric} have numeric prices. It maps what was visible on the captured pages; it is not a census of the assortment or a measure of affordability.
 
 ## Context
 
-Chanel is read against Hermès, Louis Vuitton and Dior on separate local currency axes. The competitor panel supplies an external coordinate system, while the deeper interpretation stays with Chanel. Dior US has {dior_us_numeric} numeric prices out of {dior_us_accepted} accepted rows; {dior_us_unresolved} unresolved prices remain missing. Hermès has no supplied signature flag in the current panel, so its prices do not support a like-for-like icon premium calculation.
+Chanel is the focal case. Hermès, Louis Vuitton and Dior provide external coordinates on separate local-currency axes. Dior US has {dior_us_numeric} numeric prices among {dior_us_accepted} accepted rows; the remaining {dior_us_unresolved} prices are unresolved and are not imputed. Hermès has no supplied signature flag in the current panel, so its prices do not support a like-for-like icon-premium calculation.
 
 ## The price ladder
 
 Within the France snapshot, the lowest Classic observation is {fr['classic_min']} EUR and the highest entry/core comparison observation is {fr['entry_core_max']} EUR, a visible sample gap of {fr['observed_gap']} EUR. The median distance is {fr['median_distance']} EUR and the median ratio is {fr['relative_ratio']}. The US snapshot shows {us['classic_min']} versus {us['entry_core_max']} USD, a gap of {us['observed_gap']} USD, with a median distance of {us['median_distance']} USD and a ratio of {us['relative_ratio']}.
 
-The membership rule matters. Classic 11.12 and Small Classic form the Classic group. Mini Classic is an entry observation even when its product name contains “Classic”; Shopping Bag and Bowling Bag are retained as other core observations. Price-upon-request rows remain a separate state and are not placed above the numeric axis.
+The membership rule matters. Classic 11.12 and Small Classic form the Classic group. Mini Classic is an entry observation even though its product name contains “Classic”; Shopping Bag and Bowling Bag remain other core observations. Price-upon-request rows stay separate and are not placed above the numeric axis.
 
 ## Moving together
 
-The aligned Chanel France panel compares fixed lineages CH-C01/CH-C02 with CH-C03/CH-C04 only in common observed years ({common_years}). It reports group medians, absolute distance, ratio and lineage counts without interpolating missing years. Historical rows are mostly secondary-source tables, so the result is a bounded product-line observation rather than a complete official repricing calendar. The Hermès Geta France 2023 conflict is kept as two branches and excluded from the primary path.
+The aligned Chanel France panel compares fixed lineages CH-C01/CH-C02 with CH-C03/CH-C04 only in common observed years ({common_years}). It reports group medians, absolute distance, ratio and lineage counts; missing years are not interpolated. Because most historical rows come from secondary-source tables, the result is a bounded product-line observation, not a complete official repricing calendar. The Hermès Geta France 2023 conflict remains as two branches and is excluded from the primary path.
 
-The later Chanel supplement was filtered by the same market, bag type, size label and material group. It produces {len(pairing_candidates)} directional peer candidates across {len(pairing_cells)} supplementary cells. The price comparison is blocked because the supplement is dated 7 September 2026 while the competitor baseline is dated 15 August 2026. The audit keeps unknown-size, seasonal-collection and Wallet on Chain rows in separate gates. Latest independent refresh evidence contains {len(wave6_refresh)} rows, {len(wave6_cells)} exact cells and {wave6_strict_word} strict main-text cells. The only dimension match is {matched_size_text}, so its price comparison also remains blocked.
+The later Chanel supplement uses the same market, bag type, size label and material-group filters. It produces {len(pairing_candidates)} directional peer candidates across {len(pairing_cells)} supplementary cells. The price comparison is blocked because the supplement is dated 7 September 2026 and the competitor baseline is dated 15 August 2026. Unknown-size, seasonal-collection and Wallet on Chain rows stay in separate gates. Latest independent refresh evidence contains {len(wave6_refresh)} rows, {len(wave6_cells)} exact cells and {wave6_strict_word} strict main-text cells. The only dimension match is {matched_size_text}; its price comparison also remains blocked.
 
 ## What the evidence can support
 
-Three decisions follow conditionally. If the ladder gap survives de-variant sensitivity, a category lead can verify the full SKU ladder and the customer upgrade path. If it moves when family coverage changes, the next action is assortment mapping. If a historical movement is needed for a decision, the next evidence should be same-model identity, common dates and primary price records. The sample cannot establish demand, substitution, profit, brand-equity effects or an optimal future price.
+The evidence supports three conditional next steps. If the ladder gap survives de-variant sensitivity, verify the full SKU ladder and customer upgrade path. If it moves when family coverage changes, map the assortment first. If a historical movement matters to the decision, the next evidence should include same-model identities, common dates and primary price records. The sample cannot establish demand, substitution, profit, brand-equity effects or an optimal future price.
 
 ## Afterlife
 
-All numbers in the public candidate export point to R1 outputs and claim IDs. The source registry distinguishes page access from effective dates; the 15 August current snapshot remains separate from any later refresh. Reproduction uses the local Python standard-library scripts and `python3 -m unittest discover -s tests/r1 -p 'test_*.py'`.
+The public candidate export links its numbers to R1 outputs and claim IDs. The source registry separates page-access dates from effective dates, and the 15 August current snapshot remains separate from later refreshes. Reproduction uses the local Python standard-library scripts and `python3 -m unittest discover -s tests/r1 -p 'test_*.py'`.
 """
     (REPORT / "CASE_STUDY_EN.md").write_text(report_en, encoding="utf-8")
 
@@ -733,12 +733,12 @@ All numbers in the public candidate export point to R1 outputs and claim IDs. Th
 - 法国 Classic 最低观察价 {fr['classic_min']} EUR，进入/其他核心最高观察价 {fr['entry_core_max']} EUR，样本间隔 {fr['observed_gap']} EUR。
 - 美国对应样本间隔为 {us['observed_gap']} USD。
 - Dior 美国有 {dior_us_numeric} 条数值价格（共 {dior_us_accepted} 条接受观察）；未解析行不插补。
-- 补充配对审计产生 {len(pairing_candidates)} 条属性匹配的方向性候选配对和 {len(pairing_cells)} 个补充属性单元；2026-09-07 补充快照与 2026-08-15 竞品基线日期不一致。
+- 补充配对审计找到 {len(pairing_candidates)} 条属性匹配的方向性候选配对和 {len(pairing_cells)} 个补充属性单元；2026-09-07 补充快照与 2026-08-15 竞品基线日期不一致，因此不计算价格差。
 - 历史法国 Chanel 只在共同观察年份（{common_years}）比较固定产品线；未插值。
 
 ## 解释
 
-当前样本显示 Classic 与较低/其他核心家族之间存在可见距离，但距离是观察样本中的结构，不能直接解释为购买替代、需求或品牌管理意图。
+当前样本显示 Classic 与较低/其他核心家族之间存在可见距离。这个距离属于观察样本中的结构，不能直接解释为购买替代、需求或品牌管理意图。
 
 ## 待核实问题与最多三条行动
 

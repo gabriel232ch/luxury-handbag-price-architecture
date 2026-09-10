@@ -1,7 +1,7 @@
 {
   "schemaVersion": "research-r1-baseline-1",
-  "generated_at": "2026-09-07T09:46:31+08:00",
-  "source_commit": "5ef2ee7e22e4010d7b951ec09df3e5337ee8e56f",
+  "generated_at": "2026-09-10T13:46:58+08:00",
+  "source_commit": "6055df2d0c38e90bf14292030595d07b868d04b7",
   "current_snapshot": "current_2026-08-15",
   "historical_snapshot": "historical_panel_2026-08-15",
   "input_files": [

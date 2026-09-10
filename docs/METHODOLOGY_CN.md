@@ -6,11 +6,11 @@
 
 > Chanel 如何构建并持续抬升其手袋价格架构？这种 premiumization 在多大程度上伴随着健康的增长、盈利能力与品牌经济性，其表现与 Hermès 及更广泛的奢侈品皮具市场相比如何？
 
-“伴随 / accompanied by”是有意选择的表述。价格与经营指标按时间对齐可以支持共同发生的描述，但公开证据不能识别价格变化对收入、利润、现金流或需求的因果影响。
+报告使用“伴随 / accompanied by”，因为价格与经营指标按时间对齐只能支持共同发生的描述；公开证据不能识别价格变化对收入、利润、现金流或需求的因果影响。
 
 ## 2. BA OS 研究链
 
-本阶段内部按 BA OS 管理：
+研究链为：
 
 `Research Question → Required Evidence → Source Hierarchy → Structured Data → Calculation → Finding → Strategic Interpretation → Claim Validation`
 
@@ -59,7 +59,7 @@ Hermès 的 Leather Goods & Saddlery 包含 bags、travel items、small leather 
 
 市场按 FR / EUR 与 US / USD 分开计算，不做 FX、VAT、销售税、关税或 landed-cost 标准化。
 
-新增诊断位于 `financial_business_performance/calculations/`：
+新增诊断输出在 `financial_business_performance/calculations/`：
 
 - `sku_price_steps.csv`：按市场、品牌将数值 SKU 价格排序，计算相邻价格点的绝对 / 相对 step；重复价格保留为 0 step。
 - `family_step_up.csv`：按产品家族数值中位数排序，计算相邻 family median step。
@@ -71,7 +71,7 @@ Hermès 的 Leather Goods & Saddlery 包含 bags、travel items、small leather 
 
 ## 7. WS2 历史价格计算
 
-既有历史面板继续作为基础，保留：
+历史面板保留两类连续性：
 
 - `SAME_MODEL_CONTINUOUS`：产品身份、尺寸、材质或 reference 连续性足以支持较强的跨期标价描述。
 - `MODEL_SUCCESSOR`：产品家族延续但版本、材质、尺寸或商业定位发生变化，只支持方向性路径。
@@ -86,7 +86,7 @@ Chanel France 的 icon/access-core 比较只使用四个共同观察年份（202
 
 ## 8. WS3 财务计算
 
-脚本 `build_financial_dataset.py` 将已确认的官方 observations 标准化到 `financial_business_performance/clean/financial_panel.csv`，并生成 raw、source registry、scope matrix、conflicts、missingness 与 build log。
+脚本 `build_financial_dataset.py` 将已确认的官方 observations 标准化到 `financial_business_performance/clean/financial_panel.csv`，同时生成 raw、source registry、scope matrix、conflicts、missingness 与 build log。
 
 脚本 `financial_performance_calculations.py` 生成：
 
@@ -112,7 +112,7 @@ Hermès official displayed group margin 优先于用已四舍五入 revenue / pr
 
 ## 9. Evidence → finding → interpretation
 
-每个外部 claim 都必须回答三件事：
+每个外部 claim 都回答三件事：
 
 1. **Evidence：**哪一个 price / financial / benchmark observation 支持它？
 2. **Finding：**这组数字本身显示什么？

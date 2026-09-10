@@ -2,17 +2,17 @@
 
 ## Handbag Price Architecture, Financial Performance and Competitive Positioning
 
-本项目研究一个更具体的商业问题：**Chanel 如何构建并持续抬升其手袋价格架构？这种 premiumization 在多大程度上伴随着健康的增长、盈利能力与品牌经济性，其表现与 Hermès 及更广泛的奢侈品皮具市场相比如何？**
+本项目聚焦一个具体的商业问题：**Chanel 如何构建并持续抬升其手袋价格架构？这种 premiumization 在多大程度上伴随着增长、盈利能力与品牌经济性，其表现与 Hermès 及更广泛的奢侈品皮具市场相比如何？**
 
 ## 一句话答案
 
-Chanel 的 premiumization 不是单纯把 Classic 价格抬高，而是让可见价格梯整体上移，同时保留 Classic/icon 的高位锚点；2020–2025 年，这一价格演变与 Chanel consolidated business 的强劲复苏、较高经营利润率、现金创造和持续品牌/资本投入共存，但 2024 年的利润和现金压力也说明：价格上移并不能消除行业周期、地域需求和再投资要求。公开证据支持“共同发生 / accompanied by”，不支持“价格导致经营结果”的因果结论。
+Chanel 的 premiumization 不只是提高 Classic 标价，而是让可见价格梯整体上移，同时保留 Classic/icon 的高位锚点。2020–2025 年，这一价格演变与 Chanel consolidated business 的复苏、较高经营利润率、现金创造和持续品牌/资本投入共存；2024 年的利润和现金压力也说明，价格上移不能消除行业周期、地域需求和再投资要求。公开证据支持“共同发生 / accompanied by”，不支持“价格导致经营结果”的因果结论。
 
 ## 为什么重要
 
-价格架构决定品牌在不同层级面对谁、客户如何从 entry/core 迁移到 icon，以及高端定位需要怎样的品牌、渠道、体验和工艺投入。只看官网标价可以识别架构，却不能单独判断增长质量或品牌经济性；因此本项目把价格、历史路径、官方财务披露和 reporting-grain-valid benchmark 放在同一证据链中。
+价格架构决定品牌在不同层级面对谁、客户能否从 entry/core 走向 icon，以及高端定位需要怎样的品牌、渠道、体验和工艺投入。官网标价能识别架构，却不能单独判断增长质量或品牌经济性。因此，本项目把价格、历史路径、官方财务披露和 reporting-grain-valid benchmark 放进同一条证据链。
 
-## 使用的证据
+## 证据范围
 
 - Chanel 官方本地化手袋价格页面：法国 / 美国 2026-08-15 快照。
 - 既有 2020–2026 历史价格面板：same-model continuous 与 model successor 分开处理。
@@ -27,7 +27,7 @@ Chanel 的 premiumization 不是单纯把 Classic 价格抬高，而是让可见
 2. **历史 evidence 更支持 broad repricing，同时存在一定 ladder stretching。** 在 2022–2026 对齐的 Chanel France 选定产品线中，Classic 中位数上涨 18.1%，Mini/access-core 上涨 16.5%；相对比值约从 2.052× 变为 2.081×，绝对价差从 €4,470 扩大到 €5,350。
 3. **经营表现与 premiumization 共存，但不是线性成功故事。** Chanel 2020–2025 名义收入 CAGR 为 13.8%；operating margin 从 20.0%（2020 restated basis）恢复至 24.5%（2025），但 2024 收入 comparable growth 为 -4.3%、经营利润下降 30.1%、FCF 下降 50.9%。2025 FCF 回升 43.6%。
 4. **再投资是高端定位的组成部分。** Chanel brand-support investment 在 2020–2025 年间保持在约收入的 11.5%–13.5%；2024 capex/revenue 为 9.4%，2025 为 7.5%。官方披露还指向 boutiques、client experience、craftsmanship、supplier capacity 与 real estate 投入。
-5. **竞争必须按 grain 与 tier 比较。** Hermès Leather Goods & Saddlery 是较强的皮具经济 benchmark，但包含 bags、travel、small leather goods、saddlery 与 equestrian products；LVMH Fashion & Leather Goods 是多品牌环境，绝不能改写成 Louis Vuitton 或 Dior 的独立收入。
+5. **竞争必须按 grain 与 tier 比较。** Hermès Leather Goods & Saddlery 是较强的皮具经济 benchmark，但包含 bags、travel、small leather goods、saddlery 与 equestrian products；LVMH Fashion & Leather Goods 是多品牌环境，不能改写成 Louis Vuitton 或 Dior 的独立收入。
 
 ## 交付物
 
@@ -53,7 +53,7 @@ flowchart LR
     G --> H[Claim validation and readiness]
 ```
 
-项目内部使用 BA OS 管理研究问题拆解、source hierarchy、evidence ledger、reporting-grain、冲突和 claim validation；内部状态保存在被忽略的 `.ba-os/`，不作为 public portfolio deliverable。对外只保留可复核的数据、来源、计算、方法与结论。
+研究链从问题拆解开始，经过 source hierarchy、evidence ledger、reporting-grain、冲突处理和 claim validation；内部状态保存在被忽略的 `.ba-os/`，不作为 public portfolio deliverable。对外只保留可复核的数据、来源、计算、方法与结论。
 
 ## 可复现入口
 
