@@ -33,6 +33,7 @@ Chanel 的 premiumization 不只是提高 Classic 标价，而是让可见价格
 
 - [最终战略报告](FINAL_LUXURY_HANDBAG_PRICING_STRATEGY_CN.md)
 - [最终报告附录](FINAL_REPORT_APPENDIX_CN.md)
+- [R1 中文研究报告](research_r1/report/REPORT_CN.md) · [English case study](research_r1/report/CASE_STUDY_EN.md) · [R1 决策备忘录](research_r1/report/DECISION_MEMO_CN.md)
 - [研究方法](docs/METHODOLOGY_CN.md)
 - [证据地图](docs/EVIDENCE_MAP.md)
 - [验证与 readiness](docs/VALIDATION.md)
