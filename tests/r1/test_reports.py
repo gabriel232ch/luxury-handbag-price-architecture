@@ -28,7 +28,8 @@ class ReportContractTest(unittest.TestCase):
         self.assertRegex(text, rf"Dior 美国(?:只有|有) {numeric} 条数值价格")
         self.assertRegex(text, rf"{candidate_count} 条属性匹配的方向性候选配对")
         self.assertRegex(text, rf"{cell_count} 个补充属性单元")
-        self.assertIn(f"其余 {accepted - numeric} 条不插补", text)
+        self.assertRegex(text, rf"(?:另有|其余) {accepted - numeric} 条(?:价格)?(?:未解析|待解析)")
+        self.assertIn("不做插补", text)
 
     def test_english_case_study_exposes_snapshot_limitation(self):
         text = (REPORT / "CASE_STUDY_EN.md").read_text(encoding="utf-8")
