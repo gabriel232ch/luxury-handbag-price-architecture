@@ -1,0 +1,10 @@
+Website handoff QA, 2026-10-03
+
+Style integrity scripts: English PASS with a quote-tokenizer warning; Chinese PASS.
+The warning treats possessive apostrophes as quotation delimiters. No source quotations were changed. A separate exact signed-number and Markdown-link Counter check is required and included in check_handoff.py.
+
+Semantic review: retained group versus handbag scope; price snapshot versus fiscal-year windows; comparable versus reported growth; non-additive region/channel bridges; accounting identity versus business causation; public self-reports versus interviews; withdrawn instrument versus active next step.
+
+Portable arithmetic and path checks: check_handoff.py passed against the assembled repository; all ten claim IDs and evidence paths resolve, exact numeric/link Counters survive the style revisions, the 11-row archive contains no actor field, and selected arithmetic reconciles. All four research_slowdown_2023_2025/checks scripts passed. These results do not constitute source authentication or causal validation.
+
+No website or Notion deployment. No original R1 data/export overwritten. No full third-party source PDFs redistributed. Three inspected pre-existing project drafts are backed up in the archive; their original paths are not staged or modified.

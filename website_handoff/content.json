@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "luxury-integrated-handoff-1",
+  "preparedAt": "2026-10-03",
+  "publicationStatus": "website-handoff-not-deployed",
+  "slug": "luxury-handbag-pricing-architecture",
+  "title": "Chanel's price ladder under a luxury slowdown",
+  "activeNextStep": "website-revision",
+  "withdrawnNextStep": "customer-choice-interviews",
+  "blocks": [
+    {"id":"architecture","claimIds":["INT-01"],"visual":"existing price endpoints"},
+    {"id":"history","claimIds":["INT-02"],"visual":"existing selected France line history"},
+    {"id":"slowdown","claimIds":["INT-03","INT-04"],"visual":"FY2023-based revenue and operating-profit indices"},
+    {"id":"location","claimIds":["INT-05","INT-06"],"visual":"parallel bridges, never additive"},
+    {"id":"profit","claimIds":["INT-07"],"visual":"operating-profit bridge"},
+    {"id":"mechanisms","claimIds":["INT-08","INT-09"],"visual":null},
+    {"id":"conclusion","claimIds":["INT-10"],"visual":null}
+  ],
+  "claims": [
+    {"id":"INT-01","type":"observation","status":"supported-with-sample-boundary","text":"Observed Chanel list-price ladder contains a high Classic anchor.","scope":"FR/US public list prices, 2026-08-15; 41 accepted, 35 numeric observations","evidencePaths":["FINAL_LUXURY_HANDBAG_PRICING_STRATEGY_CN.md"],"boundary":"Visible sample gaps do not measure customer migration or complete assortment."},
+    {"id":"INT-02","type":"calculated-description","status":"supported","text":"Classic median +18.1%, Mini median +16.5%, absolute gap +EUR880.","scope":"Selected continuous France lines; common years 2022, 2023, 2024, 2026","evidencePaths":["FINAL_LUXURY_HANDBAG_PRICING_STRATEGY_CN.md"],"boundary":"Not every handbag or a US historical series."},
+    {"id":"INT-03","type":"comparison","status":"supported-with-grain-boundary","text":"Chanel declined in FY2024 and recovered partially in FY2025; peer paths differ.","scope":"Chanel consolidated / Hermes group / LVMH FLG department / Gucci segment","evidencePaths":["research_slowdown_2023_2025/data/resilience_panel.csv","research_slowdown_2023_2025/reports/RELATIVE_RESILIENCE_REVIEW_CN.md"],"boundary":"Comparable, constant-currency and organic definitions differ; no universal ranking."},
+    {"id":"INT-04","type":"calculated-description","status":"supported","text":"FY2025 revenue index 97.6 and operating-profit index 73.5, FY2023=100.","scope":"Chanel consolidated, reported USD","evidencePaths":["research_slowdown_2023_2025/data/chanel_profit_bridge_inputs.csv"],"calculation":"19269.1/19743.9*100; 4711.5/6407.0*100","boundary":"Group recovery, not handbag demand; reported currency retains FX."},
+    {"id":"INT-05","type":"calculated-description","status":"supported","text":"Asia Pacific represents 90.4% of FY2024 net decline; Europe and Americas offset AP weakness in FY2025.","scope":"Chanel reported-USD regional disclosures, rounded USD millions","evidencePaths":["research_slowdown_2023_2025/data/chanel_regional_panel.csv","research_slowdown_2023_2025/reports/SLOWDOWN_LOCATION_REVIEW_CN.md"],"boundary":"Sales region is not customer nationality or product category."},
+    {"id":"INT-06","type":"calculated-description","status":"supported","text":"Retail recovered 45.7% of its previous-year loss in FY2025.","scope":"Chanel consolidated retail channel, reported USD","evidencePaths":["research_slowdown_2023_2025/data/chanel_channel_panel.csv"],"calculation":"435.1/952.4*100","boundary":"Retail is not handbags; geography and channel are parallel decompositions."},
+    {"id":"INT-07","type":"accounting-description","status":"supported","text":"Operating-profit shortfall of USD1695.5m equals gross-profit loss773.0 plus SG&A rise984.8 minus advertising/distribution savings62.3.","scope":"Chanel consolidated FY2025 versus FY2023","evidencePaths":["research_slowdown_2023_2025/data/chanel_profit_bridge_inputs.csv","research_slowdown_2023_2025/reports/PROFIT_RECOVERY_REVIEW_CN.md"],"boundary":"Accounting identity does not identify investment ROI or causal demand mechanism."},
+    {"id":"INT-08","type":"timing-description","status":"supported-with-selected-event-boundary","text":"Blazy first collection merchandise arrived in March2026, outside FY2025 merchandise sales.","scope":"Selected product timing; marketing study window2025-08-13 to2026-08-13","evidencePaths":["research_slowdown_2023_2025/data/product_timing_ledger.csv","research_slowdown_2023_2025/reports/CHANNEL_PRODUCT_REVIEW_CN.md"],"boundary":"Earlier halo effects unmeasured; CHANEL25 universal first-sale date unresolved."},
+    {"id":"INT-09","type":"mechanism-inventory","status":"limited-not-causal","text":"Public CHANEL25 use accounts and beauty scale offer possible mechanisms.","scope":"Purposive unauthenticated self-reports; third-party beauty estimate","evidencePaths":["research_slowdown_2023_2025/reports/CUSTOMER_BEAUTY_REVIEW_CN.md","research_slowdown_2023_2025/data/beauty_scale_inputs.csv"],"boundary":"No representative client mix, audited category bridge or contribution ranking."},
+    {"id":"INT-10","type":"synthesis","status":"supported-bounded-answer","text":"Higher visible handbag price architecture coexisted with partial group revenue recovery and incomplete operating-profit recovery.","scope":"Price observations and FY2023–FY2025 group diagnostic retain separate periods and grain","evidencePaths":["website_handoff/NARRATIVE_INTEGRATION_CN.md","research_slowdown_2023_2025/reports/LUXURY_SLOWDOWN_SYNTHESIS_CN.md"],"boundary":"No pricing-to-growth or marketing-to-sales causal estimate. No further interviews planned."}
+  ]
+}

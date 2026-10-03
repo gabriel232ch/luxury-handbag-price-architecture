@@ -24,6 +24,8 @@ Beauty scale and CHANEL 25 daily-use accounts suggest mechanisms worth testing. 
 
 The `source_id` columns map to [SOURCE_INDEX.md](SOURCE_INDEX.md); sources are also linked at the corresponding claims in the reports.
 
+Three consulted source files are included in [`sources/originals/`](sources/originals/README.md). Their SHA-256 hashes and official locators are recorded in [`research_archive/source_manifest.json`](../research_archive/source_manifest.json). Price research source URLs and collection lineage are preserved in `research_r1/`.
+
 Run the read-only reconciliation scripts from this directory with Python 3:
 
 ```bash
@@ -35,8 +37,8 @@ python3 checks/check_channel_bridge.py
 
 The scripts validate arithmetic and selected table structures. They do not authenticate the underlying sources or establish causality. Sources are linked beside the relevant claims in each report.
 
-## Open evidence need
+## Research boundary and website handoff
 
-The next useful test is a customer-choice instrument that records prior ownership, next-best purchase, whether spending is incremental or shifted within Chanel, exposure before purchase, and retained/returned outcome. A representative causal estimate would require a suitable sample and transaction or comparison data. Until those exist, keep category and marketing contribution unranked.
+Customer-choice validation has been withdrawn from the active plan by the user: there is no accessible client sample or recruitment route. Category, customer and marketing contribution remain unranked. The public-source phase closes with a bounded answer, not an interview promise. Use [the integrated website handoff](../website_handoff/README.md) for the next step: connecting price architecture, historical repricing and the slowdown diagnostic into one argument. Historical future directions in individual reports are not current tasks.
 
 Prepared 2026-10-03. Historical company results and source links were checked as part of the underlying research. This is not an update to the project's handbag-price sample.
