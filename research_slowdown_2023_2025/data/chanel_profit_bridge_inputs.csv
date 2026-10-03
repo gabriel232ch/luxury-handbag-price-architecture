@@ -1,0 +1,4 @@
+fiscal_year,revenue_usd_m,cost_of_sales_usd_m,gross_profit_usd_m,distribution_usd_m,advertising_promotion_demonstration_usd_m,selling_general_administrative_usd_m,operating_profit_usd_m,staff_cost_usd_m,average_employees,exceptional_net_charge_usd_m,selected_da_usd_m,adjusted_ebitda_usd_m,finance_income_usd_m,finance_cost_usd_m,equity_income_usd_m,income_tax_usd_m,profit_before_nci_usd_m,nci_usd_m,profit_for_year_usd_m,source_id,income_printed_page,income_pdf_page
+2023,19743.9,3693.3,16050.6,223.6,2462.6,6957.4,6407.0,3486.4,34329,-12.0,,,491.6,605.3,89.7,1650.8,4732.2,8.1,4724.1,LS-S24,86,87
+2024,18699.3,3734.3,14965.0,229.3,2444.8,7812.3,4478.6,4061.8,37492,175.3,572.1,5226.0,426.1,290.1,89.4,1305.2,3398.8,5.6,3393.2,LS-S23,116,120
+2025,19269.1,3991.5,15277.6,229.2,2394.7,7942.2,4711.5,4293.2,38045,93.6,648.0,5453.1,301.2,742.1,110.7,1468.5,2912.8,8.4,2904.4,LS-S23,116,120

@@ -39,6 +39,7 @@ Chanel 的 premiumization 不只是提高 Classic 标价，而是让可见价格
 - [验证与 readiness](docs/VALIDATION.md)
 - [核心 SVG 图表](final_report_assets/)
 - [Financial & Business Performance 数据层](financial_business_performance/)
+- [Luxury slowdown 诊断研究包（FY2023–FY2025）](research_slowdown_2023_2025/README.md)：补充业务表现、地区 / 渠道收入桥、利润恢复及产品与客户机制证据；结论限于集团口径，未估计手袋独立表现或营销因果贡献。
 - [策略演示 PPTX（原有交付）](LUXURY_HANDBAG_PRICING_STRATEGY_PRESENTATION.pptx)
 
 ## 分析框架

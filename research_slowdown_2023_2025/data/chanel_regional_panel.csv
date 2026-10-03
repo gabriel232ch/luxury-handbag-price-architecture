@@ -1,0 +1,10 @@
+entity,scope,fiscal_year,region,revenue_usd_m,comparable_growth_pct,source_id,locator
+Chanel,consolidated,2023,Europe,5606,,LS-S17,p.4 FY2023 comparative
+Chanel,consolidated,2023,Asia_Pacific,10178,,LS-S17,p.4 FY2023 comparative
+Chanel,consolidated,2023,Americas,3960,,LS-S17,p.4 FY2023 comparative
+Chanel,consolidated,2024,Europe,5676,0.6,LS-S17,p.4
+Chanel,consolidated,2024,Asia_Pacific,9233,-7.1,LS-S17,p.4
+Chanel,consolidated,2024,Americas,3790,-4.2,LS-S17,p.4
+Chanel,consolidated,2025,Europe,6054,2.5,LS-S05,p.4
+Chanel,consolidated,2025,Asia_Pacific,9182,-0.8,LS-S05,p.4
+Chanel,consolidated,2025,Americas,4033,7.2,LS-S05,p.4
