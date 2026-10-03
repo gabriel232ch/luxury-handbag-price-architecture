@@ -1,0 +1,12 @@
+record_id,source_record_id,record_origin,decision_stage,outcome,channel,prior_brand_relationship,next_best_choice,budget_effect,ad_order,use_signal,main_followup
+FIT01,LS-R01,existing_public_account,purchase_self_report,unknown,unknown,unknown,unknown,unknown,unknown,classic_uncertainty,Clarify first handbag versus first brand purchase and whether the bag was kept
+FIT02,LS-R02,existing_public_account,purchase_self_report,unknown,unknown,unknown,unknown,unknown,unknown,daily_casual,Clarify first-purchase scope and whether Chanel spending was additional or shifted
+FIT03,LS-R03,existing_public_account,ownership_use_self_report,unknown,unknown,owned_only,unknown,unknown,unknown,daily_use_complement,When and through which channel was the bag acquired and did brand spending change
+FIT04,LS-R04,existing_public_account,purchase_self_report,unknown,unknown,unknown,unknown,unknown,unknown,availability_and_aesthetics,What was the next choice if the desired version remained unavailable
+FIT05,LS-R05,existing_public_account,store_visit_self_report,not_applicable,not_applicable,unknown,not_applicable,not_applicable,unknown,availability_counterexample,Was there an actual purchase choice beyond the store observation
+FIT06,LS-R06,existing_public_account,purchase_low_use_self_report,unknown,unknown,unknown,unknown,unknown,unknown,comfort_and_pocket_design,Verify model purchase period channel and final outcome
+FIT07,LS-R07,existing_public_account,return_then_purchase_self_report,unknown,unknown,unknown,unknown,unknown,unknown,size_fit,Link refund and replacement events and confirm final retention
+FIT08,LS-R08,existing_public_account,alternative_purchase_self_report,bought_alternative,unknown,unknown,unknown,unknown,unknown,appearance,How seriously was the 25 considered and what was the original budget plan
+FIT09,LS-R09,existing_public_account,alternative_purchase_self_report,bought_alternative,unknown,owned_only,unknown,unknown,unknown,casual_use_and_prior_experience,Confirm retail versus resale and the actual next-best choice
+FIT10,LS-R10,existing_public_account,purchase_self_report,unknown,brand_direct,unknown,unknown,unknown,unknown,availability,Verify early version and market and ask about prior alternatives
+FIT11,LS-R11,existing_public_account,planned_purchase,planned,unknown,unknown,unknown,unknown,unknown,daily_casual,Follow up on the completed choice and spending changes

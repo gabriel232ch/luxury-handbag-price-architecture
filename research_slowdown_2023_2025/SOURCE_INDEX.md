@@ -37,4 +37,4 @@ The `source_id` columns in `data/*.csv` use these IDs. Company filings support r
 | LS-S35 | [L'Oréal FY2025 universal registration document](https://www.loreal-finance.com/eng/2025-universal-registration-document/en/article/23/) | Reproduces WWD's FY2024 Chanel Beauty estimate; not audited Chanel segment disclosure |
 | LS-S36 | [DIARY directory: WWD 2025 beauty ranking](https://www.diarydirectory.com/newsarticle/wwd-reveals-the-2025-top-100-beauty-companies/71474) | Derivative FY2025 estimate; upstream methodology/comparability unresolved |
 
-The same upstream company filing or industry research may support several reports; repeating the source in multiple places is not independent corroboration. The public package omits the row-level forum account ledger and locally saved source scans.
+The same upstream company filing or industry research may support several reports; repeating the source in multiple places is not independent corroboration. Raw account handles and full source scans remain excluded. A de-identified row-level coding table and official source locators/hashes are retained in [the supporting archive](../research_archive/README.md).

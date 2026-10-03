@@ -1,6 +1,6 @@
 # Luxury slowdown diagnostic handoff
 
-As of 2026-10-03. Research package: [`research_slowdown_2023_2025/`](../../research_slowdown_2023_2025/README.md).
+As of 2026-10-03. Research package: [README](README.md). Latest integrated website handoff: [website_handoff](../website_handoff/README.md).
 
 ## Completed
 
@@ -15,10 +15,10 @@ As of 2026-10-03. Research package: [`research_slowdown_2023_2025/`](../../resea
 
 Chanel looked different in FY2025 because group revenue stabilized while some peers continued to contract. Geography and channel data show where reported revenue changed. They do not identify the customer, category, price/volume, or marketing cause. Chanel's operating profit remained materially below FY2023, so the conclusion is not broad demand or profit immunity.
 
-## Next evidence gate
+## Current stopping boundary and next action
 
-Prepare a buyer-choice instrument and coding rules covering prior Chanel ownership, intended next-best choice, purchase timing, campaign exposure before purchase, budget increment versus brand-internal substitution, and final kept/returned status. Use it to structure any later customer research; do not infer a representative rate from public forum posts. A category contribution ranking requires comparable Chanel category revenue or another validated sales bridge.
+The user has withdrawn customer-choice validation because the project has no respondent access or recruitment resources. The public-source findings above are sufficient for a bounded answer. Category contribution, customer incrementality and marketing effectiveness remain unmeasured; no interview deployment or further causal ranking is planned. The next action is to revise the website using the integrated narrative and English copy. The prepared instrument is retained only as withdrawn history in `research_archive/withdrawn_customer_instrument/`.
 
 ## Scope and reproducibility
 
-This is a supporting diagnostic alongside, not a replacement for, the project's handbag price-architecture sample. The package preserves six reports, six input tables, and five checks. Reported-USD bridges retain exchange-rate and mix effects; growth-rate definitions differ by company and are shown explicitly. Public package omits raw account handles and locally stored scans; claims link to their sources.
+This is a supporting diagnostic alongside, not a replacement for, the project's handbag price-architecture sample. The core package preserves six reports, six input tables, and four checks. Reported-USD bridges retain exchange-rate and mix effects; growth-rate definitions differ by company and are shown explicitly. The supporting archive adds de-identified public-record coding and working history. Source PDFs remain local with public URLs and hashes. Historic next-step statements in individual reports are superseded by this status.

@@ -1,0 +1,12 @@
+record_id,source_id,thread_or_post_date,comment_date_status,purchase_period,geography,prior_chanel,behavior_status,alternative,reason_code,locator,confidence_limit
+LS-R01,LS-S29,unknown,search_exact_comment_2025-04-07,2025-04-07,unknown,first_self_report,purchase_self_report,classic_piece_concern,classic_uncertainty,L275-288,return outcome unknown; no receipt
+LS-R02,LS-S30,2025-10-31,search_exact_comment_2025-10-31,by_comment_date,unknown,first_self_report,purchase_self_report,flaps_seen_on_friends,daily_casual,L111-117,no brand counterfactual; no receipt
+LS-R03,LS-S30,2025-10-31,exact_comment_unverified,unknown,unknown,owns_classic_flap_and_25,ownership_use_self_report,owned_medium_classic_flap,daily_use_complement,L47-53;L80-86,no purchase date; usage not sales substitution
+LS-R04,LS-S31,2025-11-16,opening_post_date_verified,recent_before_post,London residence; Tokyo purchase; Shanghai search,unknown,purchase_self_report,preferred_small_suede_25,availability_and_aesthetics,L20-21;L67-72;L178-184,first interest not verified first purchase; no receipt
+LS-R05,LS-S31,2025-11-16,exact_comment_unverified,unknown,US unspecified store,unknown,store_visit_self_report,,availability_counterexample,L42-65,not stock audit; comment date unverified
+LS-R06,LS-S32,2025-08-22,opening_post_date_verified,2025-01_self_recalled,Paris visit; purchase_market_unknown,unknown,purchase_low_use_self_report,Hermes_owned_bags,comfort_and_pocket_design,L20-26;L208-236,early date and model not independently verified
+LS-R07,LS-S32,2025-08-22,exact_comment_unverified,unknown,unknown,unknown,return_then_purchase_self_report,earlier_larger_25,size_fit,L67-88,no transaction verification; not return rate
+LS-R08,LS-S32,2025-08-22,exact_comment_unverified,unknown,unknown,unknown,not_selected_alternative_purchase_self_report,Margaux_10,appearance,L170-200,not verified brand win_loss; date unknown
+LS-R09,LS-S33,2025-03-13,forum_post_exact,by_post_date,unknown,owns_black_22,purchase_choice_self_report,31_and_25,casual_use_and_prior_experience,post18;L138-146,new versus resale transaction unknown
+LS-R10,LS-S34,2025-02-02,forum_post_exact,by_post_date,unknown,unknown,purchase_self_report,,availability,post65;L196-205,no SKU or receipt validation; early availability lead
+LS-R11,LS-S30,2025-10-31,opening_post_date_verified,future_plan,unknown,unknown,planned_purchase,25_or_medium_classic_flap,daily_casual,L17;L55-60,no completed choice retrieved

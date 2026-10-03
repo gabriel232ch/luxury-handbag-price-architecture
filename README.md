@@ -1,5 +1,11 @@
 # Chanel Premiumization Strategy
 
+## 最新整合与官网交接（2026-10-03）
+
+[渐进式论证与官网改版内容包](website_handoff/README.md) 将价格架构、历史提价和 FY2023–FY2025 放缓诊断串成一条线：更高价格架构与部分集团收入恢复共存，但盈利仍明显落后于 FY2023，提价及营销的因果贡献尚未识别。客户验证方向因没有访谈资源退出活跃计划；下一步是官网改版。原 R1 export 与价格/财务材料保持不变。
+
+[支持性研究与撤回工作档案](research_archive/README.md) 保存早期营销报告、去标识公开自述编码、写作复核和项目状态。下文为此前研究概述；最新综合解释以交接包和诊断研究状态为准。
+
 ## Handbag Price Architecture, Financial Performance and Competitive Positioning
 
 本项目聚焦一个具体的商业问题：**Chanel 如何构建并持续抬升其手袋价格架构？这种 premiumization 在多大程度上伴随着增长、盈利能力与品牌经济性，其表现与 Hermès 及更广泛的奢侈品皮具市场相比如何？**
