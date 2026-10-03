@@ -1,0 +1,13 @@
+entity,scope,fiscal_year,currency,money_unit,revenue,operating_profit,profit_basis,margin_pct,margin_basis,comparable_growth_pct,growth_basis,free_cash_flow,cash_basis,investment,investment_basis,brand_support,source_ids,precision_note
+Chanel,consolidated,2023,USD,million,19744,6407,operating_profit,32.5,derived,16.0,comparable,3755,free_cash_flow,1227,capital_expenditure,2463,LS-S07;LS-S17,exact revenue from FY2024 comparative table replaces rounded FY2023 summary
+Chanel,consolidated,2024,USD,million,18699,4479,operating_profit,24.0,derived,-4.3,comparable,1842,free_cash_flow,1755,capital_expenditure,2445,LS-S04;LS-S05,
+Chanel,consolidated,2025,USD,million,19269,4712,operating_profit,24.5,derived,1.8,comparable,2646,free_cash_flow,1449,capital_expenditure,2395,LS-S05,
+Hermes,group,2023,EUR,million,13427,5650,recurring_operating_income,42.1,official,20.6,constant_currency,3192,adjusted_free_cash_flow,859,operating_investments,,LS-S08,
+Hermes,group,2024,EUR,million,15170,6150,recurring_operating_income,40.5,official,14.7,constant_currency,3767,adjusted_free_cash_flow,1067,operating_investments,,LS-S08;LS-S09,
+Hermes,group,2025,EUR,million,16002,6569,recurring_operating_income,41.0,official,8.9,constant_currency,3880,adjusted_free_cash_flow,1161,operating_investments,,LS-S09,official margin retained despite rounding of monetary amounts
+LVMH,Fashion_and_Leather_Goods,2023,EUR,million,42169,16836,profit_from_recurring_operations,39.9,official,14.0,organic,,,,,,LS-S10,
+LVMH,Fashion_and_Leather_Goods,2024,EUR,million,41060,15230,profit_from_recurring_operations,37.1,official,-1.0,organic,,,,,,LS-S11,
+LVMH,Fashion_and_Leather_Goods,2025,EUR,million,37770,13209,profit_from_recurring_operations,35.0,official,-5.0,organic,,,,,,LS-S12,
+Gucci,brand,2023,EUR,million,9873,3264,recurring_operating_income,33.1,official,-2.0,comparable,,,,,,LS-S13;LS-S14,
+Gucci,brand,2024,EUR,million,7650,1605,recurring_operating_income,21.0,official,-21.0,comparable,,,,,,LS-S14;LS-S15,
+Gucci,brand,2025,EUR,million,5992,966,recurring_operating_income,16.1,official,-19.0,comparable,,,,,,LS-S15,

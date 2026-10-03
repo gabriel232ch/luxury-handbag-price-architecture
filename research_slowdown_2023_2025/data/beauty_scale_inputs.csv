@@ -1,0 +1,4 @@
+fiscal_year,metric,value,unit,source_id,status,use_in_bridge
+2024,beauty_sales_external,8.54,USD_billion,LS-S35,WWD_third_party_via_Loreal,no
+2024,group_revenue,18699.3,USD_million,LS-S23,filed_consolidated,denominator_scale_proxy_only
+2025,beauty_sales_external_candidate,9.18,USD_billion,LS-S36,derivative_estimate_upstream_not_read,no
