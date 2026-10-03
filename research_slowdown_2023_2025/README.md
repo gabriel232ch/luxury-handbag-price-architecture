@@ -24,6 +24,8 @@ Beauty scale and CHANEL 25 daily-use accounts suggest mechanisms worth testing. 
 
 The `source_id` columns map to [SOURCE_INDEX.md](SOURCE_INDEX.md); sources are also linked at the corresponding claims in the reports.
 
+Three consulted source files are included in [`sources/originals/`](sources/originals/README.md). Their SHA-256 hashes and official locators are recorded in [`research_archive/source_manifest.json`](../research_archive/source_manifest.json). Price research source URLs and collection lineage are preserved in `research_r1/`.
+
 Run the read-only reconciliation scripts from this directory with Python 3:
 
 ```bash

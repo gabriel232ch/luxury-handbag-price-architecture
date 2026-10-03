@@ -1,26 +1,29 @@
 [
   {
     "local_filename": "chanel_fy2024_accounts.pdf",
+    "repository_path": "research_slowdown_2023_2025/sources/originals/chanel_fy2024_accounts.pdf",
     "source_id": "LS-S24",
     "official_locator": "https://find-and-update.company-information.service.gov.uk/company/00203669/filing-history/MzQ2ODQzNTAzN2FkaXF6a2N4/document?download=0&format=pdf",
     "bytes": 7185473,
     "sha256": "c25c2ffd5031fc827fbd7a32a1ee8685f279738f70326e9492b2f16e927ce2c1",
-    "distribution": "local source retained; public locator only"
+    "distribution": "repository source snapshot and official locator"
   },
   {
     "local_filename": "chanel_fy2025_accounts.pdf",
+    "repository_path": "research_slowdown_2023_2025/sources/originals/chanel_fy2025_accounts.pdf",
     "source_id": "LS-S23",
     "official_locator": "https://find-and-update.company-information.service.gov.uk/company/00203669/filing-history/MzUyNzQxOTg3MmFkaXF6a2N4/document?download=0&format=pdf",
     "bytes": 7156334,
     "sha256": "0132ae24c94a6dbfad26f7176b61e0c5c17de2d96078fb2bd7db7610eadd2434",
-    "distribution": "local source retained; public locator only"
+    "distribution": "repository source snapshot and official locator"
   },
   {
     "local_filename": "loreal_urd2025.pdf",
+    "repository_path": "research_slowdown_2023_2025/sources/originals/loreal_urd2025.pdf",
     "source_id": "LS-S35",
     "official_locator": "https://www.loreal-finance.com/eng/2025-universal-registration-document/en/article/23/",
     "bytes": 18088532,
     "sha256": "6b28219904b5cba67cbab16843943b9e26ca8138ed0c553924258d54ac966caf",
-    "distribution": "local source retained; public locator only"
+    "distribution": "repository source snapshot and official locator"
   }
 ]
